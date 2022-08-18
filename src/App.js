@@ -4,15 +4,20 @@ import "./App.css";
 
 import Home from "./pages/Home";
 import About from "./pages/About";
+import Navbar from "./components/navbar";
+import Footer from './components/footer'
+
 
 function App() {
 	return (
 		<div className="App">
-			<h1>Welcome to React Router!</h1>
+			<Navbar/>
+	
 			<Routes>
 				<Route path="/" element={<Home />} />
 				<Route path="about" element={<About />} />
 			</Routes>
+			<Footer/>
 		</div>
 	);
 }
