@@ -1,19 +1,29 @@
 import React from 'react'
 import Pattern from '../../assets/home/linimasa/pattern-linimasa.svg'
-
+import LiniMasa from '../../assets/home/linimasa/linimasa-tulisan.svg'
+import KembangUngu from  '../../assets/kembang-ungu.svg'
 
 const tentang = () => {
   return (
-    <div className=' relative flex justify-center bg-cover h-screen   bg-[#171717]' style={{ backgroundImage: "url(" + Pattern + ")" }}>
-      
-    <div className=' relative my-5 mx-auto justify-center w-2/5 items-center text-left text-white'>
-        <div className='text-5xl mb-5 font-bold'><p>
-          FESTIVAL <br /> GADJAH MADA </p></div>
-        <div className='text-xl w-full'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-        Donec tellus nulla, porta vel consectetur et,
-         mattis quis orci. In hac habitasse platea dictumst. Sed eget tincidunt risus. Mauris nec luctus sapien, eu cursus diam.</div>
+    <div className=' relative flex justify-center bg-cover h-[75vh]   bg-[#171717]' >
+  
+      <div className='grid absolute gap-24 h-full  mx-auto w-full grid-cols-2'>
+      <div className=' flex bg-cover h-auto w-auto  bg-[#171717]' style={{ backgroundImage: "url(" + Pattern + ")" }}></div>
+      <div className='  flex bg-cover h-auto w-auto  bg-[#171717]' style={{ backgroundImage: "url(" + Pattern + ")" }}></div>
 
       </div>
+      
+    <div className=' justify-center w-full h-1/3 relative flex '>
+    <div className=' relative my-5 mx-auto -top-8 flex justify-center items-center w-full text-left text-white'>
+      <div className='h-1 z-10 bg-white w-1/3 ml-24 '></div>
+    <img src={KembangUngu} className='relative -ml-10 h-16 mx-auto' alt="" />
+    <img src={LiniMasa} className='relative h-16 mx-auto' alt="" />
+    <img src={KembangUngu} className=' relative -mr-10 h-16 mx-auto' alt="" />
+    <div className='h-1  bg-white relative w-1/3  mr-24'></div>
+
+
+      </div>
+    </div>
     </div>
   )
 }
