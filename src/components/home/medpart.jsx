@@ -4,7 +4,7 @@ import Medpart from '../../assets/home/medpart-text.svg'
 import KembangMerah from  '../../assets/kembang-merah.svg'
 import PlainCover from  '../../assets/home/plain-cover.svg'
 
-
+import Slider from './slider'
 const medpart = () => {
   return (
     <div className=' relative  justify-center bg-cover h-[75vh]   bg-[#171717]' >
@@ -27,7 +27,9 @@ const medpart = () => {
             </div>
           </div>
 
-          <div className=' flex bg-cover h-3/5 w-3/4 my-auto mx-auto  relative z-100  bg-[#171717]' style={{ backgroundImage: "url(" + PlainCover + ")" }}></div>
+          <div className=' flex bg-cover h-3/5 w-3/4 my-auto mx-auto  relative z-100  bg-[#171717]' style={{ backgroundImage: "url(" + PlainCover + ")" }}>
+            
+          </div>
     </div>
   )
 }
