@@ -11,6 +11,8 @@ export default function Home() {
 				<Opening_video/>
 				<Tentang/>
 				<Rangkaian/>
+				<Rangkaian/>
+
 			</main>
 			<nav>
 			
