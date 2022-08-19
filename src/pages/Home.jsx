@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import Opening_video from "../components/home/opening_video";
 import Tentang from "../components/home/tentang";
 import Rangkaian from "../components/home/rangkaian";
+import LiniMasa from '../components/home/lini_masa'
+
 
 export default function Home() {
 	return (
@@ -11,12 +13,13 @@ export default function Home() {
 				<Opening_video/>
 				<Tentang/>
 				<Rangkaian/>
-				<Rangkaian/>
+
+
+
+				<LiniMasa/>
 
 			</main>
-			<nav>
 			
-			</nav>
 		</>
 	);
 }
