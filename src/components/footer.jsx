@@ -12,17 +12,18 @@ import { Link } from 'react-router-dom';
 
 const footer = () => {
   return (
-    <footer className=" bg-black">
-        <img className='absolute ' src={ornament_footer} >
+    <footer className=" bg-black ">
+        <div className=''>
+        <img className='hidden md:block md:scale-50 lg:scale-75 xl:scale-100 absolute w-auto h-auto ' src={ornament_footer} >
 
         </img>
     <div className="container mx-auto py-32 px-2 text-left">
         <div className="flex flex-col-reverse md:flex-row justify-evenly items-start gap-y-2 md:gap-0 mx-4">
             {/* Nesco dan sosmed */}
             <div className="flex flex-col items-center self-center lg:items-start lg:self-auto">
-                <div className="flex items-center gap-10 mt-8 md:mt-0 lg:mb-4">
-                    <img src={Logo} alt="" className='h-10 lg:h-32  transition-all' />
-                    <img src={festival_footer} alt="" className='h-10 lg:h-32  transition-all' />
+                <div className="flex flex-col lg:flex-row items-center   md:gap-10 mt-8 md:mt-0 lg:mb-4">
+                    <img src={Logo} alt="" className='hidden lg:inline-flex lg:h-32  transition-all' />
+                    <img src={festival_footer} alt="" className='h-24 lg:h-32  transition-all' />
                 </div>
                
                 <p className='text-xs lg:text-sm text-white lg:mt-4'>&copy; IT FGM 2022</p>
@@ -53,6 +54,7 @@ const footer = () => {
                 
             </div>
         </div>
+    </div>
     </div>
 </footer >
   )

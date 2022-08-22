@@ -32,7 +32,7 @@
 
 .vvsmall {
   z-index: 3;
-  filter: blur(0.875px) brightness(0.9);
+  filter: blur(0.875px)  brightness(0.9);
   margin: 0 -7.7rem;
   transform: scale(0.675);
 }
@@ -70,7 +70,7 @@
 
 .medium-blur {
   z-index: 6;
-  filter: blur(2px) brightness(0.95);
+  filter: blur(2.7px)  brightness(0.95);
   margin: 0 -1rem;
   transform: scale(0.862);
 }

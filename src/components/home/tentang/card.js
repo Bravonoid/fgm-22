@@ -46,7 +46,7 @@ export const Card = ({ style, children, image, id, hovered, url, ...rest }) => {
         } ${pasar.card} text-2xl font-semibold text-white`}
         {...rest}
       >
-        <div className="absolute z-10 px-6 py-6 capitalize">{children}</div>
+        <div className="absolute z-10 justify-between flex max-w-[72] py-6 capitalize">{children}</div>
         <motion.div
           className="w-full h-full relative"
           whileHover={{
@@ -74,7 +74,7 @@ export const Card = ({ style, children, image, id, hovered, url, ...rest }) => {
         className={`flex md:hidden mb-3 rounded-xl border-none items-end justify-center flex-wrap w-52 h-60 text-md font-semibold text-white bg-black`}
         {...rest}
       >
-        <div className="absolute z-10 p-10 capitalize">{children}</div>
+        <div className="absolute z-10 p-5  max-w-[32] capitalize">{children}</div>
         <div className="w-full h-full relative">
           <div className={`w-full h-full absolute ${pasar.filter}`} />
           <motion.img

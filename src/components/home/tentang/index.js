@@ -12,6 +12,23 @@ const cardName = [
 ];
 
 export default function Cards() {
+
+
+  const color = (id) => {
+    switch (id) {
+      case 0:
+        return "#E62C20";
+      case 1:
+        return "#9C4A9A";
+      case 2:
+        return "#F69722";
+        case 3:
+        return "#E62C20";
+    
+      default:
+        break;
+    }
+  };
   const [hovered, setHovered] = useState(8);
 
   function handleHovered(id) {
@@ -31,7 +48,7 @@ export default function Cards() {
             image={cards.img}
           >
             <span>{cards.name}</span>
-            <div className="inline-block bg-black w-32 h-5">
+            <div className={`inline-block bg-[${color(id)}] ml-5 md:w-32 w-16 h-5`}>
 
             </div>
           </Card>
