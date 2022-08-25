@@ -1,35 +1,47 @@
-import React from 'react'
-import Penari from '../../assets/home/penari.png'
-import Logo from '../../assets/logo_fgm.svg';
-import gunungan from '../../assets/home/gunungan.svg';
-import mozaik_horizontal from '../../assets/home/mozaik_horizontal.svg';
+import React, {useState} from 'react';
+import Logo from '../assets/home/logo-navbar.svg';
 
+const Navbar = () => {
+  const [navbar, setNavbar] = useState(false);
 
-
-const tentang = () => {
   return (
-    <div className='w-full   h-[75vh] justify-end items-center  bg-[#1E1E1E] bg-cover bg-1/2' style={{backgroundImage: `url(${gunungan})`}}>
-      <div className='grid relative  top-48 -right-40 mx-auto w-3/4 grid-cols-2'>
-      <div className=' relative my-5 -top-10 mx-auto justify-center w-full  items-end text-left text-white'>
-        <img className='w-full' src={mozaik_horizontal} alt="mozaik"></img>
-        <div className='text-5xl mb-5 font-bold'>
-          <p>FESTIVAL</p>
-
-          <p>GADJAH MADA</p>
+      <div className='w-full h-16 bg-black relative flex text-white justify-between'>
+        <div className="flex items-center flex-shrink-0 px-[10px] py-[10px] sm:mx-0">
+          <div className="h-full w-full">
+              <img src={Logo} alt="Logo" className="hover:cursor-pointer" />
           </div>
-        <div className='text-xl w-full'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-        Donec tellus nulla, porta vel consectetur et,
-         mattis quis orci. In hac habitasse platea dictumst. Sed eget tincidunt risus. Mauris nec luctus sapien, eu cursus diam.</div>
-
-      </div>  
-      <img className=' relative my-5 -top-10 mx-auto justify-center w-2/5 items-center text-left text-white' src={Logo} alt="logo">
-
-
-
-      </img>  
+        </div>
+        <ul className='flex items-center justify-between mx-10 gap-20 text-xl hover:cursor-pointer sm:hidden lg:flex lg:ml-auto py-2'>
+            <li className="hover:bg-pattern hover:bg-cover p-2">Beranda</li>
+            <li className="hover:bg-pattern hover:bg-cover p-2">Tentang</li>
+            <li className="hover:bg-pattern hover:bg-cover p-2">Event</li>
+            <li className="hover:bg-pattern hover:bg-cover p-2">Ticket</li>
+        </ul>
+        <div className="lg:hidden items-center">
+						<button onClick={() => setNavbar(!navbar)} className="outline-none mobile-menu-button items-center my-[20px]">
+						<svg className=" w-6 h-6 text-gray-500 hover:text-green-500"
+							x-show="!showMenu"
+							fill="none"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							stroke-width="2"
+							viewBox="0 0 24 24"
+							stroke="currentColor"
+						>
+							<path d="M4 6h16M4 12h16M4 18h16"></path>
+						</svg>
+					</button>
+				</div>
+        <div className={`${navbar?"inline-block":"hidden"} mobile-menu`}>
+          <ul className="flex flex-col bg-green-300">
+            <li className="active"><a href=" " className="block text-sm px-2 py-4 text-white font-semibold">Beranda</a></li>
+            <li><a href="#services" className="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">Tentang</a></li>
+            <li><a href="#about" className="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">Event</a></li>
+            <li><a href="#contact" className="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">Ticket</a></li>
+          </ul>
+			  </div>
       </div>
-    </div>
   )
 }
 
-export default tentang
+export default Navbar;
