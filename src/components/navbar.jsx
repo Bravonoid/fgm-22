@@ -1,54 +1,47 @@
-import React from 'react';
-import Logo from '../assets/logo_fgm.svg';
+import React, {useState} from 'react';
+import Logo from '../assets/home/logo-navbar.svg';
 
+const Navbar = () => {
+  const [navbar, setNavbar] = useState(false);
 
-const navbar = () => {
   return (
-    <>
-      <nav
-        id="nav-trans"
-        style={{ zIndex: "100" }}
-        class="fixed navbar flex items-center justify-between flex-wrap shadow-lg text-fgmBlack w-screen bg-white p-3 pl-2"
-      >
-        <div className="flex items-center flex-shrink-0 px-2 mx-2">
-          <div className="h-12 w-12">
-            <Link href="/">
-              <Image
-                src={Logo}
-                className="hover:cursor-pointer"
-                alt="Logo Festival Gadjah Mada"
-              />
-            </Link>
+      <div className='w-full h-16 bg-black relative flex text-white justify-between'>
+        <div className="flex items-center flex-shrink-0 px-[10px] py-[10px] sm:mx-0">
+          <div className="h-full w-full">
+              <img src={Logo} alt="Logo" className="hover:cursor-pointer" />
           </div>
-          <Link href="/" className="text-lg">
-            Festival Gadjah Mada
-          </Link>
         </div>
-        <div class="block lg:hidden mx-2">
-          <button
-            class="flex items-center px-3 py-2 border rounded"
-            onClick={() => setNavbar(!navbar)}
-          >
-            <svg
-              class="fill-current h-3 w-3"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <title>Menu</title>
-              <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
-            </svg>
-          </button>
-        </div>
-      <div className='w-full h-16 bg-black relative top-0 items-center px-10 text-white justify-end flex'>
-        <ul className='flex justify-between mx-10 gap-36 text-2xl '>
-            <li >Beranda</li>
-            <li>Event</li>
-            <li>Ticket</li>
-
-            </ul></div>
-      </nav>
-    </>
+        <ul className='flex items-center justify-between mx-10 gap-20 text-xl hover:cursor-pointer sm:hidden lg:flex lg:ml-auto py-2'>
+            <li className="hover:bg-pattern hover:bg-cover p-2">Beranda</li>
+            <li className="hover:bg-pattern hover:bg-cover p-2">Tentang</li>
+            <li className="hover:bg-pattern hover:bg-cover p-2">Event</li>
+            <li className="hover:bg-pattern hover:bg-cover p-2">Ticket</li>
+        </ul>
+        <div className="lg:hidden items-center">
+						<button onClick={() => setNavbar(!navbar)} className="outline-none mobile-menu-button items-center my-[20px]">
+						<svg className=" w-6 h-6 text-gray-500 hover:text-green-500"
+							x-show="!showMenu"
+							fill="none"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							stroke-width="2"
+							viewBox="0 0 24 24"
+							stroke="currentColor"
+						>
+							<path d="M4 6h16M4 12h16M4 18h16"></path>
+						</svg>
+					</button>
+				</div>
+        <div className={`${navbar?"inline-block":"hidden"} mobile-menu`}>
+          <ul className="flex flex-col bg-green-300">
+            <li className="active"><a href=" " className="block text-sm px-2 py-4 text-white font-semibold">Beranda</a></li>
+            <li><a href="#services" className="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">Tentang</a></li>
+            <li><a href="#about" className="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">Event</a></li>
+            <li><a href="#contact" className="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">Ticket</a></li>
+          </ul>
+			  </div>
+      </div>
   )
 }
 
-export default navbar;
+export default Navbar;

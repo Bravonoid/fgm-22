@@ -7,6 +7,9 @@ module.exports = {
 			'heading': ['Exo'],
 		  },
 		extend: {},
+		backgroundImage: {
+			'pattern': "url('../src/assets/home/navbar-hover.svg')",
+		},
 	},
 	plugins: [],
 };
