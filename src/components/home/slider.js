@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect,useState} from 'react'
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
@@ -9,7 +9,38 @@ import { faDiscord, faFacebook, faFacebookSquare, faInstagram, faInstagramSquare
     faLine, faLinkedin, faSteam, faTiktok, faTwitter, faTwitterSquare, faUssunnah, faWhatsapp, faYoutube, faGmail } from '@fortawesome/free-brands-svg-icons';
 
 
-const slider = () => { 
+const Sllider = () => { 
+  let today = new Date();
+  let dd = String(today.getDate()).padStart(2, '0');
+  let mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+  let yyyy = today.getFullYear();
+  
+  today = mm + '/' + dd + '/' + yyyy;
+  console.log(today)
+
+
+  const TimelineCondition = (today) => {
+    switch (today) {
+      case "08/22/2022":
+        return 1;
+      case "08/23/2022":
+        return 3;
+      case "08/24/2022":
+        return 3;
+ 
+
+      default:
+        break;
+    }
+  };
+
+  console.log(TimelineCondition(today))
+
+
+
+
+
+
 
     const settings = {
         dots: true,
@@ -17,7 +48,7 @@ const slider = () => {
         speed: 500,
         slidesToShow: 3,
         slidesToScroll: 1,
-        initialSlide: 0,
+        initialSlide: `${TimelineCondition(today)}`,
         responsive: [
           {
             breakpoint: 1304,
@@ -82,4 +113,4 @@ const slider = () => {
   )
 }
 
-export default slider
+export default Sllider
