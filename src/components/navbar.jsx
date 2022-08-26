@@ -37,6 +37,7 @@ const Navbar = () => {
             <li className="active"><a href=" " className="block text-sm px-2 py-4 text-white font-semibold">Beranda</a></li>
             <li><a href="#services" className="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">Tentang</a></li>
             <li><a href="#about" className="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">Event</a></li>
+            <li><a href="#contact" className="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">Ticket</a></li>
           </ul>
 			  </div>
       </div>

@@ -14,7 +14,7 @@ const footer = () => {
   return (
     <footer className=" bg-black ">
         <div className=''>
-        <img className='hidden md:block md:scale-50 lg:scale-75 xl:scale-100 absolute w-auto h-auto ' src={ornament_footer} >
+        <img className='hidden md:block md:scale-50 lg:scale-75 xl:scale-100 absolute w-auto h-auto' src={ornament_footer} >
 
         </img>
     <div className="container mx-auto py-32 px-2 text-left">
