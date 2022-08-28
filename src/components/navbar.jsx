@@ -19,7 +19,7 @@ const Navbar = () => {
             <li className="hover:bg-pattern hover:bg-cover p-2">Ticket</li>
         </ul>
         <div className="lg:hidden items-center">
-						<button onClick={() => setNavbar(!navbar)} className="outline-none mobile-menu-button items-center my-[20px]">
+						<button onClick={() => setNavbar(!navbar)} className="outline-none items-center my-[20px]">
 						<svg className=" w-6 h-6 text-gray-500 hover:text-green-500"
 							x-show="!showMenu"
 							fill="none"
@@ -31,9 +31,10 @@ const Navbar = () => {
 						>
 							<path d="M4 6h16M4 12h16M4 18h16"></path>
 						</svg>
-					</button>
+					</button>  
+          <button onClick={() => setNavbar(navbar)} className="outline-none items-center my-[20px] bg-red-500">klik</button>    
 				</div>
-        <div className={`${navbar?"inline-block":"hidden"} mobile-menu`}>
+        <div className={`${navbar?"absolute":"hidden"} w-36`} >
           <ul className="flex flex-col bg-green-300">
             <li className="active"><a href=" " className="block text-sm px-2 py-4 text-white font-semibold">Beranda</a></li>
             <li><a href="#services" className="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">Tentang</a></li>

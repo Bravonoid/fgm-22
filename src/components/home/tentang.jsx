@@ -21,7 +21,7 @@ const tentang = () => {
           </div>
           <div className='flex sm:gap-1'>
             <p>GADJAH MADA</p>
-            <img className='sm:w-[105px] md:w-32 lg:w-40' src={rectangle_18} alt="rectangle"></img>
+            <img className='sm:w-[96px] md:w-28 lg:w-40' src={rectangle_18} alt="rectangle"></img>
           </div>
           </div>
         <div className='xl:text-xl xl:w-full sm:text-base'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
