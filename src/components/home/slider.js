@@ -7,6 +7,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import { faDiscord, faFacebook, faFacebookSquare, faInstagram, faInstagramSquare, 
     faLine, faLinkedin, faSteam, faTiktok, faTwitter, faTwitterSquare, faUssunnah, faWhatsapp, faYoutube, faGmail } from '@fortawesome/free-brands-svg-icons';
+import{faLocationDot, faCalendar} from '@fortawesome/free-solid-svg-icons';
 
 
 const Sllider = () => { 
@@ -86,13 +87,21 @@ const Sllider = () => {
     <div className='card text-white mx-5'>
         <div className='card-top justify-center items-center '>
             <div className='bg-[#242424] justify-between flex-col flex items-start text-left mx-auto h-72 w-72'>
-                <h1 className='text-4xl my-5 mx-5 font-bold  '>
+                <h1 className='text-4xl my-2 mx-2 font-bold  '>
                     {item.title}
+                    <ul className='top-0  relative flex  h-1 w-full'>
+                      <li className=' bg-white w-1/3'></li>
+                      <li className=' bg-black w-1/3'></li>
+
+                      <li className=' bg-white w-1/3'></li>
+
+                    </ul>
                 </h1>
+               
                 <div className='relative my-5 mx-5 '>
          
-                <h3> <FontAwesomeIcon icon={faTwitter} size='2x' color='white' className='h-5 lg:h-6 hover:text-yellow-500  transition-all'></FontAwesomeIcon>  {item.price}</h3>
-                <p>{item.category}</p>
+                <h3> <FontAwesomeIcon icon={faLocationDot} size='2x' color='white' className='h-5 lg:h-6 hover:text-yellow-500  transition-all'></FontAwesomeIcon>  {item.price}</h3>
+                <p><FontAwesomeIcon icon={faCalendar} size='2x' color='white' className='h-5 lg:h-6 hover:text-yellow-500  transition-all'></FontAwesomeIcon>{item.category}</p>
                 </div>
                 
                 </div>
