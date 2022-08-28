@@ -31,11 +31,11 @@ const Navbar = () => {
 						>
 							<path d="M4 6h16M4 12h16M4 18h16"></path>
 						</svg>
-					</button>  
-          <button onClick={() => setNavbar(navbar)} className="outline-none items-center my-[20px] bg-red-500">klik</button>    
+					</button>
+
 				</div>
-        <div className={`${navbar?"absolute":"hidden"} w-36`} >
-          <ul className="flex flex-col bg-green-300">
+        <div className={`${navbar?"absolute":"hidden"}`} >
+          <ul className="flex flex-col w-screen h-screen bg-black mt-16 absolute z-50">
             <li className="active"><a href=" " className="block text-sm px-2 py-4 text-white font-semibold">Beranda</a></li>
             <li><a href="#services" className="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">Tentang</a></li>
             <li><a href="#about" className="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">Event</a></li>
