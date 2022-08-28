@@ -13,36 +13,36 @@ import { Link } from 'react-router-dom';
 const footer = () => {
   return (
     <footer className=" bg-black ">
-        <div className=''>
-        <img className='hidden md:block md:scale-50 lg:scale-75 xl:scale-100 absolute w-auto h-auto' src={ornament_footer} >
+        <div className='flex sm:flex-col'>
+        <img className='hidden xl:block md:scale-50 lg:scale-75 xl:scale-100 absolute w-auto h-auto' src={ornament_footer} >
 
         </img>
-    <div className="container mx-auto py-32 px-2 text-left">
-        <div className="flex flex-col-reverse md:flex-row justify-evenly items-start gap-y-2 md:gap-0 mx-4">
+    <div className="container mx-auto py-32 px-2 text-left sm:w-auto lg:w-full">
+        <div className="flex sm:flex-col lg:flex-row justify-evenly sm:text-2xl lg:items-start gap-y-2 md:gap-0 mx-4">
             {/* Nesco dan sosmed */}
             <div className="flex flex-col items-center self-center lg:items-start lg:self-auto">
-                <div className="flex flex-col lg:flex-row items-center   md:gap-10 mt-8 md:mt-0 lg:mb-4">
-                    <img src={Logo} alt="" className='hidden lg:inline-flex lg:h-32  transition-all' />
-                    <img src={festival_footer} alt="" className='h-24 lg:h-32  transition-all' />
+                <div className="flex sm:flex-row sm:bottom-10 lg:flex-row items-center md:gap-10 mt-8 md:mt-0 lg:mb-4">
+                    <img src={Logo} alt="" className='hidden lg:inline-flex lg:h-32 transition-all' />
+                    <img src={festival_footer} alt="" className='sm:h-auto sm:-top-8 md:my-auto lg:h-32 transition-all' />
                 </div>
                
-                <p className='text-xs lg:text-sm text-white lg:mt-4'>&copy; IT FGM 2022</p>
+                <p className='text-xs content-left lg:text-sm text-white lg:mt-4'>&copy; IT FGM 2022</p>
             </div>
             {/* quick link */}
-            <div className="flex flex-col gap-0.5 lg:gap-2 text-white">
-            <img src={sitemap_footer} alt="" className='h-10 lg:h-auto   ' />
-                <Link to='/' className='text-sm lg:text-xl hover:text-yellow-500'>Beranda</Link>
-                <Link to='/' className='text-sm lg:text-xl hover:text-yellow-500'>Tentang</Link>
-                <Link to='/' className='text-sm lg:text-xl hover:text-yellow-500'>Teater </Link>
-                <Link to='/' className='text-sm lg:text-xl hover:text-yellow-500'>Pasar Rakyat</Link>
-                <Link to='/' className='text-sm lg:text-xl hover:text-yellow-500'>Festival Seni</Link>
-                <Link to='/' className='text-sm lg:text-xl hover:text-yellow-500'>Tiket</Link>
+            <div className="flex flex-col gap-0.5 sm:gap-2 text-white">
+            <img src={sitemap_footer} alt="" className='h-10 sm:h-auto sm:mr-16' />
+                <Link to='/' className='text-sm sm:text-2xl hover:text-yellow-500'>Beranda</Link>
+                <Link to='/' className='text-sm sm:text-2xl hover:text-yellow-500'>Tentang</Link>
+                <Link to='/' className='text-sm sm:text-2xl hover:text-yellow-500'>Teater </Link>
+                <Link to='/' className='text-sm sm:text-2xl hover:text-yellow-500'>Pasar Rakyat</Link>
+                <Link to='/' className='text-sm sm:text-2xl hover:text-yellow-500'>Festival Seni</Link>
+                <Link to='/' className='text-sm sm:text-2xl hover:text-yellow-500'>Tiket</Link>
              
                 
             </div>
             {/* kontak person whatsapp */}
-            <div className="flex flex-col gap-0.5 lg:gap-2 text-white text-sm lg:text-xl">
-            <img src={ikuti_footer} alt="" className='h-10 lg:h-auto   ' />
+            <div className="flex flex-col sm:gap-2 text-white text-sm sm:text-2xl">
+            <img src={ikuti_footer} alt="" className='h-10 sm:h-auto sm:mr-2' />
                <a href={"https://www.instagram.com/festivalgadjahmada"} rel='noreferrer' target="_blank">
                         <FontAwesomeIcon icon={faInstagram} size='2x' color='white' className='h-5 lg:h-6 hover:text-yellow-500  transition-all'></FontAwesomeIcon>  @festivalgadjahmada </a> 
             <a href={"https://www.tiktok.com/@festivalgadjahmada?lang=id-ID"} rel='noreferrer' target="_blank">
