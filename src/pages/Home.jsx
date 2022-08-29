@@ -10,7 +10,7 @@ import Medpart from "../components/home/medpart";
 export default function Home() {
 	return (
 		<>
-			<main>
+			<main className="overflow-hidden">
 				<Opening_video/>
 				<Tentang/>
 				<Rangkaian/>

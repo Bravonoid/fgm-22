@@ -22,11 +22,11 @@ const footer = () => {
             {/* Nesco dan sosmed */}
             <div className="flex flex-col items-center self-center lg:items-start lg:self-auto">
                 <div className="flex sm:flex-row sm:bottom-10 lg:flex-row items-center md:gap-10 mt-8 md:mt-0 lg:mb-4">
-                    <img src={Logo} alt="" className='hidden lg:inline-flex lg:h-32 transition-all' />
-                    <img src={festival_footer} alt="" className='sm:h-auto sm:-top-8 md:my-auto lg:h-32 transition-all' />
+                    <img src={Logo} alt="" className='hidden lg:inline-flex lg:h-32 transition-all lg:scale-[1.4]' />
+                    <img src={festival_footer} alt="" className='sm:h-auto sm:-top-8 md:my-auto lg:h-32 transition-all lg:scale-[1.4] lg:ml-10' />
                 </div>
                
-                <p className='text-xs content-left lg:text-sm text-white lg:mt-4'>&copy; IT FGM 2022</p>
+                <p className='text-xs content-left lg:text-sm text-white lg:mt-6'>&copy; IT FGM 2022</p>
             </div>
             {/* quick link */}
             <div className="flex flex-col gap-0.5 mobile:gap-2 text-white">

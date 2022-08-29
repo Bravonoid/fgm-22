@@ -7,16 +7,16 @@ const Navbar = () => {
 
   return (
       <div className='w-full h-16 bg-black relative flex text-white justify-between'>
-        <div className="flex items-center flex-shrink-0 px-[10px] py-[10px] sm:mx-0">
+        <div className="flex items-center flex-shrink-0 px-[10px] py-[10px] ml-8">
           <div className="h-full w-full">
               <img src={Logo} alt="Logo" className="hover:cursor-pointer" />
           </div>
         </div>
         <ul className='flex items-center justify-between mx-10 gap-20 text-xl hover:cursor-pointer sm:hidden lg:flex lg:ml-auto py-2'>
-            <li className="hover:bg-pattern hover:bg-cover p-2">Beranda</li>
-            <li className="hover:bg-pattern hover:bg-cover p-2">Tentang</li>
-            <li className="hover:bg-pattern hover:bg-cover p-2">Event</li>
-            <li className="hover:bg-pattern hover:bg-cover p-2">Ticket</li>
+            <li className="hover:bg-pattern hover:bg-cover p-4">Beranda</li>
+            <li className="hover:bg-pattern hover:bg-cover p-4">Tentang</li>
+            <li className="hover:bg-pattern hover:bg-cover p-4">Event</li>
+            <li className="hover:bg-pattern hover:bg-cover p-4">Ticket</li>
         </ul>
         <div className="lg:hidden items-center">
 						<button onClick={() => setNavbar(!navbar)} className="outline-none items-center my-[20px]">
