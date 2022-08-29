@@ -7,7 +7,7 @@ const Navbar = () => {
 
   return (
       <div className='w-full h-16 bg-black relative flex text-white justify-between'>
-        <div className="flex items-center flex-shrink-0 px-[10px] py-[10px] sm:mx-0">
+        <div className="flex items-center flex-shrink-0 px-[10px] py-[10px] ml-8">
           <div className="h-full w-full">
               <img src={Logo} alt="Logo" className="hover:cursor-pointer" />
           </div>
