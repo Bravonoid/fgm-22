@@ -6,7 +6,11 @@ module.exports = {
 			'body': ['"Montserrat "', 'sans'],
 			'heading': ['Exo'],
 		  },
-		extend: {},
+		extend: {
+			fontFamily: {
+				'Montserrat': ['Montserrat'],
+			  },
+		},
 		backgroundImage: {
 			'pattern': "url('../src/assets/home/navbar-hover.svg')",
 		},

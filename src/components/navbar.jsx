@@ -13,10 +13,10 @@ const Navbar = () => {
           </div>
         </div>
         <ul className='flex items-center justify-between mx-10 gap-20 text-xl hover:cursor-pointer sm:hidden lg:flex lg:ml-auto py-2'>
-            <li className="hover:bg-pattern hover:bg-cover p-2">Beranda</li>
-            <li className="hover:bg-pattern hover:bg-cover p-2">Tentang</li>
-            <li className="hover:bg-pattern hover:bg-cover p-2">Event</li>
-            <li className="hover:bg-pattern hover:bg-cover p-2">Ticket</li>
+            <li className="hover:bg-pattern hover:bg-cover p-4">Beranda</li>
+            <li className="hover:bg-pattern hover:bg-cover p-4">Tentang</li>
+            <li className="hover:bg-pattern hover:bg-cover p-4">Event</li>
+            <li className="hover:bg-pattern hover:bg-cover p-4">Ticket</li>
         </ul>
         <div className="lg:hidden items-center">
 						<button onClick={() => setNavbar(!navbar)} className="outline-none items-center my-[20px]">
