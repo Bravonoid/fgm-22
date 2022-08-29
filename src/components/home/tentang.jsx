@@ -10,14 +10,14 @@ import rectangle_18 from '../../assets/home/rectangle-18.svg';
 const tentang = () => {
   return (
     <div className='w-full h-[75vh] justify-end items-center  bg-[#1E1E1E]'>
-      <img src={gunungan} className='absolute sm:w-1/3 md:w-1/4 lg:w-1/5 xl:w-1/6' alt='gunungan'></img>
+      <img src={gunungan} className='absolute sm:h-3/4 md:w-1/4 lg:w-1/5 xl:w-1/6' alt='gunungan'></img>
       <div className='grid relative sm:top-32 sm:-right-8 xl:-right-40 xl:top-48 xl:top-48 xl:ml-[50px] mx-auto grid-cols-2'>
       <div className='relative my-5 -top-10  w-full items-end text-left text-white sm:mb-[100px] xl:-top-16'>
         <div className='xl:text-5xl xl:mb-5 font-bold sm:text-3xl md:text-4xl lg:text-5xl'>
         <img className='w-full' src={mozaik_horizontal} alt="mozaik"></img>
           <div className='flex sm:gap-1.5 md:gap-1'>
             <p>FESTIVAL </p>
-            <img className='sm:w-48 md:w-56 lg:w-72' src={rectangle_17} alt="rectangle"></img>
+            <img className='sm:w-48 md:w-56 lg:w-72  ' src={rectangle_17} alt="rectangle"></img>
           </div>
           <div className='flex sm:gap-1'>
             <p>GADJAH MADA</p>
