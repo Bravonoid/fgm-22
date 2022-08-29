@@ -6,10 +6,15 @@ module.exports = {
 			'body': ['"Montserrat "', 'sans'],
 			'heading': ['Exo'],
 		  },
-		extend: {},
+		extend: {
+			screens: {
+				'mobile':'360px',
+			},
+		},
 		backgroundImage: {
 			'pattern': "url('../src/assets/home/navbar-hover.svg')",
 		},
+		
 	},
 	plugins: [],
 };
