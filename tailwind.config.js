@@ -8,7 +8,7 @@ module.exports = {
 		  },
 		extend: {
 			screens: {
-				'mobile':{'min':'360px', 'max':'640px'},
+				'mobile':{'min':'360px', 'max':'639px'},
 			},
 			fontFamily: {
 				'Montserrat': ['Montserrat'],

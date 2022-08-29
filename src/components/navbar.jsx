@@ -1,18 +1,20 @@
 
 import React, {useState} from 'react';
 import Logo from '../assets/home/logo-navbar.svg'
+import logo from '../assets/logo_fgm.svg'
 
 const Navbar = () => {
   const [navbar, setNavbar] = useState(false);
 
   return (
       <div className='w-full h-16 bg-black relative flex text-white justify-between'>
-        <div className="flex items-center flex-shrink-0 px-[10px] py-[10px] ml-8">
+        <div className="flex items-center flex-shrink-0 px-[10px] py-[10px] ml-4">
           <div className="h-full w-full">
-              <img src={Logo} alt="Logo" className="hover:cursor-pointer" />
+              <img src={Logo} alt="Logo" className="mobile:hidden hover:cursor-pointer" />
+              <img src={logo} alt="Logo" className="sm:hidden h-12 hover:cursor-pointer" />
           </div>
         </div>
-        <ul className='flex items-center justify-between mx-10 gap-20 text-xl hover:cursor-pointer sm:hidden lg:flex lg:ml-auto py-2'>
+        <ul className='flex items-center justify-between mx-10 gap-16 text-xl hover:cursor-pointer mobile:hidden  sm:hidden lg:flex lg:ml-auto py-2'>
             <li className="hover:bg-pattern hover:bg-cover p-4">Beranda</li>
             <li className="hover:bg-pattern hover:bg-cover p-4">Tentang</li>
             <li className="hover:bg-pattern hover:bg-cover p-4">Event</li>
