@@ -1,18 +1,28 @@
-import React from 'react'
-import Penari from '../../assets/home/penari.png';
-import fgm_black from '../../assets/home/fgm-black.svg';
-import mozaik from '../../assets/home/mozaik.svg'
-
+import React from "react";
+import Penari from "../../assets/home/penari.png";
+import fgm_black from "../../assets/home/fgm-black.svg";
+import mozaik from "../../assets/home/mozaik.svg";
 
 const opening_video = () => {
-  return (
-    <div className="w-full sm:object-left relative flex justify-center px-[10px] py-[1px]" style={{backgroundImage: `url(${Penari})`}}>
-      <div className='flex h-[450px]'>
-        <img className="sm:w-1/8 px-[10px] py-[10px] mx-[0px] lg:mr-[50px] lg:w-1/12 xl:mr-[100px]" src={mozaik} alt="fgm_black"></img>
-        <img className=' ml-[100px] pr-[10px] sm:w-2/3 lg:ml-[10px] xl:w-1/2' src={fgm_black} alt="fgm_black"></img>
-      </div>
-    </div>
-  )
-}
+	return (
+		<div
+			className="relative flex w-full justify-center bg-cover px-[10px] py-[1px] sm:object-left"
+			style={{ backgroundImage: `url(${Penari})` }}
+		>
+			<div className="flex h-[450px]">
+				<img
+					className="sm:w-1/8 mx-[0px] px-[10px] py-[10px] lg:mr-[50px] lg:w-1/12 xl:mr-[100px]"
+					src={mozaik}
+					alt="fgm_black"
+				></img>
+				<img
+					className=" ml-[100px] pr-[10px] sm:w-2/3 lg:ml-[10px] xl:w-1/2"
+					src={fgm_black}
+					alt="fgm_black"
+				></img>
+			</div>
+		</div>
+	);
+};
 
-export default opening_video
+export default opening_video;
