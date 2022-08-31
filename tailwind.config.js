@@ -7,6 +7,14 @@ module.exports = {
 			'heading': ['Exo'],
 		  },
 		extend: {
+			colors: {
+				'fgm-merah-orange': '#E62C20',
+				'fgm-purple': '#9C4A9A',
+				'fgm-orange': '#F69722',
+				'fgm-hijau': '#4A8068',
+
+
+			  },
 			screens: {
 				'mobile':{'min':'360px', 'max':'639px'},
 			},
@@ -15,7 +23,7 @@ module.exports = {
 			  },
 		},
 		backgroundImage: {
-			'pattern': "url('../src/assets/home/navbar-hover.svg')",
+			'pattern': "url('../src/assets/home/navbar-hover.svg')"
 		},
 		
 	},

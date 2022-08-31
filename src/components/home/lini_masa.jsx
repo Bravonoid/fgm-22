@@ -17,11 +17,11 @@ const medpart = () => {
       
           <div className=' justify-center w-full h-1/5 relative flex '>
               <div className=' relative my-1 mx-auto  flex justify-center items-center w-full text-left text-white'>
-                <div className='h-1 z-10 bg-white w-1/3 ml-24 '></div>
-                  <img src={KembangUngu} className='relative -ml-10 h-16 mx-auto' alt="" />
+                <div className='h-1 z-10 hidden sm:block bg-white w-1/3 ml-24 '></div>
+                  <img src={KembangUngu} className='hidden sm:block relative -ml-10 h-16 mx-auto' alt="" />
                   <img src={LiniMasa} className='relative h-16 mx-auto' alt="" />
-                  <img src={KembangUngu} className=' relative -mr-10 h-16 mx-auto' alt="" />
-                  <div className='h-1  bg-white relative w-1/3  mr-24'></div>
+                  <img src={KembangUngu} className=' hidden sm:block relative -mr-10 h-16 mx-auto' alt="" />
+                  <div className='h-1 hidden sm:block bg-white relative w-1/3  mr-24'></div>
 
 
             </div>
