@@ -1,3 +1,4 @@
+import { motion } from "framer-motion"
 import React, { useState } from "react";
 import Logo from "../assets/home/logo-navbar.svg";
 import logo from "../assets/logo_fgm.svg";
@@ -6,9 +7,9 @@ const Navbar = () => {
 	const [navbar, setNavbar] = useState(false);
 
 	return (
-		<div className="relative flex h-[72px] justify-between bg-black py-4 px-4 text-white">
-			<div className="my-auto ml-4 flex flex-shrink-0 items-center px-[10px]">
-				<div className="h-full w-full">
+		<div className="relative flex h-[70px] justify-between bg-black py-4 px-4 text-white">
+			<div className="mx-14 flex flex-shrink-0 items-center px-[36px]">
+				<div className="h-full w-full pb-[3.05rem]">
 					<img
 						src={Logo}
 						alt="Logo"
@@ -21,17 +22,17 @@ const Navbar = () => {
 					/>
 				</div>
 			</div>
-			<ul className="mx-10 flex h-full items-center justify-between gap-16 py-2 text-xl sm:hidden lg:ml-auto lg:flex mobile:hidden">
-				<li className="w-28 cursor-pointer p-4 text-center hover:bg-pattern hover:bg-cover hover:bg-center">
+			<ul className="mx-12 flex h-full items-center justify-between gap-16 py-2 text-xl sm:hidden lg:ml-auto lg:flex mobile:hidden">
+				<li className="w-28 cursor-pointer p-6 text-center hover:bg-pattern hover:bg-cover hover:bg-center">
 					Beranda
 				</li>
-				<li className="w-28 cursor-pointer p-4 text-center hover:bg-pattern hover:bg-cover hover:bg-center">
+				<li className="w-28 cursor-pointer p-6 text-center hover:bg-pattern hover:bg-cover hover:bg-center">
 					Tentang
 				</li>
-				<li className="w-28 cursor-pointer p-4 text-center hover:bg-pattern hover:bg-cover hover:bg-center">
+				<li className="w-28 cursor-pointer p-6 text-center hover:bg-pattern hover:bg-cover hover:bg-center">
 					Event
 				</li>
-				<li className="w-28 cursor-pointer p-4 text-center hover:bg-pattern hover:bg-cover hover:bg-center">
+				<li className="w-28 cursor-pointer p-6 text-center hover:bg-pattern hover:bg-cover hover:bg-center">
 					Ticket
 				</li>
 			</ul>

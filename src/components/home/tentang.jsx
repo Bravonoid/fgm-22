@@ -16,14 +16,14 @@ const tentang = () => {
         
         <div className='xl:text-5xl xl:mb-5 font-bold sm:text-3xl md:text-4xl lg:text-5xl'>
         {/* <img className='w-full' src={mozaik_horizontal} alt="mozaik"></img> */}
-        {/* <img className='w-full' src={mozaik_horizontal} alt="mozaik"></img> */}
-          <div className='flex sm:gap-1.5 md:gap-1 xl:gap-[10rem]'>
+        <img className='w-full' src={mozaik_horizontal} alt="mozaik"></img>
+          <div className='flex sm:gap-1.5 md:gap-1 xl:gap-[8.5rem]'>
             <p className='font-Montserrat'>FESTIVAL </p>
-            <img className='sm:w-48 md:w-56 lg:w-72 xl:scale-x-[2.0]' src={rectangle_17} alt="rectangle"></img>
+            <img className='sm:w-48 md:w-56 lg:w-80 xl:scale-x-[1.8]' src={rectangle_17} alt="rectangle"></img>
           </div>
-          <div className='flex sm:gap-1 xl:gap-[9.5rem]'>
+          <div className='flex sm:gap-1 xl:gap-[7.8rem]'>
             <p className='font-Montserrat'>GADJAH MADA</p>
-            <img className='sm:w-[96px] md:w-28 lg:w-40 xl:scale-x-[2.66]' src={rectangle_18} alt="rectangle"></img>
+            <img className='sm:w-[96px] md:w-28 lg:w-48 xl:scale-x-[2.25]' src={rectangle_18} alt="rectangle"></img>
           </div>
           </div>
         <div className='xl:text-xl:w-full sm:text-base'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
