@@ -23,7 +23,9 @@ module.exports = {
 			  },
 		},
 		backgroundImage: {
-			'pattern': "url('../src/assets/home/navbar-hover.svg')"
+			'pattern': "url('../src/assets/home/navbar-hover.svg')",
+			'flat-medpart' : "url('../src/assets/home/plain-cover.svg')"
+
 		},
 		
 	},
