@@ -1,0 +1,54 @@
+
+
+.slick-dots {
+  bottom: 10px !important;
+  border-radius: 4px !important;
+}
+
+.slick-dots li button:before {
+  color: white !important;
+}
+
+@media (min-width: 640px) {
+  .slick-dots {
+    bottom: 20px !important;
+  }
+
+  .slick-dots li button:before {
+    font-size: 10px !important;
+  }
+}
+
+.slick-dots li.slick-active button:before {
+  color: white !important;
+}
+
+
+@keyframes entranceLeft {
+  from {
+    transform: translateX(-150%) translateY(-50%);
+    opacity: 0;
+  }
+}
+
+@keyframes entranceRight {
+  from {
+    transform: translateX(150%) translateY(-50%);
+    opacity: 0;
+  }
+}
+
+
+@keyframes exitLeft {
+  to {
+    transform: translateX(-150%) translateY(-50%);
+    opacity: 0;
+  }
+}
+
+@keyframes exitRight {
+  to {
+    transform: translateX(150%) translateY(-50%);
+    opacity: 0;
+  }
+}

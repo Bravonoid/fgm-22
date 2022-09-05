@@ -17,11 +17,11 @@ export default function Cards() {
   const color = (id) => {
     switch (id) {
       case 0:
-        return "#E62C20";
+        return "fgm-hijau";
       case 1:
-        return "#9C4A9A";
+        return "fgm-merah-orange";
       case 2:
-        return "#F69722";
+        return "fgm-orange";
         case 3:
         return "#E62C20";
     
@@ -47,8 +47,11 @@ export default function Cards() {
             url={cards.url}
             image={cards.img}
           >
+            <div className="md:ml-8 items-center w-fit flex justify-center">
             <span>{cards.name}</span>
-            <div className={`inline-block bg-[${color(id)}] ml-5 md:w-32 w-16 h-5`}>
+              <div className={` hidden  md:inline-block bg-${color(id)} ml-5 md:w-32 w-full h-6`}>
+            </div>
+              
 
             </div>
           </Card>
