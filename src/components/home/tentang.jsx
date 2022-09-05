@@ -10,22 +10,12 @@ import rectangle_18 from '../../assets/home/rectangle-18.svg';
 const tentang = () => {
   return (
     <div className='w-full h-[75vh] justify-end items-center bg-[#1E1E1E]'>
-      <img src={gunungan} className='mobile:w-3/5 xl:scale-[2] absolute sm:h-3/4 md:w-1/4 lg:w-1/5 xl:w-1/6' alt='gunungan'></img>
-      <div className='mobile:flex mobile:flex-col-reverse mobile:top-20 mobile:my-auto mobile:mx-4 relative sm:top-32 sm:-right-8 xl:-right-40 xl:top-48 xl:ml-[50px] mx-auto xl:grid xl:grid-cols-2'>
+      <img src={gunungan} className='xl:scale-[2] absolute sm:h-3/4 md:w-1/4 lg:w-1/5 xl:w-1/6' alt='gunungan'></img>
+      <div className='grid relative sm:top-32 sm:-right-8 xl:-right-40 xl:top-48 xl:ml-[50px] mx-auto grid-cols-2'>
       <div className='relative my-5 -top-10  w-full items-end text-left text-white sm:mb-[100px] xl:-top-16'>
         
         <div className='xl:text-5xl xl:mb-5 font-bold sm:text-3xl md:text-4xl lg:text-5xl'>
         {/* <img className='w-full' src={mozaik_horizontal} alt="mozaik"></img> */}
-
-        {/* <img className='w-full' src={mozaik_horizontal} alt="mozaik"></img> */}
-          <div className='flex sm:gap-1.5 md:gap-1 xl:gap-[10rem] mobile:text-4xl'>
-            <p className='font-Montserrat'>FESTIVAL </p>
-            <img className='sm:w-48 md:w-56 lg:w-72 xl:scale-x-[2.0] mobile:hidden' src={rectangle_17} alt="rectangle"></img>
-          </div>
-          <div className='flex sm:gap-1 xl:gap-[9.5rem] mobile:text-4xl'>
-            <p className='font-Montserrat'>GADJAH MADA</p>
-            <img className='sm:w-[96px] md:w-28 lg:w-40 xl:scale-x-[2.66] mobile:hidden' src={rectangle_18} alt="rectangle"></img>
-
         <img className='w-full' src={mozaik_horizontal} alt="mozaik"></img>
           <div className='flex sm:gap-1.5 md:gap-1 xl:gap-[8.5rem]'>
             <p className='font-Montserrat'>FESTIVAL </p>
@@ -44,13 +34,12 @@ const tentang = () => {
 </button>
 
       </div>  
-      <img className='mobile:hidden sm:w-1/2 sm:top-1 sm:left-20 md:-top-0.5 lg:left-40 lg:w-2/5 relative xl:mb-1 xl:-top-20 justify-center xl:w-1/3 items-center text-left text-white' src={Logo} alt="logo">
+      <img className=' sm:w-1/2 sm:top-1 sm:left-20 md:-top-0.5 lg:left-40 lg:w-2/5 relative xl:mb-1 xl:-top-20 justify-center xl:w-1/3 items-center text-left text-white' src={Logo} alt="logo">
 
 
 
       </img>  
       </div>
-    </div>
     </div>
   )
 }
