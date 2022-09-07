@@ -7,8 +7,8 @@ const Navbar = () => {
 	const [navbar, setNavbar] = useState(false);
 
 	return (
-		<div className="relative flex h-[70px] justify-between bg-black py-4 px-4 text-white">
-			<div className="mx-14 flex flex-shrink-0 items-center px-[36px]">
+		<div className="relative flex h-[70px] justify-between bg-black py-4 text-white">
+			<div className="mx-14 flex flex-shrink-0 items-center px-[36px] mobile:mx-0 mobile:px-8">
 				<div className="h-full w-full pb-[3.05rem]">
 					<img
 						src={Logo}
@@ -22,7 +22,7 @@ const Navbar = () => {
 					/>
 				</div>
 			</div>
-			<ul className="mx-12 flex h-full items-center justify-between gap-16 py-2 text-xl sm:hidden lg:ml-auto lg:flex mobile:hidden">
+			<ul className="mx-12 flex h-full items-center justify-between gap-16 py-2 text-xl sm:hidden lg:ml-auto xl:flex mobile:hidden">
 				<li className="w-28 cursor-pointer p-6 text-center hover:bg-pattern hover:bg-cover hover:bg-center">
 					Beranda
 				</li>
@@ -36,10 +36,10 @@ const Navbar = () => {
 					Ticket
 				</li>
 			</ul>
-			<div className="items-center lg:hidden">
+			<div className=" my-auto items-center xl:hidden mobile:block sm:block">
 				<button
 					onClick={() => setNavbar(!navbar)}
-					className="my-0 items-center outline-none"
+					className="my-0 outline-none px-4"
 				>
 					<svg
 						className=" h-6 w-6 text-gray-500 hover:text-green-500"
@@ -56,7 +56,7 @@ const Navbar = () => {
 				</button>
 			</div>
 			<div className={`${navbar ? "absolute" : "hidden"}`}>
-				<ul className="absolute z-50 mt-16 flex h-screen w-screen flex-col bg-black mobile:items-center mobile:justify-evenly mobile:text-3xl mobile:fixed">
+				<ul className="absolute z-50 mt-12 mx-0 flex h-full w-full flex-col bg-black mobile:items-center mobile:justify-evenly mobile:text-3xl mobile:fixed sm:fixed sm:justify-evenly sm:items-center sm:text-3xl">
 					<li className="active">
 						<a
 							href=" "

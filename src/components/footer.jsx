@@ -63,37 +63,37 @@ const footer = () => {
 							<div className="flex flex-col sm:gap-2 mobile:ml-4 mobile:gap-2 text-lg">
 								<Link
 									to="/"
-									className="w-fit text-sm transition-colors hover:text-yellow-500 sm:text-2xl"
+									className="w-fit text-sm transition-colors hover:text-yellow-500 sm:text-2xl mobile:text-xl"
 								>
 									Beranda
 								</Link>
 								<Link
 									to="/"
-									className="w-fit text-sm transition-colors hover:text-yellow-500 sm:text-2xl"
+									className="w-fit text-sm transition-colors hover:text-yellow-500 sm:text-2xl mobile:text-xl"
 								>
 									Tentang
 								</Link>
 								<Link
 									to="/"
-									className="w-fit text-sm transition-colors hover:text-yellow-500 sm:text-2xl"
+									className="w-fit text-sm transition-colors hover:text-yellow-500 sm:text-2xl mobile:text-xl"
 								>
 									Teater{" "}
 								</Link>
 								<Link
 									to="/"
-									className="w-fit text-sm transition-colors hover:text-yellow-500 sm:text-2xl"
+									className="w-fit text-sm transition-colors hover:text-yellow-500 sm:text-2xl mobile:text-xl"
 								>
 									Pasar Rakyat
 								</Link>
 								<Link
 									to="/"
-									className="w-fit text-sm transition-colors hover:text-yellow-500 sm:text-2xl"
+									className="w-fit text-sm transition-colors hover:text-yellow-500 sm:text-2xl mobile:text-xl"
 								>
 									Festival Seni
 								</Link>
 								<Link
 									to="/"
-									className="w-fit text-sm transition-colors hover:text-yellow-500 sm:text-2xl"
+									className="w-fit text-sm transition-colors hover:text-yellow-500 sm:text-2xl mobile:text-xl"
 								>
 									Tiket
 								</Link>
