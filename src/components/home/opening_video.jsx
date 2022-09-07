@@ -24,5 +24,4 @@ const opening_video = () => {
 		</div>
 	);
 };
-
 export default opening_video;

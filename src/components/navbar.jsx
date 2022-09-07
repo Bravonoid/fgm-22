@@ -39,7 +39,7 @@ const Navbar = () => {
 			<div className="items-center lg:hidden">
 				<button
 					onClick={() => setNavbar(!navbar)}
-					className="my-[20px] items-center outline-none"
+					className="my-0 items-center outline-none"
 				>
 					<svg
 						className=" h-6 w-6 text-gray-500 hover:text-green-500"
@@ -56,7 +56,7 @@ const Navbar = () => {
 				</button>
 			</div>
 			<div className={`${navbar ? "absolute" : "hidden"}`}>
-				<ul className="absolute z-50 mt-16 flex h-screen w-screen flex-col bg-black">
+				<ul className="absolute z-50 mt-16 flex h-screen w-screen flex-col bg-black mobile:items-center mobile:justify-evenly mobile:text-3xl mobile:fixed">
 					<li className="active">
 						<a
 							href=" "

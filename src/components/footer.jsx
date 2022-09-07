@@ -60,7 +60,7 @@ const footer = () => {
 								alt=""
 								className="h-10 sm:h-auto mobile:mr-16 mobile:ml-4 mobile:h-auto"
 							/>
-							<div className="flex flex-col sm:gap-2 mobile:ml-4 mobile:gap-2">
+							<div className="flex flex-col sm:gap-2 mobile:ml-4 mobile:gap-2 text-lg">
 								<Link
 									to="/"
 									className="w-fit text-sm transition-colors hover:text-yellow-500 sm:text-2xl"
@@ -100,7 +100,7 @@ const footer = () => {
 							</div>
 						</div>
 						{/* kontak person whatsapp */}
-						<div className="flex flex-col text-sm text-white sm:gap-2 sm:text-2xl mobile:flex-wrap">
+						<div className="flex flex-col text-lg text-white sm:gap-2 sm:text-2xl mobile:flex-wrap">
 							<img
 								src={ikuti_footer}
 								alt=""
