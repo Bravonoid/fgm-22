@@ -26,7 +26,7 @@ import { Link } from "react-router-dom";
 
 const footer = () => {
 	return (
-		<footer className=" bg-black ">
+		<footer className=" bg-black">
 			<div className="flex flex-row">
 				<img
 					className="absolute hidden h-auto w-auto md:scale-50 lg:scale-75 xl:block xl:scale-100"
