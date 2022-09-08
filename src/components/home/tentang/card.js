@@ -71,7 +71,7 @@ export const Card = ({ style, children, image, id, hovered, url, ...rest }) => {
         // href={
         //   url !== "" ? url : `/pasar-rakyat/tenant/${id + 1 > 2 ? id : id + 1}`
         // }
-        className={`flex md:hidden mb-3 rounded-xl border-none items-end justify-center flex-wrap w-52 h-60 text-md font-semibold text-white bg-black`}
+        className={`flex md:hidden mb-3 rounded-xl border-none items-end justify-center sm:flex-wrap sm:w-52 sm:h-60 mobile:w-52 mobile:h-40 text-md font-semibold text-white bg-black`}
         {...rest}
       >
         <div className="absolute z-10 p-5  max-w-[32] capitalize">{children}</div>

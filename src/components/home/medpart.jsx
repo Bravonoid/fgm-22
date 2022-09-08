@@ -5,6 +5,7 @@ import KembangMerah from  '../../assets/kembang-merah.svg'
 import PlainCover from  '../../assets/home/plain-cover.svg'
 import { MedPartSponsorLogo } from '../home/sponsor/MedPartSponsor';
 import {  dataSponsor, dataMedpart } from '../../data/dataMedPartSponsor';
+import medpart_mobile from '../../assets/home/media_partner_mobile.svg'
 
 
 import Slider from './slider'
@@ -19,7 +20,7 @@ const medpart = () => {
             </div>
       
           <div className=' justify-center w-full h-1/5 relative flex '>
-              <div className=' relative my-1 mx-auto  flex justify-center items-center w-full text-left text-white'>
+              <div className=' relative my-1 mx-auto  flex justify-center items-center w-full text-left text-white mobile:hidden'>
                 <div className='h-1 z-10 hidden sm:block bg-white w-1/3 ml-24 '></div>
                   <img src={KembangMerah} className=' hidden sm:block relative -ml-10 h-16 mx-auto' alt="" />
                   <img src={Medpart} className='relative h-16 mx-auto' alt="" />
@@ -28,9 +29,10 @@ const medpart = () => {
 
 
             </div>
+            <img src={medpart_mobile} className='block sm:hidden relative h-24 mx-auto' alt="" />
           </div>
 
-          <div className={` flex  mt-32  p-5 bg-[#242424] xl:bg-flat-medpart bg-cover h-3/5 w-4/5 my-auto mx-auto  relative z-100 `} >
+          <div className={` flex  mobile:mt-12 mt-32  p-5 bg-[#242424] xl:bg-flat-medpart bg-cover h-3/5 w-4/5 my-auto mx-auto  relative z-100 `} >
           <div className="relative p-2 z-50 flex flex-wrap md:gap-8 gap-4 justify-evenly md:mx-16 ">
                             {dataMedpart.map((sponsor, index) =>
                                 <div className="self-center">

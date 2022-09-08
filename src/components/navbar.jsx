@@ -60,7 +60,7 @@ const Navbar = () => {
 					<li className="active">
 						<a
 							href=" "
-							className="block px-2 py-4 text-sm font-semibold text-white"
+							className="block px-2 py-4 text-2xl font-bold text-white"
 						>
 							Beranda
 						</a>
@@ -68,7 +68,7 @@ const Navbar = () => {
 					<li>
 						<a
 							href="#services"
-							className="block px-2 py-4 text-sm transition duration-300 hover:bg-green-500"
+							className="block px-2 py-4 text-2xl font-bold transition duration-300 hover:bg-green-500"
 						>
 							Tentang
 						</a>
@@ -76,7 +76,7 @@ const Navbar = () => {
 					<li>
 						<a
 							href="#about"
-							className="block px-2 py-4 text-sm transition duration-300 hover:bg-green-500"
+							className="block px-2 py-4 text-2xl font-bold transition duration-300 hover:bg-green-500"
 						>
 							Event
 						</a>
@@ -84,7 +84,7 @@ const Navbar = () => {
 					<li>
 						<a
 							href="#contact"
-							className="block px-2 py-4 text-sm transition duration-300 hover:bg-green-500"
+							className="block px-2 py-4 text-2xl font-bold transition duration-300 hover:bg-green-500"
 						>
 							Ticket
 						</a>

@@ -2,19 +2,22 @@ import React from 'react'
 import Cards from '../home/tentang/index'
 import Pattern from '../../assets/home/rangakaian/pattern-rangkaian-acara.svg'
 import Rangkaian from '../../assets/home/rangakaian/rangkaian-acara.svg'
+import acara from '../../assets/home/acara_mobile.svg'
 
 
 
 const rangkaian = () => {
   return (
-    <div className="flex flex-col items-center justify-center bg-[#171717]  h-[90vh] px-10 md:px-20 md:py-20">
-    <img className="font-bold text-xl md:text-5xl text-fgmBlue pb-8" src={Rangkaian}>
+    <div className="flex flex-col items-center justify-center bg-[#171717]  mobile:h-[120vh] px-10 md:px-20 md:py-20">
+    <img className=" sm:block font-bold text-xl md:text-5xl text-fgmBlue pb-8" src={Rangkaian}>
+  
     
     </img>
+    <img className="mobile:block w-full" scr={acara} alt=""></img>
     <div className="flex flex-col md:flex-row">
       <Cards />
     </div>
-    <img className=' h-16 inline-block w-full z-10' src={Pattern}>
+    <img className='h-16 inline-block w-full mobile:scale-125 z-10' src={Pattern}>
  
     </img>
   </div>
