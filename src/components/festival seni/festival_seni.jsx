@@ -54,24 +54,24 @@ const festival_seni = () => {
             <div className="h-[500px]">
                 <div className="items-center flex flex-col relative py-4 gap-2 top-10">
                     <p className="font-bold text-xl">UNIT KEGIATAN MAHASISWA</p>
-                    <div className="bg-black flex flex-row flex-wrap gap-2 h-[200px] w-screen">
-                        <div className="bg-gray-600 w-[200px] h-1/2"></div>
-                        <div className="bg-gray-600 w-[200px] h-1/2"></div>
-                        <div className="bg-gray-600 w-[200px] h-1/2"></div>
-                        <div className="bg-gray-600 w-[200px] h-1/2"></div>
-                        <div className="bg-gray-600 w-[200px] h-1/2"></div>
-                        <div className="bg-gray-600 w-[200px] h-1/2"></div>
-                        <div className="bg-gray-600 w-[200px] h-1/2"></div>
-                        <div className="bg-gray-600 w-[200px] h-1/2"></div>
-                        <div className="bg-gray-600 w-[200px] h-1/2"></div>
-                        <div className="bg-gray-600 w-[200px] h-1/2"></div>
-                        <div className="bg-gray-600 w-[200px] h-1/2"></div>
-                        <div className="bg-gray-600 w-[200px] h-1/2"></div>
+                    <div className="bg-black flex flex-row flex-wrap gap-2 h-[300px] pl-4">
+                        <div className="bg-gray-600 w-[200px] h-1/2 hover:scale-110 duration-300 ease-out hover:bg-gray-300"></div>
+                        <div className="bg-gray-600 w-[200px] h-1/2 hover:scale-110 duration-300 ease-out hover:bg-gray-300"></div>
+                        <div className="bg-gray-600 w-[200px] h-1/2 hover:scale-110 duration-300 ease-out hover:bg-gray-300"></div>
+                        <div className="bg-gray-600 w-[200px] h-1/2 hover:scale-110 duration-300 ease-out hover:bg-gray-300"></div>
+                        <div className="bg-gray-600 w-[200px] h-1/2 hover:scale-110 duration-300 ease-out hover:bg-gray-300"></div>
+                        <div className="bg-gray-600 w-[200px] h-1/2 hover:scale-110 duration-300 ease-out hover:bg-gray-300"></div>
+                        <div className="bg-gray-600 w-[200px] h-1/2 hover:scale-110 duration-300 ease-out hover:bg-gray-300"></div>
+                        <div className="bg-gray-600 w-[200px] h-1/2 hover:scale-110 duration-300 ease-out hover:bg-gray-300"></div>
+                        <div className="bg-gray-600 w-[200px] h-1/2 hover:scale-110 duration-300 ease-out hover:bg-gray-300"></div>
+                        <div className="bg-gray-600 w-[200px] h-1/2 hover:scale-110 duration-300 ease-out hover:bg-gray-300"></div>
+                        <div className="bg-gray-600 w-[200px] h-1/2 hover:scale-110 duration-300 ease-out hover:bg-gray-300"></div>
+                        <div className="bg-gray-600 w-[200px] h-1/2 hover:scale-110 duration-300 ease-out hover:bg-gray-300"></div>
                     </div>
                 </div>
             </div>
             <div className="bg-slate-700 h-[200px]">
-                <button className="bg-white text-xl rounded relative top-16 left-[600px] p-4">BELI TIKETMU SEKARANG</button>
+                <button className="bg-white text-xl rounded relative top-16 left-[600px] p-4 hover:bg-blue-400 hover:scale-110 duration-300">BELI TIKETMU SEKARANG</button>
             </div>
         </>
     );
