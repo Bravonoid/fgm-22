@@ -8,7 +8,7 @@ import acara from '../../assets/home/acara_mobile.svg'
 
 const rangkaian = () => {
   return (
-    <div className="flex flex-col items-center justify-center bg-[#171717]  mobile:h-[120vh] px-10 md:px-20 md:py-20">
+    <div className="flex flex-col items-center justify-center bg-[#171717]  mobile:h-[120vh] z-10 px-10 md:px-20 md:py-20">
     <img className=" sm:block font-bold text-xl md:text-5xl text-fgmBlue pb-8" src={Rangkaian}>
   
     
@@ -17,7 +17,7 @@ const rangkaian = () => {
     <div className="flex flex-col md:flex-row">
       <Cards />
     </div>
-    <img className='h-16 inline-block w-full mobile:scale-125 z-10' src={Pattern}>
+    <img className='h-16  w-[1000px] min-w-[1000px] overflow-hidden hidden  md:inline-block translate-y-80 absolute z-10' src={Pattern}>
  
     </img>
   </div>
