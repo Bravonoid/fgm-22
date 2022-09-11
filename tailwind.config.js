@@ -17,19 +17,14 @@ module.exports = {
 			},
 			animation: {
 				fade: 'fadeIn 500ms',
-				still: 'stills 250ms'
 			  },
 		
 			  // that is actual animation
 			  keyframes: theme => ({
 				fadeIn: {
-				  '0%': { opacity: '0%' },
+				  '0%': { opacity: '50%' },
 				  '100%': { opacity: '100%' },
 				},
-				stills: {
-					'0%': { opacity: '100%' },
-					'100%': { opacity: '100%' },
-				  },
 			  }),
 		},
 		backgroundImage: {

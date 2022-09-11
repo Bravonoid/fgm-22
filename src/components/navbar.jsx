@@ -22,24 +22,24 @@ const Navbar = () => {
           />
         </div>
       </div>
-      <ul className="mr-28 flex h-full items-center justify-between gap-4 text-xl sm:hidden lg:ml-auto xl:flex mobile:hidden">
+      <ul className="mr-28 flex h-full items-center justify-between gap-5 text-xl sm:hidden lg:ml-auto xl:flex mobile:hidden">
         <a href="/">
           <li className="w-[8.1rem] cursor-pointer py-5 text-center hover:animate-fade hover:bg-pattern hover:bg-cover hover:bg-center">
             Beranda
           </li>
         </a>
         <a href="/about">
-          <li className="w-[8.1rem] cursor-pointer py-5 text-center hover:animate-pulse hover:bg-pattern hover:bg-cover hover:bg-center">
+          <li className="w-[8.1rem] cursor-pointer py-5 text-center hover:animate-fade hover:bg-pattern hover:bg-cover hover:bg-center">
             Tentang
           </li>
         </a>
-        <li className="w-[8.1rem] cursor-pointer py-5 text-center hover:animate-pulse hover:bg-pattern hover:bg-cover hover:bg-center">
+        <li className="w-[8.1rem] cursor-pointer py-5 text-center hover:animate-fade hover:bg-pattern hover:bg-cover hover:bg-center">
           Teater
         </li>
-        <li className="w-[8.1rem] mr-7 cursor-pointer py-5 text-center hover:animate-pulse hover:bg-pattern hover:bg-cover hover:bg-center">
+        <li className="mr-7 w-[8.1rem] cursor-pointer py-5 text-center hover:animate-fade hover:bg-pattern hover:bg-cover hover:bg-center">
           Pasar Rakyat
         </li>
-        <li className="w-[8.1rem] cursor-pointer py-5 text-center hover:animate-pulse hover:bg-pattern hover:bg-cover hover:bg-center">
+        <li className="w-[8.1rem] cursor-pointer py-5 text-center hover:animate-fade hover:bg-pattern hover:bg-cover hover:bg-center">
           Festival Seni
         </li>
         {/* <li className="w-28 cursor-pointer p-6 text-center hover:bg-pattern hover:bg-cover hover:bg-center">
