@@ -3,6 +3,7 @@ import TemaBesar from "../../assets/tentang/text-tema-besar.png";
 import TemaBesarKecil from "../../assets/tentang/text-tema-besar-kecil.png";
 import Tagline from "../../assets/tentang/tagline.png";
 import KembangTagline from "../../assets/tentang/kembang-tagline.svg";
+import MozaikTentang from "../../assets/tentang/mozaik-tentang.svg";
 
 const ActiveTab = () => {
   const [tema, setTema] = useState(true);
@@ -20,7 +21,7 @@ const ActiveTab = () => {
 
   return (
     <>
-      <div className="flex h-[10vh] w-full justify-center bg-[#1E1E1E]">
+      <div className="flex h-[5vh] w-full justify-center bg-[#1E1E1E]">
         <div className="flex w-full justify-center">
           <h2
             onClick={handleTema}
@@ -45,7 +46,7 @@ const ActiveTab = () => {
           </h2>
         </div>
       </div>
-      <div className="flex h-[40vh] w-full bg-[#1E1E1E]">
+      <div className="flex h-[35vh] pt-5 w-full bg-[#1E1E1E]">
         <div className={tema ? "mx-auto block justify-center pt-5" : "hidden"}>
           <img src={TemaBesar} alt="tema-besar" />
           <img
@@ -66,6 +67,13 @@ const ActiveTab = () => {
             alt="kembang"
           />
         </div>
+      </div>
+      <div className="flex h-[10vh] w-full bg-[#1E1E1E]">
+        <img
+          src={MozaikTentang}
+          className="mx-auto items-center justify-center overflow-hidden"
+          alt="mozaik"
+        />
       </div>
     </>
   );
