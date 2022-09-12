@@ -33,7 +33,7 @@ const Navbar = () => {
             Tentang
           </li>
         </a>
-        <li className="w-[8.1rem] cursor-pointer py-5 text-center hover:animate-fade hover:bg-pattern hover:bg-cover hover:bg-center">
+        <li className="mr-3 w-[8.1rem] cursor-pointer py-5 text-center hover:animate-fade hover:bg-pattern hover:bg-cover hover:bg-center">
           Teater
         </li>
         <li className="mr-7 w-[8.1rem] cursor-pointer py-5 text-center hover:animate-fade hover:bg-pattern hover:bg-cover hover:bg-center">
