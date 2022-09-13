@@ -22,7 +22,7 @@ const tentang = () => {
               src={mozaik_horizontal}
               alt="mozaik"
             ></img>
-            <div className="flex sm:gap-1.5 md:gap-1 xl:gap-[8.5rem] mobile:w-1/2 mobile:gap-1.5">
+            <div className="flex flex-row mobile:justify-between sm:gap-1.5 md:gap-1 xl:gap-[8.5rem] mobile:w-1/2 mobile:gap-1.5">
               <p className="font-Montserrat mobile:text-2xl mobile:font-bold">
                 FESTIVAL{" "}
               </p>
@@ -43,13 +43,13 @@ const tentang = () => {
               ></img>
             </div>
           </div>
-          <div className="sm:text-base xl:text-xl mobile:w-4/5">
+          <div className="sm:text-base xl:text-xl mobile:w-4/5 text-justify">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
             tellus nulla, porta vel consectetur et, mattis quis orci. In hac
             habitasse platea dictumst. Sed eget tincidunt risus. Mauris nec
             luctus sapien, eu cursus diam.
           </div>
-          <button class="mt-4 rounded bg-white py-2 px-6 font-Montserrat text-lg font-bold text-black hover:bg-slate-300">
+          <button class="mt-4 rounded bg-white py-2 px-6 font-Montserrat text-lg font-bold text-black hover:bg-slate-300 mobile:text-sm">
             Selengkapnya
           </button>
         </div>

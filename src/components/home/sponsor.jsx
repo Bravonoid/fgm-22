@@ -31,7 +31,7 @@ const sponsor = () =>  {
           </div>
 
           <div className={` mobile:mt-4 flex  mt-32  p-5 bg-[#242424] xl:bg-flat-medpart bg-cover h-3/5 w-3/4 my-auto mx-auto  relative z-100 `} >
-          <div className="relative p-2 z-50 flex flex-wrap md:gap-8 gap-4 justify-evenly md:mx-16 ">
+          <div className="relative p-2 z-40 flex flex-wrap md:gap-8 gap-4 justify-evenly md:mx-16 ">
                             {dataSponsor.map((sponsor, index) =>
                                 <div className="self-center">
                                 <MedPartSponsorLogo
