@@ -26,21 +26,23 @@ const tentang = () => {
               <p className="font-Montserrat mobile:text-2xl mobile:font-bold">
                 FESTIVAL{" "}
               </p>
-              <img
+              <div className="w-screen bg-yellow-500 block"></div>
+              {/* <div
                 className="sm:w-48 md:w-56 lg:w-80 xl:scale-x-[1.8] mobile:w-40"
                 src={rectangle_17}
                 alt="rectangle"
-              ></img>
+              ></div> */}
             </div>
-            <div className="flex sm:gap-1 xl:gap-[7.8rem] mobile:gap-1">
+            <div className="flex flex-row sm:gap-1 xl:gap-[7.8rem] mobile:gap-1">
               <p className="font-Montserrat mobile:text-2xl mobile:font-bold">
                 GADJAH MADA
               </p>
-              <img
+              <div className="block bg-red-500 w-screen"/>
+              {/* <img
                 className="sm:w-[96px] md:w-28 lg:w-48 xl:scale-x-[2.25] mobile:w-1/4"
                 src={rectangle_18}
                 alt="rectangle"
-              ></img>
+              ></img> */}
             </div>
           </div>
           <div className="sm:text-base xl:text-xl mobile:w-4/5 text-justify">

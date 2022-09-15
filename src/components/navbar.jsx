@@ -4,9 +4,9 @@ import Logo from "../assets/home/logo-navbar.svg";
 import logo from "../assets/logo_fgm.svg";
 import './home/navbar.css';
 
+
 const Navbar = () => {
   const [navbar, setNavbar] = useState(false);
-
   return (
     <div className="flex h-[70px] justify-between bg-black py-4 text-white fixed w-full z-50">
       <div className="ml-14 flex flex-shrink-0 items-center px-[28px] mobile:mx-0 mobile:px-10">
@@ -67,7 +67,7 @@ const Navbar = () => {
         </button>
       </div>
       <div className={`${navbar ? "absolute" : "hidden"}`}>
-        <ul id='dropdown' className="z-50 mx-0 mt-12 flex h-full w-full flex-col bg-black sm:fixed sm:items-center sm:justify-evenly sm:text-3xl mobile:fixed mobile:items-center mobile:gap-10 mobile:text-3xl">
+        <ul id='dropdown' className={`menuNav ${navbar? "showMenu": ""} z-50 mx-0 mt-12 flex h-full w-full flex-col bg-black sm:fixed sm:items-center sm:justify-evenly sm:text-3xl mobile:fixed mobile:items-center mobile:gap-10 mobile:text-3xl`}>
           <li className="active">
             <a
               href=" "

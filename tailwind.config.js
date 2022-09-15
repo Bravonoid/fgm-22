@@ -9,7 +9,7 @@ module.exports = {
 				"fgm-hijau": "#4A8068",
 			},
 			screens: {
-				mobile: { min: "360px", max: "639px" },
+				mobile: { MIN: "360px", max: "639px" },
 			},
 			fontFamily: {
 				Montserrat: ["Montserrat"],

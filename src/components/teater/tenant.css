@@ -1,5 +1,3 @@
-
-
 .slick-dots {
   bottom: 10px !important;
   border-radius: 4px !important;
@@ -23,7 +21,6 @@
   color: white !important;
 }
 
-
 @keyframes entranceLeft {
   from {
     transform: translateX(-150%) translateY(-50%);
@@ -37,7 +34,6 @@
     opacity: 0;
   }
 }
-
 
 @keyframes exitLeft {
   to {
