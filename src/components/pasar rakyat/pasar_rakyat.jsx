@@ -5,15 +5,15 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 const pasar_rakyat = () => {
     return (
         <>
-            <div className="bg-slate-500 h-[500px]">
+            <div className="bg-slate-500 h-[600px]">
                 <p className="text-white font-bold text-xs pt-24 pl-10">&#9664; Kategori</p>
-                <div className="container pl-16 flex flex-row gap-8 relative top-20">
-                    <div className="w-[200px] h-[200px] bg-slate-300">
-                        <p className="align-middle my-auto block">Logo tenant</p>
+                <div className=" pl-16 flex flex-row gap-12 relative top-20">
+                    <div className="w-[300px] h-[300px] bg-slate-300 block">
+                        <p className="mx-auto">Logo tenant</p>
                     </div>
                     <div className="flex flex-col w-1/3 gap-y-4">
-                        <p className="font-bold text-3xl text-white">NAMA TENANT</p>
-                        <p className="text-base text-justify text-white ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. consectetur adipiscing elit.</p>
+                        <p className="font-bold text-4xl text-white">NAMA TENANT</p>
+                        <p className="text-xl text-justify text-white ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. consectetur adipiscing elit.</p>
                         <div className="flex flex-row gap-4">
                             <FontAwesomeIcon
 										icon={faInstagram}
@@ -82,7 +82,7 @@ const pasar_rakyat = () => {
                 </div>
             </div>
             <div className="flex flex-row-reverse">
-                <button className="p-4 bg-slate-500 text-center font-bold m-4">PREORDER DISINI</button>
+                <button className="p-4 bg-slate-200 text-center font-bold m-4">PREORDER DISINI</button>
             </div>
         </>
     )
