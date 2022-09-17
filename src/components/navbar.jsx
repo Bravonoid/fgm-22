@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import Logo from "../assets/home/logo-navbar.svg";
 import logo from "../assets/logo_fgm.svg";
 import './home/navbar.css';
-
+import { CSSTransition } from 'react-transition-group';
 
 const Navbar = () => {
   const [navbar, setNavbar] = useState(false);
@@ -66,8 +66,16 @@ const Navbar = () => {
           </svg>
         </button>
       </div>
-      <div className={`${navbar ? "absolute" : "hidden"}`}>
-        <ul id='dropdown' className={`menuNav ${navbar? "showMenu": ""} z-50 mx-0 mt-12 flex h-full w-full flex-col bg-black sm:fixed sm:items-center sm:justify-evenly sm:text-3xl mobile:fixed mobile:items-center mobile:gap-10 mobile:text-3xl`}>
+      <CSSTransition
+        in={navbar}
+        timeout={300}
+        classNames="menu-primary"
+        unmountOnExit
+        onEnter={() => setNavbar(true)}
+        onExited={() => setNavbar(false)}
+        >
+      {/* <div className={`${navbar ? "absolute" : "hidden"}`}> */}
+        <ul className="z-50 mx-0 mt-12 flex h-full w-full flex-col bg-black sm:fixed sm:items-center sm:justify-evenly sm:text-3xl mobile:fixed mobile:items-center mobile:gap-10 mobile:text-3xl">
           <li className="active">
             <a
               href=" "
@@ -117,7 +125,8 @@ const Navbar = () => {
             </a>
           </li>
         </ul>
-      </div>
+      {/* </div> */}
+      </CSSTransition>
     </div>
   );
 };
