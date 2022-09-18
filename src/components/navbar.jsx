@@ -37,9 +37,11 @@ const Navbar = () => {
             Tentang
           </li>
         </a>
+        <a href="/teater">
         <li className="mr-3 w-[8.1rem] cursor-pointer py-5 text-center hover:animate-fade hover:bg-pattern hover:bg-cover hover:bg-center">
           Teater
         </li>
+        </a>
         <li className="mr-7 w-[8.1rem] cursor-pointer py-5 text-center hover:animate-fade hover:bg-pattern hover:bg-cover hover:bg-center">
           Pasar Rakyat
         </li>

@@ -9,6 +9,8 @@ const publicURL = "${process.env.PUBLIC_URL}";
 
 export const Card = ({ style, children, image, id, hovered, url, ...rest }) => {
   const setStyle = (hoveredId, idx) => {
+    console.log(id)
+
     switch (Math.abs(idx - hoveredId)) {
       case 0:
         return " ";
@@ -33,15 +35,31 @@ export const Card = ({ style, children, image, id, hovered, url, ...rest }) => {
         break;
     }
   };
+  const setLink = (id) => {
+    console.log(id)
+    
+    switch (id) {
+      case 0:
+        return "/teater";
+      case 1:
+        return "/festivalseni";
+      case 2:
+        return "/pasarrakyat";
+ 
+    
+      default:
+        break;
+    }
+  };
 
   useMotionValue(0);
   return (
     <>
       <a
-        // href={
-        //   url !== "" ? url : `/pasar-rakyat/tenant/${id + 1 > 2 ? id : id + 1}`
-        // }
-        className={`hidden md:flex items-end  flex-wrap border-none ${
+        href={
+          `${setLink(id)}`
+         }
+        className={`hidden cursor-pointer md:flex items-end  flex-wrap border-none ${
           pasar[setStyle(hovered, id)]
         } ${pasar.card} text-2xl font-semibold text-white`}
         {...rest}
@@ -68,17 +86,17 @@ export const Card = ({ style, children, image, id, hovered, url, ...rest }) => {
         </motion.div>
       </a>
       <a
-        // href={
-        //   url !== "" ? url : `/pasar-rakyat/tenant/${id + 1 > 2 ? id : id + 1}`
-        // }
-        className={`flex md:hidden mb-3 rounded-xl border-none items-end justify-center sm:flex-wrap sm:w-52 sm:h-60 mobile:w-52 mobile:h-40 text-md font-semibold text-white bg-black`}
+        href={
+          `${setLink(id)}`
+       }
+        className={`flex md:hidden mb-3 rounded-xl border-none items-end justify-center sm:flex-wrap sm:w-72 sm:h-60 mobile:w-72 mobile:h-40 text-md font-semibold text-white bg-black`}
         {...rest}
       >
         <div className="absolute z-10 p-5  max-w-[32] capitalize">{children}</div>
         <div className="w-full h-full relative">
           <div className={`w-full h-full absolute ${pasar.filter}`} />
           <motion.img
-            className="w-full h-full rounded-xl"
+            className="w-full h-full "
             style={{
               background: `url('/assets/${image}')`,
               backgroundPosition: "center",

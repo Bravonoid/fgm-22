@@ -7,6 +7,8 @@ module.exports = {
 				"fgm-purple": "#9C4A9A",
 				"fgm-orange": "#F69722",
 				"fgm-hijau": "#4A8068",
+				"fgm-base" :"#171717",
+				"fgm-base-terang":"#242424"
 			},
 			screens: {
 				mobile: { MIN: "360px", max: "639px" },
@@ -30,6 +32,7 @@ module.exports = {
 		backgroundImage: {
 			pattern: "url('../src/assets/home/navbar-hover.svg')",
 			"flat-medpart": "url('../src/assets/home/plain-cover.svg')",
+			foto_teater : "../src/assets/home/teater/teater.svg"
 		},
 	},
 	plugins: [],

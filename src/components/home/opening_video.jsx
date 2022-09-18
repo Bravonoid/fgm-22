@@ -7,7 +7,7 @@ import fgm from "../../assets/home/fgm.svg";
 const opening_video = () => {
 	return (
 		<div
-			className="relative flex w-full justify-center bg-cover px-[10px] py-[1px] sm:object-left mobile:object-right mobile:object-none mt-16"
+			className="relative flex w-full justify-center  bg-foto_teater bg-cover px-[10px] py-[1px] sm:object-left mobile:object-right mobile:object-none mt-16"
 			style={{ backgroundImage: `url(${Penari})` }}
 		>
 			<div className="flex h-[450px] mobile:h-[167px]">

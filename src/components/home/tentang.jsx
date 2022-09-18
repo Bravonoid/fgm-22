@@ -22,9 +22,9 @@ const tentang = () => {
               src={mozaik_horizontal}
               alt="mozaik"
             ></img>
-            <div className="flex flex-row sm:gap-1.5 md:gap-1 xl:gap-1 mobile:w-4/5 mobile:gap-1.5 mt-1">
+            <div className="flex flex-row mobile:justify-between sm:gap-1.5 md:gap-1 xl:gap-[8.5rem] mobile:w-1/2 mobile:gap-1.5">
               <p className="font-Montserrat mobile:text-2xl mobile:font-bold">
-                FESTIVAL
+                FESTIVAL{" "}
               </p>
               <div className="w-screen bg-yellow-500 block"></div>
               {/* <div
@@ -33,9 +33,9 @@ const tentang = () => {
                 alt="rectangle"
               ></div> */}
             </div>
-            <div className="flex flex-row sm:gap-1 xl:gap-1 mobile:gap-1 mt-1 mobile:w-4/5">
+            <div className="flex flex-row sm:gap-1 xl:gap-[7.8rem] mobile:gap-1">
               <p className="font-Montserrat mobile:text-2xl mobile:font-bold">
-                GADJAH</p><p className="ml-2 mobile:text-2xl">MADA
+                GADJAH MADA
               </p>
               <div className="block bg-red-500 w-screen"/>
               {/* <img

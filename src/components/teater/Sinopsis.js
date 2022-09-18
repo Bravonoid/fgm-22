@@ -1,16 +1,21 @@
 import React from 'react'
-
+import Pattern_bawah from '../../assets/home/teater/Pattern_bawah.svg'
+import Judul_sinopsis from '../../assets/teater/judul-sinopsis.svg'
 const trailer = () => {
   return (
-    <div className='bg-gray-200  w-full h-full flex  justify-start  items-center align-start pl-32  my-auto'>
-      <div className='xl:w-1/2 mx-4 w-2/3 xl:mx-12'>
-      <h1 className='text-3xl font-bold'>SINOPSIS</h1>
-      <p className='relative text-base md:text-lg xl:text-2xl '>
+    <div className=' bg-cover text-white w-full h-full flex  justify-start relative items-center  text-start align-start pl-3 pr-4 xl:pr-24 sm:pl-24 my-auto' >
+      <div className='lg:w-3/4 xl:w-3/4 mx-6   xl:-translate-y-10 sm:w-full w-full xl:mx-12'>
+      <img className=' mt-6 h-14 xl:h-24' src={Judul_sinopsis}></img>
+
+      <p className='relative mt-5  text-base md:text-lg xl:text-2xl '>
       Manusia adalah makhluk multidimensi. Sejahat-jahat manusia, masih memiliki kebaikan. Sebaik-baik manusia, masih ada sisi kejahatan. 
       <br /> <br />  Konsekuensi dari multidimensional adalah adanya perubahan watak dari seorang manusia. Sewaktu manusia dapat jahat ketika memiliki perasaan tamak. Sewaktu manusia dapat baik hingga mampu menebarkan perasaan damai dan kenyamanan.
       <br /> <br />
 Tamak, damai, dan kenyamanan merupakan emosi turunan dari enam (6) emosi dasar manusia.
       </p>
+      <img className='hidden xl:inline-block mt-6' src={Pattern_bawah}>
+      
+      </img>
      </div>
      </div>
   )
