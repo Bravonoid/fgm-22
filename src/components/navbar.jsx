@@ -4,12 +4,15 @@ import Logo from "../assets/home/logo-navbar.svg";
 import logo from "../assets/logo_fgm.svg";
 import './home/navbar.css';
 import { CSSTransition } from 'react-transition-group';
+import { MdClose } from "react-icons/md"
+import { FiMenu } from "react-icons/fi"
+import {Divide as Hamburger} from 'hamburger-react';
 
 const Navbar = () => {
   const [navbar, setNavbar] = useState(false);
   return (
-    <div className="flex h-[70px] justify-between bg-black py-4 text-white fixed w-full z-50">
-      <div className="ml-14 flex flex-shrink-0 items-center px-[28px] mobile:mx-0 mobile:px-10">
+    <div className="flex h-[70px] justify-between bg-black text-white fixed w-full z-50">
+      <div className="ml-14 flex flex-shrink-0 items-center py-4 px-[28px] mobile:mx-0 mobile:px-10">
         <div className="h-full w-full pb-[3.05rem]">
           <img
             src={Logo}
@@ -48,7 +51,10 @@ const Navbar = () => {
 				</li>
       </ul>
       <div className=" my-auto items-center sm:block xl:hidden mobile:block">
-        <button
+        <div className="px-10 mb-0 outline-none">
+          <Hamburger toggled={navbar} toggle={setNavbar}/>
+        </div>
+        {/* <button
           onClick={() => setNavbar(!navbar)}
           className="my-0 px-10 outline-none"
         >
@@ -64,7 +70,12 @@ const Navbar = () => {
           >
             <path d="M4 6h16M4 12h16M4 18h16"></path>
           </svg>
-        </button>
+          {navbar ? (
+            <MdClose style={{ color: "#7b7b7b", width: "40px", height: "40px" }} />
+              ) : (
+            <FiMenu style={{ color: "#7b7b7b", width: "40px", height: "40px" }} />
+          )}
+        </button> */}
       </div>
       <CSSTransition
         in={navbar}
