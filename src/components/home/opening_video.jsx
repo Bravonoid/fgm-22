@@ -12,7 +12,7 @@ const opening_video = () => {
 		>
 			<div className="flex h-[450px] mobile:h-[167px]">
 				<img
-					className="mobile:block mobile:w-1/2 mobile:mx-10 sm:hidden"
+					className="mobile:block mobile:w-2/3 mobile:mx-10 sm:hidden"
 					src={fgm}
 					alt="fgm"
 				></img>
