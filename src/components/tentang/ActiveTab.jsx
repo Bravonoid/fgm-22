@@ -25,32 +25,32 @@ const ActiveTab = () => {
 
   return (
     <>
-      <div className="flex h-[5vh] w-full justify-center bg-[#1E1E1E]">
+      <div className="flex h-[8vh] w-full justify-center bg-[#1E1E1E]" id="tema">
         <div className="flex w-full justify-center">
           <h2
             onClick={handleTema}
             className={
               tema
-                ? "text-[40px] text-white opacity-100 hover:cursor-pointer mobile:text-[20px]"
-                : "text-[40px] text-white opacity-40 hover:cursor-pointer hover:opacity-100 mobile:text-[20px]"
+                ? "text-[20px] text-white opacity-100 hover:cursor-pointer md:text-[40px]"
+                : "text-[20px] text-white opacity-40 hover:cursor-pointer hover:opacity-100 md:text-[40px]"
             }
           >
             TEMA BESAR
           </h2>
-          <span className="mx-10 my-[10px] inline-block h-[2.5em] w-[3px] bg-white mobile:mx-5 mobile:my-0 mobile:h-[2em] "></span>
+          <span className="md:mx-10 md:my-[10px] inline-block md:h-[2.5em] w-[3px] bg-white mx-5 my-0 h-[2em] "></span>
           <h2
             onClick={handleTagline}
             className={
               tagline
-                ? "text-[40px] text-white opacity-100 hover:cursor-pointer mobile:text-[20px]"
-                : "text-[40px] text-white opacity-40 hover:cursor-pointer hover:opacity-100 mobile:text-[20px]"
+                ? "text-[20px] text-white opacity-100 hover:cursor-pointer md:text-[40px]"
+                : "text-[20px] text-white opacity-40 hover:cursor-pointer hover:opacity-100 md:text-[40px]"
             }
           >
             TAGLINE
           </h2>
         </div>
       </div>
-      <div className="flex w-full justify-center bg-[#1E1E1E] pt-5 md:h-[35vh] pb-10 md:pb-0">
+      <div className="flex w-full justify-center bg-[#1E1E1E] pt-5 pb-10 md:h-[40vh] md:pb-0">
         <div
           className={
             tema ? "mx-auto block items-center justify-center pt-5" : "hidden"
@@ -77,7 +77,7 @@ const ActiveTab = () => {
             />
             <img
               src={Tagline}
-              className="mx-auto items-center justify-center overflow-hidden hidden md:flex"
+              className="mx-auto hidden items-center justify-center overflow-hidden md:flex"
               alt="mozaik"
             />
           </div>

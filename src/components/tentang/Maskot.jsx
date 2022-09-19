@@ -4,8 +4,8 @@ import MaskotCindaru from "../../assets/tentang/maskot-cindaru.svg";
 
 const Maskot = () => {
   return (
-    <div className="z-[10] h-[80vh] mobile:h-[100vh] w-full items-center justify-end bg-[#242424] pt-10">
-      <div className="relative sm:top-32 sm:-right-8 sm:mx-auto sm:grid sm:grid-cols-3 xl:-right-40 xl:top-24 xl:ml-[50px] mobile:flex mobile:flex-col">
+    <div id="maskot" className="z-[10] h-[80vh] mobile:h-[100vh] w-full items-center justify-end bg-[#242424] lg:pt-0 pt-10 pb-[55rem] md:pb-0">
+      <div className="xl:px-24 relative sm:top-32 sm:mx-auto sm:grid sm:grid-cols-3 xl:top-24 mobile:flex mobile:flex-col">
         <div className="col-span-2">
           <h1 className="mb-3 text-3xl font-bold text-white mobile:text-center">
             MASKOT KITA
@@ -31,8 +31,8 @@ const Maskot = () => {
             </h2>
           </div>
         </div>
-        <div className="mobile:mt-10 relative col-span-1 w-full items-end text-left text-white sm:-top-10 sm:my-5 sm:mb-[100px] xl:-top-16 mobile:scale-[125%] mobile:my-24 mobile:text-sm">
-          <img src={MaskotCindaru} alt="maskot-cindaru" />
+        <div className="mobile:mt-10 relative col-span-1 w-full items-end text-left text-white sm:my-5 mobile:my-24 mobile:text-sm">
+          <img src={MaskotCindaru} className="scale-[110%] md:scale-[175%]" alt="maskot-cindaru" />
         </div>
       </div>
       {/* <img
