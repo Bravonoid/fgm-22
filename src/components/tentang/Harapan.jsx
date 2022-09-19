@@ -6,7 +6,7 @@ import KembangHarapanMobile from "../../assets/tentang/kembang-harapan-mobile.sv
 const Harapan = () => {
   return (
     <>
-      <div className="flex h-[50vh] w-full bg-[#1E1E1E] md:h-[40vh] mobile:pt-10">
+      <div className="flex h-[50vh] w-full bg-[#1E1E1E] md:h-[40vh] mobile:pt-1">
         <img src={BackgroundKembangKiri} className="hidden md:flex" alt="" />
         <div className="container mx-auto px-10 md:px-32">
           <h1 className="text-weight-700 mt-10 text-center text-3xl font-bold text-white">
