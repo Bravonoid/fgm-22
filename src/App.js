@@ -9,7 +9,7 @@ import Teater from "./pages/Teater";
 import Festival from "./components/festival seni/festival_seni";
 import Produk from "./components/pasar rakyat/pasar_rakyat";
 import Tenant from "./components/pasar rakyat/tenant/tenant.jsx";
-
+import Tiket from "./pages/Tiket";
 
 
 function App() {
@@ -24,7 +24,7 @@ function App() {
 				<Route path="/festival" element={<Festival />} />
 				<Route path="/produk" element={<Produk />} />
 				<Route path="/tenants" element={<Tenant />} />
-
+				<Route path="/tiket" element={<Tiket />} />
 			</Routes>
 	
 			<Footer />
