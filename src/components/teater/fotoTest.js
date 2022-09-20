@@ -138,7 +138,7 @@ const Foto = () => {
       
     </div>
     <div className=' hidden md:flex  right-0  absolute bottom-[250px] justify-start  items-end'>
-      <img className='  mx-auto relative' src={Pattern_samping}>
+      <img className=' h-48 xl:h-72 mx-auto relative' src={Pattern_samping}>
       </img>
 
       </div>

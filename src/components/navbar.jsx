@@ -88,7 +88,8 @@ const Navbar = () => {
         onExited={() => setNavbar(false)}
       >
         {/* <div className={`${navbar ? "absolute" : "hidden"}`}> */}
-        <ul className="z-50 mx-0 mt-16 flex h-full w-full flex-col bg-black sm:fixed sm:items-center sm:justify-evenly sm:text-3xl mobile:fixed mobile:items-center mobile:gap-10 mobile:text-3xl">
+
+        <ul className="z-50 mx-0 mt-12 xl:hidden flex h-full w-full flex-col bg-black sm:fixed sm:items-center sm:justify-evenly sm:text-3xl mobile:fixed mobile:items-center mobile:gap-10 mobile:text-3xl">
           <li className="active">
             <a
               href=" "
