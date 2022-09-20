@@ -29,7 +29,7 @@ const footer = () => {
 		<footer className=" bg-black">
 			<div className="flex flex-row">
 				<img
-					className="absolute hidden h-auto w-auto md:scale-50 lg:scale-75 xl:block xl:scale-100"
+					className="mobile:hidden sm:hidden lg:block"
 					src={ornament_footer}
 				></img>
 				<div className="container mx-auto py-32 px-2 text-left sm:w-auto lg:w-full">
