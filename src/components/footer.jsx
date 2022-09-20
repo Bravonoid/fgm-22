@@ -33,7 +33,7 @@ const footer = () => {
 					src={ornament_footer}
 				></img>
 				<div className="container mx-auto py-32 px-2 text-left sm:w-auto lg:w-full">
-					<div className="mx-4 flex justify-evenly gap-y-2 sm:flex-col sm:gap-8 md:gap-8 md:gap-0 lg:flex-row lg:items-start mobile:flex-col mobile:gap-8 mobile:text-2xl">
+					<div className="mx-4 flex justify-evenly gap-y-2 sm:flex-col sm:gap-8 md:gap-8 lg:flex-row lg:items-start mobile:flex-col mobile:gap-8 mobile:text-2xl">
 						{/* Nesco dan sosmed */}
 						<div className="flex flex-col items-center self-center lg:items-start lg:self-auto xl:ml-12">
 							<div className="mt-8 flex items-center sm:bottom-10 sm:flex-row md:mt-0 md:gap-10 lg:mb-4 lg:mr-10 lg:mt-6 lg:flex-row">
@@ -54,13 +54,13 @@ const footer = () => {
 							</p>
 						</div>
 						{/* quick link */}
-						<div className="flex flex-col gap-0.5 text-white mobile:gap-2">
+						<div className="flex flex-col text-lg text-white sm:gap-2 sm:text-2xl mobile:self-center mobile:gap-2 mobile:w-[275px]">
 							<img
 								src={sitemap_footer}
 								alt=""
-								className="h-10 sm:h-auto mobile:mr-16 mobile:ml-4 mobile:h-auto"
+								className="sm:h-auto mobile:max-w-xs"
 							/>
-							<div className="flex flex-col sm:gap-2 mobile:ml-4 mobile:gap-2 text-lg">
+							<div className="flex flex-col sm:gap-2 mobile:gap-2 text-lg">
 								<Link
 									to="/"
 									className="w-fit text-sm transition-colors hover:text-yellow-500 sm:text-2xl mobile:text-xl"
@@ -100,13 +100,13 @@ const footer = () => {
 							</div>
 						</div>
 						{/* kontak person whatsapp */}
-						<div className="flex flex-col text-lg text-white sm:gap-2 sm:text-2xl mobile:flex-wrap">
+						<div className="flex flex-col text-lg text-white sm:gap-2 sm:text-2xl mobile:self-center mobile:gap-2">
 							<img
 								src={ikuti_footer}
 								alt=""
-								className="h-10 sm:h-auto mobile:mr-10 mobile:ml-4 mobile:mb-2 mobile:h-auto mobile:gap-4"
+								className="sm:h-auto mobile:max-w-xs"
 							/>
-							<div className="flex flex-col sm:gap-2 mobile:ml-4 mobile:gap-2">
+							<div className="flex flex-col sm:gap-2 mobile:gap-2">
 								<a
 									href={"https://www.instagram.com/festivalgadjahmada"}
 									rel="noreferrer"
