@@ -12,6 +12,10 @@ import olski_photo from "../../assets/festival-seni/olski.svg";
 import guyon_waton_photo from "../../assets/festival-seni/guyon_waton.svg";
 import ask from "../../assets/festival-seni/ask_me.svg";
 import ukm1 from "../../assets/festival-seni/unit.svg";
+import ungu from "../../assets/festival-seni/kembang_ungu.svg";
+import orange from "../../assets/festival-seni/kembang_orange.svg";
+import write from "../../assets/festival-seni/tulisan.svg";
+import pattern1 from "../../assets/festival-seni/pattern.svg";
 
 const festival_seni = () => {
     return (
@@ -23,7 +27,7 @@ const festival_seni = () => {
                         <p>26 November 2022 | Lapangan Pancasila UGM</p>
                     </div>
                     <div className="pl-20 pt-4 text-[#FFFFFF]">
-                        <p className="underline text-bold text-4xl">PRADIKA AKSARA</p>
+                        <img src={write} alt="write"/>
                         <p>Bermakna dengan merebaknya syair dalam pesta sebagai wujud kesatuan diversitas berkehidupan di nusantara yang selaras, senada, dan berdampingan</p>
                     </div>
                 </div>
@@ -33,14 +37,16 @@ const festival_seni = () => {
                    <img src={pertunjukan} alt="pertunjukan" className="w-auto"/>
                     <div className="flex flex-row gap-8 text-white justify-center">
                             <div className="text-left px-4 mt-20 h-[400px] w-2/5 border-8 border-white bg-cover" style={{ backgroundImage: `url(${bintangtamu})` }}>
+                                <img src={orange} alt="orange" className="relative -top-12 -left-16"/>
                                 {/* <img src={bintangtamu} alt="bintangtamu" className="w-[500px] absolute"/> */}
-                                <p className="font-bold text-xl relative border-t-2 border-b-2 border-white mt-4 w-fit">BINTANG TAMU</p>
-                                <p className="text-xl relative w-2/3">Turut dimeriahkan dengan adanya bintang tamu sebagai puncak penampilan</p>
+                                <p className="font-bold text-xl mt-2 relative -top-16 border-t-2 border-b-2 border-white w-fit">BINTANG TAMU</p>
+                                <p className="text-xl relative -top-16 w-2/3">Turut dimeriahkan dengan adanya bintang tamu sebagai puncak penampilan</p>
                             </div>
                             <div className="text-left px-4 mt-20 border-8 w-2/5 border-white  bg-cover" style={{ backgroundImage: `url(${ukm})` }}>
-                                {/* <img src={ukm} alt="ukm" className=" w-[500px] absolute" /> */}
+                                {/* <img src={ukm} alt="ukm" claszName=" w-[500px] absolute" /> */}
                                 <p className="font-bold text-xl text-right border-t-2 border-b-2 border-white mt-4 w-fit">UNIT KEGIATAN MAHASISWA</p>
                                 <p className="text-xl relative w-4/5">Pertunjukan panggung hiburan tradisional yang dikemas secara modern sebagai wadah mahasiswa UGM dalam mengekspresikan bakatnya melalui seni pertunjukkan  </p>
+                                <img src={ungu} alt="orange" className="relative -bottom-40 -right-[525px]"/>
                             </div>
                     </div>
                 </div>
@@ -57,10 +63,12 @@ const festival_seni = () => {
                     </div>
                 </div>
             </div>
-            <div className="h-[500px] bg-[#242424]">
-                <div className="items-center flex flex-col relative py-4 gap-2 top-10">
+            <div className="h-[500px] bg-[#242424]" style={{backgroundImage: `url(${pattern})`}}>
+                <div className="items-center flex flex-col relative py-4 gap-2 top-10 justify-center">
                     <img src={ukm1} alt="ukm header" className="w-auto"/>
-                    <div className="bg-black flex flex-row gap-2 h-[150px] w-screen">
+                    <p className="font-Montserrat text-white text-6xl font-bold mt-16">C<span className="text-[#E62C20]">O</span>MING S<span className="text-[#4A8068]">O</span><span className="text-[#9C4A9A]">O</span>N</p>
+                    <img src={pattern1} alt="pattern1" className="w-auto"/>
+                    {/* <div className="bg-black flex flex-row gap-2 h-[150px] w-screen">
                         <div className="bg-gray-600 w-full h-full hover:scale-110 duration-300 ease-out hover:bg-gray-300"></div>
                         <div className="bg-gray-600 w-full h-full hover:scale-110 duration-300 ease-out hover:bg-gray-300"></div>
                         <div className="bg-gray-600 w-full h-full hover:scale-110 duration-300 ease-out hover:bg-gray-300"></div>
@@ -75,7 +83,7 @@ const festival_seni = () => {
                         <div className="bg-gray-600 w-full h-full hover:scale-110 duration-300 ease-out hover:bg-gray-300"></div>
                         <div className="bg-gray-600 w-full h-full hover:scale-110 duration-300 ease-out hover:bg-gray-300"></div>
                         <div className="bg-gray-600 w-full h-full hover:scale-110 duration-300 ease-out hover:bg-gray-300"></div>
-                    </div>
+                    </div> */}
                 </div>
             </div>
             <div className="bg-[#3E3E3E] h-[175px] bg-cover py-2">
