@@ -1,0 +1,6 @@
+@media (min-width: 360px) and (max-width: 640px) {
+    #content1 {
+        background-image: url("../../assets/festival-seni/mobile1.svg");
+        background-size: cover;
+    }
+}

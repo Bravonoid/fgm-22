@@ -13,7 +13,7 @@ const tentang = () => {
         className="absolute sm:h-3/4 md:w-1/4 lg:w-1/5 xl:w-1/6 xl:scale-[2] mobile:top-80 mobile:w-2/5"
         alt="gunungan"
       ></img>
-      <div className="-right-12 absolute pt-[2rem] overflow-hidden scale-125">
+      <div className="xl:-right-12 absolute pt-[2rem] overflow-hidden xl:scale-125 sm:w-11/12 sm:right-4">
         <img
           className="mobile:hidden "
           src={mozaik_horizontal}
