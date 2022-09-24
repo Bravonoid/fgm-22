@@ -140,7 +140,7 @@ const festival_seni = () => {
                 </div>
             </div>
             <div className="bg-[#242424]">
-                <div className="items-center flex flex-col py-4 gap-2 relative mobile:top-60 mobile:justify-center">
+                <div className="items-center flex flex-col py-4 gap-2 relative mobile:-top-40 mobile:justify-center">
                     <img src={header} alt="header" className="w-auto mobile:hidden sm:hidden md:block"/>
                     <img src={mobile3} alt="header" className="w-screen mobile:block mobile:pt-12 mobile:pb-2 md:hidden"/>
                     <div className="flex md:flex-row gap-2 w-auto mobile:flex-col sm:flex-col md:mt-12 md:flex-wrap md:justify-center">
@@ -153,7 +153,7 @@ const festival_seni = () => {
                 </div>
             </div>
             <div className="h-[500px] bg-[#242424] mobile:h-[800px] sm:h-[700px]" style={{backgroundImage: `url(${pattern})`}}>
-                <div className="items-center flex flex-col py-4 gap-2 top-10 justify-center relative mobile:top-60">
+                <div className="items-center flex flex-col py-4 gap-2 top-10 justify-center relative mobile:top-0">
                     <img src={ukm1} alt="ukm header" className="w-auto mobile:hidden sm:hidden md:block md:mb-12"/>
                     <img src={mobile4} alt="ukm header" className="w-screen mobile:block md:hidden"/>
                     {/* <p className="font-Montserrat text-white text-6xl font-bold mt-16 mobile:hidden">C<span className="text-[#E62C20]">O</span>MING S<span className="text-[#4A8068]">O</span><span className="text-[#9C4A9A]">O</span>N</p>
