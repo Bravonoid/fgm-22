@@ -1,6 +1,21 @@
-@media (min-width: 360px) and (max-width: 640px) {
+@media screen and (max-width: 640px) {
     #content1 {
         background-image: url("../../assets/festival-seni/mobile1.svg");
         background-size: cover;
+    }
+}
+
+#carousel1{
+    animation: marquee 40s linear infinite;
+}
+#carousel1:hover{
+    animation-play-state: paused;
+}
+@keyframes marquee{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(calc(-250px*9));
     }
 }
