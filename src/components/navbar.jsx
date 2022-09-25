@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 import React, { useState } from "react";
 import Logo from "../assets/home/logo-navbar.svg";
 import logo from "../assets/logo_fgm.svg";
@@ -27,27 +28,57 @@ const Navbar = () => {
         </div>
       </div>
       <ul className="mr-28 flex h-full items-center justify-between gap-5 text-xl sm:hidden lg:ml-auto xl:flex mobile:hidden">
-        <a href="/">
-          <li className="w-[8.1rem] cursor-pointer py-5 text-center hover:animate-fade hover:bg-pattern hover:bg-cover hover:bg-center hover:font-bold">
+        <Link to="">
+          {" "}
+          <li
+            onClick={() => {
+              window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+            }}
+            className="w-[8.1rem] cursor-pointer py-5 text-center hover:animate-fade hover:bg-pattern hover:bg-cover hover:bg-center hover:font-bold"
+          >
             Beranda
           </li>
-        </a>
-        <a href="/about">
-          <li className="w-[8.1rem] cursor-pointer py-5 text-center hover:animate-fade hover:bg-pattern hover:bg-cover hover:bg-center hover:font-bold">
+        </Link>
+        <Link to="/about">
+          <li
+            onClick={() => {
+              window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+            }}
+            className="w-[8.1rem] cursor-pointer py-5 text-center hover:animate-fade hover:bg-pattern hover:bg-cover hover:bg-center hover:font-bold"
+          >
             Tentang
           </li>
-        </a>
-        <a href="/teater">
-          <li className="mr-3 w-[8.1rem] cursor-pointer py-5 text-center hover:animate-fade hover:bg-pattern hover:bg-cover hover:bg-center hover:font-bold">
+        </Link>
+        <Link to="/teater">
+          <li
+            onClick={() => {
+              window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+            }}
+            className="mr-3 w-[8.1rem] cursor-pointer py-5 text-center hover:animate-fade hover:bg-pattern hover:bg-cover hover:bg-center hover:font-bold"
+          >
             Teater
           </li>
-        </a>
-        <li className="mr-7 w-[8.8rem] cursor-pointer py-5 text-center hover:animate-fade hover:bg-pattern hover:bg-cover hover:bg-center hover:font-bold">
-          Pasar Rakyat
-        </li>
-        <li className="w-[8.5rem] cursor-pointer py-5 text-center hover:animate-fade hover:bg-pattern hover:bg-cover hover:bg-center hover:font-bold">
-          Festival Seni
-        </li>
+        </Link>
+        <Link to="/pasar-rakyat">
+          <li
+            onClick={() => {
+              window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+            }}
+            className="mr-7 w-[8.8rem] cursor-pointer py-5 text-center hover:animate-fade hover:bg-pattern hover:bg-cover hover:bg-center hover:font-bold"
+          >
+            Pasar Rakyat
+          </li>
+        </Link>
+        <Link to="/festival">
+          <li
+            onClick={() => {
+              window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+            }}
+            className="w-[8.5rem] cursor-pointer py-5 text-center hover:animate-fade hover:bg-pattern hover:bg-cover hover:bg-center hover:font-bold"
+          >
+            Festival Seni
+          </li>
+        </Link>
         <li className="w-28 cursor-pointer p-6 text-center hover:animate-fade hover:bg-pattern hover:bg-cover hover:bg-center hover:font-bold">
           Tiket
         </li>
@@ -89,54 +120,72 @@ const Navbar = () => {
       >
         {/* <div className={`${navbar ? "absolute" : "hidden"}`}> */}
 
-        <ul className="z-50 mx-0 mt-16 xl:hidden flex h-full w-full flex-col bg-black sm:fixed sm:items-center sm:justify-evenly sm:text-3xl mobile:fixed mobile:items-center mobile:gap-10 mobile:text-3xl">
+        <ul className="z-50 mx-0 mt-16 flex h-full w-full flex-col bg-black sm:fixed sm:items-center sm:justify-evenly sm:text-3xl xl:hidden mobile:fixed mobile:items-center mobile:gap-10 mobile:text-3xl">
           <li className="active">
-            <a
-              href=" "
+            <Link
+              to=""
+              onClick={() => {
+                window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+              }}
               className="block px-2 py-4 text-2xl font-bold text-white"
             >
               Beranda
-            </a>
+            </Link>
           </li>
           <li>
-            <a
-              href="#services"
+            <Link
+              onClick={() => {
+                window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+              }}
+              to="/about"
               className="block px-2 py-4 text-2xl font-bold transition duration-300 hover:bg-green-500"
             >
               Tentang
-            </a>
+            </Link>
           </li>
           <li>
-            <a
-              href="#about"
+            <Link
+              onClick={() => {
+                window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+              }}
+              to="/teater"
               className="block px-2 py-4 text-2xl font-bold transition duration-300 hover:bg-green-500"
             >
               Teater
-            </a>
+            </Link>
           </li>
           <li>
-            <a
-              href="#about"
+            <Link
+              onClick={() => {
+                window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+              }}
+              to="#about"
               className="block px-2 py-4 text-2xl font-bold transition duration-300 hover:bg-green-500"
             >
               Pasar Rakyat
-            </a>
+            </Link>
           </li>
           <li>
-            <a
-              href="#about"
+            <Link
+              onClick={() => {
+                window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+              }}
+              to="/festival"
               className="block px-2 py-4 text-2xl font-bold transition duration-300 hover:bg-green-500"
             >
               Festival Seni
-            </a>
+            </Link>
           </li>
           <li>
-            <a
-              href="#contact"
+            <Link
+              onClick={() => {
+                window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+              }}
+              to="#contact"
               className="block px-2 py-4 text-2xl font-bold transition duration-300 hover:bg-green-500"
             >
               Ticket
-            </a>
+            </Link>
           </li>
         </ul>
         {/* </div> */}

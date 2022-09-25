@@ -4,8 +4,11 @@ import MaskotCindaru from "../../assets/tentang/maskot-cindaru.svg";
 
 const Maskot = () => {
   return (
-    <div id="maskot" className="z-[10] h-[80vh] mobile:h-[100vh] w-full items-center justify-end bg-[#242424] lg:pt-0 pt-10 pb-[55rem] md:pb-0">
-      <div className="xl:px-24 relative sm:top-32 sm:mx-auto sm:grid sm:grid-cols-3 xl:top-24 mobile:flex mobile:flex-col">
+    <div
+      id="maskot"
+      className="z-[10] h-[90vh] w-full items-center justify-end bg-[#242424] pt-10 pb-[55rem] md:pb-0 lg:pt-0 mobile:h-[145vh]"
+    >
+      <div className="relative sm:top-32 sm:mx-auto sm:grid sm:grid-cols-3 xl:top-24 xl:px-24 mobile:flex mobile:flex-col">
         <div className="col-span-2">
           <h1 className="mb-3 text-3xl font-bold text-white mobile:text-center">
             MASKOT KITA
@@ -20,19 +23,26 @@ const Maskot = () => {
             <span className="bg-[#E62C20] px-1 font-bold">Cindaku</span> dan{" "}
             <span className="bg-[#4A8068] px-1 font-bold">Aru.</span>
           </h2>
-          <div className="mt-3 py-5 md:w-[40vw] mobile:px-10">
-            <h2 className="text-2xl text-white">
-              <span className="font-bold">Cindaku</span> merupakan makhluk
-              mitologi berupa{" "}
-              <span className="font-bold">manusia harimau.</span>
-              <span className="font-bold"> Aru</span> merupakan{" "}
-              <span className="font-bold">gelar bangsawan</span> dalam suku
-              bugis
-            </h2>
+          <div className="mt-3 py-5 md:w-[60vw] lg:w-[55vw] xl:w-[45vw] mobile:px-10">
+            <p className="text-justify text-xl text-white xl:text-2xl">
+              <span className="font-bold">Cindaru</span> digambarkan dengan sosok harimau Sumatera bertubuh manusia
+              dengan kostum pemimpin kerajaan. Nama Cindaru berasal dari
+              gabungan kata <span className="font-bold">Cindaku dan Aru</span> di mana <span className="font-bold">Cindaku</span> merupakan makhluk
+              mitologi manusia harimau yang dipercaya sebagai penjaga kawasan
+              hutan Gunung Kerinci dalam cerita legenda di masyarakat Jambi.
+              Sementara <span className="font-bold">Aru</span> merupakan gelar bangsawan dalam suku Bugis. Selain
+              itu, wujud harimau Sumatera dipilih sebagai bentuk pelestarian
+              fauna asli Indonesia yang kini sedang dalam fase krisis menuju
+              kepunahan.
+            </p>
           </div>
         </div>
-        <div className="mobile:mt-10 relative col-span-1 w-full items-end text-left text-white sm:my-5 mobile:my-24 mobile:text-sm">
-          <img src={MaskotCindaru} className="scale-[110%] md:scale-[175%]" alt="maskot-cindaru" />
+        <div className="relative col-span-1 w-full items-end text-left text-white sm:my-5 mobile:my-24 mobile:mt-10 mobile:text-sm">
+          <img
+            src={MaskotCindaru}
+            className="scale-[110%] md:scale-[175%]"
+            alt="maskot-cindaru"
+          />
         </div>
       </div>
       {/* <img

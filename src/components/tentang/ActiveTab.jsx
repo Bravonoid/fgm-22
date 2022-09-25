@@ -25,7 +25,7 @@ const ActiveTab = () => {
 
   return (
     <>
-      <div className="flex h-[8vh] w-full justify-center bg-[#1E1E1E]" id="tema">
+      <div className="flex h-[8vh] w-full justify-center bg-[#171717]" id="tema">
         <div className="flex w-full justify-center">
           <h2
             onClick={handleTema}
@@ -50,7 +50,7 @@ const ActiveTab = () => {
           </h2>
         </div>
       </div>
-      <div className="flex w-full justify-center bg-[#1E1E1E] pt-5 pb-10 md:h-[40vh] md:pb-0">
+      <div className="flex w-full justify-center bg-[#171717] pt-5 pb-10 md:h-[40vh] md:pb-0">
         <div
           className={
             tema ? "mx-auto block items-center justify-center pt-5" : "hidden"
@@ -83,7 +83,7 @@ const ActiveTab = () => {
           </div>
         </div>
       </div>
-      <div className="flex h-[15vh] w-full bg-[#1E1E1E]">
+      <div className="flex h-[15vh] w-full bg-[#171717]">
         <img
           src={MozaikTentang}
           className="mx-auto hidden items-center justify-center overflow-hidden md:flex"

@@ -6,9 +6,9 @@ import KembangHarapanMobile from "../../assets/tentang/kembang-harapan-mobile.sv
 const Harapan = () => {
   return (
     <>
-      <div className="flex h-[50vh] w-full bg-[#1E1E1E] md:h-[40vh] mobile:pt-1">
-        <img src={BackgroundKembangKiri} className="hidden md:flex" alt="" />
-        <div className="container mx-auto px-10 md:px-32">
+      <div className="flex h-[30vh] w-full bg-[#171717] md:h-[40vh] xl:h-[31vh] mobile:pt-1">
+        <img src={BackgroundKembangKiri} className="hidden xl:flex" alt="" />
+        <div className="container mx-auto px-10 xl:px-32 xl:w-2/3 xl:pt-1">
           <h1 className="text-weight-700 mt-10 text-center text-3xl font-bold text-white">
             <span className="bg-[#242424] px-10">HARAPAN</span>
           </h1>
@@ -18,10 +18,10 @@ const Harapan = () => {
             mempertahankan keselarasan dalam kediversitasan budaya di Nusantara
           </h2>
         </div>
-        <img src={BackgroundKembangKanan} className="hidden md:flex" alt="" />
+        <img src={BackgroundKembangKanan} className="hidden xl:flex" alt="" />
       </div>
-      <div className="flex h-[30vh] md:hidden items-center justify-center w-full bg-[#1E1E1E]">
-      <img src={KembangHarapanMobile} className="md:hidden flex" alt="" />
+      <div className="flex h-[25vh] md:hidden items-center justify-center w-full bg-[#171717]">
+      <img src={KembangHarapanMobile} className="flex" alt="" />
       </div>
     </>
   );
