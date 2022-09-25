@@ -124,18 +124,20 @@ const festival_seni = () => {
                 </div>
                 <div className="xl:hidden mobile:block mobile:w-2/3 sm:w-2/3 mx-auto sm:block md:hidden">
                     <Slider {... settings}>
-                        <div className="text-left px-4 xl:mt-20 h-[400px] w-2/5 sm:border-8 border-white bg-cover mobile:w-screen" style={{ backgroundImage: `url(${bintangtamu})` }}>
-                            {/* <img src={orange} alt="orange" className="relative -top-12 -left-16 mobile:hidden"/> */}
-                            {/* <img src={bintangtamu} alt="bintangtamu" className="w-[500px] absolute"/> */}
-                            <p className="font-bold text-xl mt-2 relative xl:-top-16 border-t-2 border-b-2 border-white w-fit mobile:mt-8">BINTANG TAMU</p>
-                            <p className="text-xl relative xl:-top-16 w-2/3">Turut dimeriahkan dengan adanya bintang tamu sebagai puncak penampilan</p>
-                        </div>
+                        <>
+                            <div className="text-left px-4 xl:mt-20 h-[400px] w-2/5 sm:border-8 border-white bg-cover mobile:w-screen" style={{ backgroundImage: `url(${bintangtamu})` }}>
+                                {/* <img src={orange} alt="orange" className="relative -top-12 -left-16 mobile:hidden"/> */}
+                                {/* <img src={bintangtamu} alt="bintangtamu" className="w-[500px] absolute"/> */}
+                                <p className="font-bold text-xl mt-2 relative xl:-top-16 border-t-2 border-b-2 border-white w-fit mobile:mt-8">BINTANG TAMU</p>
+                                <p className="text-xl relative xl:-top-16 w-2/3">Turut dimeriahkan dengan adanya bintang tamu sebagai puncak penampilan</p>
+                            </div>
                             <div className="px-4 xl:mt-20 sm:border-8 h-[400px] w-2/5 border-white  bg-cover mobile:w-screen" style={{ backgroundImage: `url(${ukm})` }}>
                                 {/* <img src={ukm} alt="ukm" claszName=" w-[500px] absolute" /> */}
                                 <p className="font-bold text-xl border-t-2 border-b-2 border-white mt-4 w-fit relative mobile:mt-8">UNIT KEGIATAN MAHASISWA</p>
                                 <p className="text-xl relative w-4/5 mobile:w-auto">Pertunjukan panggung hiburan tradisional yang dikemas secara modern sebagai wadah mahasiswa UGM dalam mengekspresikan bakatnya melalui seni pertunjukkan  </p>
                                 {/* <img src={ungu} alt="orange" className="relative xl:-bottom-40 xl:-right-[525px] mobile:hidden sm:hidden md:block md:-right-60 md:-bottom-0"/> */}
                             </div>
+                        </>
                     </Slider>
                 </div>
             </div>
