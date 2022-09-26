@@ -6,7 +6,7 @@ const Maskot = () => {
   return (
     <div
       id="maskot"
-      className="z-[10] h-[90vh] w-full items-center justify-end bg-[#242424] pt-10 pb-[55rem] md:pb-0 lg:pt-0 mobile:h-[145vh]"
+      className="z-[10] w-full items-center justify-end bg-[#242424] pt-48 sm:pt-12 pb-44 lg:py-24 lg:pb-36 sm:px-10 xl:px-0"
     >
       <div className="relative sm:top-32 sm:mx-auto sm:grid sm:grid-cols-3 xl:top-24 xl:px-24 mobile:flex mobile:flex-col">
         <div className="col-span-2">
@@ -40,7 +40,7 @@ const Maskot = () => {
         <div className="relative col-span-1 w-full items-end text-left text-white sm:my-5 mobile:my-24 mobile:mt-10 mobile:text-sm">
           <img
             src={MaskotCindaru}
-            className="scale-[110%] md:scale-[175%]"
+            className="scale-[110%] md:scale-[150%]"
             alt="maskot-cindaru"
           />
         </div>

@@ -70,7 +70,7 @@ const Foto = () => {
      
     <Trailer/>
     </div>
-    <div         className={sinopsis? ' ease-in-out duration-1000  transition-all w-full h-full bg-center bg-no-repeat  ' : 'hidden'} style={{ backgroundImage: `url(${Bgfoto})` }}>
+    <div         className={sinopsis? ' ease-in-out duration-1000  transition-all w-full h-full bg-right bg-no-repeat  ' : 'hidden'} style={{ backgroundImage: `url(${Bgfoto})` }}>
      
      <Sinopsis/>
      </div>
@@ -79,21 +79,24 @@ const Foto = () => {
      <Pemeran/>
      </div>
    <div       className={teater? ' relative ease-in-out duration-1000 ' : 'ease-in-out  duration-1000 relative left-[-100%] '}>
-   <div className='absolute py-5 xl:py-20 mx-auto flex w-[60%] md:w-[65%] xl:w-[55%] text-white flex-col-2  z-20'>
+   <div className='absolute py-5 xl:py-20 mx-auto flex w-[90%] sm:w-[60%] md:w-[65%] xl:w-[55%] text-white flex-col-2  z-20'>
         <div className='w-full'>
-        <div className='bg-fgm-base-terang xl:w-full py-5 xl:pl-16 pr-4 px-4'>
+        <div className='bg-fgm-base-terang xl:w-[80%] py-5 xl:pl-16 pr-4 px-4'>
           <img className='h-8 xl:h-12' src={Judul_teater}>
           </img>
           <p className='text-sm md:text-lg xl:text-2xl font-bold'>
             18 November 2022 | Taman Budaya Yogyakarta
           </p>
         </div>
-        <div className='xl:w-full  xl:px-16  px-4 '>
-        <h1 className='text-2xl underline md:text-4xl xl:text-5xl mt-3 font-bold'>
+        <div className='xl:w-full  xl:px-16  pl-8  sm:px-4 '>
+        <h1 className='text-3xl underline md:text-4xl xl:text-5xl mt-3 font-bold'>
             AMONG DINO SUKMO
           </h1>
-          <p className='  my-2 text-sm md:text-lg xl:text-2xl'>
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+          <p className='  my-2  text-base md:text-lg xl:text-lg'>
+          Wirama Bhatara Kertagama merupakan pementasan akulturasi budaya kontemporer dan tradisional yang menyajikan sebuah pertunjukan seni peran, tari, dan musik, yang nantinya akan dinarasikan oleh seorang dalang menggunakan wayang. Kata ‘Wirama’ diambil dari bahasa Sanskerta yang berarti ‘kidung’, ‘Bhatara’ memiliki arti ‘agung’, sedangkan “Kertagama” memiliki arti “negeri”. Dengan demikian, “Wirama Bhatara Kertagama” memiliki makna ‘kidung agung negeri’. 
+
+Pementasan ini mengangkat tema keberagaman budaya Nusantara yang akan digambarkan melalui kisah kerajaan di Indonesia. Setiap kerajaan akan mewakili emosi dasar yang manusia miliki, seperti marah, sedih, bahagia, takut, jijik, dan terkejut. Pementasan ini akan dibawakan secara fragmentasi berdasarkan tiga kisah kerajaan Indonesia yaitu Kerajaan Singosari, Mataram, dan Majapahit. 
+ 
         
           </p>
         </div>

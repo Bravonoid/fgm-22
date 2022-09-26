@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
-import SmartSlider from "react-smart-slider";
 import Slider from "react-slick";
+import Slider1 from "react-slick";
 import festivalseni from "../../assets/festival-seni/festival_seni.svg";
 import background from "../../assets/festival-seni/background.svg";
 import pertunjukan from "../../assets/festival-seni/pertunjukan.svg";
@@ -46,20 +46,6 @@ const SampleNextArrow = (props) => {
       />
     );
   }
-
-// const DummyCaption = ({ caption }) => (
-//     <div style={{
-//       position: 'absolute',
-//       right: 100,
-//       top: 250,
-//       fontSize: 38,
-//       padding: 55,
-//       border: 'solid 1px',
-//     }}>
-//       {caption}
-//     </div>
-//   )
-
 const festival_seni = () => {
     const settings = {
         dots: true,
@@ -80,24 +66,8 @@ const festival_seni = () => {
         autoplaySpeed: 2000,
         cssEase: "linear"
       };
-    // const slidesArray = [
-    //     {
-    //         url: "assets/festival-seni/bintang_tamu.png",
-    //         // (Optional) Set if you want to add any content on your slide
-    //         childrenElem: <DummyCaption className="bg-black" caption="Caption 2" />
-    //       },
-    //       {
-    //         url: "https://i.imgur.com/E8gkF2f.jpg",
-    //         childrenElem: <DummyCaption caption="Caption 2" />
-    //       },
-    //   ];
     return (
         <>
-            {/* <SmartSlider
-                slides={slidesArray}"
-                buttonShape="round" // round or square
-            /> */}
-           
             <div id="content1" className="h-[500px] bg-cover mobile:bg-auto pt-16 mobile:h-[700px]" style={{ backgroundImage: `url(${background})`, backgroundSize: 'cover' }}>
                 <div className="top-10 mt-12 mobile:relative sm:w-[475px]">
                     <div className="bg-[#202020] h-auto py-4 sm:w-[475px] sm:pl-20 text-[#FFFFFF] mobile:w-4/5 mobile:pl-4">
@@ -135,20 +105,22 @@ const festival_seni = () => {
                 </div>
                 <div className="xl:hidden mobile:block mobile:w-2/3 sm:w-2/3 mx-auto sm:block md:hidden">
                     <Slider {... settings}>
-                       
-                            <div className="text-left px-4 xl:mt-20 h-[400px] w-2/5 sm:border-8 border-white bg-cover mobile:w-screen" style={{ backgroundImage: `url(${bintangtamu})` }}>
+                       <>
+                            <div className="text-left px-4 xl:mt-20 h-[400px] w-2/5 sm:border-8 border-white bg-cover mobile:w-fit text-white sm:w-fit mobile:border-8" style={{ backgroundImage: `url(${bintangtamu})` }}>
                                 {/* <img src={orange} alt="orange" className="relative -top-12 -left-16 mobile:hidden"/> */}
                                 {/* <img src={bintangtamu} alt="bintangtamu" className="w-[500px] absolute"/> */}
                                 <p className="font-bold text-xl mt-2 relative xl:-top-16 border-t-2 border-b-2 border-white w-fit mobile:mt-8">BINTANG TAMU</p>
-                                <p className="text-xl relative xl:-top-16 w-2/3">Turut dimeriahkan dengan adanya bintang tamu sebagai puncak penampilan</p>
+                                <p className="text-xl relative xl:-top-16">Turut dimeriahkan dengan adanya bintang tamu sebagai puncak penampilan</p>
                             </div>
-                            <div className="px-4 xl:mt-20 sm:border-8 h-[400px] w-2/5 border-white  bg-cover mobile:w-screen" style={{ backgroundImage: `url(${ukm})` }}>
+                            </>
+                            <>
+                            <div className="px-4 xl:mt-20 sm:border-8 h-[400px] w-2/5 border-white  bg-cover text-white sm:w-auto mobile:w-fit mobile:border-8" style={{ backgroundImage: `url(${ukm})` }}>
                                 {/* <img src={ukm} alt="ukm" claszName=" w-[500px] absolute" /> */}
-                                <p className="font-bold text-xl border-t-2 border-b-2 border-white mt-4 w-fit relative mobile:mt-8">UNIT KEGIATAN MAHASISWA</p>
-                                <p className="text-xl relative w-4/5 mobile:w-auto">Pertunjukan panggung hiburan tradisional yang dikemas secara modern sebagai wadah mahasiswa UGM dalam mengekspresikan bakatnya melalui seni pertunjukkan  </p>
+                                <p className="font-bold text-xl border-t-2 border-b-2 border-white mt-4 w-fit relative mobile:mt-8 mobile:w-1/2">UNIT KEGIATAN MAHASISWA</p>
+                                <p className="mobile:text-base text-xl relative w-4/5">Pertunjukan panggung hiburan tradisional yang dikemas secara modern sebagai wadah mahasiswa UGM dalam mengekspresikan bakatnya melalui seni pertunjukkan  </p>
                                 {/* <img src={ungu} alt="orange" className="relative xl:-bottom-40 xl:-right-[525px] mobile:hidden sm:hidden md:block md:-right-60 md:-bottom-0"/> */}
                             </div>
-                       
+                       </>
                     </Slider>
                 </div>
             </div>
@@ -172,6 +144,57 @@ const festival_seni = () => {
                     {/* <p className="font-Montserrat text-white text-6xl font-bold mt-16 mobile:hidden">C<span className="text-[#E62C20]">O</span>MING S<span className="text-[#4A8068]">O</span><span className="text-[#9C4A9A]">O</span>N</p>
                     <img src={pattern1} alt="pattern1" className="w-auto mobile:hidden"/>
                     <img src={mobile5} alt="pattern1" className="w-auto mobile:block xl:hidden pt-2"/> */}
+                    {/* <Slider {... autoplay}>
+                        <>
+                        <div className="bg-green-300 w-[100px] h-[100px] hover:scale-110 duration-300 ease-out hover:bg-gray-300 flex justify-end flex-col">
+                            <div className="flex flex-row justify-between">
+                                <p className="font-bold text-white pl-2 align-center">Nama</p>
+                                <div className="bg-white h-4 w-2/3 pl-2"/>
+                            </div>
+                        </div>
+                        </>
+                        <>
+                        <div className="bg-[#818181] w-full h-full hover:scale-110 duration-300 ease-out hover:bg-gray-300 flex justify-end flex-col">
+                            <div className="flex flex-row justify-between">
+                                <p className="font-bold text-white pl-2 align-center">Nama</p>
+                                <div className="bg-white h-4 w-2/3 pl-2"/>
+                            </div>
+                        </div>
+                        </>
+                        <>
+                        <div className="bg-[#818181] w-full h-full hover:scale-110 duration-300 ease-out hover:bg-gray-300 flex justify-end flex-col">
+                            <div className="flex flex-row justify-between">
+                                <p className="font-bold text-white pl-2 align-center">Nama</p>
+                                <div className="bg-white h-4 w-2/3 pl-2"/>
+                            </div>
+                        </div>
+                        </>
+                        <>
+                        <div className="bg-[#818181] w-full h-full hover:scale-110 duration-300 ease-out hover:bg-gray-300 flex justify-end flex-col">
+                            <div className="flex flex-row justify-between">
+                                <p className="font-bold text-white pl-2 align-center">Nama</p>
+                                <div className="bg-white h-4 w-2/3 pl-2"/>
+                            </div>
+                        </div>
+                        </>
+                        <>
+                        <div className="bg-[#818181] w-full h-full hover:scale-110 duration-300 ease-out hover:bg-gray-300 flex justify-end flex-col">
+                            <div className="flex flex-row justify-between">
+                                <p className="font-bold text-white pl-2 align-center">Nama</p>
+                                <div className="bg-white h-4 w-2/3 pl-2"/>
+                            </div>
+                        </div>
+                        </>
+                        <>
+                        <div className="bg-[#818181] w-full h-full hover:scale-110 duration-300 ease-out hover:bg-gray-300 flex justify-end flex-col">
+                            <div className="flex flex-row justify-between">
+                                <p className="font-bold text-white pl-2 align-center">Nama</p>
+                                <div className="bg-white h-4 w-2/3 pl-2"/>
+                            </div>
+                        </div>
+                        </>
+                    </Slider> */}
+                    <>
                     <div id="carousel1" className="bg-black flex flex-row gap-2 h-[150px] w-screen">
                         <div className="bg-[#818181] w-full h-full hover:scale-110 duration-300 ease-out hover:bg-gray-300 flex justify-end flex-col">
                             <div className="flex flex-row justify-between">
@@ -210,6 +233,8 @@ const festival_seni = () => {
                             </div>
                         </div>
                     </div>
+                    </>
+                    <>
                     <div id="carousel1" className="bg-black flex flex-row gap-2 h-[150px] w-screen">
                         <div className="bg-[#818181] w-full h-full hover:scale-110 duration-300 ease-out hover:bg-gray-300 flex justify-end flex-col">
                             <div className="flex flex-row justify-between">
@@ -248,6 +273,7 @@ const festival_seni = () => {
                             </div>
                         </div>
                     </div>
+                    </>
                 </div>
             </div>
              <div className="bg-[#3E3E3E] h-auto py-2">
