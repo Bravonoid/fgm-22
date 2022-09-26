@@ -3,14 +3,16 @@ import Penari from "../../assets/home/penari.png";
 import fgm_black from "../../assets/home/fgm-black.svg";
 import mozaik from "../../assets/home/mozaik.svg";
 import fgm from "../../assets/home/fgm.svg";
-
+import  Teaser from '../../assets/home/video/Video_Web_2_1_1_1.mp4'
 const opening_video = () => {
 	return (
 		<div
-			className="relative flex w-full justify-center  bg-foto_teater bg-cover px-[10px] py-[1px] sm:object-left mobile:object-right mobile:object-none mt-16"
-			style={{ backgroundImage: `url(${Penari})` }}
+			className="relative flex w-full justify-center  bg-cover  sm:object-left mobile:object-right mobile:object-none mt-16"
+
+			
 		>
-			<div className="flex h-[450px] mobile:h-[167px]">
+		
+			<div className="flex z-50 h-screen overflow-hidden mobile:h-[167px]">
 				<img
 					className="mobile:block mobile:w-2/3 mobile:mx-10 sm:hidden"
 					src={fgm}
@@ -26,6 +28,10 @@ const opening_video = () => {
 					src={fgm_black}
 					alt="fgm_black"
 				></img>
+				<div className="absolute justify-between items-center w-full -z-50 overflow-hidden  mx-auto h-full">
+				<video className='-z-50 object-cover overflow-hidden mx-auto h-screen w-full' src={Teaser} type="video/mp4" autoPlay loop muted>
+        </video>
+				</div>
 			</div>
 		</div>
 	);
