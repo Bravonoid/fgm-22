@@ -50,7 +50,7 @@ const ActiveTab = () => {
           </h2>
         </div>
       </div>
-      <div className="flex w-full justify-center bg-[#171717] pt-5 pb-10 md:h-[40vh] md:pb-0">
+      <div className="flex w-full justify-center bg-[#171717] py-12">
         <div
           className={
             tema ? "mx-auto block items-center justify-center pt-5" : "hidden"
@@ -83,10 +83,10 @@ const ActiveTab = () => {
           </div>
         </div>
       </div>
-      <div className="flex h-[15vh] w-full bg-[#171717]">
+      <div className="flex w-full bg-[#171717] py-10 absolute overflow-hidden">
         <img
           src={MozaikTentang}
-          className="mx-auto hidden items-center justify-center overflow-hidden md:flex"
+          className="mx-auto hidden items-center justify-center overflow-hidden md:flex scale-x-[135%]"
           alt="mozaik"
         />
         <img

@@ -7,7 +7,7 @@ import TextFGM from "../../assets/tentang/text-fgm.svg";
 
 const Tentang = () => {
   return (
-    <div className="h-[115vh] items-center bg-[#171717] pb-[50rem] sm:h-[90vh]">
+    <div className="items-center bg-[#171717] pb-[10rem] lg:pb-[25rem]">
       <div className="relative sm:top-24 sm:-right-4 sm:mx-auto sm:grid sm:grid-cols-3 xl:top-48 mobile:top-0 mobile:flex mobile:flex-col">
         <div className="col-span-1 mt-8 flex items-center justify-center lg:mt-12 mobile:mt-32">
           <img

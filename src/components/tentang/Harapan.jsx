@@ -6,22 +6,24 @@ import KembangHarapanMobile from "../../assets/tentang/kembang-harapan-mobile.sv
 const Harapan = () => {
   return (
     <>
-      <div className="flex h-[30vh] w-full bg-[#171717] md:h-[40vh] xl:h-[31vh] mobile:pt-1">
+      <div className="flex w-full bg-[#171717] md:pb-10 xl:pb-0 mobile:pt-1">
         <img src={BackgroundKembangKiri} className="hidden xl:flex" alt="" />
-        <div className="container mx-auto px-10 xl:px-32 xl:w-2/3 xl:pt-1">
+        <div className="container mx-auto xl:w-2/3 xl:px-32 xl:pt-5">
           <h1 className="text-weight-700 mt-10 text-center text-3xl font-bold text-white">
             <span className="bg-[#242424] px-10">HARAPAN</span>
           </h1>
-          <h2 className="text-weight-700 mt-4 md:text-center text-right text-base md:text-2xl text-white">
+          <h2 className="text-weight-700 mt-4 text-right text-base text-white md:text-center md:text-2xl">
             Melalui sosok Cindaru, Festival Gadjah Mada 2022 diharapkan dapat
-            menjadi simbol kebijaksanaan dan kekuatan masyarakat dalam
-            mempertahankan keselarasan dalam kediversitasan budaya di Nusantara
+            menjadi <span className="font-bold">simbol kebijaksanaan</span> dan{" "}
+            <span className="font-bold">kekuatan</span> masyarakat dalam
+            mempertahankan <span className="font-bold">keselarasan</span> dalam
+            kediversitasan budaya di Nusantara
           </h2>
         </div>
         <img src={BackgroundKembangKanan} className="hidden xl:flex" alt="" />
       </div>
-      <div className="flex h-[25vh] md:hidden items-center justify-center w-full bg-[#171717]">
-      <img src={KembangHarapanMobile} className="flex" alt="" />
+      <div className="flex w-full items-center justify-center bg-[#171717] md:hidden">
+        <img src={KembangHarapanMobile} className="flex" alt="" />
       </div>
     </>
   );
