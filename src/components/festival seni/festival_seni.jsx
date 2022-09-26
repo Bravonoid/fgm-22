@@ -25,7 +25,7 @@ import mobile4 from "../../assets/festival-seni/mobile4.svg";
 import mobile5 from "../../assets/festival-seni/mobile5.svg";
 import "./festival.css";
 
-function SampleNextArrow(props) {
+const SampleNextArrow = (props) => {
     const { className, style, onClick } = props;
     return (
       <div
@@ -46,6 +46,7 @@ function SampleNextArrow(props) {
       />
     );
   }
+
 // const DummyCaption = ({ caption }) => (
 //     <div style={{
 //       position: 'absolute',
@@ -69,6 +70,16 @@ const festival_seni = () => {
         nextArrow: <SampleNextArrow />,
         prevArrow: <SamplePrevArrow />
       };
+      const autoplay = {
+        dots: true,
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplay: true,
+        speed: 2000,
+        autoplaySpeed: 2000,
+        cssEase: "linear"
+      };
     // const slidesArray = [
     //     {
     //         url: "assets/festival-seni/bintang_tamu.png",
@@ -88,18 +99,18 @@ const festival_seni = () => {
             /> */}
            
             <div id="content1" className="h-[500px] bg-cover mobile:bg-auto pt-16 mobile:h-[700px]" style={{ backgroundImage: `url(${background})`, backgroundSize: 'cover' }}>
-                <div className="top-10 mt-12 mobile:relative xl:w-[475px]">
+                <div className="top-10 mt-12 mobile:relative sm:w-[475px]">
                     <div className="bg-[#202020] h-auto py-4 sm:w-[475px] sm:pl-20 text-[#FFFFFF] mobile:w-4/5 mobile:pl-4">
                         <img src={festivalseni} alt="festivalseni" className="w-[300px] mobile:w-4/5"></img>
                         <p>26 November 2022 | Lapangan Pancasila UGM</p>
                     </div>
-                    <div className="sm:pl-20 pt-4 text-[#FFFFFF] mobile:pl-4">
+                    <div className="sm:pl-20 pt-4 text-[#FFFFFF] mobile:px-4">
                         <img src={write} alt="write" className="mobile:hidden"/>
                         <div className='font-bold text-4xl underline sm:hidden'>
                             <p>PRADIKA</p>
                             <p>PRASARA</p>
                         </div>
-                        <p className="w-2/3 mobile:mt-2">Bermakna dengan merebaknya syair dalam pesta sebagai wujud kesatuan diversitas berkehidupan di nusantara yang selaras, senada, dan berdampingan</p>
+                        <p className="mt-2 text-lg sm:w-2/3 xl:w-full mobile:w-2/3">Bermakna dengan merebaknya syair dalam pesta sebagai wujud kesatuan diversitas berkehidupan di nusantara yang selaras, senada, dan berdampingan</p>
                     </div>
                 </div>
             </div>
@@ -124,7 +135,7 @@ const festival_seni = () => {
                 </div>
                 <div className="xl:hidden mobile:block mobile:w-2/3 sm:w-2/3 mx-auto sm:block md:hidden">
                     <Slider {... settings}>
-                        <>
+                       
                             <div className="text-left px-4 xl:mt-20 h-[400px] w-2/5 sm:border-8 border-white bg-cover mobile:w-screen" style={{ backgroundImage: `url(${bintangtamu})` }}>
                                 {/* <img src={orange} alt="orange" className="relative -top-12 -left-16 mobile:hidden"/> */}
                                 {/* <img src={bintangtamu} alt="bintangtamu" className="w-[500px] absolute"/> */}
@@ -137,7 +148,7 @@ const festival_seni = () => {
                                 <p className="text-xl relative w-4/5 mobile:w-auto">Pertunjukan panggung hiburan tradisional yang dikemas secara modern sebagai wadah mahasiswa UGM dalam mengekspresikan bakatnya melalui seni pertunjukkan  </p>
                                 {/* <img src={ungu} alt="orange" className="relative xl:-bottom-40 xl:-right-[525px] mobile:hidden sm:hidden md:block md:-right-60 md:-bottom-0"/> */}
                             </div>
-                        </>
+                       
                     </Slider>
                 </div>
             </div>
@@ -154,7 +165,7 @@ const festival_seni = () => {
                     </div>
                 </div>
             </div>
-            <div className="h-[500px] bg-[#242424] mobile:h-[800px] sm:h-[700px]" style={{backgroundImage: `url(${pattern})`}}>
+            <div className="h-[500px] bg-[#242424] mobile:h-[800px] sm:h-[700px] bg-cover" style={{backgroundImage: `url(${pattern})`}}>
                 <div className="items-center flex flex-col py-4 gap-2 top-10 justify-center relative mobile:top-0">
                     <img src={ukm1} alt="ukm header" className="w-auto mobile:hidden sm:hidden md:block md:mb-12"/>
                     <img src={mobile4} alt="ukm header" className="w-screen mobile:block md:hidden"/>
