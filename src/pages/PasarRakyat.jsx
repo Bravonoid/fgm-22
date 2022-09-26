@@ -1,3 +1,4 @@
+import TemaPasarRakyat from "../components/pasar rakyat/home-pasar-rakyat/TemaPasarRakyat";
 import TentangPasarRakyat from "../components/pasar rakyat/home-pasar-rakyat/TentangPasarRakyat";
 
 export default function PasarRakyat() {
@@ -5,6 +6,7 @@ export default function PasarRakyat() {
     <>
       <main className="overflow-hidden">
         <TentangPasarRakyat />
+        <TemaPasarRakyat />
       </main>
     </>
   );
