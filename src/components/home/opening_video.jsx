@@ -3,18 +3,13 @@ import Penari from "../../assets/home/penari.png";
 import fgm_black from "../../assets/home/fgm-black.svg";
 import mozaik from "../../assets/home/mozaik.svg";
 import fgm from "../../assets/home/fgm.svg";
-import  Teaser from '../../assets/home/video/Video_Web_2_1_1_1.mp4'
+import Teaser from "../../assets/home/video/Video_Web_2_1_1_1.mp4";
 const opening_video = () => {
 	return (
-		<div
-			className="relative flex w-full justify-center  bg-cover  sm:object-left mobile:object-right mobile:object-none mt-16"
-
-			
-		>
-		
-			<div className="flex z-50 h-screen overflow-hidden mobile:h-[167px]">
+		<div className="relative mt-16 flex w-full  justify-center  bg-cover sm:object-left mobile:object-none mobile:object-right">
+			<div className="z-50 flex h-screen overflow-hidden mobile:h-[75vh]">
 				<img
-					className="mobile:block mobile:w-2/3 mobile:mx-10 sm:hidden"
+					className="sm:hidden mobile:mx-10 mobile:block mobile:w-2/3"
 					src={fgm}
 					alt="fgm"
 				></img>
@@ -24,13 +19,19 @@ const opening_video = () => {
 					alt="fgm_black"
 				></img>
 				<img
-					className=" ml-[100px] pr-[10px] sm:w-2/3 lg:ml-[10px] xl:w-1/2 mobile:mx-auto mobile:w-1/2 mobile:hidden"
+					className=" ml-[100px] pr-[10px] sm:w-2/3 lg:ml-[10px] xl:w-1/2 mobile:mx-auto mobile:hidden mobile:w-1/2"
 					src={fgm_black}
 					alt="fgm_black"
 				></img>
-				<div className="absolute justify-between items-center w-full -z-50 overflow-hidden  mx-auto h-full">
-				<video className='-z-50 object-cover overflow-hidden mx-auto h-screen w-full' src={Teaser} type="video/mp4" autoPlay loop muted>
-        </video>
+				<div className="absolute -z-50 mx-auto h-full w-full items-center  justify-between overflow-hidden">
+					<video
+						className="-z-50 mx-auto h-screen w-full overflow-hidden object-cover"
+						src={Teaser}
+						type="video/mp4"
+						autoPlay
+						loop
+						muted
+					></video>
 				</div>
 			</div>
 		</div>
