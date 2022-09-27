@@ -1,68 +1,44 @@
 const dataMedpart = [
     {
         "name" : "DEM UGM",
-        "img" : "medpart/dem.png",
+        "img" : "medpart/eventlist.png",
         "lebar" : "24"
     }, 
     {
         "name" : "Geronimo",
-        "img" : "medpart/geronimo1.jpg",
+        "img" : "medpart/infoeventjogja.jpg",
         "lebar" : "32"
     }, 
     {
         "name" : "Polinema",
-        "img" : "medpart/polinema.jpg",
+        "img" : "medpart/infoeventmahasiswa.png",
         "lebar" : "24"
     }, 
     {
         "name" : "Magenta",
-        "img" : "medpart/magenta.png",
+        "img" : "medpart/infokonserjogja.png",
         "lebar" : "32"
     }, 
     {
         "name" : "SRE",
-        "img" : "medpart/sre.png",
+        "img" : "medpart/jogjaistimewa.png",
         "lebar" : "32"
     }, 
     {
         "name" : "Swaragama",
-        "img" : "medpart/swaragama.png",
+        "img" : "medpart/jogjaseni.png",
         "lebar" : "48"
     },
     {
         "name" : "Maulomba",
-        "img" : "medpart/maulomba.png",
+        "img" : "medpart/pointkampus.png",
         "lebar" : "40"
     },    {
         "name" : "BEMP",
-        "img" : "medpart/bemp.png",
+        "img" : "medpart/rariamedia.png",
         "lebar" : "24"
     }, 
-    {
-        "name" : "HME",
-        "img" : "medpart/hme.png",
-        "lebar" : "24"
-    }, 
-    {
-        "name" : "HMJTE",
-        "img" : "medpart/HMJTE.png",
-        "lebar" : "24"
-    }, 
-    {
-        "name" : "HMTE",
-        "img" : "medpart/hmte.png",
-        "lebar" : "24"
-    }, 
-    {
-        "name" : "HMTE2",
-        "img" : "medpart/hmte2.png",
-        "lebar" : "24"
-    }, 
-    {
-        "name" : "SRE UNAIR",
-        "img" : "medpart/sreunair.jpg",
-        "lebar" : "24"
-    },   
+    
 ]
 const dataSponsor = [
     {

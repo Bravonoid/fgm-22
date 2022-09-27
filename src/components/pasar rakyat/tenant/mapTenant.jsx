@@ -7,7 +7,21 @@ import KembangMerah from  '../../../assets/kembang-putih.svg'
 const Tenant = ({tenantList,categoryName}) => {
 
   const [searchValue, setSearchValue] = useState("");
+  const[sorting,setSorting] = useState(false)
+
+
+
+
   console.log(tenantList)
+
+
+  const handle = () =>{  tenantList = tenantList.sort((a,b)=> {
+    var a1 = a.tenantName.toLowerCase();
+    var b1 = b.tenantName.toLowerCase();
+    return a1<b1 ?-1:a1> b1? 1 :0;
+    })
+    console.log(tenantList);}
+    console.log(tenantList)
   let listItem;
   if (tenantList) {
     listItem = tenantList.filter((item) => {
@@ -42,6 +56,9 @@ const Tenant = ({tenantList,categoryName}) => {
           value={searchValue}
           onChange={searchHandler}
         ></input>
+        <button type='button' onClick={handle}>
+          sorting
+        </button>
       </form>
       {listItem && (
         <>
