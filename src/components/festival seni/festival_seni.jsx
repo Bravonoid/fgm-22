@@ -25,36 +25,13 @@ import mobile4 from "../../assets/festival-seni/mobile4.svg";
 import mobile5 from "../../assets/festival-seni/mobile5.svg";
 import "./festival.css";
 
-const SampleNextArrow = (props) => {
-    const { className, style, onClick } = props;
-    return (
-      <div
-        className={className}
-        style={{ ...style, display: "block", background: "red" }}
-        onClick={onClick}
-      />
-    );
-  }
-  
-  const SamplePrevArrow = (props) => {
-    const { className, style, onClick } = props;
-    return (
-      <div
-        className={className}
-        style={{ ...style, display: "block", background: "blue" }}
-        onClick={onClick}
-      />
-    );
-  }
 const festival_seni = () => {
     const settings = {
         dots: true,
         infinite: true,
         speed: 500,
         slidesToShow: 1,
-        slidesToScroll: 1,
-        nextArrow: <SampleNextArrow />,
-        prevArrow: <SamplePrevArrow />
+        slidesToScroll: 1
       };
       const autoplay = {
         dots: true,
@@ -144,15 +121,15 @@ const festival_seni = () => {
                     {/* <p className="font-Montserrat text-white text-6xl font-bold mt-16 mobile:hidden">C<span className="text-[#E62C20]">O</span>MING S<span className="text-[#4A8068]">O</span><span className="text-[#9C4A9A]">O</span>N</p>
                     <img src={pattern1} alt="pattern1" className="w-auto mobile:hidden"/>
                     <img src={mobile5} alt="pattern1" className="w-auto mobile:block xl:hidden pt-2"/> */}
-                    {/* <Slider {... autoplay}>
-                        <>
+                    <Slider {... autoplay}>
+                        <div className="bg-green-300 border-8">
                         <div className="bg-green-300 w-[100px] h-[100px] hover:scale-110 duration-300 ease-out hover:bg-gray-300 flex justify-end flex-col">
                             <div className="flex flex-row justify-between">
                                 <p className="font-bold text-white pl-2 align-center">Nama</p>
                                 <div className="bg-white h-4 w-2/3 pl-2"/>
                             </div>
                         </div>
-                        </>
+                        </div>
                         <>
                         <div className="bg-[#818181] w-full h-full hover:scale-110 duration-300 ease-out hover:bg-gray-300 flex justify-end flex-col">
                             <div className="flex flex-row justify-between">
@@ -193,7 +170,7 @@ const festival_seni = () => {
                             </div>
                         </div>
                         </>
-                    </Slider> */}
+                    </Slider>
                     <>
                     <div id="carousel1" className="bg-black flex flex-row gap-2 h-[150px] w-screen">
                         <div className="bg-[#818181] w-full h-full hover:scale-110 duration-300 ease-out hover:bg-gray-300 flex justify-end flex-col">
@@ -277,8 +254,8 @@ const festival_seni = () => {
                 </div>
             </div>
              <div className="bg-[#3E3E3E] h-auto py-2">
-                <img src={background1} alt="background1" className="absolute w-auto pt-4"/>
-                <img src={btn} alt="button" className="relative block rounded-md mx-auto w-[300px] py-12 hover:scale-125 duration-300"/>
+                <img src={background1} alt="background1" className="absolute w-screen py-4 mobile:py-12 sm:py-12 md:py-8 xl:py-4"/>
+                <img src={btn} alt="button" className="relative block rounded-md mx-auto w-[300px] py-12 scale-125 hover:scale-150 duration-300"/>
             </div>
         </>
     );
