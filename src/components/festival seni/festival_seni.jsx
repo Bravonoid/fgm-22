@@ -41,7 +41,34 @@ const festival_seni = () => {
         autoplay: true,
         speed: 2000,
         autoplaySpeed: 2000,
-        cssEase: "linear"
+        cssEase: "linear",
+        initialSlide: 0,
+        responsive: [
+            {
+              breakpoint: 1024,
+              settings: {
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                infinite: true,
+                dots: true
+              }
+            },
+            {
+              breakpoint: 648,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2,
+                initialSlide: 2
+              }
+            },
+            {
+              breakpoint: 480,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+              }
+            }
+          ]
       };
     return (
         <>
@@ -101,7 +128,7 @@ const festival_seni = () => {
                     </Slider>
                 </div>
             </div>
-            <div className="bg-[#242424]">
+            <div className="bg-[#242424]" style={{backgroundImage: `url(${pattern})`}}>
                 <div className="items-center flex flex-col py-4 gap-2 relative mobile:-top-40 mobile:justify-center">
                     <img src={header} alt="header" className="w-auto mobile:hidden sm:hidden md:block"/>
                     <img src={mobile3} alt="header" className="w-screen mobile:block mobile:pt-12 mobile:pb-2 md:hidden"/>
@@ -114,64 +141,68 @@ const festival_seni = () => {
                     </div>
                 </div>
             </div>
-            <div className="h-[500px] bg-[#242424] mobile:h-[800px] sm:h-[700px] bg-cover" style={{backgroundImage: `url(${pattern})`}}>
-                <div className="items-center flex flex-col py-4 gap-2 top-10 justify-center relative mobile:top-0">
+            <div className="items-center flex flex-col py-4 gap-2 justify-center relative mobile:top-0 bg-[#242424]">
+                <img src={ukm1} alt="ukm header" className="w-auto mobile:hidden sm:hidden md:block md:mb-12 "/>
+                <img src={mobile4} alt="ukm header" className="w-screen mobile:block md:hidden"/>
+            </div>
+            <div className="h-[500px] bg-[#242424] mobile:h-[800px] sm:h-[600px] bg-cover" style={{backgroundImage: `url(${pattern})`}}>
+                <Slider {... autoplay} className="w-11/12 block mx-auto h-[400px] px-4">
+                        <div className="px-4">
+                        <div className="bg-[#818181] w-auto h-[300px] hover:scale-110 duration-300 ease-out hover:bg-gray-300 flex justify-end flex-col">
+                            <div className="flex flex-row justify-between">
+                                <p className="font-bold text-white pl-2 align-center">Nama</p>
+                                <div className="bg-white h-4 w-2/3 pl-2"/>
+                            </div>
+                        </div>
+                        </div>
+                        <div className="px-4">
+                        <div className="bg-[#818181] w-auto h-[300px] hover:scale-110 duration-300 ease-out hover:bg-gray-300 flex justify-end flex-col">
+                            <div className="flex flex-row justify-between">
+                                <p className="font-bold text-white pl-2 align-center">Nama</p>
+                                <div className="bg-white h-4 w-2/3 pl-2"/>
+                            </div>
+                        </div>
+                        </div>
+                        <div className="px-4">
+                        <div className="bg-[#818181] w-auto h-[300px] hover:scale-110 duration-300 ease-out hover:bg-gray-300 flex justify-end flex-col">
+                            <div className="flex flex-row justify-between">
+                                <p className="font-bold text-white pl-2 align-center">Nama</p>
+                                <div className="bg-white h-4 w-2/3 pl-2"/>
+                            </div>
+                        </div>
+                        </div>
+                        <div className="px-4">
+                        <div className="bg-[#818181] w-auto h-[300px] hover:scale-110 duration-300 ease-out hover:bg-gray-300 flex justify-end flex-col">
+                            <div className="flex flex-row justify-between">
+                                <p className="font-bold text-white pl-2 align-center">Nama</p>
+                                <div className="bg-white h-4 w-2/3 pl-2"/>
+                            </div>
+                        </div>
+                        </div>
+                        <div className="px-4">
+                        <div className="bg-[#818181] w-auto h-[300px] hover:scale-110 duration-300 ease-out hover:bg-gray-300 flex justify-end flex-col">
+                            <div className="flex flex-row justify-between">
+                                <p className="font-bold text-white pl-2 align-center">Nama</p>
+                                <div className="bg-white h-4 w-2/3 pl-2"/>
+                            </div>
+                        </div>
+                        </div>
+                        <div className="px-4">
+                        <div className="bg-[#818181] w-auto h-[300px] hover:scale-110 duration-300 ease-out hover:bg-gray-300 flex justify-end flex-col">
+                            <div className="flex flex-row justify-between">
+                                <p className="font-bold text-white pl-2 align-center">Nama</p>
+                                <div className="bg-white h-4 w-2/3 pl-2"/>
+                            </div>
+                        </div>
+                        </div>
+                    </Slider>
+                {/* <div className="items-center flex flex-col py-4 gap-2 top-10 justify-center relative mobile:top-0">
                     <img src={ukm1} alt="ukm header" className="w-auto mobile:hidden sm:hidden md:block md:mb-12"/>
                     <img src={mobile4} alt="ukm header" className="w-screen mobile:block md:hidden"/>
                     {/* <p className="font-Montserrat text-white text-6xl font-bold mt-16 mobile:hidden">C<span className="text-[#E62C20]">O</span>MING S<span className="text-[#4A8068]">O</span><span className="text-[#9C4A9A]">O</span>N</p>
                     <img src={pattern1} alt="pattern1" className="w-auto mobile:hidden"/>
                     <img src={mobile5} alt="pattern1" className="w-auto mobile:block xl:hidden pt-2"/> */}
-                    <Slider {... autoplay}>
-                        <div className="bg-green-300 border-8">
-                        <div className="bg-green-300 w-[100px] h-[100px] hover:scale-110 duration-300 ease-out hover:bg-gray-300 flex justify-end flex-col">
-                            <div className="flex flex-row justify-between">
-                                <p className="font-bold text-white pl-2 align-center">Nama</p>
-                                <div className="bg-white h-4 w-2/3 pl-2"/>
-                            </div>
-                        </div>
-                        </div>
-                        <>
-                        <div className="bg-[#818181] w-full h-full hover:scale-110 duration-300 ease-out hover:bg-gray-300 flex justify-end flex-col">
-                            <div className="flex flex-row justify-between">
-                                <p className="font-bold text-white pl-2 align-center">Nama</p>
-                                <div className="bg-white h-4 w-2/3 pl-2"/>
-                            </div>
-                        </div>
-                        </>
-                        <>
-                        <div className="bg-[#818181] w-full h-full hover:scale-110 duration-300 ease-out hover:bg-gray-300 flex justify-end flex-col">
-                            <div className="flex flex-row justify-between">
-                                <p className="font-bold text-white pl-2 align-center">Nama</p>
-                                <div className="bg-white h-4 w-2/3 pl-2"/>
-                            </div>
-                        </div>
-                        </>
-                        <>
-                        <div className="bg-[#818181] w-full h-full hover:scale-110 duration-300 ease-out hover:bg-gray-300 flex justify-end flex-col">
-                            <div className="flex flex-row justify-between">
-                                <p className="font-bold text-white pl-2 align-center">Nama</p>
-                                <div className="bg-white h-4 w-2/3 pl-2"/>
-                            </div>
-                        </div>
-                        </>
-                        <>
-                        <div className="bg-[#818181] w-full h-full hover:scale-110 duration-300 ease-out hover:bg-gray-300 flex justify-end flex-col">
-                            <div className="flex flex-row justify-between">
-                                <p className="font-bold text-white pl-2 align-center">Nama</p>
-                                <div className="bg-white h-4 w-2/3 pl-2"/>
-                            </div>
-                        </div>
-                        </>
-                        <>
-                        <div className="bg-[#818181] w-full h-full hover:scale-110 duration-300 ease-out hover:bg-gray-300 flex justify-end flex-col">
-                            <div className="flex flex-row justify-between">
-                                <p className="font-bold text-white pl-2 align-center">Nama</p>
-                                <div className="bg-white h-4 w-2/3 pl-2"/>
-                            </div>
-                        </div>
-                        </>
-                    </Slider>
-                    <>
+                    {/* <>
                     <div id="carousel1" className="bg-black flex flex-row gap-2 h-[150px] w-screen">
                         <div className="bg-[#818181] w-full h-full hover:scale-110 duration-300 ease-out hover:bg-gray-300 flex justify-end flex-col">
                             <div className="flex flex-row justify-between">
@@ -251,7 +282,7 @@ const festival_seni = () => {
                         </div>
                     </div>
                     </>
-                </div>
+                </div> */}
             </div>
              <div className="bg-[#3E3E3E] h-auto py-2">
                 <img src={background1} alt="background1" className="absolute w-screen py-4 mobile:py-12 sm:py-12 md:py-8 xl:py-4"/>

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Modal from "./Modal";
-import productData from "../../../assets/data/tenants/data.json";
+import productData from "../../../../data/data.json";
 import Image from "next/image";
 import { useRouter } from "next/router";
 import { Header, produk as data } from "../../../../components/settings";
