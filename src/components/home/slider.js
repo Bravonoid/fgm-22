@@ -83,8 +83,8 @@ const Sllider = () => {
     {DataTanggalEvent.map((item) =>(
     <div className='card text-white mx-5'>
         <div className='card-top justify-center items-center '>
-            <div className='bg-[#242424] justify-between flex-col flex items-start p-1 text-left mx-auto sm:h-72  h-[16rem] w-[16rem] sm:w-72'>
-                <h1 className='text-2xl sm:text-4xl my-2 mx-2 sm:mx-4 font-bold  '>
+            <div className='bg-[#242424] justify-between flex-col flex items-start p-1 text-left mx-auto sm:h-72  h-[15rem] w-[13rem] sm:w-72'>
+                <h1 className='text-xl sm:text-4xl my-2 mx-2 sm:mx-4 font-bold  '>
                     {item.title}
                     <ul className='top-0  relative flex  h-1 w-full'>
                       <li className=' bg-fgm-merah-orange w-1/3'></li>
