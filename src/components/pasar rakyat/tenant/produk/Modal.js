@@ -1,14 +1,23 @@
 import React, { Component } from "react";
-import Image from "next/image";
-
+import block1 from "../../../../assets/Pasar-Rakyat/produk/block1.svg";
+import block2 from "../../../../assets/Pasar-Rakyat/produk/block2.svg";
 export default class Modal extends Component {
   render() {
     return (
       <>
-        <div className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none pt-64 md:pt-10 pb-3">
+        <div className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none pt-64 md:pt-10 pb-6">
           <div className="relative w-96 md:w-auto my-2 mx-auto max-w-xl md:max-w-4xl m-8">
-            <div className="border-0 shadow-lg relative w-auto bg-white outline-none focus:outline-none mx-4 md:mx-2 px-4 md:px-16 rounded-3xl">
-              <div className="flex justify-center text-center items-center text-3xl font-bold py-8">
+            <div className="border-0 shadow-lg relative w-auto bg-white outline-none focus:outline-none mx-4 md:mx-2 px-4 md:px-16">
+            <img src={block1} alt="block" className="absolute left-0 top-0 z-0"/>
+            <img src={block2} alt="block" className="absolute bottom-0 right-0 z-0"/>
+            <button
+                  className="absolute right-0 top-0 scale-150 text-red-500 background-transparent font-bold uppercase px-6 py-2 text-sm outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+                  type="button"
+                  onClick={this.props.hide}
+                >
+                  X
+                </button>
+              <div className="flex justify-center text-center items-center text-3xl font-bold py-8 z-50 relative">
                 {this.props.newProductName}
               </div>
               <div className="md:flex">
@@ -16,8 +25,8 @@ export default class Modal extends Component {
                   <div className="text-center items-center justify-center px-5 border-b border-solid border-blueGray-200 rounded-t">
                     <div className="flex items-center justify-center content-center">
                       <div className="lg:w-64 md:w-60 w-44">
-                        <Image
-                          className="rounded-2xl object-cover"
+                        <img
+                          className="object-cover mb-8 z-50 relative"
                           alt={this.props.newProductName}
                           src={
                             "/data/tenant/" +
@@ -86,32 +95,6 @@ export default class Modal extends Component {
                     </div>
                   </div>
                 </div>
-              </div>
-              <div className="flex items-center justify-end p-6 border-t border-solid border-blueGray-200 rounded-b">
-                <button
-                  className="text-red-500 background-transparent font-bold uppercase px-6 py-2 text-sm outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
-                  type="button"
-                  onClick={this.props.hide}
-                >
-                  Close
-                </button>
-                <a
-                  href={
-                    this.props.newPembayaran +
-                    "?text=Halo!%20" +
-                    this.props.newTenantName +
-                    ",%20saya%20ingin%20membeli%20" +
-                    this.props.newProductName +
-                    "%20apakah%20masih+ada?%0aBagaimana%20caranya?"
-                  }
-                >
-                  <button
-                    type="button"
-                    className="bg-red-500 text-white active:bg-red-500 font-bold uppercase text-sm px-6 py-3 rounded-full shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
-                  >
-                    Beli
-                  </button>
-                </a>
               </div>
             </div>
           </div>
