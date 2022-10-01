@@ -11,7 +11,7 @@ export default class Modal extends Component {
             <img src={block1} alt="block" className="absolute left-0 top-0 z-0"/>
             <img src={block2} alt="block" className="absolute bottom-0 right-0 z-0"/>
             <button
-                  className="absolute right-0 top-0 scale-150 text-red-500 background-transparent font-bold uppercase px-6 py-2 text-sm outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+                  className="absolute right-0 top-0 scale-150 text-red-500 background-transparent font-bold uppercase px-4 py-2 text-sm outline-none focus:outline-none ease-linear transition-all duration-150"
                   type="button"
                   onClick={this.props.hide}
                 >

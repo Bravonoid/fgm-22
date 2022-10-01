@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from "react";
+import React, {useState, useRouter} from "react";
 import { faInstagram, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import kembangputih1 from "../../../../assets/Pasar-Rakyat/produk/kembangputih1.svg";
@@ -10,47 +10,10 @@ import produk2 from "../../../../assets/Pasar-Rakyat/produk/produk2.svg";
 import hiasan from "../../../../assets/Pasar-Rakyat/produk/hiasan-kanan-pageproduk.svg";
 import productData from "../../../../assets/data/tenants/data.json";
 import Modal from "./Modal.js";
-import Tenant from "./mapProduk.jsx";
 
 const Pasar_rakyat = () => {
-  const [number,setNumber] = useState("1");
-    const data = require("../../../../assets/data/tenants/data.json");
-    const [categoryName,setCategoryName] = useState("test");
-    const [tenantLists,setTenantLists] = useState([]);
-    useEffect(() => {
-        switch (number) {
-          case "1":
-            setCategoryName("Fashion")
-            break;
-          case "2":
-            setCategoryName( "Aksesoris");
-            break;
-          case "3":
-            setCategoryName("Kain")
-            break;
-          case "4":
-            setCategoryName("Food and Beverages")
-            break;
-        }
-        console.log(number)
-          const tenantList = data.filter((tenant) => {
-            if (tenant.category.toString() === number) {
-              return tenant;
-            } else if (tenant.category2 && tenant.category2.toString() === number) {
-              tenant.category = tenant.category2;
-              return tenant;
-            }
-          });
-  console.log(data)
-  setTenantLists(tenantList)
-  if (!tenantList){                     
-    return {
-      notFound: true,
-    };
-  }
-}, [number]);
-console.log(tenantLists)
-    const [showModal, setShowModal] = useState(false);
+  const [number,setNumber] = useState(18);
+  const [showModal, setShowModal] = useState(false);
   const [showModalData, setShowModalData] = useState([]);
   const modalData = (
     newName,
@@ -82,9 +45,10 @@ console.log(tenantLists)
     return (
         <>
         {productData.map((dataTenant) => {
+            if(dataTenant.id_tenant == number){
             return (
                 <>
-                <div className="bg-[#171717] h-[825px]">
+                <div className="bg-[#171717] h-[825px] mobile:h-auto">
                 <p className="text-white font-bold text-xs pt-24 pl-10">&#9664; Kategori</p>
                 <div className=" pl-16 flex flex-row gap-12 relative top-20 mobile:flex-col mobile:px-8 mobile:top-0 mobile:pt-8">
                     <img
@@ -212,7 +176,7 @@ console.log(tenantLists)
                         </div>
                     </div>
                 </div>
-                <img src={hiasan} alt="hiasan" className="absolute right-0 bottom-0 top-auto w-1/2 mobile:hidden"/>
+                <img src={hiasan} alt="hiasan" className="absolute right-0 xl:bottom-0 top-auto w-1/2 mobile:hidden sm:hidden lg:block lg:bottom-24"/>
             </div>
             <div className="block bg-[#202020] bg-cover" style={{backgroundImage: `url(${pattern}`}}>
                 <div className="relative pt-20 mx-auto flex justify-center items-center w-full text-left text-white">
@@ -221,10 +185,7 @@ console.log(tenantLists)
                     <img src={produk} alt="kembangputih" className="relative h-16 mx-auto"/>
                     <img src={kembangputih2} alt="kembangputih" className="hidden sm:block relative h-16 ml-10 mx-auto"/> */}
                 </div>
-                <div className="flex flex-row justify-between gap-x-4 my-20">
-                    <Tenant></Tenant>
-                </div>
-                <div className="flex flex-row flex-wrap justify-center gap-y-4 ">
+                <div className="flex flex-row flex-wrap justify-center gap-y-4 pt-8 ">
                 {dataTenant.product.map((product, product_index) => {
                     return (
                         <>
@@ -282,7 +243,9 @@ console.log(tenantLists)
                 <button className="p-4 bg-[#EEEEEE] text-[#171717] font-Montserrat text-center font-bold m-4 hover:bg-[#171717] hover:text-[#EEEEEE]">PREORDER DISINI</button></a>
             </div>
             </>
+            
             );
+            }
         })}
         {showModal === true ? (
         <Modal
@@ -301,7 +264,8 @@ console.log(tenantLists)
       ) : (
         ""
       )}
-        </>
+      </>
     )
+    
 }
 export default Pasar_rakyat;
