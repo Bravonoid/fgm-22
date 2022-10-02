@@ -79,9 +79,16 @@ const Navbar = () => {
 						Festival Seni
 					</li>
 				</Link>
-				<li className="w-28 cursor-pointer p-6 text-center hover:animate-fade hover:bg-pattern hover:bg-cover hover:bg-center hover:font-bold">
-					Tiket
-				</li>
+				<Link to="/tiket">
+					<li
+						onClick={() => {
+							window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+						}}
+						className="w-[8.5rem] cursor-pointer py-5 text-center hover:animate-fade hover:bg-pattern hover:bg-cover hover:bg-center hover:font-bold"
+					>
+						Tiket
+					</li>
+				</Link>
 			</ul>
 			<div className=" my-auto items-center sm:block xl:hidden mobile:block">
 				<div className="mb-0 px-10 outline-none">

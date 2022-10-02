@@ -8,7 +8,7 @@ export default function ItemTenant(props) {
   console.log(src)
   return (
     <a
-      className="flex flex-col items-center border sm:border-2 shadow  bg-white  hover:scale-110 duration-300 ease-out overflow-hidden"
+      className="flex flex-col items-center border sm:border-2 shadow  bg-white   duration-300 ease-out overflow-hidden"
       href={`/pasar-rakyat/tenant/produk/${props.itemData.id_tenant}`}
     >
       <img

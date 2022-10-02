@@ -3,6 +3,7 @@ import { useState,useEffect } from 'react'
 import MapTenant from './mapTenant'
 import Foto from './Foto'
 import Polygon from '../../../assets/Pasar-Rakyat/Polygon 1.svg'
+import { Link } from 'react-router-dom'
 
 const Tenant = () => {
   const [teater, setTeater] = useState(true);
@@ -81,11 +82,12 @@ const Tenant = () => {
       <div className='grid  py-16 bg-fgm-base  justify-between  xl:flex'>
       <div className='text-start order-first xl:order-first p-5 items-start z-100  '>
          <ul className=' hidden xl:inline-block justify-center items-center xl:m-8 gap-2 xl:text-3xl text-white text-lg sm:text-lg '>
+         <Link to="/pasar-rakyat">
          <li onClick={handleTeater} className={' font-bold py-16 px-6 text-3xl cursor-pointer transition-colors  ease-in-out duration-200  '}>
           <img className='h-7 inline-block mr-5' src={Polygon}>
           </img>
           Pasar Rakyat</li>
-
+          </Link>
            <li onClick={handleTeater} className={number === "1" ?'  py-16 px-6 font-semibold bg-fgm-merah-orange transition-colors  ease-in-out duration-200 border-2 border-black ':"font-semibold px-6 border-[1px] border-black ease-in-out duration-200    py-8 bg-gray-500 cursor-pointer"}>HASIL KARYA SENI</li>
            <li onClick={handleTrailer} className={number === "2"?'  py-16 px-6 font-semibold bg-fgm-merah-orange  transition-colors ease-in-out duration-200 border-2  border-black':"font-semibold px-6 border-[1px] border-black ease-in-out duration-200  bg-gray-500 py-8 cursor-pointer"}>KECANTIKAN</li>  
            <li onClick={handleSinopsis} className={number === "3"?' py-16 px-8 font-semibold bg-fgm-merah-orange transition-colors ease-in-out duration-200 border-2 border-black ':" font-semibold px-6 border-[1px] border-black ease-in-out duration-200       py-8 bg-gray-500 cursor-pointer"}>MAKANAN DAN MINUMAN</li>

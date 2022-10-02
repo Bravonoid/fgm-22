@@ -11,6 +11,7 @@ import Trailer from './trailer';
 import Sinopsis from './Sinopsis'
 import Pemeran from './Pemeran'
 import Judul_teater from '../../assets/teater/judul teater.svg'
+import { Link } from 'react-router-dom';
 
 
 
@@ -116,7 +117,7 @@ Pementasan ini mengangkat tema keberagaman budaya Nusantara yang akan digambarka
                
                 </div>
                 </>
-       ))}
+       ))} 
     </Slider>
 
    
@@ -134,8 +135,9 @@ Pementasan ini mengangkat tema keberagaman budaya Nusantara yang akan digambarka
 
 
         <li onClick={handleSinopsis} className={sinopsis?' font-bold ':" hover:font-bold cursor-pointer"}>SINOPSIS</li>
-
+        <Link to="/tiket">
         <li>TIKET</li>
+        </Link>
 
       </ul>
       

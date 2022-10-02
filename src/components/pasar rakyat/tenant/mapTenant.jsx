@@ -15,20 +15,23 @@ const Tenant = ({tenantList,categoryName}) => {
   console.log(tenantList)
 
 
-  const handle = () =>{  tenantList = tenantList.sort((a,b)=> {
-    var a1 = a.tenantName.toLowerCase();
-    var b1 = b.tenantName.toLowerCase();
-    return a1<b1 ?-1:a1> b1? 1 :0;
-    })
-    console.log(tenantList);}
-    console.log(tenantList)
+
   let listItem;
   if (tenantList) {
     listItem = tenantList.filter((item) => {
       const regex = new RegExp(searchValue, "gi");
       return regex.test(item.tenantName);
     });
-  }
+  } 
+  console.log(listItem)
+   const handle = () =>{  listItem = tenantList.sort((a,b)=> {
+    var a1 = a.tenantName.toLowerCase();
+    var b1 = b.tenantName.toLowerCase();
+    return a1<b1 ?-1:a1> b1? 1 :0;
+    })
+    setSorting(true)
+    console.log(listItem);}
+    console.log(listItem)
 
   function searchHandler(event) {
     setSearchValue(event.target.value);
@@ -48,7 +51,7 @@ const Tenant = ({tenantList,categoryName}) => {
       <h2 className="my-8 text-4xl font-bold text-center text-white">
         {categoryName}
       </h2>
-      <form className="2xl:w-1/4 xl:w-1/3 lg:w-1/2 w-4/5 h-12">
+      <form className="2xl:w-1/4 xl:w-1/3 lg:w-1/2 w-4/5 flex h-12">
         <input
           id="search-tenant"
           className="bg-fgmGray  focus:outline-none focus:ring-2 focus:ring-fgmRed w-full h-full px-8 text-fgmBlack"
@@ -56,7 +59,7 @@ const Tenant = ({tenantList,categoryName}) => {
           value={searchValue}
           onChange={searchHandler}
         ></input>
-        <button type='button' onClick={handle}>
+        <button type='button' className='bg-gray-500' onClick={handle}>
           sorting
         </button>
       </form>
