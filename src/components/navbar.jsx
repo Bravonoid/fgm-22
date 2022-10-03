@@ -69,7 +69,7 @@ const Navbar = () => {
 						Pasar Rakyat
 					</li>
 				</Link>
-				<Link to="/festival">
+				<Link to="/festivalseni">
 					<li
 						onClick={() => {
 							window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
