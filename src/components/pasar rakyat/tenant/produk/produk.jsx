@@ -11,10 +11,12 @@ import hiasan from "../../../../assets/Pasar-Rakyat/produk/hiasan-kanan-pageprod
 import productData from "../../../../assets/data/tenants/data.json";
 import Modal from "./Modal.js";
 
-const Pasar_rakyat = () => {
-  const [number,setNumber] = useState(18);
+const Pasar_rakyat = ({tenantList,categoryName}) => {
+  const [number,setNumber] = useState(1);
   const [showModal, setShowModal] = useState(false);
   const [showModalData, setShowModalData] = useState([]);
+  const[sorting,setSorting] = useState(false);
+  const [searchValue, setSearchValue] = useState("");
   const modalData = (
     newName,
     newImages,
@@ -42,6 +44,27 @@ const Pasar_rakyat = () => {
     setShowModalData((product) => [1,...showModalData]);
     return setShowModal(true);
   };
+  console.log(tenantList)
+  let listItem;
+  if (tenantList) {
+    listItem = tenantList.filter((item) => {
+      const regex = new RegExp(searchValue, "gi");
+      return regex.test(item.tenantName);
+    });
+  } 
+  console.log(listItem)
+   const handle = () =>{  listItem = tenantList.sort((a,b)=> {
+    var a1 = a.tenantName.toLowerCase();
+    var b1 = b.tenantName.toLowerCase();
+    return a1<b1 ?-1:a1> b1? 1 :0;
+    })
+    setSorting(true)
+    console.log(listItem);}
+    console.log(listItem)
+
+  function searchHandler(event) {
+    setSearchValue(event.target.value);
+  }
     return (
         <>
         {productData.map((dataTenant) => {
@@ -185,6 +208,18 @@ const Pasar_rakyat = () => {
                     <img src={produk} alt="kembangputih" className="relative h-16 mx-auto"/>
                     <img src={kembangputih2} alt="kembangputih" className="hidden sm:block relative h-16 ml-10 mx-auto"/> */}
                 </div>
+                <form className="2xl:w-1/4 xl:w-1/3 lg:w-1/2 w-4/5 flex h-12 mx-auto">
+                  <input
+                    id="search-tenant"
+                    className="bg-fgmGray  focus:outline-none focus:ring-2 focus:ring-fgmRed w-full h-full px-8 text-fgmBlack"
+                    placeholder="Nama Tenant"
+                    value={searchValue}
+                    onChange={searchHandler}
+                  ></input>
+                  <button type='button' className='bg-gray-500' onClick={handle}>
+                    sorting
+                  </button>
+              </form>
                 <div className="flex flex-row flex-wrap justify-center gap-y-4 pt-8 ">
                 {dataTenant.product.map((product, product_index) => {
                     return (
