@@ -11,6 +11,7 @@ import Produk from "./components/pasar rakyat/tenant/produk/produk";
 import Tenant from "./components/pasar rakyat/tenant/tenant.jsx";
 import Tiket from "./pages/Tiket";
 import PasarRakyat from "./pages/PasarRakyat";
+import NotFound from "./pages/NotFound";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
         <Route path="/tenants" element={<Tenant />} />
         <Route path="/tiket" element={<Tiket />} />
         <Route path="/pasar-rakyat" element={<PasarRakyat />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
 
       <Footer />
