@@ -8,7 +8,7 @@ const Harapan = () => {
     <>
       <div className="flex w-full bg-[#171717] md:pb-10 xl:pb-0 mobile:pt-1">
         <img src={BackgroundKembangKiri} className="hidden xl:flex" alt="" />
-        <div className="container mx-auto xl:w-2/3 xl:px-32 xl:pt-5">
+        <div className="container mx-auto px-10 xl:w-2/3 xl:px-32 xl:pt-5">
           <h1 className="text-weight-700 mt-10 text-center text-3xl font-bold text-white">
             <span className="bg-[#242424] px-10">HARAPAN</span>
           </h1>
@@ -17,7 +17,7 @@ const Harapan = () => {
             menjadi <span className="font-bold">simbol kebijaksanaan</span> dan{" "}
             <span className="font-bold">kekuatan</span> masyarakat dalam
             mempertahankan <span className="font-bold">keselarasan</span> dalam
-            kediversitasan budaya di Nusantara
+            kediversitasan budaya di Nusantara.
           </h2>
         </div>
         <img src={BackgroundKembangKanan} className="hidden xl:flex" alt="" />

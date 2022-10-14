@@ -7,9 +7,9 @@ import TextFGM from "../../assets/tentang/text-fgm.svg";
 
 const Tentang = () => {
   return (
-    <div className="items-center bg-[#171717] pb-[8rem] md:pb-[10rem] xl:pb-[20rem] lg:pb-[15rem]">
-      <div className="relative sm:top-24 sm:-right-4 sm:mx-auto sm:grid sm:grid-cols-3 lg:top-24 xl:top-48 mobile:top-0 mobile:flex mobile:flex-col">
-        <div className="col-span-1 mt-8 flex items-center justify-center lg:mt-12 mobile:mt-32">
+    <div className="items-center bg-[#171717] py-36 md:py-28">
+      <div className="relative sm:mx-auto sm:grid sm:grid-cols-3 mobile:flex mobile:flex-col">
+        <div className="col-span-1 flex items-center justify-center">
           <img
             src={Logo}
             className="sm:scale-[175%] lg:scale-[225%] mobile:scale-125"
@@ -19,7 +19,7 @@ const Tentang = () => {
         <div className="items-left relative col-span-2 mx-10 mr-24 text-left text-white sm:my-5 xl:w-3/4 mobile:mx-10 mobile:mt-12 mobile:text-base">
           <img src={KembangLogo} className="" alt="tema-besar" />
           <img src={TextFGM} className="mt-3" alt="tema-besar" />
-          <p className="mt-5 mb-5 hidden text-justify text-lg sm:flex mobile:text-base">
+          <p className="mt-5 mb-5 hidden text-justify text-lg xl:text-xl sm:flex mobile:text-base">
             Festival Gadjah Mada atau FGM merupakan sebuah acara apresiasi seni
             tahunan yang diselenggarakan di bawah kepengurusan BEM KM UGM yang
             diprakarsai oleh Kementerian Kreasi BEM KM UGM. Festival Gadjah Mada
@@ -57,16 +57,16 @@ const Tentang = () => {
           </a>
         </div>
       </div>
-      <div className="-top-4 relative">
+      <div className="bottom-48 relative">
         <img
           src={KembangLogoBawah}
-          className="absolute right-0 hidden scale-75 overflow-hidden md:mr-[-2rem] lg:right-0 xl:mr-[0.5rem] lg:block xl:scale-[105%]"
+          className="absolute -right-10 xl:-right-0 hidden scale-75 overflow-hidden lg:block xl:scale-[105%]"
           alt="tema-besar"
         />
       </div>
       <img
         src={KembangLogoBawahMobile}
-        className="absolute right-0 mt-10 sm:mt-[6rem] lg:hidden"
+        className="absolute right-0 mt-10 lg:hidden"
         alt="tema-besar"
       />
     </div>
