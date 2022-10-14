@@ -10,21 +10,19 @@ import Tentang from "../tentang/Tentang";
 
 const tentang = () => {
   return (
-    <div className="items-center bg-[#1E1E1E]">
+    <div className="relative items-center bg-[#1E1E1E] md:pt-32 xl:pt-48 pb-16">
       <img
         src={gunungan}
-        className="absolute sm:h-3/4 md:w-1/4 lg:w-1/5 xl:w-1/6 xl:scale-[2] mobile:top-80 mobile:w-2/5"
+        className="absolute sm:h-3/4 md:w-1/4 lg:w-1/5 xl:w-1/6 xl:scale-[2] mobile:top-12 mobile:w-2/5"
         alt="gunungan"
       ></img>
-      <div className="absolute overflow-hidden pt-[2rem] sm:right-4 sm:w-11/12 xl:-right-0 xl:scale-75">
+      <div className="relative sm:mx-auto sm:grid sm:grid-cols-2 mobile:flex mobile:flex-col-reverse">
         <img
-          className="mobile:hidden "
+          className="absolute -top-8 md:-top-16 lg:-top-28 -right-32 w-full xl:-right-40 scale-y-75 z-[60] mobile:hidden"
           src={mozaik_horizontal}
           alt="mozaik"
         ></img>
-      </div>
-      <div className="relative sm:top-32 sm:-right-8 sm:mx-auto sm:grid sm:grid-cols-2 xl:-right-40 xl:top-[11rem] xl:ml-[50px] mobile:flex mobile:flex-col-reverse pb-32">
-        <div className="relative items-end text-left text-white sm:-top-10 sm:my-5 sm:mb-[100px] xl:-top-10 xl:w-4/5 mobile:top-16 mobile:mx-10 mobile:text-sm">
+        <div className="relative items-end text-left text-white mobile:text-sm mx-10 sm:ml-24 xl:ml-40 sm:w-[105%]">
           <div className="font-black sm:text-3xl md:text-4xl lg:text-5xl xl:mb-5 xl:text-5xl">
             {/* <img className='w-full' src={mozaik_horizontal} alt="mozaik"></img> */}
 
@@ -69,8 +67,13 @@ const tentang = () => {
             </button>
           </Link>
         </div>
+        {/* <img
+          className="relative items-center mx-auto justify-center text-left text-white sm:top-1 sm:left-20 sm:w-1/2 md:-top-0.5 lg:left-32 lg:w-2/5 xl:-top-20 xl:mb-1 xl:w-2/6 mobile:top-10 mobile:mx-auto mobile:w-1/4"
+          src={Logo}
+          alt="logo"
+        ></img> */}
         <img
-          className="relative items-center justify-center text-left text-white sm:top-1 sm:left-20 sm:w-1/2 md:-top-0.5 lg:left-32 lg:w-2/5 xl:-top-20 xl:mb-1 xl:w-2/6 mobile:top-10 mobile:mx-auto mobile:w-1/4"
+          className="transform sm:translate-x-16 m-auto items-center justify-center text-left text-white pb-12 w-[35%]"
           src={Logo}
           alt="logo"
         ></img>
