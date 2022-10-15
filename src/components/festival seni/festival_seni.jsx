@@ -12,6 +12,9 @@ import pattern from "../../assets/festival-seni/background_pattern.svg";
 import header from "../../assets/festival-seni/bintang_header.svg";
 import olski_photo from "../../assets/festival-seni/olski.svg";
 import guyon_waton_photo from "../../assets/festival-seni/guyon_waton.svg";
+import smash from "../../assets/festival-seni/smash.svg";
+import project_pop from "../../assets/festival-seni/project_pop.svg";
+import the_overtunes from "../../assets/festival-seni/the_overtunes.svg";
 import ask from "../../assets/festival-seni/ask_me.svg";
 import ukm1 from "../../assets/festival-seni/unit.svg";
 import ungu from "../../assets/festival-seni/kembang_ungu.svg";
@@ -73,7 +76,7 @@ const festival_seni = () => {
       };
     return (
         <>
-            <div id="content1" className="h-[500px] bg-cover mobile:bg-auto pt-16 mobile:h-[700px] mobile:bg-festival_mobile md:bg-festival_md">
+            <div id="content1" className="h-[500px] bg-cover mobile:bg-cover pt-16 mobile:h-[700px]  md:bg-festival_md mobile:bg-festival_mobile">
                 <div className="top-10 mt-12 mobile:relative sm:w-[475px]">
                     <div className="bg-[#202020] h-auto py-4 sm:w-[475px] sm:pl-20 text-[#FFFFFF] mobile:w-4/5 mobile:pl-4">
                         <img src={festivalseni} alt="festivalseni" className="w-[300px] mobile:w-4/5"></img>
@@ -136,9 +139,9 @@ const festival_seni = () => {
                     <div className="flex md:flex-row gap-2 w-auto mobile:flex-col sm:flex-col md:mt-12 md:flex-wrap md:justify-center">
                         <img src={olski_photo} alt="olski_photo" className="w-auto"/>
                         <img src={guyon_waton_photo} alt="olski_photo" className="w-auto"/>
-                        <img src={ask} alt="ask" className="w-auto"/>
-                        <img src={ask} alt="ask" className="w-auto"/>
-                        <img src={ask} alt="ask" className="w-auto"/>
+                        <img src={the_overtunes} alt="the overtunes" className="w-auto"/>
+                        <img src={smash} alt="smash" className="w-auto"/>
+                        <img src={project_pop} alt="project pop" className="w-auto"/>
                     </div>
                 </div>
             </div>
@@ -147,7 +150,7 @@ const festival_seni = () => {
                 <img src={mobile4} alt="ukm header" className="w-screen mobile:block md:hidden"/>
             </div>
             <div className="h-[500px] bg-[#242424] mobile:h-[800px] sm:h-[600px] bg-cover" style={{backgroundImage: `url(${pattern})`}}>
-                <Slider {... autoplay} className="w-11/12 block mx-auto h-[400px] px-4">
+                {/* <Slider {... autoplay} className="w-11/12 block mx-auto h-[400px] px-4 mobile:w-5/6">
                         <div className="px-4">
                         <div className="bg-[#818181] w-auto h-[300px] hover:scale-110 duration-300 ease-out hover:bg-gray-300 flex justify-end flex-col">
                             <div className="flex flex-row justify-between">
@@ -196,14 +199,14 @@ const festival_seni = () => {
                             </div>
                         </div>
                         </div>
-                    </Slider>
-                {/* <div className="items-center flex flex-col py-4 gap-2 top-10 justify-center relative mobile:top-0">
-                    <img src={ukm1} alt="ukm header" className="w-auto mobile:hidden sm:hidden md:block md:mb-12"/>
-                    <img src={mobile4} alt="ukm header" className="w-screen mobile:block md:hidden"/>
-                    {/* <p className="font-Montserrat text-white text-6xl font-bold mt-16 mobile:hidden">C<span className="text-[#E62C20]">O</span>MING S<span className="text-[#4A8068]">O</span><span className="text-[#9C4A9A]">O</span>N</p>
+                    </Slider> */}
+                <div className="items-center flex flex-col py-4 gap-2 top-10 justify-center relative mobile:top-0">
+                    {/* <img src={ukm1} alt="ukm header" className="w-auto mobile:hidden sm:hidden md:block md:mb-12"/>
+                    <img src={mobile4} alt="ukm header" className="w-screen mobile:block md:hidden"/> */}
+                    <p className="font-Montserrat text-white text-6xl font-bold mt-16 mobile:hidden">C<span className="text-[#E62C20]">O</span>MING S<span className="text-[#4A8068]">O</span><span className="text-[#9C4A9A]">O</span>N</p>
                     <img src={pattern1} alt="pattern1" className="w-auto mobile:hidden"/>
-                    <img src={mobile5} alt="pattern1" className="w-auto mobile:block xl:hidden pt-2"/> */}
-                    {/* <>
+                    <img src={mobile5} alt="pattern1" className="w-auto mobile:block xl:hidden pt-2"/>
+                     {/* <>
                     <div id="carousel1" className="bg-black flex flex-row gap-2 h-[150px] w-screen">
                         <div className="bg-[#818181] w-full h-full hover:scale-110 duration-300 ease-out hover:bg-gray-300 flex justify-end flex-col">
                             <div className="flex flex-row justify-between">
@@ -282,15 +285,15 @@ const festival_seni = () => {
                             </div>
                         </div>
                     </div>
-                    </>
-                </div> */}
+                    </> */}
+                </div>
             </div>
              <div className="bg-[#3E3E3E] h-auto py-2 bg-cover" style={{backgroundImage: `url(${background1})`}}>
                 
                 <Link to="/tiket" onClick={() => {
                     window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
                   }}>
-                    <img src={btn} alt="button" className="relative block rounded-md mx-auto my-12 w-[300px] scale-125 hover:scale-150 duration-300 transition-all ease-out  hover:translate-y-1 hover:shadow-[9px_9px_0_rgb(255,255,255)]"/>
+                    <img src={btn} alt="button" className="relative block rounded-md mx-auto my-12 w-[300px] scale-125 hover:scale-150 mobile:scale-100 duration-300 transition-all ease-out  hover:translate-y-1 hover:shadow-[9px_9px_0_rgb(255,255,255)]"/>
                 </Link>
             </div>
         </>
