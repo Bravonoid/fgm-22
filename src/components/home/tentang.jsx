@@ -10,7 +10,7 @@ import Tentang from "../tentang/Tentang";
 
 const tentang = () => {
   return (
-    <div className="relative items-center bg-[#1E1E1E] md:pt-32 xl:pt-48 pb-16">
+    <div className="relative items-center bg-[#1E1E1E] md:pt-32 xl:pt-48 pb-16 pt-16">
       <img
         src={gunungan}
         className="absolute sm:h-3/4 md:w-1/4 lg:w-1/5 xl:w-1/6 xl:scale-[2] mobile:top-12 mobile:w-2/5"
@@ -50,7 +50,7 @@ const tentang = () => {
               ></img> */}
             </div>
           </div>
-          <div className="text-justify sm:text-base xl:text-2xl">
+          <div className="text-justify sm:text-base xl:text-3xl">
             Festival Gadjah Mada merupakan sebuah festival yang menyajikan
             kreasi budaya dan seni tradisional melalui pengemasan yang modern.
             Pada tahun ini Festival Gadjah Mada akan menyemarakan rangkaian
