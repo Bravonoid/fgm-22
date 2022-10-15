@@ -130,11 +130,11 @@ Pementasan ini mengangkat tema keberagaman budaya Nusantara yang akan digambarka
     
     <div className='text-start order-first  bg-fgm-base-terang md:order-last p-5 items-start z-100  '>
       <ul className='flex md:inline-block text-white justify-center items-center md:m-8 gap-2 md:text-3xl  text-lg sm:text-lg '>
-        <li onClick={handleTeater} className={teater?' font-bold ':" hover:font-bold cursor-pointer"}>TEATER</li>
-        <li onClick={handleTrailer} className={trailer?' font-bold ':" hover:font-bold cursor-pointer"}>TRAILER</li>
+        <li onClick={handleTeater} className={teater?' font-bold cursor-default ':" hover:font-bold cursor-pointer"}>TEATER</li>
+        <li onClick={handleTrailer} className={trailer?' font-bold  cursor-default ':" hover:font-bold cursor-pointer"}>TRAILER</li>
 
 
-        <li onClick={handleSinopsis} className={sinopsis?' font-bold ':" hover:font-bold cursor-pointer"}>SINOPSIS</li>
+        <li onClick={handleSinopsis} className={sinopsis?' font-bold   cursor-default':" hover:font-bold cursor-pointer"}>SINOPSIS</li>
         <Link to="/tiket">
         <li>TIKET</li>
         </Link>

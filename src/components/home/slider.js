@@ -39,13 +39,15 @@ const Sllider = () => {
 
 
   var settings = {
-    focusOnSelect: true,
-    dots: false,
-    
-    infinite: false,
-    speed: 500,
-    slidesToShow: 3,
-    slidesToScroll: 1,
+    dots: true,
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplay:true,
+        speed: 2000,
+        autoplaySpeed: 3000,
+        cssEase: "linear",
+        dots: false,
     initialSlide: 0,
     responsive: [
       {
@@ -62,12 +64,16 @@ const Sllider = () => {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
-          initialSlide: 0
+          initialSlide: 0,
+          infinite: true,
+
         }
       },
       {
         breakpoint: 480,
         settings: {
+          infinite: true,
+
           slidesToShow: 1,
           slidesToScroll: 1
         }
@@ -97,8 +103,8 @@ const Sllider = () => {
                
                 <div className='relative my-5 mx-1 sm:mx-5 '>
          
-                <p className=' items-start  py-2'> <FontAwesomeIcon icon={faLocationDot} size='2x' color='white' className='h-5 lg:h-6   mx-2 text-center transition-all'></FontAwesomeIcon>  {item.lokasi}</p>
-                <p className='items-start py-2'><FontAwesomeIcon icon={faCalendar} size='2x' color='white' className='h-5 lg:h-6  mx-2  transition-all'></FontAwesomeIcon>{item.tanggal}</p>
+                <p className=' items-center text-sm  align-center my-2'> <FontAwesomeIcon icon={faLocationDot} size='2x' color='white' className='h-5 lg:h-6   mx-2 text-center transition-all'></FontAwesomeIcon>  {item.lokasi}</p>
+                <p className='items-start align-center text-sm py-2'><FontAwesomeIcon icon={faCalendar} size='2x' color='white' className='h-5 lg:h-6  mx-2  transition-all'></FontAwesomeIcon>{item.tanggal}</p>
                 </div>
                 
                 </div>
