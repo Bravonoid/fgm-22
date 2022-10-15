@@ -32,7 +32,9 @@ module.exports = {
 		backgroundImage: {
 			pattern: "url('../src/assets/home/navbar-hover.svg')",
 			"flat-medpart": "url('../src/assets/home/plain-cover.svg')",
-			foto_teater : "../src/assets/home/teater/teater.svg"
+			foto_teater : "../src/assets/home/teater/teater.svg",
+			"festival_mobile" : "../src/assets/festival-seni/background.svg",
+			"festival_md" : "../src/assets/festival-seni/mobile1.svg",
 		},
 	},
 	plugins: [],

@@ -5,7 +5,7 @@ import festivalseni from "../../assets/festival-seni/festival_seni.svg";
 import background from "../../assets/festival-seni/background.svg";
 import pertunjukan from "../../assets/festival-seni/pertunjukan.svg";
 import bintangtamu from "../../assets/festival-seni/bintang_tamu.svg";
-import ukm from "../../assets/festival-seni/ukm.svg";
+import ukm from "../../assets/festival-seni/ukm.png";
 import background1 from "../../assets/festival-seni/buy_tiket_background.svg";
 import btn from "../../assets/festival-seni/button.svg";
 import pattern from "../../assets/festival-seni/background_pattern.svg";
@@ -24,6 +24,7 @@ import mobile3 from "../../assets/festival-seni/mobile3.svg";
 import mobile4 from "../../assets/festival-seni/mobile4.svg";
 import mobile5 from "../../assets/festival-seni/mobile5.svg";
 import "./festival.css";
+import {Link} from "react-router-dom";
 
 const festival_seni = () => {
     const settings = {
@@ -72,7 +73,7 @@ const festival_seni = () => {
       };
     return (
         <>
-            <div id="content1" className="h-[500px] bg-cover mobile:bg-auto pt-16 mobile:h-[700px]" style={{ backgroundImage: `url(${background})`, backgroundSize: 'cover' }}>
+            <div id="content1" className="h-[500px] bg-cover mobile:bg-auto pt-16 mobile:h-[700px] mobile:bg-festival_mobile md:bg-festival_md">
                 <div className="top-10 mt-12 mobile:relative sm:w-[475px]">
                     <div className="bg-[#202020] h-auto py-4 sm:w-[475px] sm:pl-20 text-[#FFFFFF] mobile:w-4/5 mobile:pl-4">
                         <img src={festivalseni} alt="festivalseni" className="w-[300px] mobile:w-4/5"></img>
@@ -284,9 +285,13 @@ const festival_seni = () => {
                     </>
                 </div> */}
             </div>
-             <div className="bg-[#3E3E3E] h-auto py-2">
-                <img src={background1} alt="background1" className="absolute w-screen py-4 mobile:py-12 sm:py-12 md:py-8 xl:py-4"/>
-                <img src={btn} alt="button" className="relative block rounded-md mx-auto w-[300px] py-12 scale-125 hover:scale-150 duration-300"/>
+             <div className="bg-[#3E3E3E] h-auto py-2 bg-cover" style={{backgroundImage: `url(${background1})`}}>
+                
+                <Link to="/tiket" onClick={() => {
+                    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+                  }}>
+                    <img src={btn} alt="button" className="relative block rounded-md mx-auto my-12 w-[300px] scale-125 hover:scale-150 duration-300 transition-all ease-out  hover:translate-y-1 hover:shadow-[9px_9px_0_rgb(255,255,255)]"/>
+                </Link>
             </div>
         </>
     );

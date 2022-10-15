@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import useScrollListener from "./hooks/useScrollListener.jsx";
 import Logo from "../assets/home/logo-navbar.svg";
 import logo from "../assets/logo_fgm.svg";
 import "./home/navbar.css";
@@ -11,6 +12,16 @@ import { Divide as Hamburger } from "hamburger-react";
 
 const Navbar = () => {
 	const [navbar, setNavbar] = useState(false);
+	const [navClassList, setNavClassList] = useState([]);
+	const scroll = useScrollListener();
+	useEffect(() => {
+		const _classList = [];
+	
+		if (scroll.y > 150 && scroll.y - scroll.lastY > 0)
+		  _classList.push("nav-bar--hidden");
+	
+		setNavClassList(_classList);
+	  }, [scroll.y, scroll.lastY]);
 	return (
 		<div className="fixed z-[100] flex h-[70px] w-full justify-between bg-black text-white">
 			<div className="ml-14 flex flex-shrink-0 items-center py-4 px-[28px] mobile:mx-0 mobile:px-10">
@@ -43,6 +54,7 @@ const Navbar = () => {
 					<li
 						onClick={() => {
 							window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+							
 						}}
 						className="w-[8.1rem] cursor-pointer py-5 text-center hover:animate-fade hover:bg-pattern hover:bg-cover hover:bg-center hover:font-bold"
 					>
@@ -139,17 +151,20 @@ const Navbar = () => {
 							Beranda
 						</Link>
 					</li>
-					<li>
-						<Link
-							onClick={() => {
-								window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
-							}}
-							to="/about"
-							className="block px-2 py-4 text-2xl font-bold transition duration-300 hover:bg-green-500"
-						>
-							Tentang
-						</Link>
-					</li>
+					<CSSTransition onEnter={() => setNavbar(false)}>
+						<li>
+							<Link
+								onClick={() => {
+									window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+								}}
+								to="/about"
+								className="block px-2 py-4 text-2xl font-bold transition duration-300 hover:bg-green-500"
+							>
+								Tentang
+							</Link>
+						</li>
+					</CSSTransition>
+					
 					<li>
 						<Link
 							onClick={() => {
@@ -177,7 +192,7 @@ const Navbar = () => {
 							onClick={() => {
 								window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
 							}}
-							to="/festival"
+							to="/festivalseni"
 							className="block px-2 py-4 text-2xl font-bold transition duration-300 hover:bg-green-500"
 						>
 							Festival Seni

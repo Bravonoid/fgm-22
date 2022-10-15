@@ -1,4 +1,5 @@
 import React, {useState, useRouter} from "react";
+import { Route, Routes, useParams } from 'react-router-dom';
 import { faInstagram, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import kembangputih1 from "../../../../assets/Pasar-Rakyat/produk/kembangputih1.svg";
@@ -11,8 +12,8 @@ import hiasan from "../../../../assets/Pasar-Rakyat/produk/hiasan-kanan-pageprod
 import productData from "../../../../assets/data/tenants/data.json";
 import Modal from "./Modal.js";
 
-const Pasar_rakyat = ({tenantList,categoryName}) => {
-  const [number,setNumber] = useState(1);
+const Pasar_rakyat = ({tenantList,categoryName,}) => {
+  const [number,setNumber] = useState(24);
   const [showModal, setShowModal] = useState(false);
   const [showModalData, setShowModalData] = useState([]);
   const[sorting,setSorting] = useState(false);
@@ -65,6 +66,7 @@ const Pasar_rakyat = ({tenantList,categoryName}) => {
   function searchHandler(event) {
     setSearchValue(event.target.value);
   }
+  let {userId} = useParams();
     return (
         <>
         {productData.map((dataTenant) => {
@@ -302,5 +304,14 @@ const Pasar_rakyat = ({tenantList,categoryName}) => {
       </>
     )
     
+}
+function App() {
+  return (
+    <Routes>
+      <Route path="users">
+        <Route path=":userId" element={<Pasar_rakyat />} />
+      </Route>
+    </Routes>
+  );
 }
 export default Pasar_rakyat;
