@@ -109,7 +109,7 @@ const Tenant = () => {
       <div       className={'relative  w-full xl:w-2/3 xl:h-screen  overflow-hidden ' }>
       
       <div         className={number === "1"? ' ease-in-out duration-1000  transition-all w-full h-full' : 'hidden'}>
-        <Foto src ={"/img/hero1.png"} judul ="HASIL KARYA SENI"/>
+        <Foto src ={"/img/hero1.png"} judul ="HASIL KARYA SENI"/> 
 
        </div>
        <div         className={number === "2"? ' ease-in-out duration-1000  transition-all w-full h-full' : 'hidden'}>

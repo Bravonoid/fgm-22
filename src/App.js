@@ -12,6 +12,7 @@ import Tenant from "./components/pasar rakyat/tenant/tenant.jsx";
 import Tiket from "./pages/Tiket";
 import PasarRakyat from "./pages/PasarRakyat";
 import NotFound from "./pages/NotFound";
+import Product from './components/pasar rakyat/tenant/produks/Product';
 
 function App() {
   return (
@@ -24,9 +25,12 @@ function App() {
         <Route path="/teater" element={<Teater />} />
         <Route path="/festivalseni" element={<Festival />} />
         <Route path="/produk" element={<Produk />} />
-        <Route path="/tenants" element={<Tenant />} />
+        <Route path="/pasar-rakyat/tenant" element={<Tenant />} />
         <Route path="/tiket" element={<Tiket />} />
+
         <Route path="/pasar-rakyat" element={<PasarRakyat />} />
+        <Route path="/pasar-rakyat/tenant/produk/:id" element={<Product />} />
+
         <Route path="*" element={<NotFound />} />
       </Routes>
 
@@ -36,3 +40,4 @@ function App() {
 }
 
 export default App;
+
