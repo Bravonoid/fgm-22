@@ -6,8 +6,13 @@ import PlainCover from  '../../assets/home/plain-cover.svg'
 import { MedPartSponsorLogo } from '../home/sponsor/MedPartSponsor';
 import {  dataSponsor, dataMedpart } from '../../data/dataMedPartSponsor';
 import sponsor_mobile from '../../assets/home/sponsor_mobile.svg';
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const sponsor = () =>  {
+  AOS.init();
+  AOS.refresh();
+  AOS.refreshHard();
   return (
     <div className=' relative  justify-center bg-cover h-auto py-16   bg-[#171717]' >
         
@@ -17,7 +22,7 @@ const sponsor = () =>  {
 
             </div>
       
-          <div className=' justify-center w-full h-1/5 relative flex '>
+          <div className=' justify-center w-full h-1/5 relative flex ' data-aos="fade-down" data-aos-duration="1000">
               <div className=' relative my-1 mx-auto  flex justify-center items-center w-full text-left text-white'>
                 <div className='h-1 z-10 bg-white hidden sm:block w-1/3 ml-24 '></div>
                   <img src={KembangHijau} className='relative  hidden sm:block -ml-10 h-16 mx-auto' alt="" />
@@ -30,7 +35,7 @@ const sponsor = () =>  {
             </div>
           </div>
 
-          <div className={` mobile:mt-4 flex  mt-32  p-5 bg-[#242424] xl:bg-flat-medpart bg-cover h-3/5 w-3/4 my-auto mx-auto  relative z-100 `} >
+          <div className={` mobile:mt-4 flex  mt-32  p-5 bg-[#242424] xl:bg-flat-medpart bg-cover h-3/5 w-3/4 my-auto mx-auto  relative z-100 `} data-aos="flip-up" data-aos-duration="1000">
           <div className="relative p-2 z-40 flex flex-wrap md:gap-8 gap-4 justify-evenly md:mx-16 ">
                             {dataSponsor.map((sponsor, index) =>
                                 <div className="self-center">

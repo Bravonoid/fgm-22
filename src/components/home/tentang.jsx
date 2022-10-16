@@ -7,8 +7,16 @@ import mozaik_horizontal from "../../assets/home/mozaik_horizontal.svg";
 import rectangle_17 from "../../assets/home/rectangle-17.svg";
 import rectangle_18 from "../../assets/home/rectangle-18.svg";
 import Tentang from "../tentang/Tentang";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
+
 
 const tentang = () => {
+  AOS.init();
+  AOS.refresh();
+  AOS.refreshHard();
+  
   return (
     <div className="relative items-center bg-[#1E1E1E] md:pt-32 xl:pt-48 pb-16 pt-16">
       <img
@@ -16,13 +24,15 @@ const tentang = () => {
         className="absolute sm:h-3/4 md:w-1/4 lg:w-1/5 xl:w-1/6 xl:scale-[2] mobile:top-12 mobile:w-2/5"
         alt="gunungan"
       ></img>
-      <div className="relative sm:mx-auto sm:grid sm:grid-cols-2 mobile:flex mobile:flex-col-reverse">
+      <div className="relative sm:mx-auto sm:grid sm:grid-cols-2 mobile:flex mobile:flex-col-reverse" 
+      >
         <img
           className="absolute -top-8 md:-top-16 lg:-top-28 -right-32 w-full xl:-right-40 scale-y-75 z-[60] mobile:hidden"
           src={mozaik_horizontal}
           alt="mozaik"
+          data-aos="fade-down" data-aos-duration="1000"
         ></img>
-        <div className="relative items-end text-left text-white mobile:text-sm mx-10 sm:ml-24 xl:ml-40 sm:w-[105%]">
+        <div className="relative items-end text-left text-white mobile:text-sm mx-10 sm:ml-24 xl:ml-40 sm:w-[105%]" data-aos="fade-right" data-aos-duration="1000">
           <div className="font-black sm:text-3xl md:text-4xl lg:text-5xl xl:mb-5 xl:text-5xl">
             {/* <img className='w-full' src={mozaik_horizontal} alt="mozaik"></img> */}
 
@@ -76,6 +86,7 @@ const tentang = () => {
           className="transform sm:translate-x-16 m-auto items-center justify-center text-left text-white pb-12 w-[35%]"
           src={Logo}
           alt="logo"
+          data-aos="fade-left" data-aos-duration="1000"
         ></img>
       </div>
     </div>

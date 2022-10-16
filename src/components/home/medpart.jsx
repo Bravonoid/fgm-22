@@ -19,7 +19,7 @@ const medpart = () => {
 
             </div>
       
-          <div className=' justify-center w-full h-1/5 relative flex '>
+          <div className=' justify-center w-full h-1/5 relative flex ' data-aos="fade-down" data-aos-duration="1000">
               <div className=' relative my-1 mx-auto  flex justify-center items-center w-full text-left text-white mobile:hidden'>
                 <div className='h-1 z-10 hidden sm:block bg-white w-1/3 ml-24 '></div>
                   <img src={KembangMerah} className=' hidden sm:block relative -ml-10 h-16 mx-auto' alt="" />
@@ -32,7 +32,7 @@ const medpart = () => {
             <img src={medpart_mobile} className='block sm:hidden relative h-24 mx-auto' alt="" />
           </div>
 
-          <div className={` flex  mobile:mt-12 mt-32  p-5 bg-[#242424] xl:bg-flat-medpart bg-cover h-3/5 w-4/5 my-auto mx-auto  2xl:w-2/3 relative z-100 `} >
+          <div className={` flex  mobile:mt-12 mt-32  p-5 bg-[#242424] xl:bg-flat-medpart bg-cover h-3/5 w-4/5 my-auto mx-auto  2xl:w-2/3 relative z-100 `} data-aos="flip-up" data-aos-duration="1000">
           <div className="relative p-2 z-40  flex 2xl:ml-24 flex-wrap md:gap-8 gap-4 justify-evenly md:mx-16 ">
                             {dataMedpart.map((sponsor, index) =>
                                 <div className="self-center">

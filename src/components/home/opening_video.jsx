@@ -12,16 +12,19 @@ const opening_video = () => {
 					className="sm:hidden mobile:mx-10 mobile:block mobile:w-2/3"
 					src={fgm}
 					alt="fgm"
+					data-aos="fade-left" data-aos-duration="1000"
 				></img>
 				<img
 					className="sm:w-1/8 mx-[0px] px-[10px] py-[10px] lg:mr-[50px] lg:w-1/12 xl:mr-[100px] mobile:hidden"
 					src={mozaik}
 					alt="fgm_black"
+					data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1000"
 				></img>
 				<img
 					className=" ml-[100px] pr-[10px] sm:w-2/3 lg:ml-[10px] xl:w-1/2 mobile:mx-auto mobile:hidden mobile:w-1/2"
 					src={fgm_black}
 					alt="fgm_black"
+					data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="1000"
 				></img>
 				<div className="absolute -z-50 mx-auto h-full w-full items-center  justify-between overflow-hidden">
 					<video

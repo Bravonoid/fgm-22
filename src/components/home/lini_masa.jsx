@@ -16,7 +16,7 @@ const medpart = () => {
 
             </div>
       
-          <div className=' justify-center w-full h-1/5 relative flex '>
+          <div className=' justify-center w-full h-1/5 relative flex ' data-aos="fade-left" data-aos-duration="1000">
               <div className=' relative my-1 mx-auto  flex justify-center items-center w-full text-left text-white'>
                 <div className='h-1 z-10 hidden sm:block bg-white w-1/3 ml-24 '></div>
                   <img src={KembangUngu} className='hidden sm:block relative -ml-10 h-16 mx-auto' alt="" />
@@ -29,7 +29,7 @@ const medpart = () => {
             </div>
           </div>
 
-          <div className=' mobile:top-10 mt-2 flex bg-cover h-3/5 w-3/4 my-auto mx-auto top-20  relative z-100  bg-[#171717]' >
+          <div className=' mobile:top-10 mt-2 flex bg-cover h-3/5 w-3/4 my-auto mx-auto top-20  relative z-100  bg-[#171717]' data-aos="zoom-in" data-aos-duration="1000">
             <Slider></Slider>
           </div>
     </div>
