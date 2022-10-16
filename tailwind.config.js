@@ -12,6 +12,8 @@ module.exports = {
 			},
 			screens: {
 				mobile: { MIN: "360px", max: "639px" },
+				'xsm': '400px',
+
 			},
 			fontFamily: {
 				Montserrat: ["Montserrat"],

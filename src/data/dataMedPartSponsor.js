@@ -38,39 +38,41 @@ const dataMedpart = [
         "img" : "medpart/rariamedia.png",
         "lebar" : "24"
     }, 
+    {
+        "name" : "InfoVoulenteers",
+        "img" : "medpart/infovolunteers.png",
+        "lebar" : "24"
+    }, 
+    {
+        "name" : "Jateng-page",
+        "img" : "medpart/jateng-page.jpg",
+        "lebar" : "24"
+    }, 
+    {
+        "name" : "Jelajah-solo",
+        "img" : "medpart/jelajah-solo.png",
+        "lebar" : "24"
+    }, 
+    {
+        "name" : "Event-alerts",
+        "img" : "medpart/event-alerts.jpg",
+        "lebar" : "24"
+    }, 
+    {
+        "name" : "Jogja-punya-acara",
+        "img" : "medpart/jogja-punya-acara.png",
+        "lebar" : "24"
+    }, 
+    {
+        "name" : "Solo Info",
+        "img" : "medpart/soloinfo.png",
+        "lebar" : "24"
+    }
+    
     
 ]
 const dataSponsor = [
-    {
-        "name" : "PT NEX",
-        "img" : "sponsor/nex.png",
-        "lebar" : "120"
-    },
-    {
-        "name" : "PLN",
-        "img" : "sponsor/pln.jpg",
-        "lebar" : "120"
-    },
-    {
-        "name" : "Akebono",
-        "img" : "sponsor/astra.jpg",
-        "lebar" : "80"
-    },
-    {
-        "name" : "Maxpower",
-        "img" : "sponsor/maxpower.png",
-        "lebar" : "120"
-    },
-    {
-        "name" : "BPJS",
-        "img" : "sponsor/bpjs.png",
-        "lebar" : "90"
-    },
-    {
-        "name" : "MM",
-        "img" : "sponsor/mm.jpg",
-        "lebar" : "60"
-    },
+   
 
 ]
 
