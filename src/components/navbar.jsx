@@ -13,7 +13,7 @@ const Navbar = () => {
   const [navbar, setNavbar] = useState(false);
   return (
     <div className="fixed z-[100] flex h-[70px] w-full justify-between bg-black text-white">
-      <div className="ml-14 flex flex-shrink-0 items-center py-4 px-[28px] mobile:mx-0 mobile:px-10">
+      <div className="ml-0 flex flex-shrink-0 items-center py-4 px-[10px] mobile:mx-0 mobile:px-10">
         <div className="h-full w-full pb-[3.05rem]">
           <Link to="">
             <img
@@ -37,7 +37,7 @@ const Navbar = () => {
           </Link>
         </div>
       </div>
-      <ul className="mr-28 flex h-full items-center justify-between gap-5 text-xl sm:hidden lg:ml-auto xl:flex mobile:hidden">
+      <ul className="mr-28 flex h-full items-center justify-center gap-1 text-xl sm:hidden lg:ml-auto xl:flex mobile:hidden">
         <Link to="">
           {" "}
           <li
@@ -143,6 +143,7 @@ const Navbar = () => {
               to=""
               onClick={() => {
                 window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+                setNavbar(false);
               }}
               className="block px-2 py-4 text-2xl font-bold text-white"
             >
@@ -153,6 +154,7 @@ const Navbar = () => {
             <Link
               onClick={() => {
                 window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+                setNavbar(false);
               }}
               to="/about"
               className="block px-2 py-4 text-2xl font-bold transition duration-300 hover:bg-green-500"
@@ -164,6 +166,7 @@ const Navbar = () => {
             <Link
               onClick={() => {
                 window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+                setNavbar(false);
               }}
               to="/teater"
               className="block px-2 py-4 text-2xl font-bold transition duration-300 hover:bg-green-500"
@@ -175,6 +178,7 @@ const Navbar = () => {
             <Link
               onClick={() => {
                 window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+                setNavbar(false);
               }}
               to="#about"
               className="block px-2 py-4 text-2xl font-bold transition duration-300 hover:bg-green-500"
@@ -186,8 +190,9 @@ const Navbar = () => {
             <Link
               onClick={() => {
                 window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+                setNavbar(false);
               }}
-              to="/festival"
+              to="/festivalseni"
               className="block px-2 py-4 text-2xl font-bold transition duration-300 hover:bg-green-500"
             >
               Festival Seni
@@ -197,6 +202,7 @@ const Navbar = () => {
             <Link
               onClick={() => {
                 window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+                setNavbar(false);
               }}
               to="#contact"
               className="block px-2 py-4 text-2xl font-bold transition duration-300 hover:bg-green-500"
