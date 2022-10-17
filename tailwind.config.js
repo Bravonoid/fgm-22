@@ -36,7 +36,7 @@ module.exports = {
 			"flat-medpart": "url('../src/assets/home/plain-cover.svg')",
 			foto_teater : "../src/assets/home/teater/teater.svg",
 			"festival_md" : 'url("../src/assets/festival-seni/background.png")',
-			"festival_mobile" : 'url("../src/assets/festival-seni/mobile1.svg")',
+			"festival_mobile" : 'url("../src/assets/festival-seni/background_mobile.png")',
 		},
 	},
 	plugins: [],
