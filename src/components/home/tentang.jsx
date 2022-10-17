@@ -80,7 +80,7 @@ const Tentang = () => {
               onClick={() => {
                 window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
               }}
-              class="mt-4 rounded bg-white py-2 px-6 font-Montserrat text-lg text-black hover:bg-slate-300 hover:px-[1.33rem] hover:font-bold mobile:text-sm"
+              class="mt-4 rounded bg-white py-2 px-6 font-Montserrat text-lg text-black hover:px-[1.33rem] hover:font-bold mobile:text-sm hover:bg-black hover:text-white"
             >
               Selengkapnya
             </button>
