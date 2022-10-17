@@ -178,11 +178,11 @@ const section1 = () => {
               />
             </div>
           </div>
-          <a href="https://www.kiostix.com/id/event/1752/festival-gadjah-mada">
-            <div
-              data-aos="zoom-in"
+          <a   data-aos="zoom-in"
               data-aos-duration="1000"
-              data-aos-delay="500"
+              data-aos-delay="1500" href="https://www.kiostix.com/id/event/1752/festival-gadjah-mada">
+            <div
+            
               className="btn mx-auto mt-2  w-fit bg-fgm-orange py-4 px-5 text-center text-xl font-bold  text-white shadow-[0_0px_0px_rgb(72,130,103)] transition-all  ease-out hover:translate-y-1 hover:shadow-[9px_9px_0_rgb(72,130,103)] md:mt-8  md:text-2xl xl:mt-16 2xl:mt-32"
             >
               BELI TIKET FESTIVAL SENI X PASAR RAKYAT
