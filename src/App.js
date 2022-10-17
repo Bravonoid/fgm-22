@@ -6,7 +6,7 @@ import About from "./pages/About";
 import Navbar from "./components/navbar";
 import Footer from "./components/footer";
 import Teater from "./pages/Teater";
-import Festival from "./components/festival seni/festival_seni";
+import Festival from "./pages/Festival";
 import Produk from "./components/pasar rakyat/tenant/produk/produk";
 import Tenant from "./components/pasar rakyat/tenant/tenant.jsx";
 import Tiket from "./pages/Tiket";

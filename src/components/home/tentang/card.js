@@ -42,9 +42,9 @@ export const Card = ({ style, children, image, id, hovered, url, ...rest }) => {
       case 0:
         return "/teater";
       case 1:
-        return "/festivalseni";
+        return "/festival-seni";
       case 2:
-        return "/pasarrakyat";
+        return "/pasar-rakyat";
  
     
       default:
