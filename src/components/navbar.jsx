@@ -11,6 +11,67 @@ import { Divide as Hamburger } from "hamburger-react";
 
 const Navbar = () => {
   const [navbar, setNavbar] = useState(false);
+  const [activeBeranda, setActiveBeranda] = useState(false);
+  const [activeTentang, setActiveTentang] = useState(false);
+  const [activePentasTeater, setActivePentasTeater] = useState(false);
+  const [activePasarRakyat, setActivePasarRakyat] = useState(false);
+  const [activeFestivalSeni, setActiveFestivalSeni] = useState(false);
+  const [activeTiket, setActiveTiket] = useState(false);
+
+  const handleActiveBeranda = () => {
+    setActiveBeranda(true);
+    setActiveTentang(false);
+    setActivePentasTeater(false);
+    setActivePasarRakyat(false);
+    setActiveFestivalSeni(false);
+    setActiveTiket(false);
+  };
+
+  const handleActiveTentang = () => {
+    setActiveBeranda(false);
+    setActiveTentang(true);
+    setActivePentasTeater(false);
+    setActivePasarRakyat(false);
+    setActiveFestivalSeni(false);
+    setActiveTiket(false);
+  };
+
+  const handleActivePentasTeater = () => {
+    setActiveBeranda(false);
+    setActiveTentang(false);
+    setActivePentasTeater(true);
+    setActivePasarRakyat(false);
+    setActiveFestivalSeni(false);
+    setActiveTiket(false);
+  };
+
+  const handleActivePasarRakyat = () => {
+    setActiveBeranda(false);
+    setActiveTentang(false);
+    setActivePentasTeater(false);
+    setActivePasarRakyat(true);
+    setActiveFestivalSeni(false);
+    setActiveTiket(false);
+  };
+
+  const handleActiveFestivalSeni = () => {
+    setActiveBeranda(false);
+    setActiveTentang(false);
+    setActivePentasTeater(false);
+    setActivePasarRakyat(false);
+    setActiveFestivalSeni(true);
+    setActiveTiket(false);
+  };
+
+  const handleActiveTiket = () => {
+    setActiveBeranda(false);
+    setActiveTentang(false);
+    setActivePentasTeater(false);
+    setActivePasarRakyat(false);
+    setActiveFestivalSeni(false);
+    setActiveTiket(true);
+  };
+
   return (
     <div className="fixed z-[100] flex h-[70px] w-full justify-between bg-black text-white">
       <div className="ml-14 flex flex-shrink-0 items-center py-4 px-[28px] mobile:mx-0 mobile:px-10">
@@ -43,8 +104,14 @@ const Navbar = () => {
           <li
             onClick={() => {
               window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+              handleActiveBeranda();
             }}
-            className="w-[9rem] cursor-pointer py-5 text-center hover:animate-fade hover:bg-pattern hover:bg-cover hover:bg-center hover:font-bold"
+            // className="w-[9rem] cursor-pointer py-5 text-center hover:animate-fade hover:bg-pattern hover:bg-cover hover:bg-center hover:font-bold"
+            className={
+              activeBeranda
+                ? "w-[9rem] cursor-pointer py-5 text-center font-bold hover:animate-fade hover:bg-pattern hover:bg-cover hover:bg-center hover:font-bold"
+                : "w-[9rem] cursor-pointer py-5 text-center font-normal hover:animate-fade hover:bg-pattern hover:bg-cover hover:bg-center hover:font-bold"
+            }
           >
             Beranda
           </li>
@@ -53,8 +120,14 @@ const Navbar = () => {
           <li
             onClick={() => {
               window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+              handleActiveTentang();
             }}
-            className="transform -translate-x-6 w-[9rem] cursor-pointer py-5 text-center hover:animate-fade hover:bg-pattern hover:bg-cover hover:bg-center hover:font-bold"
+            // className="w-[9rem] -translate-x-6 transform cursor-pointer py-5 text-center hover:animate-fade hover:bg-pattern hover:bg-cover hover:bg-center hover:font-bold"
+            className={
+              activeTentang
+                ? "w-[9rem] -translate-x-6 transform cursor-pointer py-5 text-center font-bold hover:animate-fade hover:bg-pattern hover:bg-cover hover:bg-center hover:font-bold"
+                : "w-[9rem] -translate-x-6 transform cursor-pointer py-5 text-center font-normal hover:animate-fade hover:bg-pattern hover:bg-cover hover:bg-center hover:font-bold"
+            }
           >
             Tentang
           </li>
@@ -63,8 +136,14 @@ const Navbar = () => {
           <li
             onClick={() => {
               window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+              handleActivePentasTeater();
             }}
-            className="transform -translate-x-5 w-[9rem] cursor-pointer py-5 text-center hover:animate-fade hover:bg-pattern hover:bg-cover hover:bg-center hover:font-bold"
+            // className="w-[9rem] -translate-x-5 transform cursor-pointer py-5 text-center hover:animate-fade hover:bg-pattern hover:bg-cover hover:bg-center hover:font-bold"
+            className={
+              activePentasTeater
+                ? "w-[9rem] -translate-x-5 transform cursor-pointer py-5 text-center font-bold hover:animate-fade hover:bg-pattern hover:bg-cover hover:bg-center hover:font-bold"
+                : "w-[9rem] -translate-x-5 transform cursor-pointer py-5 text-center font-normal hover:animate-fade hover:bg-pattern hover:bg-cover hover:bg-center hover:font-bold"
+            }
           >
             Pentas Teater
           </li>
@@ -73,8 +152,14 @@ const Navbar = () => {
           <li
             onClick={() => {
               window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+              handleActivePasarRakyat();
             }}
-            className="w-[9rem] cursor-pointer py-5 text-center hover:animate-fade hover:bg-pattern hover:bg-cover hover:bg-center hover:font-bold"
+            // className="w-[9rem] cursor-pointer py-5 text-center hover:animate-fade hover:bg-pattern hover:bg-cover hover:bg-center hover:font-bold"
+            className={
+              activePasarRakyat
+                ? "w-[9rem] cursor-pointer py-5 text-center font-bold hover:animate-fade hover:bg-pattern hover:bg-cover hover:bg-center hover:font-bold"
+                : "w-[9rem] cursor-pointer py-5 text-center font-normal hover:animate-fade hover:bg-pattern hover:bg-cover hover:bg-center hover:font-bold"
+            }
           >
             Pasar Rakyat
           </li>
@@ -83,8 +168,14 @@ const Navbar = () => {
           <li
             onClick={() => {
               window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+              handleActiveFestivalSeni();
             }}
-            className="transform translate-x-4 w-[9rem] cursor-pointer py-5 text-center hover:animate-fade hover:bg-pattern hover:bg-cover hover:bg-center hover:font-bold"
+            // className="w-[9rem] translate-x-4 transform cursor-pointer py-5 text-center hover:animate-fade hover:bg-pattern hover:bg-cover hover:bg-center hover:font-bold"
+            className={
+              activeFestivalSeni
+                ? "w-[9rem] translate-x-4 transform cursor-pointer py-5 text-center font-bold hover:animate-fade hover:bg-pattern hover:bg-cover hover:bg-center hover:font-bold"
+                : "w-[9rem] translate-x-4 transform cursor-pointer py-5 text-center font-normal hover:animate-fade hover:bg-pattern hover:bg-cover hover:bg-center hover:font-bold"
+            }
           >
             Festival Seni
           </li>
@@ -93,8 +184,14 @@ const Navbar = () => {
           <li
             onClick={() => {
               window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+              handleActiveTiket();
             }}
-            className="transform -translate-x-2 w-[9rem] cursor-pointer py-5 text-center hover:animate-fade hover:bg-pattern hover:bg-cover hover:bg-center hover:font-bold"
+            // className="w-[9rem] -translate-x-2 transform cursor-pointer py-5 text-center hover:animate-fade hover:bg-pattern hover:bg-cover hover:bg-center hover:font-bold"
+            className={
+              activeTiket
+                ? "w-[9rem] -translate-x-2 transform cursor-pointer py-5 text-center font-bold hover:animate-fade hover:bg-pattern hover:bg-cover hover:bg-center hover:font-bold"
+                : "w-[9rem] -translate-x-2 transform cursor-pointer py-5 text-center font-normal hover:animate-fade hover:bg-pattern hover:bg-cover hover:bg-center hover:font-bold"
+            }
           >
             Tiket
           </li>
