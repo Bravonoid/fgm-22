@@ -37,24 +37,24 @@ const Navbar = () => {
           </Link>
         </div>
       </div>
-      <ul className="mr-28 flex h-full items-center justify-center gap-1 text-xl sm:hidden lg:ml-auto xl:flex mobile:hidden">
+      <ul className="mr-20 flex h-full items-center justify-center gap-1 text-xl sm:hidden lg:ml-auto xl:flex mobile:hidden">
         <Link to="">
           {" "}
           <li
             onClick={() => {
               window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
             }}
-            className="w-[8.1rem] cursor-pointer py-5 text-center hover:animate-fade hover:bg-pattern hover:bg-cover hover:bg-center hover:font-bold"
+            className="w-[9rem] cursor-pointer py-5 text-center hover:animate-fade hover:bg-pattern hover:bg-cover hover:bg-center hover:font-bold"
           >
             Beranda
           </li>
         </Link>
-        <Link to="/about">
+        <Link to="/tentang">
           <li
             onClick={() => {
               window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
             }}
-            className="w-[8.1rem] cursor-pointer py-5 text-center hover:animate-fade hover:bg-pattern hover:bg-cover hover:bg-center hover:font-bold"
+            className="transform -translate-x-6 w-[9rem] cursor-pointer py-5 text-center hover:animate-fade hover:bg-pattern hover:bg-cover hover:bg-center hover:font-bold"
           >
             Tentang
           </li>
@@ -64,7 +64,7 @@ const Navbar = () => {
             onClick={() => {
               window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
             }}
-            className="mr-3 w-[9rem] cursor-pointer py-5 text-center hover:animate-fade hover:bg-pattern hover:bg-cover hover:bg-center hover:font-bold"
+            className="transform -translate-x-5 w-[9rem] cursor-pointer py-5 text-center hover:animate-fade hover:bg-pattern hover:bg-cover hover:bg-center hover:font-bold"
           >
             Pentas Teater
           </li>
@@ -74,7 +74,7 @@ const Navbar = () => {
             onClick={() => {
               window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
             }}
-            className="mr-7 w-[8.8rem] cursor-pointer py-5 text-center hover:animate-fade hover:bg-pattern hover:bg-cover hover:bg-center hover:font-bold"
+            className="w-[9rem] cursor-pointer py-5 text-center hover:animate-fade hover:bg-pattern hover:bg-cover hover:bg-center hover:font-bold"
           >
             Pasar Rakyat
           </li>
@@ -84,7 +84,7 @@ const Navbar = () => {
             onClick={() => {
               window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
             }}
-            className="w-[8.5rem] cursor-pointer py-5 text-center hover:animate-fade hover:bg-pattern hover:bg-cover hover:bg-center hover:font-bold"
+            className="transform translate-x-4 w-[9rem] cursor-pointer py-5 text-center hover:animate-fade hover:bg-pattern hover:bg-cover hover:bg-center hover:font-bold"
           >
             Festival Seni
           </li>
@@ -94,7 +94,7 @@ const Navbar = () => {
             onClick={() => {
               window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
             }}
-            className="w-[8.5rem] cursor-pointer py-5 text-center hover:animate-fade hover:bg-pattern hover:bg-cover hover:bg-center hover:font-bold"
+            className="transform -translate-x-2 w-[9rem] cursor-pointer py-5 text-center hover:animate-fade hover:bg-pattern hover:bg-cover hover:bg-center hover:font-bold"
           >
             Tiket
           </li>
@@ -156,7 +156,7 @@ const Navbar = () => {
                 window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
                 setNavbar(false);
               }}
-              to="/about"
+              to="/tentang"
               className="block px-2 py-4 text-2xl font-bold transition duration-300 hover:bg-green-500"
             >
               Tentang
@@ -180,7 +180,7 @@ const Navbar = () => {
                 window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
                 setNavbar(false);
               }}
-              to="#about"
+              to="/pasar-rakyat"
               className="block px-2 py-4 text-2xl font-bold transition duration-300 hover:bg-green-500"
             >
               Pasar Rakyat
@@ -204,7 +204,7 @@ const Navbar = () => {
                 window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
                 setNavbar(false);
               }}
-              to="#contact"
+              to="/tiket"
               className="block px-2 py-4 text-2xl font-bold transition duration-300 hover:bg-green-500"
             >
               Ticket

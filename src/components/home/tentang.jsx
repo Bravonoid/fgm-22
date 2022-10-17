@@ -1,38 +1,47 @@
-import React from "react";
-import { BrowserRouter, Route, Link } from "react-router-dom";
-import About from "../tentang/Tentang";
+import { useState } from "react";
+import { Link } from "react-router-dom";
 import Logo from "../../assets/logo_fgm.svg";
 import gunungan from "../../assets/home/gunungan.svg";
 import mozaik_horizontal from "../../assets/home/mozaik_horizontal.svg";
-import rectangle_17 from "../../assets/home/rectangle-17.svg";
-import rectangle_18 from "../../assets/home/rectangle-18.svg";
-import Tentang from "../tentang/Tentang";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import "./tentang.css";
 
-
-
-const tentang = () => {
+const Tentang = () => {
   AOS.init();
   AOS.refresh();
   AOS.refreshHard();
-  
+
+  const [width] = useState(window.innerWidth);
+  const isDesktop = width > 640;
+
+  const translateLogo = {
+    transform: isDesktop ? 'translate(30%, 0%)' : 'translate(0%, 0%)',
+  }
+
+
+
   return (
-    <div className="relative items-center bg-[#1E1E1E] md:pt-32 xl:pt-48 pb-16 pt-16">
+    <div className="relative items-center bg-[#1E1E1E] pb-16 pt-16 md:pt-32 xl:pt-48">
       <img
         src={gunungan}
         className="absolute sm:h-3/4 md:w-1/4 lg:w-1/5 xl:w-1/6 xl:scale-[2] mobile:top-12 mobile:w-2/5"
         alt="gunungan"
       ></img>
-      <div className="relative sm:mx-auto sm:grid sm:grid-cols-2 mobile:flex mobile:flex-col-reverse" 
-      >
+      <div className="relative sm:mx-auto sm:grid sm:grid-cols-2 mobile:flex mobile:flex-col-reverse">
         <img
-          className="absolute -top-8 md:-top-16 lg:-top-28 -right-32 w-full xl:-right-40 scale-y-75 z-[60] mobile:hidden"
+          className="absolute -top-8 -right-32 z-[60] w-full scale-y-75 scale-x-75 transform md:-top-16 lg:-top-36 xl:-right-40 mobile:hidden"
+          style={{ transform: "scaleY(75%)" }}
           src={mozaik_horizontal}
           alt="mozaik"
-          data-aos="fade-down" data-aos-duration="1000"
+          data-aos="fade-down"
+          data-aos-duration="1000"
         ></img>
-        <div className="relative items-end text-left text-white mobile:text-sm mx-10 sm:ml-24 xl:ml-40 sm:w-[105%]" data-aos="fade-right" data-aos-duration="1000">
+        <div
+          className="relative mx-10 items-end text-left text-white sm:ml-20 sm:w-[105%] xl:ml-40 mobile:text-sm"
+          data-aos="fade-right"
+          data-aos-duration="1000"
+        >
           <div className="font-black sm:text-3xl md:text-4xl lg:text-5xl xl:mb-5 xl:text-5xl">
             {/* <img className='w-full' src={mozaik_horizontal} alt="mozaik"></img> */}
 
@@ -66,7 +75,7 @@ const tentang = () => {
             Pada tahun ini Festival Gadjah Mada akan menyemarakan rangkaian
             acaranya melalui festival seni, pasar rakyat, dan pentas teater
           </div>
-          <Link to="/about">
+          <Link to="/tentang">
             <button
               onClick={() => {
                 window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
@@ -83,14 +92,16 @@ const tentang = () => {
           alt="logo"
         ></img> */}
         <img
-          className="transform sm:translate-x-16 m-auto items-center justify-center text-left text-white pb-12 w-[35%]"
+          className="logos w-[35%] items-center justify-center pb-12 text-left px-auto m-auto text-white sm:transform"
+          style={translateLogo}
           src={Logo}
           alt="logo"
-          data-aos="fade-left" data-aos-duration="1000"
+          data-aos="fade-left"
+          data-aos-duration="1000"
         ></img>
       </div>
     </div>
   );
 };
 
-export default tentang;
+export default Tentang;

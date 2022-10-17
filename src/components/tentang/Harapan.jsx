@@ -2,13 +2,31 @@ import React from "react";
 import BackgroundKembangKiri from "../../assets/tentang/background-kembang-kiri.svg";
 import BackgroundKembangKanan from "../../assets/tentang/background-kembang-kanan.svg";
 import KembangHarapanMobile from "../../assets/tentang/kembang-harapan-mobile.svg";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Harapan = () => {
+  AOS.init();
+  AOS.refresh();
+  AOS.refreshHard();
+
   return (
     <>
       <div className="flex w-full bg-[#171717] md:pb-10 xl:pb-0 mobile:pt-1">
-        <img src={BackgroundKembangKiri} className="hidden xl:flex" alt="" />
-        <div className="container mx-auto px-10 xl:w-2/3 xl:px-32 xl:pt-5">
+        <img
+          src={BackgroundKembangKiri}
+          data-aos="fade-right"
+          data-aos-duration="1000"
+          data-aos-offset="1000"
+          className="hidden xl:flex"
+          alt=""
+        />
+        <div
+          className="container mx-auto px-10 xl:w-2/3 xl:px-32 xl:pt-5"
+          data-aos="fade-down"
+          data-aos-duration="1500"
+          data-aos-offset="1000"
+        >
           <h1 className="text-weight-700 mt-10 text-center text-3xl font-bold text-white">
             <span className="bg-[#242424] px-10">HARAPAN</span>
           </h1>
@@ -20,10 +38,24 @@ const Harapan = () => {
             kediversitasan budaya di Nusantara.
           </h2>
         </div>
-        <img src={BackgroundKembangKanan} className="hidden xl:flex" alt="" />
+        <img
+          src={BackgroundKembangKanan}
+          data-aos="fade-left"
+          data-aos-duration="1500"
+          data-aos-offset="1000"
+          className="hidden xl:flex"
+          alt=""
+        />
       </div>
       <div className="flex w-full items-center justify-center bg-[#171717] md:hidden">
-        <img src={KembangHarapanMobile} className="flex" alt="" />
+        <img
+          src={KembangHarapanMobile}
+          data-aos="fade-up"
+          data-aos-duration="1500"
+          data-aos-offset="1000"
+          className="flex"
+          alt=""
+        />
       </div>
     </>
   );

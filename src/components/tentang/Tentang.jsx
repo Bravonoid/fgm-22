@@ -4,22 +4,36 @@ import Logo from "../../assets/tentang/logo-tentang.svg";
 import KembangLogoBawah from "../../assets/tentang/kembang-tentang-bawah.svg";
 import KembangLogoBawahMobile from "../../assets/tentang/kembang-tentang-bawah-mobile.svg";
 import TextFGM from "../../assets/tentang/text-fgm.svg";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Tentang = () => {
+  AOS.init();
+  AOS.refresh();
+  AOS.refreshHard();
+
   return (
     <div className="items-center bg-[#171717] py-36 md:py-28">
       <div className="relative sm:mx-auto sm:grid sm:grid-cols-3 mobile:flex mobile:flex-col">
-        <div className="col-span-1 flex items-center justify-center">
+        <div
+          className="col-span-1 flex items-center justify-center"
+          data-aos="fade-down"
+          data-aos-duration="1800"
+        >
           <img
             src={Logo}
             className="sm:scale-[175%] lg:scale-[225%] mobile:scale-125"
             alt="logo"
           />
         </div>
-        <div className="items-left relative col-span-2 mx-10 mr-24 text-left text-white sm:my-5 xl:w-3/4 mobile:mx-10 mobile:mt-12 mobile:text-base">
+        <div
+          className="items-left relative col-span-2 mx-10 mr-24 text-left text-white sm:my-5 xl:w-3/4 mobile:mx-10 mobile:mt-12 mobile:text-base"
+          data-aos="fade-left"
+          data-aos-duration="1800"
+        >
           <img src={KembangLogo} className="" alt="tema-besar" />
           <img src={TextFGM} className="mt-3" alt="tema-besar" />
-          <p className="mt-5 mb-5 hidden text-justify text-lg xl:text-xl sm:flex mobile:text-base">
+          <p className="mt-5 mb-5 hidden text-justify text-lg sm:flex xl:text-xl mobile:text-base">
             Festival Gadjah Mada atau FGM merupakan sebuah acara apresiasi seni
             tahunan yang diselenggarakan di bawah kepengurusan BEM KM UGM yang
             diprakarsai oleh Kementerian Kreasi BEM KM UGM. Festival Gadjah Mada
@@ -57,10 +71,14 @@ const Tentang = () => {
           </a>
         </div>
       </div>
-      <div className="bottom-48 relative">
+      <div
+        className="relative bottom-48"
+        data-aos="fade-up-left"
+        data-aos-duration="1800"
+      >
         <img
           src={KembangLogoBawah}
-          className="absolute -right-10 xl:-right-0 hidden scale-75 overflow-hidden lg:block xl:scale-[105%]"
+          className="absolute -right-10 hidden scale-75 overflow-hidden lg:block xl:-right-0 xl:scale-[105%]"
           alt="tema-besar"
         />
       </div>
