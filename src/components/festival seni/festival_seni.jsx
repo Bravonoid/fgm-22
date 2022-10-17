@@ -228,7 +228,7 @@ const festival_seni = () => {
         </div>
       </div>
       <div
-        className="bg-[#242424]"
+        className="bg-[#242424] bg-cover"
         style={{ backgroundImage: `url(${pattern})` }}
       >
         <div className="relative flex flex-col items-center gap-2 py-4 mobile:-top-40 mobile:justify-center">
@@ -292,28 +292,29 @@ const festival_seni = () => {
           </div>
         </div>
       </div>
-      <div className="relative flex flex-col items-center justify-center gap-2 bg-[#242424] py-4 mobile:top-0">
-        <img
-          src={ukm1}
-          alt="ukm header"
-          className="w-auto sm:hidden md:mb-12 md:block mobile:hidden "
-          data-aos="zoom-in"
-          data-aos-duration="1000"
-          data-aos-anchor-placement="top-center"
-        />
-        <img
-          src={mobile4}
-          alt="ukm header"
-          className="w-screen md:hidden mobile:block"
-          data-aos="zoom-in"
-          data-aos-duration="1000"
-          data-aos-anchor-placement="top-center"
-        />
-      </div>
       <div
         className="h-[500px] bg-[#242424] bg-cover sm:h-[600px] mobile:h-[800px]"
         style={{ backgroundImage: `url(${pattern})` }}
       >
+        <div className="relative flex flex-col items-center justify-center gap-2 bg-[#242424] py-4 mobile:top-0">
+          <img
+            src={ukm1}
+            alt="ukm header"
+            className="w-auto sm:hidden md:mb-12 md:block mobile:hidden "
+            data-aos="zoom-in"
+            data-aos-duration="1000"
+            data-aos-anchor-placement="top-center"
+          />
+          <img
+            src={mobile4}
+            alt="ukm header"
+            className="w-screen md:hidden mobile:block"
+            data-aos="zoom-in"
+            data-aos-duration="1000"
+            data-aos-anchor-placement="top-center"
+          />
+        </div>
+      
         {/* <Slider {... autoplay} className="w-11/12 block mx-auto h-[400px] px-4 mobile:w-5/6">
                         <div className="px-4">
                         <div className="bg-[#818181] w-auto h-[300px] hover:scale-110 duration-300 ease-out hover:bg-gray-300 flex justify-end flex-col">
