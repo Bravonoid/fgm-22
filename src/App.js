@@ -12,32 +12,30 @@ import Tenant from "./components/pasar rakyat/tenant/tenant.jsx";
 import Tiket from "./pages/Tiket";
 import PasarRakyat from "./pages/PasarRakyat";
 import NotFound from "./pages/NotFound";
-import Product from './components/pasar rakyat/tenant/produks/Product';
+import Product from "./components/pasar rakyat/tenant/produks/Product";
 
 function App() {
-  return (
-    <div className="App">
-      <Navbar />
+	return (
+		<div className="App">
+			<Navbar />
 
-      <Routes>
-        <Route exact path="/" element={<Home />} />
-        <Route path="/tentang" element={<About />} />
-        <Route path="/teater" element={<Teater />} />
-        <Route path="/festival-seni" element={<Festival />} />
-        <Route path="/produk" element={<Produk />} />
-        <Route path="/pasar-rakyat/tenant" element={<Tenant />} />
-        <Route path="/tiket" element={<Tiket />} />
+			<Routes>
+				<Route path="/" element={<Home />} />
+				<Route path="/tentang" element={<About />} />
+				<Route path="/teater" element={<Teater />} />
+				<Route path="/festival-seni" element={<Festival />} />
+				{/* <Route path="/produk" element={<Produk />} /> */}
+				<Route path="/pasar-rakyat" element={<PasarRakyat />} />
+				{/* <Route path="/pasar-rakyat/tenant" element={<Tenant />} />
+        <Route path="/pasar-rakyat/tenant/produk/:id" element={<Product />} /> */}
+				<Route path="/tiket" element={<Tiket />} />
 
-        <Route path="/pasar-rakyat" element={<PasarRakyat />} />
-        <Route path="/pasar-rakyat/tenant/produk/:id" element={<Product />} />
+				<Route path="*" element={<NotFound />} />
+			</Routes>
 
-        <Route path="*" element={<NotFound />} />
-      </Routes>
-
-      <Footer />
-    </div>
-  );
+			<Footer />
+		</div>
+	);
 }
 
 export default App;
-
