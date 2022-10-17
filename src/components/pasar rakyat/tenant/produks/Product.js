@@ -1,9 +1,18 @@
 import React, { useState } from "react";
 import Modal from "./Modal";
 import productData from "../../../../assets/data/tenants/data.json";
-
+import { faInstagram, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import kembangputih1 from "../../../../assets/Pasar-Rakyat/produk/kembangputih1.svg";
+import kembangputih2 from "../../../../assets/Pasar-Rakyat/produk/kembangputih2.svg";
+import produk from "../../../../assets/Pasar-Rakyat/produk/produk.svg";
+import sort from "../../../../assets/Pasar-Rakyat/produk/sort.svg";
+import pattern from "../../../../assets/Pasar-Rakyat/produk/bg-pattern.svg";
+import produk2 from "../../../../assets/Pasar-Rakyat/produk/produk2.svg";
+import hiasan from "../../../../assets/Pasar-Rakyat/produk/hiasan-kanan-pageproduk.svg";
 import Diskon from "../../../../assets/Pasar-Rakyat/produk/diskon.png";
 import { useParams } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 
 export default function Produk() {
@@ -50,35 +59,24 @@ export default function Produk() {
         {productData.map((dataTenant) => {
           if (dataTenant.id_tenant == index) {
             return (
-              <div className="py-16 mx-10 md:mx-20">
-                <div className="flex justify-center item-center text-center">
-                  <div className="flex justify-center pt-2 md:pt-4">
-                    <div className="mx-0 md:mx-0">
-                      <div className="space-y-15 container max-w-8xl">
-                        <div className="flex flex-wrap md:flex-row-reverse">
-                        <div className="md:w-1/2 p-6">
-                            <div className="font-bold text-3xl md:text-5xl py-10 lg:py-14 md:py-10">
-                              {dataTenant.tenantName}
-                            </div>
-                            <p className="mb-8 text-justify lg:text-2xl md:tex-lg">
-                              {dataTenant.description}
-                            </p>
-
-                            {dataTenant.socialMedia.map((socMed) => {
+              <>
+                <div className="bg-[#171717] h-[825px] mobile:h-auto">
+                <Link to="/pasar-rakyat/tenant">
+                  <p className="text-white font-bold text-xs pt-24 pl-10">&#9664; Kategori</p>
+                </Link>
+                <div className=" pl-16 flex flex-row gap-12 relative top-20 mobile:flex-col mobile:px-8 mobile:top-0 mobile:pt-8">
+                    <img
+                        className="object-cover w-[300px] h-[300px] mobile:w-[200px] mobile:h-[200px]"
+                        alt={dataTenant.tenantName}
+                        src={dataTenant.tenantLogo}
+                    />
+                    <div className="flex flex-col w-1/3 gap-y-4 mobile:w-full">
+                        <div className="font-bold text-4xl text-white"> {dataTenant.tenantName}</div>
+                        <p className="text-xl text-justify text-white mobile:text-base ">{dataTenant.description}</p>
+                        <div className="flex flex-row gap-4">
+                        {dataTenant.socialMedia.map((socMed) => {
                               return (
                                 <>
-                                  {socMed.whatsapp === null &&
-                                  socMed.instagram === null &&
-                                  socMed.facebook === null &&
-                                  socMed.website === null &&
-                                  socMed.shopee === null &&
-                                  socMed.tokopedia === null ? (
-                                    ""
-                                  ) : (
-                                    <div className="text-left text-xl font-bold pb-10">
-                                      Contact Us
-                                    </div>
-                                  )}
                                   <div className="text-left items-start grid grid-cols-3 justify-items-center justify-self-center self-center md:flex gap-10">
                                     {socMed.whatsapp !== null ? (
                                       <>
@@ -189,116 +187,28 @@ export default function Produk() {
                                 </>
                               );
                             })}
-                          </div>
-                          <div className="w-full md:w-1/2 flex justify-center items-center content-center mt-24">
-                            <div className="object-center">
-                              <div className="lg:w-96 md:w-60 w-54">
-                                <img
-                                  className="object-cover"
-                                  alt={dataTenant.tenantName}
-                                  src={
-                                    "/data/tenant/" +
-                                    index +
-                                    "/" +
-                                    dataTenant.tenantLogo
-                                  }
-                                  width="300"
-                                  height="300"
-                                />
-                              </div>
-                            </div>
-                          </div>
-                         
                         </div>
-                      </div>
                     </div>
-                  </div>
                 </div>
-                <div className="text-center font-bold text-4xl pt-16 pb-6">
-                  Produk dari {dataTenant.tenantName}
+                <img src={hiasan} alt="hiasan" className="absolute right-0 xl:bottom-0 top-auto w-1/2 mobile:hidden sm:hidden lg:block lg:bottom-24"/>
+            </div>
+            <div className="block bg-[#202020] bg-cover" style={{backgroundImage: `url(${pattern}`}}>
+                <div className="relative pt-20 mx-auto flex justify-center items-center w-full text-left text-white">
+                    <img src={produk2} alt="produk" className="relative top-0 left-0 w-full h-full object-cover" />
+                    {/* <img src={kembangputih1} alt="kembangputih" className="hidden sm:block relative h-16 mr-10 mx-auto"/>
+                    <img src={produk} alt="kembangputih" className="relative h-16 mx-auto"/>
+                    <img src={kembangputih2} alt="kembangputih" className="hidden sm:block relative h-16 ml-10 mx-auto"/> */}
                 </div>
-                <div
-                  className={
-                    "items-center justify-self-center grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-" +
-                    4 +
-                    " pb-10 gap-2 lg:gap-5 xl:gap-5"
-                  }
-                >
-                  {dataTenant.product.map((product, product_index) => {
+                <div className="flex flex-row flex-wrap justify-center gap-y-4 pt-8 ">
+                {dataTenant.product.map((product, product_index) => {
                     return (
-                      <div
+                        <>
+                        <div
                         className="bg-white text-center justify-self-center my-4"
                         key={product_index}
-                      >
-                        <div>
-                          <div className="rounded-lg overflow-hidden shadow-md pt-6 w-72 md:w-72 lg:w-80 pb-4">
-                            {product.promo !== null ? (
-                              <>
-                                <div className="sticky flex w-auto z-10 mr-3">
-                                  <div className="absolute right-0 ">
-                                    <div className="flex w-20 h-20 items-center justify-center absolute mr-4 right-0 z-20 mt-3 text-sm font-extrabold text-white">
-                                      {product.promo_short}
-                                    </div>
-                                    <img
-                                      alt="Ada diskon"
-                                      className="mt-0"
-                                      src={Diskon}
-                                      width="110"
-                                      height="110"
-                                    />
-                                  </div>
-                                </div>
-                              </>
-                            ) : (
-                              ""
-                            )}
-
-                            <div className="flex justify-center items-center ">
-                              <div className="lg:w-64 md:w-60 w-44">
-                                <img
-                                  className="rounded-2xl object-cover"
-                                  alt={product.productName}
-                                  src={
-                                    "/data/tenant/" +
-                                    dataTenant.id_tenant +
-                                    "/product/" +
-                                    product.productImages
-                                  }
-                                  width="225"
-                                  height="275"
-                                />
-                              </div>
-                            </div>
-                            <div className="px-6 py-2">
-                              <div className="font-bold text-2xl pb-4 flex justify-center text-center">
-                                {product.productName}
-                              </div>
-                            </div>
-                            <span className="w-auto max-w-prose inline-block bg-gray-200 rounded-full px-8 py-4 text-sm font-semibold text-gray-700">
-                              Bahan : {product.bahan}
-                            </span>
-                            <div className="font-bold py-5 text-2xl">
-                              Rp{product.price}.000
-                            </div>
-                            <div className="space-x-3 py-4">
-                              <a
-                                href={
-                                  dataTenant.pembayaran +
-                                  "?text=Halo!%20" +
-                                  dataTenant.tenantName +
-                                  ",%20saya%20ingin%20membeli%20" +
-                                  product.productName +
-                                  "%20apakah%20masih+ada?%0aBagaimana%20caranya?"
-                                }
-                              >
-                                <button className="bg-red-500 hover:bg-red-700 text-xl text-white font-bold py-4 px-10 rounded-full">
-                                  Beli
-                                </button>
-                              </a>
-                              <button
-                                className="bg-fgmYellow hover:bg-yellow-500 text-xl text-white font-bold py-4 px-10 rounded-full"
-                                type="button"
-                                onClick={() => {
+                        ></div>
+                <div className="flex flex-row mx-auto text-white">
+                    <div className="flex flex-col w-[300px] mx-auto bg-[#494949] hover:scale-110 duration-300" onClick={() => {
                                   modalData(
                                     product.productName,
                                     product.productImages,
@@ -311,18 +221,42 @@ export default function Produk() {
                                     dataTenant.tenantName,
                                     dataTenant.id_tenant
                                   );
-                                }}
-                              >
-                                Detail
-                              </button>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    );
-                  })}
+                                }}>
+                                <img
+                                  className="object-cover"
+                                  alt={product.productName}
+                                  src={
+                                    "/data/tenant/" +
+                                    dataTenant.id_tenant +
+                                    "/product/" +
+                                    product.productImages
+                                  }
+                                  width="auto"
+                                  height="auto"
+                                />
+                        <p className="font-bold px-10 text-3xl">{product.productName}</p>
+                        <p className="text-lg px-10"> Rp{product.price}.000</p>
+                    </div>
                 </div>
-              </div>
+                </>
+                    );
+                })}
+                </div>
+            </div>
+            <div className="flex justify-center bg-[#202020]">
+                <a
+                                href={
+                                  dataTenant.pembayaran +
+                                  "?text=Halo!%20" +
+                                  dataTenant.tenantName +
+                                  ",%20saya%20ingin%20membeli%20" +
+                                
+                                  "%20apakah%20masih+ada?%0aBagaimana%20caranya?"
+                                }
+                              >
+                <button className="p-4 bg-[#EEEEEE] text-[#171717] font-Montserrat text-center font-bold m-4 hover:bg-[#171717] hover:text-[#EEEEEE]">PREORDER DISINI</button></a>
+            </div>
+            </>
             );
           }
         })}

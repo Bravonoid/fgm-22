@@ -1,21 +1,20 @@
-import React, {useEffect,useState} from 'react'
-import Slider from 'react-slick';
-import "slick-carousel/slick/slick.css"; 
+import React, { useEffect, useState } from "react";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { DataSliderTeater } from '../../assets/data/home/DataSliderTeater';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import './tenant.css'
-import Bgfoto from '../../assets/home/teater/teater.svg'
-import Pattern_samping from '../../assets/home/teater/pattern-group.svg'
-import Trailer from './trailer';
-import Sinopsis from './Sinopsis'
-import Pemeran from './Pemeran'
-import Judul_teater from '../../assets/teater/judul teater.svg'
-import { Link } from 'react-router-dom';
+import { DataSliderTeater } from "../../assets/data/home/DataSliderTeater";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import "./tenant.css";
+import Bgfoto from "../../assets/home/teater/teater.svg";
+import Pattern_samping from "../../assets/home/teater/pattern-group.svg";
+import Trailer from "./trailer";
+import Sinopsis from "./Sinopsis";
+import Pemeran from "./Pemeran";
+import Judul_teater from "../../assets/teater/judul teater.svg";
+import { Link } from "react-router-dom";
+import Penari from '../../assets/home/penari.png'
 
-
-
-const Foto = () => { 
+const Foto = () => {
   const [teater, setTeater] = useState(true);
   const [trailer, setTrailer] = useState(false);
   const [sinopsis, setSinopsis] = useState(false);
@@ -26,7 +25,6 @@ const Foto = () => {
     setTrailer(false);
     setSinopsis(false);
     setPemeran(false);
-
   };
   const handleTrailer = () => {
     setTeater(false);
@@ -35,7 +33,6 @@ const Foto = () => {
     setPemeran(false);
   };
   const handleSinopsis = () => {
-
     setTeater(false);
     setTrailer(false);
     setSinopsis(true);
@@ -62,98 +59,132 @@ const Foto = () => {
     lazyLoad: "progressive",
   };
 
-    
   return (
-    <div className='grid bg-fgm-base-terang bg-cover mt-16 md:flex'  >
-      
-   <div       className={'relative  w-full md:w-3/4 h-[550px] xl:h-[750px]  overflow-hidden ' }>
-   <div         className={trailer? ' ease-in-out duration-1000  transition-all w-full h-full' : 'hidden'}>
-     
-    <Trailer/>
-    </div>
-    <div         className={sinopsis? ' ease-in-out duration-1000  transition-all w-full h-full bg-right bg-no-repeat  ' : 'hidden'} style={{ backgroundImage: `url(${Bgfoto})` }}>
-     
-     <Sinopsis/>
-     </div>
-     <div         className={pemeran? ' ease-in-out duration-1000  transition-all w-full h-full' : 'hidden'}>
-     
-     <Pemeran/>
-     </div>
-   <div       className={teater? ' relative ease-in-out duration-1000 ' : 'ease-in-out  duration-1000 relative left-[-100%] '}>
-   <div className='absolute py-5 xl:py-20 mx-auto flex w-[90%] sm:w-[60%] md:w-[65%] xl:w-[55%] text-white flex-col-2  z-20'>
-        <div className='w-full'>
-        <div className='bg-fgm-base-terang xl:w-[80%] py-5 xl:pl-16 pr-4 px-4'>
-          <img className='h-8 xl:h-12' src={Judul_teater}>
-          </img>
-          <p className='text-sm md:text-lg xl:text-2xl font-bold'>
-            18 November 2022 | Taman Budaya Yogyakarta
-          </p>
+    <div className="mt-16 grid bg-fgm-base-terang bg-cover md:flex">
+      <div className={"relative  h-[750px] w-full overflow-hidden  md:w-3/4 "}>
+        <div
+          className={
+            trailer
+              ? " h-full w-full  transition-all duration-1000 ease-in-out"
+              : "hidden"
+          }
+        >
+          <Trailer />
         </div>
-        <div className='xl:w-full  xl:px-16  pl-8  sm:px-4 '>
-        <h1 className='text-3xl underline md:text-4xl xl:text-5xl mt-3 font-bold'>
-            AMONG DINO SUKMO
-          </h1>
-          <p className='  my-2  text-base md:text-lg xl:text-lg'>
-          Wirama Bhatara Kertagama merupakan pementasan akulturasi budaya kontemporer dan tradisional yang menyajikan sebuah pertunjukan seni peran, tari, dan musik, yang nantinya akan dinarasikan oleh seorang dalang menggunakan wayang. Kata ‘Wirama’ diambil dari bahasa Sanskerta yang berarti ‘kidung’, ‘Bhatara’ memiliki arti ‘agung’, sedangkan “Kertagama” memiliki arti “negeri”. Dengan demikian, “Wirama Bhatara Kertagama” memiliki makna ‘kidung agung negeri’. 
+        <div
+          className={
+            sinopsis
+              ? " h-full w-full  bg-right bg-no-repeat transition-all duration-1000 ease-in-out  "
+              : "hidden"
+          }
+          style={{ backgroundImage: `url(${Bgfoto})` }}
+        >
+          <Sinopsis />
+        </div>
+        <div
+          className={
+            pemeran
+              ? " h-full w-full  transition-all duration-1000 ease-in-out"
+              : "hidden"
+          }
+        >
+          <Pemeran />
+        </div>
+        <div
+          className={
+            teater
+              ? " relative duration-1000 ease-in-out "
+              : "relative  left-[-100%] duration-1000 ease-in-out "
+          }
+        >
+          <div className="flex-col-2 absolute z-20 mx-auto flex w-[90%] py-5 text-white sm:w-[80%] md:w-[90%] xl:w-[80%] xl:py-20  2xl:w-[65%]">
+            <div className="w-full">
+              <div className="w-full   py-5  px-4 pr-4 md:w-[65%] md:min-w-[80%] xl:w-[80%] xl:pl-16">
+                <img className="h-8 xl:h-12" src={Judul_teater}></img>
+                <p className="text-sm font-bold md:text-base xl:text-2xl">
+                  18 November 2022 | Taman Budaya Yogyakarta
+                </p>
+              </div>
+              <div className="pl-8  sm:px-4  xl:w-full  xl:px-16 ">
+                <h1 className="mt-3 text-3xl font-bold underline md:text-4xl xl:text-5xl">
+                  AMONG DINO SUKMO
+                </h1>
+                <p className="  my-2  text-sm md:text-base xl:text-lg">
+                  Wirama Bhatara Kertagama merupakan pementasan akulturasi
+                  budaya kontemporer dan tradisional yang menyajikan sebuah
+                  pertunjukan seni peran, tari, dan musik, yang nantinya akan
+                  dinarasikan oleh seorang dalang menggunakan wayang. Kata
+                  ‘Wirama’ diambil dari bahasa Sanskerta yang berarti ‘kidung’,
+                  ‘Bhatara’ memiliki arti ‘agung’, sedangkan “Kertagama”
+                  memiliki arti “negeri”. Dengan demikian, “Wirama Bhatara
+                  Kertagama” memiliki makna ‘kidung agung negeri’. Pementasan
+                  ini mengangkat tema keberagaman budaya Nusantara yang akan
+                  digambarkan melalui kisah kerajaan di Indonesia. Setiap
+                  kerajaan akan mewakili emosi dasar yang manusia miliki,
+                  seperti marah, sedih, bahagia, takut, jijik, dan terkejut.
+                  Pementasan ini akan dibawakan secara fragmentasi berdasarkan
+                  tiga kisah kerajaan Indonesia yaitu Kerajaan Singosari,
+                  Mataram, dan Majapahit.
+                </p>
+              </div>
+            </div>
+          </div>
 
-Pementasan ini mengangkat tema keberagaman budaya Nusantara yang akan digambarkan melalui kisah kerajaan di Indonesia. Setiap kerajaan akan mewakili emosi dasar yang manusia miliki, seperti marah, sedih, bahagia, takut, jijik, dan terkejut. Pementasan ini akan dibawakan secara fragmentasi berdasarkan tiga kisah kerajaan Indonesia yaitu Kerajaan Singosari, Mataram, dan Majapahit. 
- 
-        
-          </p>
+          
+                <div
+                  className="relative h-[750px]   w-full bg-cover bg-right"
+                  style={{ backgroundImage: `url('${Penari}')` }}
+                ></div>
+             
         </div>
-        </div>
-        
-       
       </div>
 
+      <div className="z-100 order-first  items-start bg-fgm-base-terang p-5 text-start md:order-last  ">
+        <ul className="flex items-center justify-center gap-2 text-sm text-white sm:text-lg md:m-8  md:inline-block md:text-3xl ">
+          <li
+            onClick={handleTeater}
+            className={
+              teater
+                ? " cursor-default font-bold "
+                : " cursor-pointer hover:font-bold"
+            }
+          >
+            TEATER
+          </li>
+          <li
+            onClick={handleTrailer}
+            className={
+              trailer
+                ? " cursor-default  font-bold "
+                : " cursor-pointer hover:font-bold"
+            }
+          >
+            TRAILER
+          </li>
 
-    <Slider {... settings}>
-    {DataSliderTeater.map((item) =>(
-      <>
-      
-  
-
-                <div className='bg-cover bg-center  w-full h-[550px] xl:h-[750px] relative ' style={ {backgroundImage: `url('/img/${item.img}')`}}> 
-               
-                </div>
-                </>
-       ))} 
-    </Slider>
-
-   
-
-    </div>
-    
-   
-    
-    </div>
-    
-    <div className='text-start order-first  bg-fgm-base-terang md:order-last p-5 items-start z-100  '>
-      <ul className='flex md:inline-block text-white justify-center items-center md:m-8 gap-2 md:text-3xl  text-lg sm:text-lg '>
-        <li onClick={handleTeater} className={teater?' font-bold cursor-default ':" hover:font-bold cursor-pointer"}>TEATER</li>
-        <li onClick={handleTrailer} className={trailer?' font-bold  cursor-default ':" hover:font-bold cursor-pointer"}>TRAILER</li>
-
-
-        <li onClick={handleSinopsis} className={sinopsis?' font-bold   cursor-default':" hover:font-bold cursor-pointer"}>SINOPSIS</li>
-        <Link to="/tiket">
-        <li>TIKET</li>
-        </Link>
-
-      </ul>
-      
-    </div>
-    <div className=' hidden md:flex  right-0  absolute bottom-[250px] justify-start  items-end'>
-      <img className=' h-48 xl:h-72 mx-auto relative' src={Pattern_samping}>
-      </img>
-
+          <li
+            onClick={handleSinopsis}
+            className={
+              sinopsis
+                ? " cursor-default   font-bold"
+                : " cursor-pointer hover:font-bold"
+            }
+          >
+            SINOPSIS
+          </li>
+          <Link to="/tiket">
+            <li className="hover:font-bold">TIKET</li>
+          </Link>
+        </ul>
       </div>
-
+      <div className=" absolute right-0  bottom-[250px]  hidden items-end justify-start  md:flex">
+        <img
+          className=" relative mx-auto h-48 xl:h-72"
+          src={Pattern_samping}
+        ></img>
+      </div>
     </div>
-   
-    
-    
-       
-  )
-}
+  );
+};
 
-export default Foto
+export default Foto;

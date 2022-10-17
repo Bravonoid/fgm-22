@@ -305,13 +305,4 @@ const Pasar_rakyat = ({tenantList,categoryName,}) => {
     )
     
 }
-function App() {
-  return (
-    <Routes>
-      <Route path="users">
-        <Route path=":userId" element={<Pasar_rakyat />} />
-      </Route>
-    </Routes>
-  );
-}
 export default Pasar_rakyat;
