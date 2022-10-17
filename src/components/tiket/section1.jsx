@@ -16,6 +16,7 @@ import Presale1SM from "../../assets/tiket/Presale1-SM.png";
 import Presale2SM from "../../assets/tiket/Presale2-SM.png";
 
 import RegularSM from "../../assets/tiket/Regula-SM.png";
+import Pattern from "../../assets/tiket/bg-tiket.svg";
 
 import FestivalSeni from "../../assets/tiket/FESTIVAL SENI.svg";
 import AOS from "aos";
@@ -27,7 +28,10 @@ const section1 = () => {
   AOS.refresh();
   AOS.refreshHard();
   return (
-    <div className="flex h-full flex-col items-center justify-between overflow-hidden bg-fgm-base sm:h-full ">
+    <div
+      className="flex h-full flex-col items-center justify-between overflow-hidden bg-fgm-base bg-auto bg-repeat sm:h-full "
+      style={{ backgroundImage: `url(${Pattern})` }}
+    >
       <div className=" mx-8 mt-8  mb-2 h-full w-full  flex-row justify-center pt-8 md:px-16">
         <div
           data-aos="fade-left"
@@ -178,13 +182,13 @@ const section1 = () => {
               />
             </div>
           </div>
-          <a   data-aos="zoom-in"
-              data-aos-duration="1000"
-              data-aos-delay="1500" href="https://www.kiostix.com/id/event/1752/festival-gadjah-mada">
-            <div
-            
-              className="btn mx-auto mt-2  w-fit bg-fgm-orange py-4 px-5 text-center text-xl font-bold  text-white shadow-[0_0px_0px_rgb(72,130,103)] transition-all  ease-out hover:translate-y-1 hover:shadow-[9px_9px_0_rgb(72,130,103)] md:mt-8  md:text-2xl xl:mt-16 2xl:mt-32"
-            >
+          <a
+            data-aos="zoom-in"
+            data-aos-duration="1000"
+            data-aos-delay="1500"
+            href="https://www.kiostix.com/id/event/1752/festival-gadjah-mada"
+          >
+            <div className="btn mx-auto mt-2  w-fit bg-fgm-orange py-4 px-5 text-center text-xl font-bold  text-white shadow-[0_0px_0px_rgb(72,130,103)] transition-all  ease-out hover:translate-y-1 hover:shadow-[9px_9px_0_rgb(72,130,103)] md:mt-8  md:text-2xl xl:mt-16 2xl:mt-32">
               BELI TIKET FESTIVAL SENI X PASAR RAKYAT
             </div>
           </a>

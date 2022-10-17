@@ -4,15 +4,22 @@ import LineTemaMobile from "../../../assets/Pasar-Rakyat/home-pasar/line-tema-mo
 import Tema from "../../../assets/Pasar-Rakyat/home-pasar/tema.svg";
 import TemaBox from "../../../assets/Pasar-Rakyat/home-pasar/tema-box.svg";
 import GarisTema from "../../../assets/Pasar-Rakyat/home-pasar/garis-tema.svg";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const TemaPasarRakyat = () => {
+
+  AOS.init();
+  AOS.refresh();
+  AOS.refreshHard();
+  
   return (
     <>
       <div className="relative w-full items-center justify-center bg-[#202020] py-10">
-        <img src={Tema} className="mx-auto px-10 hidden md:block" alt="" />
-        <img src={TemaBox} className="mx-auto py-5 hidden md:block" alt="" />
+        <img src={Tema} data-aos="slide-down" data-aos-duration="1500" className="mx-auto px-10 hidden md:block" alt="" />
+        <img src={TemaBox} data-aos="slide-up" data-aos-duration="1500" className="mx-auto py-5 hidden md:block" alt="" />
         <img src={GarisTema} className="mx-auto hidden md:block" alt="" />
-        <p className="text-white text-center text-2xl max-w-[932px] mx-auto pt-5 hidden md:block">
+        <p data-aos="fade-left" data-aos-duration="1500" className="text-white text-center text-2xl max-w-[932px] mx-auto pt-5 hidden md:block">
           bertujuan untuk membentuk kekuatan yang dapat menghasilkan keuntungan
           atau menguatkan perekonomian dan juga memiliki harapan yang besar
           untuk mewujudkan kesejahteraan masyarakat.
