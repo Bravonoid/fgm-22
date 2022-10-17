@@ -28,8 +28,13 @@ import mobile4 from "../../assets/festival-seni/mobile4.svg";
 import mobile5 from "../../assets/festival-seni/mobile5.svg";
 import "./festival.css";
 import {Link} from "react-router-dom";
+import AOS from 'aos'; 
+import "aos/dist/aos.css";
 
 const festival_seni = () => {
+    AOS.init();
+    AOS.refresh();
+    AOS.refreshHard();
     const settings = {
         dots: true,
         infinite: true,
@@ -76,8 +81,8 @@ const festival_seni = () => {
       };
     return (
         <>
-            <div id="content1" className="h-[500px] bg-cover mobile:bg-cover pt-16 mobile:h-[700px]  md:bg-festival_md mobile:bg-festival_mobile">
-                <div className="top-10 mt-12 mobile:relative sm:w-[475px]">
+            <div id="content1" className="h-[500px] bg-cover mobile:bg-cover pt-16 mobile:h-fit  sm:bg-festival_md mobile:bg-festival_mobile">
+                <div className="top-10 mt-12 sm:w-[575px] pb-8" data-aos="zoom-in" data-aos-delay="500" data-aos-duration="1000">
                     <div className="bg-[#202020] h-auto py-4 sm:w-[475px] sm:pl-20 text-[#FFFFFF] mobile:w-4/5 mobile:pl-4">
                         <img src={festivalseni} alt="festivalseni" className="w-[300px] mobile:w-4/5"></img>
                         <p>26 November 2022 | Lapangan Pancasila UGM</p>
@@ -88,22 +93,22 @@ const festival_seni = () => {
                             <p>PRADIKA</p>
                             <p>PRASARA</p>
                         </div>
-                        <p className="mt-2 text-lg sm:w-2/3 xl:w-full mobile:w-2/3">Bermakna dengan merebaknya syair dalam pesta sebagai wujud kesatuan diversitas berkehidupan di nusantara yang selaras, senada, dan berdampingan</p>
+                        <p className="mt-2 text-sm w-full mobile:w-2/3 text-justify">Berangkat dari bahasa Sanskerta, Padika yang berarti syair dan Prasara yang berarti merebak melambangkan Padika Prasara yang bermakna dengan merebaknya syair dalam pesta sebagai wujud kesatuan diversitas berkehidupan di nusantara yang selaras, senada, dan berdampingan. Padika Prasara menghadirkan pertunjukan panggung hiburan tradisional yang dikemas secara modern sebagai wadah mahasiswa UGM dalam mengekspresikan bakatnya melalui seni pertunjukkan. Padika Prasara akan turut dimeriahkan dengan adanya bintang tamu sebagai puncak penampilan.</p>
                     </div>
                 </div>
             </div>
             <div className="h-[700px] bg-[#242424] bg-cover block mx-auto" style={{ backgroundImage: `url(${pattern})` }}>
                 <div className="items-center flex flex-col pt-12 mobile:pt-2">
-                   <img src={pertunjukan} alt="pertunjukan" className="w-auto mobile:hidden sm:hidden md:block "/>
-                   <img src={mobile2} alt="bintangtamu" className="w-screen mobile:block mobile:py-4 md:hidden"/>
+                   <img src={pertunjukan} alt="pertunjukan" className="w-auto mobile:hidden sm:hidden md:block " data-aos="zoom-in" data-aos-duration="1000" data-aos-anchor-placement="center-center"/>
+                   <img src={mobile2} alt="bintangtamu" className="w-screen mobile:block mobile:py-4 md:hidden" data-aos="zoom-in" data-aos-duration="1000" data-aos-anchor-placement="center-center"/>
                     <div className="md:flex flex-row gap-8 text-white md:justify-center mobile:hidden sm:hidden md:mt-12 xl:mt-0">
-                        <div className="text-left px-4 xl:mt-20 h-[400px] w-2/5 sm:border-8 border-white bg-cover mobile:w-screen" style={{ backgroundImage: `url(${bintangtamu})` }}>
+                        <div className="text-left px-4 xl:mt-20 h-[400px] w-2/5 sm:border-8 border-white bg-cover mobile:w-screen" style={{ backgroundImage: `url(${bintangtamu})` }} data-aos="fade-right" data-aos-duration="1000"  data-aos-anchor-placement="top-center">
                             {/* <img src={orange} alt="orange" className="relative -top-12 -left-16 mobile:hidden"/> */}
                             {/* <img src={bintangtamu} alt="bintangtamu" className="w-[500px] absolute"/> */}
                             <p className="font-bold text-xl mt-4 relative border-t-2 border-b-2 border-white w-fit mobile:mt-8">BINTANG TAMU</p>
                             <p className="text-xl relative w-2/3">Turut dimeriahkan dengan adanya bintang tamu sebagai puncak penampilan</p>
                         </div>
-                         <div className="px-4 xl:mt-20 sm:border-8 h-[400px] w-2/5 border-white  bg-cover mobile:w-screen mobile:border-b-8" style={{ backgroundImage: `url(${ukm})` }}>
+                         <div className="px-4 xl:mt-20 sm:border-8 h-[400px] w-2/5 border-white  bg-cover mobile:w-screen mobile:border-b-8" style={{ backgroundImage: `url(${ukm})` }} data-aos="fade-left" data-aos-duration="1000"  data-aos-anchor-placement="top-center">
                              {/* <img src={ukm} alt="ukm" claszName=" w-[500px] absolute" /> */}
                             <p className="font-bold text-xl border-t-2 border-b-2 border-white mt-4 w-fit relative mobile:mt-8">UNIT KEGIATAN MAHASISWA</p>
                             <p className="text-xl relative w-4/5 mobile:w-auto">Pertunjukan panggung hiburan tradisional yang dikemas secara modern sebagai wadah mahasiswa UGM dalam mengekspresikan bakatnya melalui seni pertunjukkan  </p>
@@ -111,7 +116,7 @@ const festival_seni = () => {
                         </div>
                     </div>
                 </div>
-                <div className="xl:hidden mobile:block mobile:w-2/3 sm:w-2/3 mx-auto sm:block md:hidden">
+                <div className="xl:hidden mobile:block mobile:w-2/3 sm:w-2/3 mx-auto sm:block md:hidden" data-aos="zoom-in" data-aos-duration="1000"  data-aos-anchor-placement="top-center">
                     <Slider {... settings}>
                        <>
                             <div className="text-left px-4 xl:mt-20 h-[400px] w-2/5 sm:border-8 border-white bg-cover mobile:w-fit text-white sm:w-fit mobile:border-8" style={{ backgroundImage: `url(${bintangtamu})` }}>
@@ -134,20 +139,20 @@ const festival_seni = () => {
             </div>
             <div className="bg-[#242424]" style={{backgroundImage: `url(${pattern})`}}>
                 <div className="items-center flex flex-col py-4 gap-2 relative mobile:-top-40 mobile:justify-center">
-                    <img src={header} alt="header" className="w-auto mobile:hidden sm:hidden md:block"/>
-                    <img src={mobile3} alt="header" className="w-screen mobile:block mobile:pt-12 mobile:pb-2 md:hidden"/>
+                    <img src={header} alt="header" className="w-auto mobile:hidden sm:hidden md:block" data-aos="zoom-in" data-aos-duration="1000"  data-aos-anchor-placement="top-center"/>
+                    <img src={mobile3} alt="header" className="w-screen mobile:block mobile:pt-12 mobile:pb-2 md:hidden" data-aos="zoom-in" data-aos-duration="1000"  data-aos-anchor-placement="top-center"/>
                     <div className="flex md:flex-row gap-2 w-auto mobile:flex-col sm:flex-col md:mt-12 md:flex-wrap md:justify-center">
-                        <img src={olski_photo} alt="olski_photo" className="w-auto"/>
-                        <img src={guyon_waton_photo} alt="olski_photo" className="w-auto"/>
-                        <img src={the_overtunes} alt="the overtunes" className="w-auto"/>
-                        <img src={smash} alt="smash" className="w-auto"/>
-                        <img src={project_pop} alt="project pop" className="w-auto"/>
+                        <img src={olski_photo} alt="olski_photo" className="w-auto" data-aos="fade-up" data-aos-duration="1000"  data-aos-anchor-placement="top-center" />
+                        <img src={guyon_waton_photo} alt="olski_photo" className="w-auto" data-aos="fade-down" data-aos-duration="1000"  data-aos-anchor-placement="top-center"/>
+                        <img src={the_overtunes} alt="the overtunes" className="w-auto" data-aos="fade-up" data-aos-duration="1000"  data-aos-anchor-placement="top-center"/>
+                        <img src={smash} alt="smash" className="w-auto" data-aos="fade-down" data-aos-duration="1000"  data-aos-anchor-placement="top-center"/>
+                        <img src={project_pop} alt="project pop" className="w-auto" data-aos="fade-up" data-aos-duration="1000"  data-aos-anchor-placement="top-center"/>
                     </div>
                 </div>
             </div>
             <div className="items-center flex flex-col py-4 gap-2 justify-center relative mobile:top-0 bg-[#242424]">
-                <img src={ukm1} alt="ukm header" className="w-auto mobile:hidden sm:hidden md:block md:mb-12 "/>
-                <img src={mobile4} alt="ukm header" className="w-screen mobile:block md:hidden"/>
+                <img src={ukm1} alt="ukm header" className="w-auto mobile:hidden sm:hidden md:block md:mb-12 " data-aos="zoom-in" data-aos-duration="1000"  data-aos-anchor-placement="top-center"/>
+                <img src={mobile4} alt="ukm header" className="w-screen mobile:block md:hidden" data-aos="zoom-in" data-aos-duration="1000"  data-aos-anchor-placement="top-center"/>
             </div>
             <div className="h-[500px] bg-[#242424] mobile:h-[800px] sm:h-[600px] bg-cover" style={{backgroundImage: `url(${pattern})`}}>
                 {/* <Slider {... autoplay} className="w-11/12 block mx-auto h-[400px] px-4 mobile:w-5/6">
@@ -200,7 +205,7 @@ const festival_seni = () => {
                         </div>
                         </div>
                     </Slider> */}
-                <div className="items-center flex flex-col py-4 gap-2 top-10 justify-center relative mobile:top-0">
+                <div className="items-center flex flex-col py-4 gap-2 top-10 justify-center relative mobile:top-0" data-aos="zoom-in" data-aos-duration="1000"  data-aos-anchor-placement="top-center">
                     {/* <img src={ukm1} alt="ukm header" className="w-auto mobile:hidden sm:hidden md:block md:mb-12"/>
                     <img src={mobile4} alt="ukm header" className="w-screen mobile:block md:hidden"/> */}
                     <p className="font-Montserrat text-white text-6xl font-bold mt-16 mobile:hidden">C<span className="text-[#E62C20]">O</span>MING S<span className="text-[#4A8068]">O</span><span className="text-[#9C4A9A]">O</span>N</p>

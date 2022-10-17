@@ -13,7 +13,7 @@ const Navbar = () => {
   const [navbar, setNavbar] = useState(false);
   return (
     <div className="fixed z-[100] flex h-[70px] w-full justify-between bg-black text-white">
-      <div className="ml-0 flex flex-shrink-0 items-center py-4 px-[10px] mobile:mx-0 mobile:px-10">
+      <div className="ml-14 flex flex-shrink-0 items-center py-4 px-[28px] mobile:mx-0 mobile:px-10">
         <div className="h-full w-full pb-[3.05rem]">
           <Link to="">
             <img
@@ -22,7 +22,7 @@ const Navbar = () => {
               }}
               src={Logo}
               alt="Logo"
-              className="hover:cursor-pointer mobile:hidden"
+              className="hover:cursor-pointer mobile:hidden navbar1:hidden"
             />
           </Link>
           <Link to="">
@@ -32,7 +32,7 @@ const Navbar = () => {
               }}
               src={logo}
               alt="Logo"
-              className="h-12 hover:cursor-pointer sm:hidden"
+              className="h-12 hover:cursor-pointer sm:hidden navbar1:block"
             />
           </Link>
         </div>
@@ -79,7 +79,7 @@ const Navbar = () => {
             Pasar Rakyat
           </li>
         </Link>
-        <Link to="/festivalseni">
+        <Link to="/festival-seni">
           <li
             onClick={() => {
               window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
@@ -192,7 +192,7 @@ const Navbar = () => {
                 window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
                 setNavbar(false);
               }}
-              to="/festivalseni"
+              to="/festival-seni"
               className="block px-2 py-4 text-2xl font-bold transition duration-300 hover:bg-green-500"
             >
               Festival Seni

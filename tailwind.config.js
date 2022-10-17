@@ -12,6 +12,7 @@ module.exports = {
 			},
 			screens: {
 				mobile: { MIN: "360px", max: "639px" },
+				navbar1: {MIN: "1280px", max: "1400px"}
 			},
 			fontFamily: {
 				Montserrat: ["Montserrat"],
