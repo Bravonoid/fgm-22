@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import React, { useState } from "react";
 import Logo from "../assets/home/logo-navbar.svg";
 import logo from "../assets/logo_fgm.svg";
@@ -11,66 +11,6 @@ import { Divide as Hamburger } from "hamburger-react";
 
 const Navbar = () => {
   const [navbar, setNavbar] = useState(false);
-  const [activeBeranda, setActiveBeranda] = useState(false);
-  const [activeTentang, setActiveTentang] = useState(false);
-  const [activePentasTeater, setActivePentasTeater] = useState(false);
-  const [activePasarRakyat, setActivePasarRakyat] = useState(false);
-  const [activeFestivalSeni, setActiveFestivalSeni] = useState(false);
-  const [activeTiket, setActiveTiket] = useState(false);
-
-  const handleActiveBeranda = () => {
-    setActiveBeranda(true);
-    setActiveTentang(false);
-    setActivePentasTeater(false);
-    setActivePasarRakyat(false);
-    setActiveFestivalSeni(false);
-    setActiveTiket(false);
-  };
-
-  const handleActiveTentang = () => {
-    setActiveBeranda(false);
-    setActiveTentang(true);
-    setActivePentasTeater(false);
-    setActivePasarRakyat(false);
-    setActiveFestivalSeni(false);
-    setActiveTiket(false);
-  };
-
-  const handleActivePentasTeater = () => {
-    setActiveBeranda(false);
-    setActiveTentang(false);
-    setActivePentasTeater(true);
-    setActivePasarRakyat(false);
-    setActiveFestivalSeni(false);
-    setActiveTiket(false);
-  };
-
-  const handleActivePasarRakyat = () => {
-    setActiveBeranda(false);
-    setActiveTentang(false);
-    setActivePentasTeater(false);
-    setActivePasarRakyat(true);
-    setActiveFestivalSeni(false);
-    setActiveTiket(false);
-  };
-
-  const handleActiveFestivalSeni = () => {
-    setActiveBeranda(false);
-    setActiveTentang(false);
-    setActivePentasTeater(false);
-    setActivePasarRakyat(false);
-    setActiveFestivalSeni(true);
-    setActiveTiket(false);
-  };
-
-  const handleActiveTiket = () => {
-    setActiveBeranda(false);
-    setActiveTentang(false);
-    setActivePentasTeater(false);
-    setActivePasarRakyat(false);
-    setActiveFestivalSeni(false);
-    setActiveTiket(true);
-  };
 
   return (
     <div className="fixed z-[100] flex h-[70px] w-full justify-between bg-black text-white">
@@ -99,103 +39,85 @@ const Navbar = () => {
         </div>
       </div>
       <ul className="mr-20 flex h-full items-center justify-center gap-1 text-xl sm:hidden lg:ml-auto xl:flex mobile:hidden">
-        <Link to="">
+        <NavLink
+          end to=''
+          className={({ isActive }) => (isActive ? "font-bold" : "font-normal")}
+        >
           {" "}
           <li
             onClick={() => {
               window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
-              handleActiveBeranda();
             }}
-            // className="w-[9rem] cursor-pointer py-5 text-center hover:animate-fade hover:bg-pattern hover:bg-cover hover:bg-center hover:font-bold"
-            className={
-              activeBeranda
-                ? "w-[9rem] cursor-pointer py-5 text-center font-bold hover:animate-fade hover:bg-pattern hover:bg-cover hover:bg-center hover:font-bold"
-                : "w-[9rem] cursor-pointer py-5 text-center font-normal hover:animate-fade hover:bg-pattern hover:bg-cover hover:bg-center hover:font-bold"
-            }
+            className="w-[9rem] cursor-pointer py-5 text-center hover:animate-fade hover:bg-pattern hover:bg-cover hover:bg-center hover:font-bold"
           >
             Beranda
           </li>
-        </Link>
-        <Link to="/tentang">
+        </NavLink>
+        <NavLink
+          exact to="/tentang"
+          className={({ isActive }) => (isActive ? "font-bold" : "font-normal")}
+        >
           <li
             onClick={() => {
               window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
-              handleActiveTentang();
             }}
-            // className="w-[9rem] -translate-x-6 transform cursor-pointer py-5 text-center hover:animate-fade hover:bg-pattern hover:bg-cover hover:bg-center hover:font-bold"
-            className={
-              activeTentang
-                ? "w-[9rem] -translate-x-6 transform cursor-pointer py-5 text-center font-bold hover:animate-fade hover:bg-pattern hover:bg-cover hover:bg-center hover:font-bold"
-                : "w-[9rem] -translate-x-6 transform cursor-pointer py-5 text-center font-normal hover:animate-fade hover:bg-pattern hover:bg-cover hover:bg-center hover:font-bold"
-            }
+            className="w-[9rem] -translate-x-6 transform cursor-pointer py-5 text-center hover:animate-fade hover:bg-pattern hover:bg-cover hover:bg-center hover:font-bold"
           >
             Tentang
           </li>
-        </Link>
-        <Link to="/teater">
+        </NavLink>
+        <NavLink
+          exact to="/teater"
+          className={({ isActive }) => (isActive ? "font-bold" : "font-normal")}
+        >
           <li
             onClick={() => {
               window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
-              handleActivePentasTeater();
             }}
-            // className="w-[9rem] -translate-x-5 transform cursor-pointer py-5 text-center hover:animate-fade hover:bg-pattern hover:bg-cover hover:bg-center hover:font-bold"
-            className={
-              activePentasTeater
-                ? "w-[9rem] -translate-x-5 transform cursor-pointer py-5 text-center font-bold hover:animate-fade hover:bg-pattern hover:bg-cover hover:bg-center hover:font-bold"
-                : "w-[9rem] -translate-x-5 transform cursor-pointer py-5 text-center font-normal hover:animate-fade hover:bg-pattern hover:bg-cover hover:bg-center hover:font-bold"
-            }
+            className="w-[9rem] -translate-x-5 transform cursor-pointer py-5 text-center hover:animate-fade hover:bg-pattern hover:bg-cover hover:bg-center hover:font-bold"
           >
             Pentas Teater
           </li>
-        </Link>
-        <Link to="/pasar-rakyat">
+        </NavLink>
+        <NavLink
+          exact to="/pasar-rakyat"
+          className={({ isActive }) => (isActive ? "font-bold" : "font-normal")}
+        >
           <li
             onClick={() => {
               window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
-              handleActivePasarRakyat();
             }}
-            // className="w-[9rem] cursor-pointer py-5 text-center hover:animate-fade hover:bg-pattern hover:bg-cover hover:bg-center hover:font-bold"
-            className={
-              activePasarRakyat
-                ? "w-[9rem] cursor-pointer py-5 text-center font-bold hover:animate-fade hover:bg-pattern hover:bg-cover hover:bg-center hover:font-bold"
-                : "w-[9rem] cursor-pointer py-5 text-center font-normal hover:animate-fade hover:bg-pattern hover:bg-cover hover:bg-center hover:font-bold"
-            }
+            className="w-[9rem] cursor-pointer py-5 text-center hover:animate-fade hover:bg-pattern hover:bg-cover hover:bg-center hover:font-bold"
           >
             Pasar Rakyat
           </li>
-        </Link>
-        <Link to="/festival-seni">
+        </NavLink>
+        <NavLink
+          exact to="/festival-seni"
+          className={({ isActive }) => (isActive ? "font-bold" : "font-normal")}
+        >
           <li
             onClick={() => {
               window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
-              handleActiveFestivalSeni();
             }}
-            // className="w-[9rem] translate-x-4 transform cursor-pointer py-5 text-center hover:animate-fade hover:bg-pattern hover:bg-cover hover:bg-center hover:font-bold"
-            className={
-              activeFestivalSeni
-                ? "w-[9rem] translate-x-4 transform cursor-pointer py-5 text-center font-bold hover:animate-fade hover:bg-pattern hover:bg-cover hover:bg-center hover:font-bold"
-                : "w-[9rem] translate-x-4 transform cursor-pointer py-5 text-center font-normal hover:animate-fade hover:bg-pattern hover:bg-cover hover:bg-center hover:font-bold"
-            }
+            className="w-[9rem] translate-x-4 transform cursor-pointer py-5 text-center hover:animate-fade hover:bg-pattern hover:bg-cover hover:bg-center hover:font-bold"
           >
             Festival Seni
           </li>
-        </Link>
-        <Link to="/tiket">
+        </NavLink>
+        <NavLink
+          exact to="/tiket"
+          className={({ isActive }) => (isActive ? "font-bold" : "font-normal")}
+        >
           <li
             onClick={() => {
               window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
-              handleActiveTiket();
             }}
-            // className="w-[9rem] -translate-x-2 transform cursor-pointer py-5 text-center hover:animate-fade hover:bg-pattern hover:bg-cover hover:bg-center hover:font-bold"
-            className={
-              activeTiket
-                ? "w-[9rem] -translate-x-2 transform cursor-pointer py-5 text-center font-bold hover:animate-fade hover:bg-pattern hover:bg-cover hover:bg-center hover:font-bold"
-                : "w-[9rem] -translate-x-2 transform cursor-pointer py-5 text-center font-normal hover:animate-fade hover:bg-pattern hover:bg-cover hover:bg-center hover:font-bold"
-            }
+            className="w-[9rem] -translate-x-2 transform cursor-pointer py-5 text-center hover:animate-fade hover:bg-pattern hover:bg-cover hover:bg-center hover:font-bold"
           >
             Tiket
           </li>
-        </Link>
+        </NavLink>
       </ul>
       <div className=" my-auto items-center sm:block xl:hidden mobile:block">
         <div className="mb-0 px-10 outline-none">
