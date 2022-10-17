@@ -82,7 +82,7 @@ const festival_seni = () => {
     return (
         <>
             <div id="content1" className="h-[500px] bg-cover mobile:bg-cover pt-16 mobile:h-fit  sm:bg-festival_md mobile:bg-festival_mobile">
-                <div className="top-10 mt-12 sm:w-[575px] pb-8" data-aos="zoom-in" data-aos-delay="500" data-aos-duration="1000">
+                <div className="top-10 mt-12 sm:w-[575px] pb-8" data-aos="zoom-in" data-aos-delay="300" data-aos-duration="1000">
                     <div className="bg-[#202020] h-auto py-4 sm:w-[475px] sm:pl-20 text-[#FFFFFF] mobile:w-4/5 mobile:pl-4">
                         <img src={festivalseni} alt="festivalseni" className="w-[300px] mobile:w-4/5"></img>
                         <p>26 November 2022 | Lapangan Pancasila UGM</p>
