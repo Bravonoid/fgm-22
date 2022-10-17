@@ -42,7 +42,7 @@ const ActiveTab = () => {
             onClick={handleTema}
             className={
               tema
-                ? "text-[20px] text-white opacity-100 hover:cursor-pointer md:text-[40px]"
+                ? "text-[20px] text-white opacity-100 hover:cursor-pointer md:text-[40px] font-bold"
                 : "text-[20px] text-white opacity-40 hover:cursor-pointer hover:opacity-100 md:text-[40px]"
             }
           >
@@ -53,7 +53,7 @@ const ActiveTab = () => {
             onClick={handleTagline}
             className={
               tagline
-                ? "text-[20px] text-white opacity-100 hover:cursor-pointer md:text-[40px]"
+                ? "text-[20px] text-white opacity-100 hover:cursor-pointer md:text-[40px] font-bold"
                 : "text-[20px] text-white opacity-40 hover:cursor-pointer hover:opacity-100 md:text-[40px]"
             }
           >

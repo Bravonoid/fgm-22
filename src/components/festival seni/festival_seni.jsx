@@ -30,6 +30,7 @@ import "./festival.css";
 import { Link } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Coming from "../coming_soon.jsx";
 
 const festival_seni = () => {
   AOS.init();
@@ -227,7 +228,7 @@ const festival_seni = () => {
         </div>
       </div>
       <div
-        className="bg-[#242424]"
+        className="bg-[#242424] bg-cover"
         style={{ backgroundImage: `url(${pattern})` }}
       >
         <div className="relative flex flex-col items-center gap-2 py-4 mobile:-top-40 mobile:justify-center">
@@ -291,28 +292,29 @@ const festival_seni = () => {
           </div>
         </div>
       </div>
-      <div className="relative flex flex-col items-center justify-center gap-2 bg-[#242424] py-4 mobile:top-0">
-        <img
-          src={ukm1}
-          alt="ukm header"
-          className="w-auto sm:hidden md:mb-12 md:block mobile:hidden "
-          data-aos="zoom-in"
-          data-aos-duration="1000"
-          data-aos-anchor-placement="top-center"
-        />
-        <img
-          src={mobile4}
-          alt="ukm header"
-          className="w-screen md:hidden mobile:block"
-          data-aos="zoom-in"
-          data-aos-duration="1000"
-          data-aos-anchor-placement="top-center"
-        />
-      </div>
       <div
         className="h-[500px] bg-[#242424] bg-cover sm:h-[600px] mobile:h-[800px]"
         style={{ backgroundImage: `url(${pattern})` }}
       >
+        <div className="relative flex flex-col items-center justify-center gap-2 bg-[#242424] py-4 mobile:top-0">
+          <img
+            src={ukm1}
+            alt="ukm header"
+            className="w-auto sm:hidden md:mb-12 md:block mobile:hidden "
+            data-aos="zoom-in"
+            data-aos-duration="1000"
+            data-aos-anchor-placement="top-center"
+          />
+          <img
+            src={mobile4}
+            alt="ukm header"
+            className="w-screen md:hidden mobile:block"
+            data-aos="zoom-in"
+            data-aos-duration="1000"
+            data-aos-anchor-placement="top-center"
+          />
+        </div>
+      
         {/* <Slider {... autoplay} className="w-11/12 block mx-auto h-[400px] px-4 mobile:w-5/6">
                         <div className="px-4">
                         <div className="bg-[#818181] w-auto h-[300px] hover:scale-110 duration-300 ease-out hover:bg-gray-300 flex justify-end flex-col">
@@ -369,9 +371,9 @@ const festival_seni = () => {
           data-aos-duration="1000"
           data-aos-anchor-placement="top-center"
         >
-          {/* <img src={ukm1} alt="ukm header" className="w-auto mobile:hidden sm:hidden md:block md:mb-12"/>
+          <Coming />          {/* <img src={ukm1} alt="ukm header" className="w-auto mobile:hidden sm:hidden md:block md:mb-12"/>
                     <img src={mobile4} alt="ukm header" className="w-screen mobile:block md:hidden"/> */}
-          <p className="mt-16 font-Montserrat text-6xl font-bold text-white mobile:hidden">
+          {/* <p className="mt-16 font-Montserrat text-6xl font-bold text-white mobile:hidden">
             C<span className="text-[#E62C20]">O</span>MING S
             <span className="text-[#4A8068]">O</span>
             <span className="text-[#9C4A9A]">O</span>N
@@ -381,7 +383,7 @@ const festival_seni = () => {
             src={mobile5}
             alt="pattern1"
             className="w-auto pt-2 xl:hidden mobile:block"
-          />
+          /> */}
           {/* <>
                     <div id="carousel1" className="bg-black flex flex-row gap-2 h-[150px] w-screen">
                         <div className="bg-[#818181] w-full h-full hover:scale-110 duration-300 ease-out hover:bg-gray-300 flex justify-end flex-col">
@@ -477,7 +479,7 @@ const festival_seni = () => {
           <img
             src={btn}
             alt="button"
-            className="relative mx-auto my-12 block w-[300px] scale-125 rounded-md transition-all duration-300 ease-out hover:translate-y-1 hover:scale-150  hover:shadow-[9px_9px_0_rgb(255,255,255)] mobile:scale-100"
+            className="relative mx-auto my-12 block w-[300px] scale-125 transition-all duration-300 ease-out hover:translate-y-1 hover:scale-[1.5]  hover:shadow-[9px_9px_0_rgb(255,255,255)] mobile:scale-100"
           />
         </Link>
       </div>
