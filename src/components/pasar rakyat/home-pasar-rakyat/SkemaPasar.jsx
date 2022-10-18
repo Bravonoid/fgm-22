@@ -27,7 +27,7 @@ const SkemaPasar = () => {
         <div
           data-aos="fade-down"
           data-aos-duration="1500"
-          // data-aos-offset="1000"
+          data-aos-offset="1000"
           className="py-10"
         >
           <Coming />
