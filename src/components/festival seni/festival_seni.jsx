@@ -4,7 +4,7 @@ import Slider1 from "react-slick";
 import festivalseni from "../../assets/festival-seni/festival_seni.svg";
 import background from "../../assets/festival-seni/background.svg";
 import pertunjukan from "../../assets/festival-seni/pertunjukan.svg";
-import bintangtamu from "../../assets/festival-seni/bintang_tamu.svg";
+import bintangtamu from "../../assets/festival-seni/bintang_tamu.png";
 import ukm from "../../assets/festival-seni/ukm.png";
 import background1 from "../../assets/festival-seni/buy_tiket_background.svg";
 import btn from "../../assets/festival-seni/button.svg";
@@ -173,7 +173,7 @@ const festival_seni = () => {
             >
               {/* <img src={ukm} alt="ukm" claszName=" w-[500px] absolute" /> */}
               <p className="relative mt-4 w-fit border-t-2 border-b-2 border-white text-xl font-bold mobile:mt-8">
-                UNIT KEGIATAN MAHASISWA
+                KOLABORASI KREASI MAHASISWA
               </p>
               <p className="relative w-4/5 text-xl mobile:w-auto">
                 Pertunjukan panggung hiburan tradisional yang dikemas secara
@@ -214,7 +214,7 @@ const festival_seni = () => {
               >
                 {/* <img src={ukm} alt="ukm" claszName=" w-[500px] absolute" /> */}
                 <p className="relative mt-4 w-fit border-t-2 border-b-2 border-white text-xl font-bold mobile:mt-8 mobile:w-1/2">
-                  UNIT KEGIATAN MAHASISWA
+                  KOLABORASI KREASI MAHASISWA
                 </p>
                 <p className="relative w-4/5 text-xl mobile:text-base">
                   Pertunjukan panggung hiburan tradisional yang dikemas secara
@@ -250,7 +250,7 @@ const festival_seni = () => {
           />
           <div className="flex w-auto gap-2 sm:flex-col md:mt-12 md:flex-row md:flex-wrap md:justify-center mobile:flex-col">
             <img
-              src={olski_photo}
+              src={project_pop}
               alt="olski_photo"
               className="w-auto"
               data-aos="fade-up"
@@ -258,7 +258,7 @@ const festival_seni = () => {
               data-aos-anchor-placement="top-center"
             />
             <img
-              src={guyon_waton_photo}
+              src={smash}
               alt="olski_photo"
               className="w-auto"
               data-aos="fade-down"
@@ -274,7 +274,7 @@ const festival_seni = () => {
               data-aos-anchor-placement="top-center"
             />
             <img
-              src={smash}
+              src={guyon_waton_photo}
               alt="smash"
               className="w-auto"
               data-aos="fade-down"
@@ -282,7 +282,7 @@ const festival_seni = () => {
               data-aos-anchor-placement="top-center"
             />
             <img
-              src={project_pop}
+              src={olski_photo}
               alt="project pop"
               className="w-auto"
               data-aos="fade-up"

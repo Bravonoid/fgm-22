@@ -65,6 +65,26 @@ const Tentang = () => {
                 src={rectangle_18}
                 alt="rectangle"
               ></img> */}
+            </div>
+          </div>
+          <div className="text-justify sm:text-base xl:text-3xl">
+            Festival Gadjah Mada merupakan sebuah festival yang menyajikan
+            kreasi budaya dan seni tradisional melalui pengemasan yang modern.
+            Pada tahun ini Festival Gadjah Mada akan menyemarakan rangkaian
+            acaranya melalui festival seni, pasar rakyat, dan pentas teater
+          </div>
+          <Link to="/tentang">
+            <button
+              onClick={() => {
+                window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+              }}
+              class="mt-4 rounded bg-white py-2 px-6 font-Montserrat text-lg text-black hover:px-[1.33rem] hover:font-bold mobile:text-sm transition-all duration-300 ease-out hover:scale-[1]  hover:shadow-[5px_5px_0_rgb(128,128,128)]"
+            >
+              Selengkapnya
+            </button>
+          </Link>
+        </div>
+        {/* <img
 						</div>
 					</div>
 					<div className="text-justify sm:text-base xl:text-3xl">
