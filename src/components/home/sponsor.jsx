@@ -7,6 +7,9 @@ import { MedPartSponsorLogo } from '../home/sponsor/MedPartSponsor';
 import {  dataSponsor, dataMedpart } from '../../data/dataMedPartSponsor';
 import sponsor_mobile from '../../assets/home/sponsor_mobile.svg';
 import AOS from "aos";
+import Pegadaian from '../../assets/medPartSponsor/Pegadaian.png'
+
+
 import "aos/dist/aos.css";
 
 const sponsor = () =>  {
@@ -35,19 +38,10 @@ const sponsor = () =>  {
             </div>
           </div>
 
-          <div className={` mobile:mt-4 flex  mt-32  p-5 bg-[#242424] xl:bg-flat-medpart bg-cover h-3/5 w-3/4 my-auto mx-auto  relative z-100 `} data-aos="flip-up" data-aos-duration="1000">
-          <div className="relative p-2 z-40 flex flex-wrap md:gap-8 gap-4 justify-evenly md:mx-16 ">
-                            {dataSponsor.map((sponsor, index) =>
-                                <div className="self-center">
-                                <MedPartSponsorLogo
-                                    key={index}
-                                    name={sponsor.name}
-                                    img={sponsor.img}
-                                    width={sponsor.lebar}
-                                    height={sponsor.tinggi}
-                                />
-                                </div>
-                            )}
+          <div className={` mobile:mt-4 flex  mt-32  p-5 bg-[#242424] xl:bg-flat-medpart bg-cover h-full w-3/4 my-auto mx-auto  relative z-100 `} data-aos="flip-up" data-aos-duration="1000">
+          <div className="relative p-2 z-40 flex h-72  mx-auto md:gap-8 gap-4 justify-between ">
+                            <img classname= " mx-auto "src ={Pegadaian}>
+                            </img>
                         </div>
           </div>
     </div>

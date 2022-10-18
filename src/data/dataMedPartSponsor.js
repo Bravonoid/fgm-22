@@ -72,6 +72,11 @@ const dataMedpart = [
     
 ]
 const dataSponsor = [
+    {
+        "name" : "Pegadaian",
+        "img" : "sponsor/Pegadaian.png",
+        "lebar" : "24"
+    }
    
 
 ]

@@ -10,11 +10,16 @@ import Pattern_samping from "../../assets/home/teater/pattern-group.svg";
 import Trailer from "./trailer";
 import Sinopsis from "./Sinopsis";
 import Pemeran from "./Pemeran";
-import Judul_teater from "../../assets/teater/judul teater.svg";
+import Judul_teater from "../../assets/teater/Judul_teater.svg";
 import { Link } from "react-router-dom";
-import Penari from '../../assets/home/penari.png'
+import Penari from '../../assets/home/penari.png';
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Foto = () => {
+  AOS.init();
+  AOS.refresh();
+  AOS.refreshHard();
   const [teater, setTeater] = useState(true);
   const [trailer, setTrailer] = useState(false);
   const [sinopsis, setSinopsis] = useState(false);
@@ -98,7 +103,10 @@ const Foto = () => {
           }
         >
           <div className="flex-col-2 absolute z-20 mx-auto flex w-[90%] py-5 text-white sm:w-[80%] md:w-[90%] xl:w-[80%] xl:py-20  2xl:w-[65%]">
-            <div className="w-full">
+            <div className="w-full"
+               data-aos="fade-right"
+               data-aos-duration="1000"
+              >
               <div className="w-full   py-5  px-4 pr-4 md:w-[65%] md:min-w-[80%] xl:w-[80%] xl:pl-16">
                 <img className="h-8 xl:h-12" src={Judul_teater}></img>
                 <p className="text-sm font-bold md:text-base xl:text-2xl">
@@ -107,7 +115,7 @@ const Foto = () => {
               </div>
               <div className="pl-8  sm:px-4  xl:w-full  xl:px-16 ">
                 <h1 className="mt-3 text-3xl font-bold underline md:text-4xl xl:text-5xl">
-                  AMONG DINO SUKMO
+                  WIRAMA BHATARA KERTAGAMA
                 </h1>
                 <p className="  my-2  text-sm md:text-base xl:text-lg">
                   Wirama Bhatara Kertagama merupakan pementasan akulturasi

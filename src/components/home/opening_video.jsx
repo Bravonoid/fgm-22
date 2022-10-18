@@ -31,6 +31,7 @@ const opening_video = () => {
 						className="-z-50 mx-auto h-screen w-full overflow-hidden object-cover"
 						src={Teaser}
 						type="video/mp4"
+						playsinline
 						autoPlay
 						loop
 						muted
