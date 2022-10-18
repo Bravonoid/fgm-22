@@ -173,7 +173,7 @@ const festival_seni = () => {
             >
               {/* <img src={ukm} alt="ukm" claszName=" w-[500px] absolute" /> */}
               <p className="relative mt-4 w-fit border-t-2 border-b-2 border-white text-xl font-bold mobile:mt-8">
-                UNIT KEGIATAN MAHASISWA
+                KOLABORASI KREASI MAHASISWA
               </p>
               <p className="relative w-4/5 text-xl mobile:w-auto">
                 Pertunjukan panggung hiburan tradisional yang dikemas secara
@@ -214,7 +214,7 @@ const festival_seni = () => {
               >
                 {/* <img src={ukm} alt="ukm" claszName=" w-[500px] absolute" /> */}
                 <p className="relative mt-4 w-fit border-t-2 border-b-2 border-white text-xl font-bold mobile:mt-8 mobile:w-1/2">
-                  UNIT KEGIATAN MAHASISWA
+                  KOLABORASI KREASI MAHASISWA
                 </p>
                 <p className="relative w-4/5 text-xl mobile:text-base">
                   Pertunjukan panggung hiburan tradisional yang dikemas secara
