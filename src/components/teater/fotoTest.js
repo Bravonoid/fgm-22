@@ -17,9 +17,11 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 const Foto = () => {
-  AOS.init();
-  AOS.refresh();
-  AOS.refreshHard();
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
+
   const [teater, setTeater] = useState(true);
   const [trailer, setTrailer] = useState(false);
   const [sinopsis, setSinopsis] = useState(false);
@@ -107,17 +109,17 @@ const Foto = () => {
                data-aos="fade-right"
                data-aos-duration="1000"
               >
-              <div className="w-full   py-5  px-4 pr-4 md:w-[65%] md:min-w-[80%] xl:w-[80%] xl:pl-16">
+              <div className="w-full   py-5 pl-8  sm:px-4 pr-4 md:w-[65%] md:min-w-[80%] xl:w-[80%] xl:pl-16">
                 <img className="h-8 xl:h-12" src={Judul_teater}></img>
                 <p className="text-sm font-bold md:text-base xl:text-2xl">
                   18 November 2022 | Taman Budaya Yogyakarta
                 </p>
               </div>
               <div className="pl-8  sm:px-4  xl:w-full  xl:px-16 ">
-                <h1 className="mt-3 text-3xl font-bold underline md:text-4xl xl:text-5xl">
+                <h1 className="mt-3 sm:text-3xl text-xl font-bold underline md:text-4xl xl:text-5xl">
                   WIRAMA BHATARA KERTAGAMA
                 </h1>
-                <p className="  my-2  text-sm md:text-base xl:text-lg">
+                <p className="  my-2 text-left text-sm md:text-base xl:text-lg">
                   Wirama Bhatara Kertagama merupakan pementasan akulturasi
                   budaya kontemporer dan tradisional yang menyajikan sebuah
                   pertunjukan seni peran, tari, dan musik, yang nantinya akan

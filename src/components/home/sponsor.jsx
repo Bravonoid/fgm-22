@@ -39,7 +39,7 @@ const sponsor = () =>  {
           </div>
 
           <div className={` mobile:mt-4 flex  mt-32  p-5 bg-[#242424] xl:bg-flat-medpart bg-cover h-full w-3/4 my-auto mx-auto  relative z-100 `} data-aos="flip-up" data-aos-duration="1000">
-          <div className="relative p-2 z-40 flex h-72  mx-auto md:gap-8 gap-4 justify-between ">
+          <div className="relative p-2 z-40 flex md:h-72 2xl:h-[24rem] mx-auto md:gap-8 gap-4 justify-between ">
                             <img classname= " mx-auto "src ={Pegadaian}>
                             </img>
                         </div>
