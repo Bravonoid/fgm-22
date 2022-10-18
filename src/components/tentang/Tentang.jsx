@@ -60,12 +60,12 @@ const Tentang = () => {
             ‘Prapti Hita Abhipraya Jagaddhita’.
           </p>
           <a href="#tema">
-            <button class="mr-5 rounded bg-[#4A8068] py-2 px-6 font-Montserrat text-lg text-[#EEEEEE] hover:bg-[#2E5343] hover:px-[1.36rem] hover:font-bold mobile:mr-3 mobile:px-3 mobile:text-base">
+            <button class="mr-5 rounded bg-[#4A8068] py-2 px-6 font-Montserrat text-lg text-[#EEEEEE] hover:bg-[#2E5343] hover:px-[1.36rem] hover:font-bold mobile:mr-3 mobile:px-3 mobile:text-base transition-all duration-300 ease-out hover:shadow-[5px_5px_0_#4A8068]">
               Tema Besar
             </button>
           </a>
           <a href="#maskot">
-            <button class="rounded bg-[#9C4A9A] py-2 px-6 font-Montserrat text-lg text-[#EEEEEE] hover:bg-[#693268] hover:px-[1.4rem]  hover:font-bold mobile:px-3 mobile:text-base">
+            <button class="rounded bg-[#9C4A9A] py-2 px-6 font-Montserrat text-lg text-[#EEEEEE] hover:bg-[#693268] hover:px-[1.4rem]  hover:font-bold mobile:px-3 mobile:text-base transition-all duration-300 ease-out hover:shadow-[5px_5px_0_#9C4A9A]">
               Cindaru
             </button>
           </a>
