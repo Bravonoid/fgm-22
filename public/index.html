@@ -28,17 +28,40 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
 		<title>Festival Gadjah Mada</title>
-		<meta property="og:site_name" content="Festival Gadjah Mada" />
-		<meta property="og:title" content="Festival Gadjah Mada" />
-		<meta property="og:type" content="video.movie" />
-		<meta property="og:url" content="https://festivalgadjahmada.com/" />
-		<meta property="og:image" content="%PUBLIC_URL%/images/og_image.png" />
+		<meta name="robots" content="follow, index" />
 		<meta
 			property="og:description"
 			content="Festival Gadjah Mada merupakan sebuah festival yang menyajikan kreasi budaya dan seni tradisional melalui pengemasan yang modern. Pada tahun ini Festival Gadjah Mada akan menyemarakan rangkaian acaranya melalui Festival Seni, Pasar Rakyat, dan Pentas Teater"
 		/>
+		<meta property="og:url" content="https://festivalgadjahmada.com/" />
 		<link rel="canonical" href="https://festivalgadjahmada.com/" />
+
+		<meta property="og:type" content="website" />
+		<meta property="og:site_name" content="Festival Gadjah Mada" />
+		<meta property="og:title" content="Festival Gadjah Mada" />
+		<meta
+			property="og:image"
+			itemprop="image"
+			name="image"
+			content="%PUBLIC_URL%/images/og_image.png"
+		/>
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:image" content="{data.image}" />
 	</head>
+	<!-- Google tag (gtag.js) -->
+	<script
+		async
+		src="https://www.googletagmanager.com/gtag/js?id=G-68J9QVR4S1"
+	></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() {
+			dataLayer.push(arguments);
+		}
+		gtag("js", new Date());
+
+		gtag("config", "G-68J9QVR4S1");
+	</script>
 	<body class="scroll-smooth">
 		<noscript>You need to enable JavaScript to run this app.</noscript>
 		<div id="root"></div>
