@@ -65,7 +65,7 @@ const Tenant = ({ tenantList, categoryName }) => {
       </form>
       {listItem && (
         <>
-          <p className="text-fgmBlack mt-5 mb-20">
+          <p className="text-white mt-5 mb-20">
             {listItem.length} tenant ditemukan
           </p>
           <div className="grid grid-cols-2 gap-2 sm:gap-12 lg:grid-cols-3 2xl:grid-cols-4">
