@@ -1,6 +1,18 @@
 import React, { Component } from "react";
 import block1 from "../../../../assets/Pasar-Rakyat/produk/block1.svg";
 import block2 from "../../../../assets/Pasar-Rakyat/produk/block2.svg";
+import Slider from "react-slick";
+const settings = {
+  arrows: false,
+  dots: false,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  initialSlide: 0,
+  infinite: true,
+  speed: 2000,
+  autoplay: true,
+  autoplaySpeed: 3000,
+};
 export default class Modal extends Component {
   render() {
     return (
@@ -25,6 +37,7 @@ export default class Modal extends Component {
                   <div className="text-center items-center justify-center px-5 border-b border-solid border-blueGray-200 rounded-t">
                     <div className="flex items-center justify-center content-center">
                       <div className="lg:w-64 md:w-60 w-44">
+                      <Slider className="" {...settings}>
                         <img
                           className="object-cover mb-8 z-50 relative"
                           alt={this.props.newProductName}
@@ -37,6 +50,43 @@ export default class Modal extends Component {
                           width="375"
                           height="500"
                         />
+                        <img
+                          className="object-cover mb-8 z-50 relative"
+                          alt={this.props.newProductName}
+                          src={
+                            "/data/tenant/" +
+                            this.props.newId +
+                            "/product/" +
+                            this.props.newProductImages
+                          }
+                          width="375"
+                          height="500"
+                        />
+                        <img
+                          className="object-cover mb-8 z-50 relative"
+                          alt={this.props.newProductName}
+                          src={
+                            "/data/tenant/" +
+                            this.props.newId +
+                            "/product/" +
+                            this.props.newProductImages
+                          }
+                          width="375"
+                          height="500"
+                        />
+                        <img
+                          className="object-cover mb-8 z-50 relative"
+                          alt={this.props.newProductName}
+                          src={
+                            "/data/tenant/" +
+                            this.props.newId +
+                            "/product/" +
+                            this.props.newProductImages
+                          }
+                          width="375"
+                          height="500"
+                        />
+                        </Slider>
                       </div>
                     </div>
                   </div>
