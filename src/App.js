@@ -26,7 +26,7 @@ function App() {
 				<Route path="/festival-seni" element={<Festival />} />
 				{/* <Route path="/produk" element={<Produk />} /> */}
 				<Route path="/pasar-rakyat" element={<PasarRakyat />} />
-				{/* <Route path="/pasar-rakyat/tenant" element={<Tenant />} /> */}
+				<Route path="/pasar-rakyat/tenant" element={<Tenant />} />
 				{/* <Route path="/pasar-rakyat/tenant/produk/:id" element={<Product />} /> */}
 				<Route path="/tiket" element={<Tiket />} />
 
