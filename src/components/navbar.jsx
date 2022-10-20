@@ -190,7 +190,7 @@ const Navbar = () => {
               to="/teater"
               className="block px-2 py-4 text-2xl font-bold transition duration-300 hover:bg-green-500"
             >
-              Teater
+              Pentas Teater
             </Link>
           </li>
           <li>
@@ -226,7 +226,7 @@ const Navbar = () => {
               to="/tiket"
               className="block px-2 py-4 text-2xl font-bold transition duration-300 hover:bg-green-500"
             >
-              Ticket
+              Tiket
             </Link>
           </li>
         </ul>
