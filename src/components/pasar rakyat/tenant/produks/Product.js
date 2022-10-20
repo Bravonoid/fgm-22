@@ -82,111 +82,18 @@ export default function Produk() {
                               return (
                                 <>
                                   <div className="text-left items-start grid grid-cols-3 justify-items-center justify-self-center self-center md:flex gap-10">
-                                    {socMed.whatsapp !== null ? (
-                                      <>
-                                        <div>
-                                          <a href={socMed.whatsapp}>
-                                            <img
-                                              src="/images/social_media/whatsapp.png"
-                                              width="30"
-                                              height="30"
-                                            />
-                                          </a>
-                                        </div>
-                                      </>
-                                    ) : (
-                                      ""
-                                    )}
                                     {socMed.instagram !== null ? (
                                       <>
                                         <div>
-                                          <a href={socMed.instagram}>
-                                            <img
-                                              src="/images/social_media/instagram.png"
-                                              width="30"
-                                              height="30"
-                                            />
+                                          <a href={socMed.instagram} >
+                                            <FontAwesomeIcon icon={faInstagram} className="h-12 w-12 text-white" />
                                           </a>
                                         </div>
                                       </>
                                     ) : (
                                       ""
                                     )}
-                                    {socMed.facebook !== null ? (
-                                      <>
-                                        <div>
-                                          <a href={socMed.facebook}>
-                                            <img
-                                              src="/images/social_media/facebook.png"
-                                              width="30"
-                                              height="30"
-                                            />
-                                          </a>
-                                        </div>
-                                      </>
-                                    ) : (
-                                      ""
-                                    )}
-                                    {socMed.website !== null ? (
-                                      <>
-                                        <div>
-                                          <a href={socMed.website}>
-                                            <img
-                                              src="/images/social_media/website.png"
-                                              width="30"
-                                              height="30"
-                                            />
-                                          </a>
-                                        </div>
-                                      </>
-                                    ) : (
-                                      ""
-                                    )}
-                                    {socMed.shopee !== null ? (
-                                      <>
-                                        <div>
-                                          <a href={socMed.shopee}>
-                                            <img
-                                              src="/images/social_media/shopee.png"
-                                              width="100"
-                                              height="30"
-                                            />
-                                          </a>
-                                        </div>
-                                      </>
-                                    ) : (
-                                      ""
-                                    )}
-                                    {socMed.tokopedia !== null ? (
-                                      <>
-                                        <div>
-                                          <a href={socMed.tokopedia}>
-                                            <img
-                                              src="/images/social_media/tokopedia.png"
-                                              width="125"
-                                              height="30"
-                                            />
-                                          </a>
-                                        </div>
-                                      </>
-                                    ) : (
-                                      ""
-                                    )}
-                                    {socMed.lazada !== null ? (
-                                      <>
-                                        <div>
-                                          <a href={socMed.lazada}>
-                                            <img
-                                              src="/images/social_media/lazada.png"
-                                              width="125"
-                                              height="30"
-                                            />
-                                          </a>
-                                        </div>
-                                      </>
-                                    ) : (
-                                      ""
-                                    )}
+                                  
                                   </div>
                                 </>
                               );

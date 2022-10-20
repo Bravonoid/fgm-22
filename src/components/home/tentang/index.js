@@ -2,7 +2,7 @@ import { Card } from "./card";
 import { useState } from "react";
 
 const cardName = [
-  { name: "Teater", img: "teater.png", url: "" },
+  { name: "Pentas Teater", img: "teater.png", url: "" },
   { name: "Festival Seni", img: "festivalseni.png", url: "" },
   {
     name: "Pasar Rakyat",
