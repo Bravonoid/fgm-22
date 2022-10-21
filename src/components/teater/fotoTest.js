@@ -110,7 +110,7 @@ const Foto = () => {
 							data-aos="fade-right"
 							data-aos-duration="1000"
 						>
-							<div className="w-full   py-5 pl-8  pr-4 sm:px-4 md:w-[65%] md:min-w-[80%] xl:w-[80%] xl:pl-16">
+							<div className="w-full bg-fgm-base py-5 pl-8  pr-4 sm:px-4 md:w-[65%] md:min-w-[80%] xl:w-[80%] xl:pl-16">
 								<img className="h-8 xl:h-12" src={Judul_teater}></img>
 								<p className="text-sm font-bold md:text-base xl:text-2xl">
 									18 November 2022 | Taman Budaya Yogyakarta

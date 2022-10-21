@@ -31,8 +31,8 @@ const TentangPasarRakyat = () => {
 	const styleGambarSlider = "w-full lg:w-[500px] 2xl:mx-auto";
 	return (
 		<>
-			<div className="items-center bg-[#171717] pb-[10rem] xl:pb-[20rem]">
-				<div className="relative md:top-24 md:mx-auto md:grid md:grid-cols-4 xl:top-48 mobile:top-0 mobile:flex mobile:flex-col">
+			<div className="items-center bg-[#171717] xl:pt-[8rem] pt-[2rem] pb-[4rem] xl:pb-[8rem]">
+				<div className="relative md:mx-auto md:grid md:grid-cols-4 mobile:top-0 mobile:flex mobile:flex-col">
 					<div
 						className="col-span-2 mt-8 hidden items-center justify-center md:block lg:mt-12 mobile:mt-32"
 						data-aos="fade-right"
