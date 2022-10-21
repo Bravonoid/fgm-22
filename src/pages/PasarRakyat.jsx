@@ -5,15 +5,19 @@ import TentangPasarRakyat from "../components/pasar rakyat/home-pasar-rakyat/Ten
 import { HtmlHead } from "../components/HtmlHead";
 
 export default function PasarRakyat() {
-  return (
-    <>
-    <HtmlHead title="Pasar Rakyat" decription="[insert page description]" />
-      <main className="overflow-hidden">
-        <TentangPasarRakyat />
-        <TemaPasarRakyat />
-        <Infografis />
-        <SkemaPasar />
-      </main>
-    </>
-  );
+	return (
+		<>
+			<HtmlHead
+				title="Pasar Rakyat"
+				decription="[insert page description]"
+				link="/pasar-rakyat"
+			/>
+			<main className="overflow-hidden">
+				<TentangPasarRakyat />
+				<TemaPasarRakyat />
+				<Infografis />
+				<SkemaPasar />
+			</main>
+		</>
+	);
 }

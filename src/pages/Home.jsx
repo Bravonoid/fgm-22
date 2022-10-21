@@ -11,7 +11,11 @@ import { HtmlHead } from "../components/HtmlHead";
 export default function Home() {
 	return (
 		<>
-		<HtmlHead title="Beranda" decription="[insert page description]" />
+			<HtmlHead
+				title="Beranda"
+				decription="[insert page description]"
+				link="/"
+			/>
 			<main className="overflow-hidden">
 				<Opening_video />
 				<Tentang />
