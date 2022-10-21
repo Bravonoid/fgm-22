@@ -7,7 +7,7 @@ import Teaser from "../../assets/home/video/Video_Web_2_1_1_1.mp4";
 const opening_video = () => {
 	return (
 		<div className="relative mt-16 flex w-full  justify-center  bg-cover sm:object-left mobile:object-none mobile:object-right">
-			<div className="z-50 flex bg-[#171717] w-full h-screen overflow-hidden mobile:h-[75vh]">
+			<div className="z-50 flex bg-[#171717] w-full h-screen overflow-hidden mobile:h-[75vh] pointer-events-none">
 				<img
 					className="sm:hidden mobile:mx-10 mobile:block mobile:w-2/3"
 					src={fgm}

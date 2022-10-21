@@ -10,13 +10,13 @@ const medpart = () => {
   return (
     <div className=' relative  justify-center bg-cover h-[60vh] overflow-hidden   bg-[#171717]' >
         
-            <div className='grid absolute gap-24 h-full  mx-auto w-full grid-cols-2'>
+            <div className='grid absolute gap-24 h-full  mx-auto w-full grid-cols-2 pointer-events-none'>
             <div className=' flex bg-cover h-auto w-auto  bg-[#171717]' style={{ backgroundImage: "url(" + Pattern + ")" }}></div>
             <div className='  flex bg-cover h-auto w-auto  bg-[#171717]' style={{ backgroundImage: "url(" + Pattern + ")" }}></div>
 
             </div>
       
-          <div className=' justify-center w-full h-1/5 relative flex ' data-aos="fade-left" data-aos-duration="1000">
+          <div className=' justify-center w-full h-1/5 relative flex pointer-events-none' data-aos="fade-left" data-aos-duration="1000">
               <div className=' relative my-1 mx-auto  flex justify-center items-center w-full text-left text-white'>
                 <div className='h-1 z-10 hidden sm:block bg-white w-1/3 ml-24 '></div>
                   <img src={KembangUngu} className='hidden sm:block relative -ml-10 h-16 mx-auto' alt="" />

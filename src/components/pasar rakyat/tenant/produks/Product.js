@@ -14,6 +14,7 @@ import hiasan from "../../../../assets/Pasar-Rakyat/produk/hiasan-kanan-pageprod
 import Diskon from "../../../../assets/Pasar-Rakyat/produk/diskon.png";
 import { useParams } from "react-router-dom";
 import { Link } from "react-router-dom";
+import { HtmlHead } from "../../../HtmlHead";
 
 
 export default function Produk() {
@@ -55,7 +56,7 @@ export default function Produk() {
 
   return (
     <div className="text-gray-500 bg-fgm-base m-0 bg-30% mx-0" >
-     
+     <HtmlHead title="Produk" decription="[insert page description]" />
       <div>
         {productData.map((dataTenant) => {
           if (dataTenant.id_tenant == index) {
@@ -155,7 +156,7 @@ export default function Produk() {
                 })}
                 </div>
             </div>
-            <div className="flex justify-center bg-[#202020]">
+            <div className="flex justify-end bg-[#202020]">
                 <a
                                 href={
                                   dataTenant.pembayaran +

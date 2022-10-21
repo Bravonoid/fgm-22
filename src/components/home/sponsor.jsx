@@ -17,7 +17,7 @@ const sponsor = () =>  {
   AOS.refresh();
   AOS.refreshHard();
   return (
-    <div className=' relative  justify-center bg-cover h-auto py-16   bg-[#171717]' >
+    <div className=' relative  justify-center bg-cover h-auto py-16   bg-[#171717] pointer-events-none' >
         
             <div className='grid absolute gap-24 h-full  mx-auto w-full grid-cols-2'>
             <div className=' flex bg-cover h-auto w-auto  bg-[#171717]' style={{ backgroundImage: "url(" + Pattern + ")" }}></div>

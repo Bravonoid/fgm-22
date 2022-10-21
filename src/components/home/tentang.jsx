@@ -23,12 +23,12 @@ const Tentang = () => {
 		<div className="relative items-center bg-[#1E1E1E] pb-16 pt-16 md:pt-32 xl:pt-48">
 			<img
 				src={gunungan}
-				className="absolute sm:h-3/4 md:w-1/4 lg:w-1/5 xl:w-1/6 xl:scale-[2] mobile:top-12 mobile:w-2/5"
+				className="absolute sm:h-3/4 md:w-1/4 lg:w-1/5 xl:w-1/6 xl:scale-[2] mobile:top-12 mobile:w-2/5 pointer-events-none"
 				alt="gunungan"
 			></img>
 			<div className="relative sm:mx-auto sm:grid sm:grid-cols-2 mobile:flex mobile:flex-col-reverse">
 				<img
-					className="absolute -top-8 -right-32 z-[60] w-full scale-y-75 scale-x-75 transform md:-top-16 lg:-top-36 xl:-right-40 mobile:hidden"
+					className="absolute -top-8 -right-32 z-[60] w-full scale-y-75 scale-x-75 transform md:-top-16 lg:-top-36 xl:-right-40 mobile:hidden pointer-events-none"
 					style={{ transform: "scaleY(75%)" }}
 					src={mozaik_horizontal}
 					alt="mozaik"
@@ -40,7 +40,7 @@ const Tentang = () => {
 					data-aos="fade-right"
 					data-aos-duration="1000"
 				>
-					<div className="font-black sm:text-3xl md:text-4xl lg:text-5xl xl:mb-5 xl:text-5xl">
+					<div className="font-black sm:text-3xl md:text-4xl lg:text-5xl xl:mb-5 xl:text-5xl pointer-events-none">
 						{/* <img className='w-full' src={mozaik_horizontal} alt="mozaik"></img> */}
 
 						<div className="mt-1 flex flex-row sm:gap-1.5 md:gap-1 xl:gap-1 mobile:gap-1.5">
@@ -110,7 +110,7 @@ const Tentang = () => {
           alt="logo"
         ></img> */}
 				<img
-					className="logos px-auto m-auto w-[35%] items-center justify-center pb-12 text-left text-white sm:transform"
+					className="logos px-auto m-auto w-[35%] items-center justify-center pb-12 text-left text-white sm:transform pointer-events-none"
 					style={translateLogo}
 					src={Logo}
 					alt="logo"
