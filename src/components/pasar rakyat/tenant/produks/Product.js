@@ -68,7 +68,7 @@ export default function Produk() {
                 </Link>
                 <div className=" pl-16 flex flex-row gap-12 sm:pt-16 mobile:flex-col mobile:px-8 mobile:top-0 mobile:pt-8 mobile:pb-8 sm:pb-8">
                     <img
-                        className="object-cover mobile:block mobile:mx-auto w-[300px] h-[300px] mobile:w-[200px] mobile:h-[200px]"
+                        className="object-cover mobile:block mobile:mx-auto w-[300px] h-[300px] mobile:w-[200px] mobile:h-[200px] pointer-events-none"
                         alt={dataTenant.tenantName}
                         src={"/data/tenant/" +
                                     index +
@@ -105,7 +105,7 @@ export default function Produk() {
                 <img src={hiasan} alt="hiasan" className="absolute right-0 bottom-0 top-auto w-1/2 mobile:hidden sm:hidden lg:block"/>
             </div>
             <div className="block bg-[#202020] bg-cover" style={{backgroundImage: `url(${pattern}`}}>
-                <div className="relative pt-20 mx-auto flex justify-center items-center w-full text-left text-white">
+                <div className="relative pt-20 mx-auto flex justify-center items-center w-full text-left text-white pointer-events-none">
                     <img src={produk2} alt="produk" className="relative top-0 left-0 w-full h-full object-cover mobile:hidden sm:block" />
                     <img src={judultemabunga} alt="produk" className="relative top-0 left-0 w-full h-full object-cover mx-8 sm:hidden" />
                     {/* <img src={kembangputih1} alt="kembangputih" className="hidden sm:block relative h-16 mr-10 mx-auto"/>
