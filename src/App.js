@@ -13,6 +13,7 @@ import Tiket from "./pages/Tiket";
 import PasarRakyat from "./pages/PasarRakyat";
 import NotFound from "./pages/NotFound";
 import Product from "./components/pasar rakyat/tenant/produks/Product";
+import PreOrder from "./components/pasar rakyat/tenant/produks/PreOrder";
 
 function App() {
 	return (
@@ -28,6 +29,7 @@ function App() {
 				<Route path="/pasar-rakyat" element={<PasarRakyat />} />
 				<Route path="/pasar-rakyat/tenant" element={<Tenant />} />
 				<Route path="/pasar-rakyat/tenant/produk/:id" element={<Product />} />
+				<Route path="/pasar-rakyat/tenant/pre-order/:id" element={<PreOrder />} />
 				<Route path="/tiket" element={<Tiket />} />
 
 				<Route path="*" element={<NotFound />} />
