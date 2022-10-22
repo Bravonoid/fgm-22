@@ -96,7 +96,7 @@ export default class Modal extends Component {
                     <div className="font-bold text-2xl pt-6 pb-6 text-center md:text-left">
                       Detail Produk
                     </div>
-                    <table className="table-fixed text-left border-separate">
+                    {/* <table className="table-fixed text-left border-separate">
                       <thead>
                         <tr>
                           <th className="w-2/7 ..."></th>
@@ -142,7 +142,7 @@ export default class Modal extends Component {
                     </table>
                     <div className="text-center md:text-left pt-8 font-bold text-2xl">
                       Rp{this.props.newProductPrice}.000
-                    </div>
+                    </div> */}
                   </div>
                 </div>
               </div>
