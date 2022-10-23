@@ -1,6 +1,6 @@
 import React, { useState,useEffect } from "react";
 import Modal from "./Modal";
-import productData from "../../../../assets/data/tenants/data.json";
+import productData from "../../../../assets/data/tenants/dataPreorder.json";
 import { faInstagram, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import kembangputih1 from "../../../../assets/Pasar-Rakyat/produk/kembangputih1.svg";
@@ -70,8 +70,8 @@ export default function PreOrder() {
           if (dataTenant.id_tenant == index) {
             return (
               <>
-                <div className="bg-[#171717] lg:h-screen sm:h-auto mobile:h-auto">
-                <Link to="/pasar-rakyat/tenant">
+                <div className="bg-[#171717] sm:h-auto mobile:h-auto relative">
+                <Link to="/pasar-rakyat/pre-order">
                   <p className="text-white font-bold text-lg pt-24 pl-10">&#9664; Katalog Pre Order</p>
                 </Link>
                 <div className=" pl-16 flex flex-row gap-12 sm:pt-16 mobile:flex-col mobile:px-8 mobile:top-0 mobile:pt-8 mobile:pb-8 sm:pb-8">
@@ -110,7 +110,7 @@ export default function PreOrder() {
                         </div>
                     </div>
                 </div>
-                <img src={hiasan} alt="hiasan" className="absolute right-0 bottom-0 top-auto w-1/2 mobile:hidden sm:hidden lg:block"/>
+                <img src={hiasan} alt="hiasan" className="absolute right-0 bottom-0 w-[30%] mobile:hidden sm:hidden lg:block"/>
             </div>
             <div className="block bg-[#202020] bg-cover" style={{backgroundImage: `url(${pattern}`}}>
                 <div className="relative pt-20 mx-auto flex justify-center items-center w-full text-left text-white">

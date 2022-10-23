@@ -96,6 +96,13 @@ export default class Modal extends Component {
                     <div className="font-bold text-2xl pt-6 pb-6 text-center md:text-left">
                       Detail Produk
                     </div>
+                    <h2>
+                          {this.props.description !== null ? (
+                            <>{this.props.description+"."}</>
+                          ) : (
+                            "Tidak ada"
+                          )}
+                    </h2>
                     {/* <table className="table-fixed text-left border-separate">
                       <thead>
                         <tr>
