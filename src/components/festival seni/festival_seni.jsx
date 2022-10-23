@@ -96,7 +96,7 @@ const festival_seni = () => {
 						<img
 							src={festivalseni}
 							alt="festivalseni"
-							className="w-[300px] mobile:w-4/5"
+							className="w-[300px] mobile:w-4/5 pointer-events-none"
 						></img>
 						<p>26 November 2022 | Lapangan Pancasila UGM</p>
 					</div>
@@ -106,7 +106,7 @@ const festival_seni = () => {
 						data-aos-delay="500"
 						className="pt-4 text-[#FFFFFF] sm:pl-20 mobile:px-4"
 					>
-						<img src={write} alt="write" className="mobile:hidden" />
+						<img src={write} alt="write" className="mobile:hidden pointer-events-none" />
 						<div className="text-4xl font-bold underline sm:hidden">
 							<p>PRADIKA</p>
 							<p>PRASARA</p>
@@ -133,7 +133,7 @@ const festival_seni = () => {
 					<img
 						src={pertunjukan}
 						alt="pertunjukan"
-						className="w-auto sm:hidden md:block mobile:hidden "
+						className="w-auto sm:hidden md:block mobile:hidden pointer-events-none"
 						data-aos="zoom-in"
 						data-aos-duration="1000"
 						data-aos-anchor-placement="center-center"
@@ -235,7 +235,7 @@ const festival_seni = () => {
 					<img
 						src={header}
 						alt="header"
-						className="w-auto sm:hidden md:block mobile:hidden"
+						className="w-auto sm:hidden md:block mobile:hidden pointer-events-none"
 						data-aos="zoom-in"
 						data-aos-duration="1000"
 						data-aos-anchor-placement="top-center"
@@ -251,16 +251,16 @@ const festival_seni = () => {
 					<div className="flex w-auto gap-2 sm:flex-col md:mt-12 md:flex-row md:flex-wrap md:justify-center mobile:flex-col">
 						<img
 							src={project_pop}
-							alt="olski_photo"
-							className="w-auto"
+							alt="projectpop"
+							className="w-auto pointer-events-none"
 							data-aos="fade-up"
 							data-aos-duration="1000"
 							data-aos-anchor-placement="top-center"
 						/>
 						<img
 							src={smash}
-							alt="olski_photo"
-							className="w-auto"
+							alt="smash"
+							className="w-auto pointer-events-none"
 							data-aos="fade-down"
 							data-aos-duration="1000"
 							data-aos-anchor-placement="top-center"
@@ -268,23 +268,23 @@ const festival_seni = () => {
 						<img
 							src={the_overtunes}
 							alt="the overtunes"
-							className="w-auto"
+							className="w-auto pointer-events-none"
 							data-aos="fade-up"
 							data-aos-duration="1000"
 							data-aos-anchor-placement="top-center"
 						/>
 						<img
 							src={guyon_waton_photo}
-							alt="smash"
-							className="w-auto"
+							alt="guyonwaton"
+							className="w-auto pointer-events-none"
 							data-aos="fade-down"
 							data-aos-duration="1000"
 							data-aos-anchor-placement="top-center"
 						/>
 						<img
 							src={olski_photo}
-							alt="project pop"
-							className="w-auto"
+							alt="olski"
+							className="w-auto pointer-events-none"
 							data-aos="fade-up"
 							data-aos-duration="1000"
 							data-aos-anchor-placement="top-center"
@@ -300,7 +300,7 @@ const festival_seni = () => {
 					<img
 						src={ukm1}
 						alt="ukm header"
-						className="w-auto sm:hidden md:mb-12 md:block mobile:hidden "
+						className="w-auto sm:hidden md:mb-12 md:block mobile:hidden pointer-events-none"
 						data-aos="zoom-in"
 						data-aos-duration="1000"
 						data-aos-anchor-placement="top-center"

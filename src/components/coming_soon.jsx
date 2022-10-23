@@ -5,8 +5,8 @@ import Segera_Hadir from "../assets/coming_soon/segerahadir1.svg";
 const coming_soon = () => {
   return (
     <div className="items-center align-center">
-      <img className="mx-auto mb-8" src={Segera_Hadir}></img>
-      <img className="mx-auto" src={Pattern}></img>
+      <img className="mx-auto mb-8 pointer-events-none" src={Segera_Hadir}></img>
+      <img className="mx-auto pointer-events-none" src={Pattern}></img>
     </div>
   );
 };
