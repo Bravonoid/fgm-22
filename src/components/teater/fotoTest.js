@@ -5,7 +5,7 @@ import "slick-carousel/slick/slick-theme.css";
 import { DataSliderTeater } from "../../assets/data/home/DataSliderTeater";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./tenant.css";
-import Bgfoto from "../../assets/home/teater/teater.svg";
+import Bgfoto from "../../assets/teater/teater.png";
 import Pattern_samping from "../../assets/home/teater/pattern-group.svg";
 import Trailer from "./trailer";
 import Sinopsis from "./Sinopsis";
@@ -81,7 +81,7 @@ const Foto = () => {
 				<div
 					className={
 						sinopsis
-							? " h-full w-full  bg-right bg-no-repeat transition-all duration-1000 ease-in-out  "
+							? " h-full w-full  bg-right bg-no-repeat bg-cover transition-all duration-1000 ease-in-out  "
 							: "hidden"
 					}
 					style={{ backgroundImage: `url(${Bgfoto})` }}

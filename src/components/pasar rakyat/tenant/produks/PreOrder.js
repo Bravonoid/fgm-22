@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 import Modal from "./Modal";
 import productData from "../../../../assets/data/tenants/data.json";
 import { faInstagram, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
@@ -17,16 +17,21 @@ import label from "../../../../assets/Pasar-Rakyat/produk/preorder_label.svg";
 import { useParams } from "react-router-dom";
 import { Link } from "react-router-dom";
 import { HtmlHead } from "../../../HtmlHead";
-
-
-
+import { useNavigate } from "react-router-dom";
 export default function PreOrder() {
   
   const param = useParams()
-
+  const navigate = useNavigate()
   const index  = param.id;
+  useEffect(() => {
+    if(index > 20)
+  {
+    navigate("/produktidakditemukan")
+    
+  }
 
-
+  }, []);
+  
   const [showModal, setShowModal] = useState(false);
   const [showModalData, setShowModalData] = useState([]);
   const modalData = (
@@ -181,7 +186,9 @@ export default function PreOrder() {
             </>
             );
           }
-        })}
+       
+        }
+        )}
       </div>
       {showModal === true ? (
         <Modal
