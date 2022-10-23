@@ -62,7 +62,7 @@ export default function Produk() {
           if (dataTenant.id_tenant == index) {
             return (
               <>
-                <div className="bg-[#171717] lg:h-screen sm:h-auto mobile:h-auto">
+                <div className="bg-[#171717] sm:h-auto mobile:h-auto relative">
                 <Link to="/pasar-rakyat/tenant">
                   <p className="text-white font-bold text-lg pt-24 pl-10">&#9664; Kategori</p>
                 </Link>
@@ -102,7 +102,7 @@ export default function Produk() {
                         </div>
                     </div>
                 </div>
-                <img src={hiasan} alt="hiasan" className="absolute right-0 bottom-0 top-auto w-1/2 mobile:hidden sm:hidden lg:block"/>
+                <img src={hiasan} alt="hiasan" className="absolute right-0 bottom-0 top-auto w-[30%] mobile:hidden sm:hidden lg:block"/>
             </div>
             <div className="block bg-[#202020] bg-cover" style={{backgroundImage: `url(${pattern}`}}>
                 <div className="relative pt-20 mx-auto flex justify-center items-center w-full text-left text-white pointer-events-none">
