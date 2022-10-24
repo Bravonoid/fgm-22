@@ -17,7 +17,7 @@ const Harapan = () => {
 					src={BackgroundKembangKiri}
 					data-aos="fade-right"
 					data-aos-duration="1000"
-					data-aos-offset={window.innerHeight * 0.55}
+					data-aos-offset={window.innerHeight * 0.525}
 					className="hidden xl:flex"
 					alt=""
 				/>
@@ -25,7 +25,7 @@ const Harapan = () => {
 					<h1
 						className="text-weight-700 mt-10 text-center text-3xl font-bold text-white"
 						data-aos="fade-down"
-						data-aos-offset={window.innerHeight * 0.55}
+						data-aos-offset={window.innerHeight * 0.525}
 						data-aos-duration="1500"
 					>
 						<span className="bg-[#242424] px-10">HARAPAN</span>
@@ -34,7 +34,7 @@ const Harapan = () => {
 						className="text-weight-700 mt-4 text-right text-base text-white md:text-center md:text-2xl"
 						data-aos="fade-down"
 						data-aos-duration="1500"
-						data-aos-offset={window.innerHeight * 0.55}
+						data-aos-offset={window.innerHeight * 0.525}
 					>
 						Melalui sosok Cindaru, Festival Gadjah Mada 2022 diharapkan dapat
 						menjadi <span className="font-bold">simbol kebijaksanaan</span> dan{" "}
@@ -47,7 +47,7 @@ const Harapan = () => {
 					src={BackgroundKembangKanan}
 					data-aos="fade-left"
 					data-aos-duration="1500"
-					data-aos-offset={window.innerHeight * 0.55}
+					data-aos-offset={window.innerHeight * 0.525}
 					className="hidden xl:flex"
 					alt=""
 				/>
@@ -57,7 +57,7 @@ const Harapan = () => {
 					src={KembangHarapanMobile}
 					data-aos="fade-up"
 					data-aos-duration="1500"
-					data-aos-offset={window.innerHeight * 0.55}
+					data-aos-offset={window.innerHeight * 0.525}
 					className="flex"
 					alt=""
 				/>
