@@ -20,7 +20,7 @@ const Infografis = () => {
         <img
           data-aos="zoom-in"
           data-aos-duration="1500"
-          data-aos-offset="400"
+          data-aos-offset="800"
           src={TeksInfografis}
           className="mx-auto hidden md:block"
           alt=""
@@ -28,7 +28,7 @@ const Infografis = () => {
         <img
           data-aos="zoom-in"
           data-aos-duration="1500"
-          data-aos-offset="500"
+          data-aos-offset="900"
           src={KontenInfografis}
           className="mx-auto hidden py-5 md:block"
           alt=""
@@ -36,6 +36,7 @@ const Infografis = () => {
         <img
           data-aos="fade-up"
           data-aos-duration="1500"
+          data-aos-offset="1200"
           src={TeksInfografisMobile}
           className="mx-auto md:hidden"
           alt=""
@@ -43,6 +44,7 @@ const Infografis = () => {
         <img
           data-aos="fade-up"
           data-aos-duration="1500"
+          data-aos-offset="1400"
           src={KontenInfografisMobile}
           className="mx-auto pt-10 md:hidden"
           alt=""

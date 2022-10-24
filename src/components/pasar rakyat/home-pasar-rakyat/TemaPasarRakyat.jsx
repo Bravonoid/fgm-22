@@ -21,15 +21,15 @@ const TemaPasarRakyat = () => {
       >
         <img
           src={Tema}
-          data-aos="slide-down"
+          data-aos="fade-down"
           data-aos-duration="1500"
-          data-aos-offset="500"
+          data-aos-offset="600"
           className="mx-auto hidden px-10 md:block"
           alt=""
         />
         <img
           src={TemaBox}
-          data-aos="slide-up"
+          data-aos="fade-up"
           data-aos-duration="1500"
           data-aos-offset="600"
           className="mx-auto hidden py-5 md:block"
@@ -47,10 +47,13 @@ const TemaPasarRakyat = () => {
           untuk mewujudkan kesejahteraan masyarakat.
         </p>
         {/* mobile */}
-        <img src={TeksTemaMobile} className="mx-auto md:hidden" alt="" />
-        <img src={TemaMobile} className="mx-auto pt-5 md:hidden" alt="" />
+        <img src={TeksTemaMobile} data-aos="fade-down"
+          data-aos-duration="1500" data-aos-offset="600" className="mx-auto md:hidden" alt="" />
+        <img src={TemaMobile} data-aos="fade-up"
+          data-aos-duration="1500" data-aos-offset="600" className="mx-auto pt-5 md:hidden" alt="" />
         <img src={LineTemaMobile} className="mx-auto py-5 md:hidden" alt="" />
-        <div className="relative mx-auto flex max-w-[233px] items-end text-sm first-letter:text-center md:hidden">
+        <div className="relative mx-auto flex max-w-[233px] items-end text-sm first-letter:text-center md:hidden" data-aos="fade-left"
+          data-aos-duration="1500" data-aos-offset="900">
           <div className="text-justify text-white md:hidden">
             bertujuan untuk membentuk kekuatan yang dapat menghasilkan
             keuntungan atau menguatkan perekonomian dan juga memiliki harapan

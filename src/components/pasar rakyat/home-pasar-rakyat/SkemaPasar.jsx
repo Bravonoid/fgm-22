@@ -18,17 +18,32 @@ const SkemaPasar = () => {
         <img
           data-aos="fade-down"
           data-aos-duration="1500"
-          data-aos-offset="800"
+          data-aos-offset="1200"
           src={TeksSkema}
           className="mx-auto hidden md:block"
           alt=""
         />
-        <img src={TeksSkemaPasar} className="mx-auto md:hidden" alt="" />
-        <div
+        <img
+          src={TeksSkemaPasar}
+          className="mx-auto md:hidden"
           data-aos="fade-down"
           data-aos-duration="1500"
-          data-aos-offset="1000"
-          className="py-10"
+          data-aos-offset="2100"
+          alt=""
+        />
+        <div
+          data-aos="fade-up"
+          data-aos-duration="1500"
+          data-aos-offset="1300"
+          className="hidden py-10 md:block"
+        >
+          <Coming />
+        </div>
+        <div
+          data-aos="fade-up"
+          data-aos-duration="1500"
+          data-aos-offset="2200"
+          className="p-10 md:hidden"
         >
           <Coming />
         </div>
