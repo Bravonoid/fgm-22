@@ -39,13 +39,13 @@ const Tenant = ({ tenantList, categoryName }) => {
         <div className="z-10 ml-24 hidden h-1 w-1/3 bg-white sm:block "></div>
         <img
           src={KembangMerah}
-          className=" relative mx-auto -ml-10 hidden h-16 sm:block"
+          className=" pointer-events-none relative mx-auto -ml-10 hidden h-16 sm:block"
           alt=""
         />
-        <img src={Tenants} className="relative mx-auto h-16" alt="" />
+        <img src={Tenants} className="pointer-events-none relative mx-auto h-16" alt="" />
         <img
           src={KembangMerah}
-          className=" relative mx-auto -mr-10 hidden h-16 sm:block"
+          className="pointer-events-none relative mx-auto -mr-10 hidden h-16 sm:block"
           alt=""
         />
         <div className="relative  mr-24 hidden h-1 w-1/3 bg-white  sm:block"></div>

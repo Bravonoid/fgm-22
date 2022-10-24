@@ -99,7 +99,7 @@ const Tenant = () => {
          <ul className='hidden md:inline-block justify-center items-center w-full  gap-2 text-xl md:text-2xl xl:text-3xl h-[89vh] text-white'>
          <Link to="/pasar-rakyat">
          <li onClick={handleTeater} className={' h-1/6 font-bold flex items-center justify-start px-6 text-xl xl:text-3xl cursor-pointer transition-colors  ease-in-out duration-200  '}>
-          <img className='h-7 inline-block mr-5' src={Polygon}>
+          <img className='h-7 inline-block mr-5 pointer-events-none' src={Polygon}>
           </img>
           Pasar Rakyat</li>
           </Link>

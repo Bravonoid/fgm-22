@@ -41,7 +41,7 @@ const section1 = () => {
         >
           <div className="flex h-32 items-center justify-between sm:w-full ">
             <div className=" hidden h-10 w-2/3  bg-fgm-merah-orange sm:mr-8 sm:block"></div>
-            <img className="mx-auto h-10 sm:h-16 " src={Judul_pentas}></img>
+            <img className="mx-auto h-10 sm:h-16 pointer-events-none" src={Judul_pentas}></img>
             <div className="hidden h-10 w-2/3  bg-fgm-merah-orange sm:ml-8 sm:block"></div>
           </div>
           <div className="tems-center w-full justify-center text-2xl font-bold text-white  sm:flex ">
@@ -69,21 +69,21 @@ const section1 = () => {
           <div className="flex h-full w-full flex-col items-center justify-between gap-4 sm:h-[32rem] sm:flex-row ">
             <div className="mx-auto justify-center">
               <img
-                className="h-[30rem] sm:h-72 md:h-96 xl:h-full"
+                className="pointer-events-none h-[30rem] sm:h-72 md:h-96 xl:h-full"
                 src={Red_card}
                 alt=""
               />
             </div>
             <div className="mx-auto justify-center">
               <img
-                className="h-[30rem] sm:h-72 md:h-96 xl:h-full"
+                className="pointer-events-none h-[30rem] sm:h-72 md:h-96 xl:h-full"
                 src={Green_card}
                 alt=""
               />
             </div>
             <div className="mx-auto justify-center">
               <img
-                className="h-[30rem] sm:h-72 md:h-96 xl:h-full"
+                className="pointer-events-none h-[30rem] sm:h-72 md:h-96 xl:h-full"
                 src={Pink_card}
                 alt=""
               />
@@ -106,7 +106,7 @@ const section1 = () => {
         >
           <div className="flex h-32  items-center justify-between sm:w-full ">
             <div className="hidden h-10 w-2/3  bg-fgm-orange sm:mr-8 sm:block"></div>
-            <img className="mx-auto h-8 sm:h-10 " src={FestivalSeni}></img>
+            <img className="mx-auto h-8 sm:h-10 pointer-events-none " src={FestivalSeni}></img>
             <div className="hidden h-10  w-2/3  bg-fgm-orange sm:ml-8 sm:block"></div>
           </div>
           <div className="tems-center w-full justify-center pl-8 text-2xl font-bold text-white  sm:flex ">
@@ -127,16 +127,16 @@ const section1 = () => {
           <div></div>
         </div>
         <div className="my-16 mx-8 h-full xl:mx-32 xl:px-8">
-          <div className="flex h-full  w-full flex-col items-center justify-between gap-4 sm:h-[36rem] md:h-[42rem] ">
+          <div className="flex h-full  w-full flex-col pointer-events-none items-center justify-between gap-4 sm:h-[36rem] md:h-[42rem] ">
             <div
               data-aos="fade-right"
               data-aos-duration="1000"
               data-aos-delay="500"
               className="mx-auto h-[32rem] justify-center"
             >
-              <img className="hidden sm:block" src={Early_Bird} alt="" />
+              <img className="hidden sm:block pointer-events-none" src={Early_Bird} alt="" />
               <img
-                className="block h-[25rem] sm:hidden"
+                className="block pointer-events-none h-[25rem] sm:hidden"
                 src={EarlyBirdSM}
                 alt=""
               />
@@ -147,9 +147,9 @@ const section1 = () => {
               data-aos-delay="500"
               className="mx-auto h-[32rem] justify-center"
             >
-              <img className="hidden sm:block" src={Presale_1} alt="" />
+              <img className="hidden sm:block pointer-events-none" src={Presale_1} alt="" />
               <img
-                className="block  h-[25rem]  sm:hidden"
+                className="block pointer-events-none h-[25rem]  sm:hidden"
                 src={Presale1SM}
                 alt=""
               />
@@ -160,9 +160,9 @@ const section1 = () => {
               data-aos-delay="500"
               className="mx-auto h-[32rem] justify-center"
             >
-              <img className="hidden sm:block" src={Presale_2} alt="" />
+              <img className="hidden sm:block pointer-events-none" src={Presale_2} alt="" />
               <img
-                className="block  h-[25rem]  sm:hidden"
+                className="block  pointer-events-none h-[25rem]  sm:hidden"
                 src={Presale2SM}
                 alt=""
               />
@@ -173,9 +173,9 @@ const section1 = () => {
               data-aos-delay="1000"
               className="mx-auto h-[32rem]  justify-center"
             >
-              <img className="hidden sm:block" src={Regular} alt="" />
+              <img className="hidden sm:block pointer-events-none" src={Regular} alt="" />
               <img
-                className="block  h-[25rem] sm:hidden"
+                className="block pointer-events-none  h-[25rem] sm:hidden"
                 src={RegularSM}
                 alt=""
               />
