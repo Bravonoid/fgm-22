@@ -22,11 +22,34 @@ const Tenant = () => {
         <div className="bg-cover mt-5 h-[13rem] flex flex-col items-center align-middle " style={{ backgroundImage: `url(${Bg})` }} >
           <img className="mx-auto sm:h-auto h-12" src={JudulPreOrder} alt="" />
           <div className="mt-4 text-base sm:text-xl w-1/2">
-          <p className="text-white text-center ">Pre-order (sering disingkat PO) adalah sistem pembelian yang banyak penjual lakukan sebelum barang benar-benar tersedia. Barang PO dapat diambil pada saat acara.</p>
+            <p className="text-white text-center ">Pre-order (sering disingkat PO) adalah sistem pembelian yang banyak penjual lakukan sebelum barang benar-benar tersedia. Barang PO dapat diambil pada saat acara.</p>
 
           </div>
         </div>
+        <div className="text-white py-48 flex flex-col items-center w-screen justify-center ">
+          <div className="">test</div>
+          <div className="flex items-center justify-center flex-col w-full">
+            <div>
+              test
+            </div>
+            <div className="bg-fgm-merah-orange px-12  w-2/3">
+              <div className="w-full justify-between flex items-center">
+              <div>test</div>
+              <div>test</div>
+
+              <div>test</div>
+              <div>test</div>
+              </div>
+           
+
+            </div>
+            <div>
+              test
+            </div>
+          </div>
+        </div>
       </div>
+
       <div className="">
         <MapTenant tenantList={dataPreorder}></MapTenant>
       </div>
