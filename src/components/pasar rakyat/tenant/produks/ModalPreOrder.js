@@ -13,7 +13,7 @@ const settings = {
   autoplay: true,
   autoplaySpeed: 3000,
 };
-export default class Modal extends Component {
+export default class ModalPreOrder extends Component {
   render() {
     return (
       <>
@@ -96,14 +96,14 @@ export default class Modal extends Component {
                     <div className="font-bold text-2xl pt-6 pb-6 text-center md:text-left">
                       Detail Produk
                     </div>
-                    <h2>
+                    {/* <h2>
                           {this.props.newDescription !== null ? (
                             <>{this.props.newDescription+"."}</>
                           ) : (
                             "Tidak ada"
                           )}
-                    </h2>
-                    {/* <table className="table-fixed text-left border-separate">
+                    </h2> */}
+                    <table className="table-fixed text-left border-separate">
                       <thead>
                         <tr>
                           <th className="w-2/7 ..."></th>
@@ -149,7 +149,7 @@ export default class Modal extends Component {
                     </table>
                     <div className="text-center md:text-left pt-8 font-bold text-2xl">
                       Rp{this.props.newProductPrice}.000
-                    </div> */}
+                    </div>
                   </div>
                 </div>
               </div>

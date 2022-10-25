@@ -147,8 +147,8 @@ export default function Produk() {
                                   width="auto"
                                   height="auto"
                                 />
-                        <p className="font-bold px-10 text-3xl">{product.productName}</p>
-                        <p className="text-lg px-10"> Rp{product.price}.000</p>
+                        {/* <p className="font-bold px-10 text-3xl">{product.productName}</p>
+                        <p className="text-lg px-10"> Rp{product.price}.000</p> */}
                     </div>
                 </div>
                 </>

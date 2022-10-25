@@ -1,6 +1,6 @@
 import React, { useState,useEffect } from "react";
-import Modal from "./Modal";
-import productData from "../../../../assets/data/tenants/dataPreorder.json";
+import Modal from "./ModalPreOrder";
+import productData from "../../../../assets/data/tenants/data.json";
 import { faInstagram, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import kembangputih1 from "../../../../assets/Pasar-Rakyat/produk/kembangputih1.svg";

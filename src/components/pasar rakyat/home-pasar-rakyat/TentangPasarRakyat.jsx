@@ -1,4 +1,5 @@
 import Slider from "react-slick";
+import {Link} from "react-router-dom";
 import KembangTentangMobile from "../../../assets/Pasar-Rakyat/home-pasar/kembang-tentang-mobile.svg";
 import JudulTentangMobile from "../../../assets/Pasar-Rakyat/home-pasar/judul-tentang-mobile.svg";
 import Gambar1Tentang from "../../../assets/Pasar-Rakyat/home-pasar/gambar1-tentang.png";
@@ -7,6 +8,7 @@ import Gambar3Tentang from "../../../assets/Pasar-Rakyat/home-pasar/gambar3-tent
 import Gambar4Tentang from "../../../assets/Pasar-Rakyat/home-pasar/gambar4-tentang.png";
 import KembangTentang from "../../../assets/Pasar-Rakyat/home-pasar/kembang-tentang.svg";
 import JudulTentang from "../../../assets/Pasar-Rakyat/home-pasar/judul-tentang.svg";
+import btn from "../../../assets/Pasar-Rakyat/home-pasar/btnPO.png";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -31,8 +33,8 @@ const TentangPasarRakyat = () => {
 	const styleGambarSlider = "w-full lg:w-[500px] 2xl:mx-auto";
 	return (
 		<>
-			<div className="items-center bg-[#171717] xl:pt-[8rem] pt-[2rem] pb-[4rem] xl:pb-[8rem]">
-				<div className="relative md:mx-auto md:grid md:grid-cols-4 mobile:top-0 mobile:flex mobile:flex-col">
+			<div className=" relative items-center bg-[#171717] xl:pt-[8rem] pt-[2rem] pb-[4rem] xl:pb-[8rem] h-auto mobile:h-auto">
+				<div className="relative md:mx-auto md:grid md:grid-cols-4 mobile:top-0 mobile:flex mobile:flex-col mobile:h-screen h-auto">
 					<div
 						className="col-span-2 mt-8 hidden items-center justify-center md:block lg:mt-12 mobile:mt-32"
 						data-aos="fade-right"
@@ -101,6 +103,9 @@ const TentangPasarRakyat = () => {
 						</Slider>
 					</div>
 				</div>
+				<Link to="/pasar-rakyat/pre-order">
+							<img src={btn} className="p-4 sm:block absolute right-0 bottom-0 mobile:block mobile:mx-auto" alt="" />
+				</Link>
 			</div>
 		</>
 	);
