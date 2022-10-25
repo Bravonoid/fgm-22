@@ -990,12 +990,10 @@
   },
   {
     "id_tenant": 26,
-    "category": 2,
-    "ownerName": "Hayuning Endraswari Artiwiputri",
-    "isUGM": false,
-    "tenantName": "Ralayu.project",
-    "description": "Ralayu adalah rangkaian bunga kering dalam pigura yang dihiasi dengan tulisan berisikan harapan untuk orang-orang spesial. Ralayu dibuat dengan sepenuh hati untuk orang-orang yang kita sayangi. Selain bunga kering dalam pigura, kami juga menjual bunga kering dan sticker dengan motif bunga.",
-    "tenantLogo": "ralayu.jpg",
+    "category": 1,
+    "tenantName": "LASYADHINARA",
+    "description": "Siapa sih yang nggak tau Nutrijell? disini kami memberikan cara yang berbeda dalam menikmati nutrijell yang dipadukan dengan susu segar dan manis. Nah, untuk menemani minuman yang manis pasti perlu makanan pendamping yang gurih gak siih? disini kami juga menyediakan makaroni dengan berbagai rasa yang pastinya gurih dan cocok abis untuk dinikmati bersamaan dengan es nutrijell yang manis",
+    "tenantLogo": "Lasyadhinara.jpeg",
     "socialMedia": [
       {
         "whatsapp": null,
@@ -1003,74 +1001,33 @@
         "facebook": null,
         "website": null,
         "shopee": null,
-        "tokopedia": null,
-        "lazada": null
+        "tokopedia": null
       }
     ],
-    "contactPerson": "0895413685111",
-    "address": "Pleret Bantul",
-    "pembayaran": "https://wa.me/62895413685111",
     "product": [
       {
-        "productName": "Paket Figura Sunflower",
-        "productImages": "rly-sunflower.jpg",
-        "bahan": "Bunga kering, figura, kertas, spidol, dan lem tembak",
-        "color": "Tidak ada",
-        "dimension": "31 x 25 x 5 cm",
-        "price": 150.0,
-        "promo_short": "Discount 5%",
-        "promo": "All item discount 5%, dan free sticker untuk pembelian paket sunflower maupun paket rose "
+        "productName": "ICE CHOCOLATE JELLY MILK",
+        "productImages": "ICE CHOCOLATE JELLY MILK.jpeg",
+        "deskripsi": ""
       },
       {
-        "productName": "Paket Figura Rose",
-        "productImages": "rly-rose.jpg",
-        "bahan": "Bunga kering, figura, kertas, spidol, dan lem tembak",
-        "color": "Tidak ada",
-        "dimension": "22 x 27 x 5 cm",
-        "price": 140.0,
-        "promo_short": "Discount 5%",
-        "promo": "All item discount 5%, dan free sticker untuk pembelian paket sunflower maupun paket rose "
+        "productName": "MAKARONI",
+        "productImages": "MAKARONI.jpeg",
+        "deskripsi": ""
       },
       {
-        "productName": "Paket Figura Lavender",
-        "productImages": "rly-lavender.jpg",
-        "bahan": "Bunga kering, figura, kertas, spidol, dan lem tembak",
-        "color": "Tidak ada",
-        "dimension": "Ukuran Figura 8R",
-        "price": 110.0,
-        "promo_short": "Discount 5%",
-        "promo": "All item discount 5%, dan free sticker untuk pembelian paket sunflower maupun paket rose "
-      },
-      {
-        "productName": "Paket Figura Daisy",
-        "productImages": "rly-daisy.jpg",
-        "bahan": "Bunga kering, figura, kertas, spidol, dan lem tembak",
-        "color": "Tidak ada",
-        "dimension": "Ukuran figura 6R",
-        "price": 80.0,
-        "promo_short": "Discount 5%",
-        "promo": "All item discount 5%, dan free sticker untuk pembelian paket sunflower maupun paket rose "
-      },
-      {
-        "productName": "Sticker bunga",
-        "productImages": "rly-sticker.jpg",
-        "bahan": "Bunga kering, figura, kertas, spidol, dan lem tembak",
-        "color": "Tidak ada",
-        "dimension": null,
-        "price": 245.0,
-        "promo_short": "Discount 5%",
-        "promo": "All item discount 5%, dan free sticker untuk pembelian paket sunflower maupun paket rose "
+        "productName": "ICE TEA",
+        "productImages": "ICE TEA.jpeg",
+        "deskripsi": ""
       }
     ]
   },
   {
     "id_tenant": 27,
-    "category": 2,
-    "ownerName": "Anggraeni Rahma Safarina",
-    "isUGM": false,
-    "tenantName": "Nganyam_id",
-    "description": "@nganyam_id adalah sebuah online shop berlokasi di Yogyakarta yang menjual tas anyam atau woven bag dari plastik daur ulang berbahan premium dan ramah lingkungan. @nganyam_id menyediakan berbagai model tas yang stylish dan cocok dipakai untuk melengkapi penampilan kamu sehari-hari.",
-    "tenantLogo": "nganyam.jpeg",
+    "category": 1,
+    "tenantName": "Decaf Yogyakarta",
+    "description": "Cold Brew Coffee Crafters based in Yogyakarta. Coffee it your way!",
+    "tenantLogo": "Decaf Yogyakarta.png",
     "socialMedia": [
       {
         "whatsapp": null,
@@ -1078,64 +1035,42 @@
         "facebook": null,
         "website": null,
         "shopee": null,
-        "tokopedia": null,
-        "lazada": null
+        "tokopedia": null
       }
     ],
-    "contactPerson": "081804230967",
-    "address": "Yogyakarta",
-    "pembayaran": "https://wa.me/6289660585322",
     "product": [
       {
-        "productName": "Kristal Bag",
-        "productImages": "ngm-kristal.jpeg",
-        "bahan": "Plastik Daur Ulang",
-        "color": "Magenta, merah bata, pearl, black, lime",
-        "dimension": "Tas kristal size s: P 23cm x L 12cm x T 19cm. Tas kristal size m: P 30cm x L 15cm x T 23cm",
-        "price": 65.0,
-        "promo_short": null,
-        "promo": null
+        "productName": "Cold Brew J.A.M (Just Add Milk!)",
+        "productImages": "J.A.M 1.jpg",
+        "productImagesArray": ["J.A.M 1.jpg","J.A.M 2.png","J.A.M 3.jpg"],
+        "deskripsi": "Konsentrat kopi cold brew yang dibuat dengan 100% biji kopi arabica pilihan. Proses penyeduhan dengan metode cold brew cocok bagi penikmat kopi dengan karakteristik rasa yang unik dan smooth. Saran penyajian: 1 bagian Cold Brew J.A.M + 1 hingga 2 bagian air/susu. Tambahkan es sesuai dengan selera."
       },
       {
-        "productName": "Pirus Bag",
-        "productImages": "ngm-pirus.jpeg",
-        "bahan": "Plastik Daur Ulang",
-        "color": "Magenta, merah bata, pearl, black, lime",
-        "dimension": "Tas kristal size s: P 23cm x L 12cm x T 19cm. Tas kristal size m: P 30cm x L 15cm x T 23cm",
-        "price": 65.0,
-        "promo_short": null,
-        "promo": null
+        "productName": "Dewata Delight",
+        "productImages": "Dewata Delight 1.jpg",
+        "productImagesArray": ["Dewata Delight 1.jpg","Dewata Delight 2.png","Dewata Delight 3.jpg"],
+        "deskripsi": "Dewata Delight by decaf.yk diseduh dengan biji kopi premium 100% arabika dari Bali dan kelapa sangrai. Nikmati aroma dan rasa menyegarkan, spesial dari Dewata Delight! Saran penyajian: Ready to drink, sajikan dengan segelas es batu"
       },
       {
-        "productName": "Opal Bag",
-        "productImages": "ngm-opal.jpeg",
-        "bahan": "Plastik Daur Ulang",
-        "color": "Magenta, merah bata, pearl, black, lime",
-        "dimension": "Tas kristal size s: P 23cm x L 12cm x T 19cm. Tas kristal size m: P 30cm x L 15cm x T 23cm",
-        "price": 65.0,
-        "promo_short": null,
-        "promo": null
+        "productName": "V for Vanilla Blanc",
+        "productImages": "V for Vanilla Blanc 1.jpg",
+        "productImagesArray": ["V for Vanilla Blanc 1.jpg","V for Vanilla Blanc 2.jpg"],
+        "deskripsi": "V for Vanilla Blanc diseduh dengan teknik cold immersion menggunakan biji kopi arabika pilihan. Nikmati kesegaran susu dan vanilla yang creamy. Saran penyajian: Ready to drink! Sajikan dengan segelas es batu."
       },
       {
-        "productName": "Jolly Bag",
-        "productImages": "ngm-jolly.jpeg",
-        "bahan": "Plastik Daur Ulang",
-        "color": "Magenta, merah bata, pearl, black, lime",
-        "dimension": "Tas kristal size s: P 23cm x L 12cm x T 19cm. Tas kristal size m: P 30cm x L 15cm x T 23cm",
-        "price": 65.0,
-        "promo_short": null,
-        "promo": null
+        "productName": "V for Vanilla Noir",
+        "productImages": "V for Vanilla Noir 1.jpg",
+        "productImagesArray": ["V for Vanilla Noir 1.jpg","V for Vanilla Noir 1.jpg"],
+        "deskripsi": "V for Vanilla Noir diseduh dengan teknik cold immersion menggunakan biji kopi arabika pilihan. Nikmati kesegaran dan aroma kopi vanilla kesayangan kamu. Saran penyajian: Ready to drink! Sajikan dengan segelas es batu."
       }
     ]
   },
   {
     "id_tenant": 28,
-    "category": 2,
-    "ownerName": "Dwi Astuti ",
-    "isUGM": false,
-    "tenantName": "Dwi Astuti Collection",
-    "description": "Dwi Astuti Collection menjual berbagai model dan pilihan tas jali atau tas rajut kekinian dengan harga yang terjangkau.",
-    "tenantLogo": "dac.jpg",
+    "category": 3,
+    "tenantName": "Gama Urban Store",
+    "description": "Gama Urban Store adalah induk dari Gama Urban yaitu organisasi mahasiswa daerah bandung.. nah disini Gama Urban Store menjual beberapa merchandise berupa T-Shirt, Tumbler, Totebag, Gelang, dan Stiker. Tapi kami juga menjual beberapa cemilan khas bandung.",
+    "tenantLogo": "Gama Urban Store.jpeg",
     "socialMedia": [
       {
         "whatsapp": null,
@@ -1143,34 +1078,48 @@
         "facebook": null,
         "website": null,
         "shopee": null,
-        "tokopedia": null,
-        "lazada": null
+        "tokopedia": null
       }
     ],
-    "contactPerson": "08157852643",
-    "address": "Pasar Bringharjo Lantai 1",
-    "pembayaran": "https://wa.me/628157852643",
     "product": [
       {
-        "productName": "Tas Jali",
-        "productImages": "dac-tas-1",
-        "bahan": "Plastik Premium",
-        "color": "Pastel, solid color, mix",
-        "dimension": "20 cm x 20 cm s.d. 40 cm x 40 cm",
-        "price": 10.0,
-        "promo_short": null,
-        "promo": "Harga pada rentang Rp10.000 - Rp100.000. Diskon 5k per pembelian di atas 100k "
+        "productName": "T-Shirt",
+        "productImages": "T-Shirt 1.jpeg",
+        "productImagesArray": ["T-Shirt 1.jpeg","T-Shirt 2.jpeg"],
+        "deskripsi": ""
+      },
+      {
+        "productName": "ToteBag",
+        "productImages": "ToteBag 1.jpeg",
+        "productImagesArray": ["ToteBag 1.jpeg","ToteBag 2.jpeg"],
+        "deskripsi": ""
+      },
+      {
+        "productName": "Stiker",
+        "productImages": "Stiker 1.jpeg",
+        "productImagesArray": ["Stiker 1.jpeg","Stiker 2.jpeg","Stiker 3.jpeg","Stiker 4.jpeg","Stiker 5.jpeg"],
+        "deskripsi": ""
+      },
+      {
+        "productName": "Gelang",
+        "productImages": "Gelang 1.jpeg",
+        "productImagesArray": ["Gelang 1.jpeg"],
+        "deskripsi": ""
+      },
+      {
+        "productName": "Tumbler",
+        "productImages": "Tumbler 1.jpeg",
+        "productImagesArray": ["Tumbler 1.jpeg","Tumbler 2.jpeg"],
+        "deskripsi": ""
       }
     ]
   },
   {
     "id_tenant": 29,
-    "category": 2,
-    "ownerName": "Paramastri Cintantya Arindra & Nadila Yang",
-    "isUGM": false,
-    "tenantName": "Kiitollinen",
-    "description": "Kiitollinen merupakan sebuah bisnis kreatif berbasis online yang didirikan pada tahun 2020 di bidang fashion & accessories. Saat ini, kiitollinen berfokus dalam pembuatan berbagai macam model tas berbahan dasar kanvas. Kiitollinen telah aktif di berbagai macam e-commerce dan telah menjual lebih dari 200 produk. ",
-    "tenantLogo": "kiitollinen.jpg",
+    "category": 1,
+    "tenantName": "Cikstik",
+    "description": "Brand yang menjual chicken steak dari event ke event.",
+    "tenantLogo": "Cikstik.png",
     "socialMedia": [
       {
         "whatsapp": null,
@@ -1178,54 +1127,24 @@
         "facebook": null,
         "website": null,
         "shopee": null,
-        "tokopedia": null,
-        "lazada": null
+        "tokopedia": null
       }
     ],
-    "contactPerson": "081548121031",
-    "address": "Yogyakarta",
-    "pembayaran": "https://wa.me/6281548121031",
     "product": [
       {
-        "productName": "Hyva Tote Bag",
-        "productImages": "hyva.JPEG",
-        "bahan": "Canvas Twill",
-        "color": "Beige",
-        "dimension": "40 x 30 x 10 cm",
-        "price": 139.0,
-        "promo_short": null,
-        "promo": "Diskon 10%"
-      },
-      {
-        "productName": "Tyvva Tote Bag",
-        "productImages": "tyvva.JPEG",
-        "bahan": "Canvas Twill",
-        "color": "Beige",
-        "dimension": "38 x 27.5 cm",
-        "price": 129.0,
-        "promo_short": null,
-        "promo": "Diskon 10%"
-      },
-      {
-        "productName": "Silkka Shoulder Bag",
-        "productImages": "silkka.JPEG",
-        "bahan": "Canvas Twill",
-        "color": "Beige",
-        "dimension": "26 x 13 x 6 cm",
-        "price": 105.0,
-        "promo_short": null,
-        "promo": "Diskon 10%"
+        "productName": "Chicken Steak BBQ",
+        "productImages": "Chicken Steak BBQ.jfif",
+        "productImagesArray": ["Chicken Steak BBQ.jfif"],
+        "deskripsi": ""
       }
     ]
   },
   {
     "id_tenant": 30,
-    "category": 2,
-    "ownerName": "Pak Yuda",
-    "isUGM": true,
-    "tenantName": "Toko Legowo",
-    "description": "Toko legowo merupakan sebuah usaha yang menawarkan kerajinan tas kulit.",
-    "tenantLogo": "nophotos",
+    "category": 1,
+    "tenantName": "Summit coffee",
+    "description": "Summit coffee bergerak di bidang minuman kopi yang utamanya adalah produk kopi susu. Kopi ini juga pernah juara harapan 1 nasional dalam acara kompetisi cafe mahasiswa indonesia lo.",
+    "tenantLogo": "Summit coffee.jpeg",
     "socialMedia": [
       {
         "whatsapp": null,
@@ -1233,34 +1152,115 @@
         "facebook": null,
         "website": null,
         "shopee": null,
-        "tokopedia": null,
-        "lazada": null
+        "tokopedia": null
       }
     ],
-    "contactPerson": "089674487364",
-    "address": "Pasar Beringharjoa",
-    "pembayaran": "https://wa.me/6289674487364",
     "product": [
       {
-        "productName": "Tas Kulit",
-        "productImages": "lgw-3.jpeg",
-        "bahan": "Kulit",
-        "color": "Coklat",
-        "dimension": "Tidak ada",
-        "price": 245.0,
-        "promo_short": null,
-        "promo": "Harga bervariasi, mulai dari Rp275.000,00, Rp275.000,00, Rp80.000,00, Rp300.000,00, Rp300..000,00"
+        "productName": "Kopi susu gula aren",
+        "productImages": "Kopi susu gula aren.jpeg",
+        "productImagesArray": ["Kopi susu gula aren.jpeg"],
+        "deskripsi": "Kopi susu gula aren terbuat dari campuran susu dan gula aren racikan kami yang gurih dan rasio kopi arabika 80 persen robusta 20 persen"
+      },
+      {
+        "productName": "Kopi susu caramel",
+        "productImages": "Kopi susu caramel 1.jpeg",
+        "productImagesArray": ["Kopi susu caramel 1.jpeg","Kopi susu caramel 2.jpeg"],
+        "deskripsi": "Kopi susu dengan campuran susu homemade serta syrup caramel dan espresso"
+      },
+      {
+        "productName": "Kopi susu vanilla",
+        "productImages": "Kopi susu vanilla 1.jpeg",
+        "productImagesArray": ["Kopi susu vanilla 1.jpeg","Kopi susu vanilla 2.jpeg"],
+        "deskripsi": "campuran susu homemade serta syrup vanilla dan espresso"
+      },
+      {
+        "productName": "Kopi susu sakura",
+        "productImages": "Kopi susu sakura.jpeg",
+        "productImagesArray": ["Chicken Steak BBQ.jpeg"],
+        "deskripsi": "Kopi susu unik campuran susu homemade serta syrup sakura dan espresso"
+      },
+      {
+        "productName": "Kopi susu caramel macchiato",
+        "productImages": "Kopi susu caramel macchiato 1.jpeg",
+        "productImagesArray": ["Kopi susu caramel macchiato 1.jpeg","Kopi susu caramel macchiato 2.jpeg"],
+        "deskripsi": "Kopi susu ampuran susu homemade serta syrup caramel mix dengan vanilla dan espresso"
+      }, 
+      {
+        "productName": "Mocktail coffee",
+        "productImages": "Mocktail coffee.jpeg",
+        "productImagesArray": ["Mocktail coffee.jpeg"],
+        "deskripsi": "Minuman segara dari Liquid espresso bercampur dengan bahan racikan kami"
+      }
+    ]
+  },
+  {
+    "id_tenant": 30,
+    "category": 1,
+    "tenantName": "Jajan'ne Monggo",
+    "description": "Menyediakan Asinan dari aneka buah segar asli Nusantara.",
+    "tenantLogo": "Jajan'ne Monggo.jpg",
+    "socialMedia": [
+      {
+        "whatsapp": null,
+        "instagram": null,
+        "facebook": null,
+        "website": null,
+        "shopee": null,
+        "tokopedia": null
+      }
+    ],
+    "product": [
+      {
+        "productName": "Asinan Buah Bogor",
+        "productImages": "Asinan Buah Bogor.jpg",
+        "productImagesArray": ["Kopi susu gula aren.jpg"],
+        "deskripsi": "Menikmati buah bersama dengan kuah cuka khas asinan Bogor"
+      },
+      {
+        "productName": "Rujak Buah Segar",
+        "productImages": "Rujak Buah Segar 1.jpg",
+        "productImagesArray": ["Rujak Buah Segar 1.jpg","Rujak Buah Segar 2.jpg"],
+        "deskripsi": "Rujak segar berisi aneka buah, dan sambel rujak yang pedas dan enak."
+      },
+      {
+        "productName": "Manisan Nanas",
+        "productImages": "Manisan Nanas.jpg",
+        "productImagesArray": ["Manisan Nanas.jpg"],
+        "deskripsi": "Nanas segar yang diperam dengan gula asli."
+      },
+      {
+        "productName": "Asinan Mangga",
+        "productImages": "Asinan Mangga.jpg",
+        "productImagesArray": ["Asinan Mangga.jpg"],
+        "deskripsi": "Mangga muda segar dengan kuah asinan cuka khas Bogor"
+      },
+      {
+        "productName": "Asinan Pepaya",
+        "productImages": "Asinan Pepaya.jpg",
+        "productImagesArray": ["Asinan Pepaya.jpg"],
+        "deskripsi": "Pepaya segar yang disajikan dengan kuah cuka asinan Bogor"
+      }, 
+      {
+        "productName": "Asinan Nanas",
+        "productImages": "Asinan Nanas.jpg",
+        "productImagesArray": ["Asinan Nanas.jpg"],
+        "deskripsi": "Buah Nanas segar yang disajikan dwngan kuah cuka asinan Bogor"
+      }, 
+      {
+        "productName": "Asinan Bengkoang",
+        "productImages": "Asinan Bengkoang.jpg",
+        "productImagesArray": ["Asinan Bengkoang.jpg"],
+        "deskripsi": "Buah Bengkoang disajikan dengan kuah cuka asinan Bogor"
       }
     ]
   },
   {
     "id_tenant": 31,
-    "category": 2,
-    "ownerName": "Safira Prasetyo",
-    "isUGM": true,
-    "tenantName": "Berdistraksi",
-    "description": "Berdistraksi adalah brand yang didirikan untuk mengakomodir masalah produktivitas dan kreativitas di Indonesia. Menyampaikan ide 'Everyone can be a creator' dan 'There is no right and wrong in art' kami tampil dengan produk utama kami: DIY Kit Merangkai. Kami merancang setiap aspek dalam produk untuk membuatnya semudah mungkin untuk dipahami dan juga menjadikannya berguna bukan sebagai produk utama saja tetapi juga terkait pasca penggunaan kemasannya.    ",
-    "tenantLogo": "berdistraksi.png",
+    "category": 1,
+    "tenantName": "Veevoofood",
+    "description": "You call it veevoofood we call it happines.",
+    "tenantLogo": "Veevoofood.jpeg",
     "socialMedia": [
       {
         "whatsapp": null,
@@ -1268,74 +1268,48 @@
         "facebook": null,
         "website": null,
         "shopee": null,
-        "tokopedia": null,
-        "lazada": null
+        "tokopedia": null
       }
     ],
-    "contactPerson": "081548121031",
-    "address": "Surakarta",
-    "pembayaran": "https://wa.me/6281548121031",
     "product": [
       {
-        "productName": "DIY Kit MERANGKAI #1 ",
-        "productImages": "diy-merangkai.JPG",
-        "bahan": "Manik-manik, benang bening, booklet dan kode QR, stiker",
-        "color": "Transparan, Pearl, Hitam",
-        "dimension": " 20x20x5 cm",
-        "price": 245.0,
-        "promo_short": "Cashback 40%",
-        "promo": "Diskon cash back sebesar 40% untuk semua produk dengan story bersama produk dari Berdistraksi setelah membeli. Cash back akan dikembalikan kepada pelanggan setelah post story di Instagram."
+        "productName": "Nasi Bakar",
+        "productImages": "Nasi Bakar.jpeg",
+        "productImagesArray": ["Nasi Bakar.jpeg"],
+        "deskripsi": ""
       },
       {
-        "productName": "4pm Choker",
-        "productImages": "4pm_choker.png",
-        "bahan": "Manik-manik akrilik ",
-        "color": "Coklat",
-        "dimension": "37-38 cm",
-        "price": 245.0,
-        "promo_short": "Cashback 40%",
-        "promo": "Diskon cash back sebesar 40% untuk semua produk dengan story bersama produk dari Berdistraksi setelah membeli. Cash back akan dikembalikan kepada pelanggan setelah post story di Instagram."
+        "productName": "Ricebowl Ayam Pop",
+        "productImages": "Ricebowl Ayam Pop.jpeg",
+        "productImagesArray": ["Ricebowl Ayam Pop.jpeg"],
+        "deskripsi": ""
       },
       {
-        "productName": "12pm Choker ",
-        "productImages": "12pm-choker.png",
-        "bahan": "Manik-manik dope crystal ",
-        "color": "Ungu",
-        "dimension": "37-38 cm",
-        "price": 245.0,
-        "promo_short": "Cashback 40%",
-        "promo": "Diskon cash back sebesar 40% untuk semua produk dengan story bersama produk dari Berdistraksi setelah membeli. Cash back akan dikembalikan kepada pelanggan setelah post story di Instagram."
+        "productName": "Telur Gulung",
+        "productImages": "Telur Gulung.jpeg",
+        "productImagesArray": ["Telur Gulung.jpeg"],
+        "deskripsi": ""
       },
       {
-        "productName": "Silhouette Bag ",
-        "productImages": "sil-bag.png",
-        "bahan": "Manik-manik akrilik",
-        "color": "Hitam",
-        "dimension": "24x18 cm",
-        "price": 245.0,
-        "promo_short": "Cashback 40%",
-        "promo": "Silhouette Bag dari harga Rp250.000,00 menjadi Rp200..000,00. Diskon cash back sebesar 40% untuk semua produk dengan story bersama produk dari Berdistraksi setelah membeli. Cash back akan dikembalikan kepada pelanggan setelah post story di Instagram."
+        "productName": "Sosis ",
+        "productImages": "Sosis 1.jpeg",
+        "productImagesArray": ["Sosis 1.jpeg","Sosis 2.jpeg"],
+        "deskripsi": ""
       },
       {
-        "productName": "Alloy Choker Collection",
-        "productImages": "alloy-choker.png",
-        "bahan": "Manik-manik crystal",
-        "color": "Transparant/Silver",
-        "dimension": "37-38 cm",
-        "price": 245.0,
-        "promo_short": "Cashback 40%",
-        "promo": "Alloy Choker Collection harga Rp75.000,00 per bundling. Diskon cash back sebesar 40% untuk semua produk dengan story bersama produk dari Berdistraksi setelah membeli. Cash back akan dikembalikan kepada pelanggan setelah post story di Instagram."
+        "productName": "Bakso Bakar",
+        "productImages": "Bakso Bakar.jpeg",
+        "productImagesArray": ["Bakso Bakar.jpeg"],
+        "deskripsi": ""
       }
     ]
   },
   {
     "id_tenant": 32,
     "category": 1,
-    "ownerName": "Fatihah Jihar Aulia, Syafira Rahajeng Cahyakemala",
-    "isUGM": false,
-    "tenantName": "Esenti",
-    "description": "Esenti Hijab adalah bisnis fashion online yang menciptakan hijab modis, chic, dan nyaman untuk setiap kebutuhan. Sekarang kami fokus memproduksi hijab paris, yang kami beri nama “Yara Basic Paris”.",
-    "tenantLogo": "esenti.png",
+    "tenantName": "Nonacocojelly",
+    "description": "Awalnya nonacocojelly adalah toko online yang jualan dessert, ketika tahu bahwa peluang event di jogja sangat besar kami memutuskan untuk berjualan sesuai permintaan pasar. Produk kami menyesuaikan dengan event, sekarang kami berjualan makanan berat, camilan dan aneka korean street food.",
+    "tenantLogo": "Nonacocojelly.jpg",
     "socialMedia": [
       {
         "whatsapp": null,
@@ -1343,34 +1317,60 @@
         "facebook": null,
         "website": null,
         "shopee": null,
-        "tokopedia": null,
-        "lazada": null
+        "tokopedia": null
       }
     ],
-    "contactPerson": "082243496667",
-    "address": "Klaten",
-    "pembayaran": "https://wa.me/6282243496667",
     "product": [
       {
-        "productName": "Yara Basic Paris",
-        "productImages": "yara-basic-1.jpeg",
-        "bahan": "Kain basic paris",
-        "color": "Mocca, Plum, Taupe",
-        "dimension": "10cm x 4cm x 20 cm",
-        "price": 22.5,
-        "promo_short": null,
-        "promo": null
+        "productName": "Soto lamongan",
+        "productImages": "Soto lamongan.jpg",
+        "productImagesArray": ["Soto lamongan.jpg"],
+        "deskripsi": "Soto ayam lamongan dengan taburan koya yang gurih"
+      },
+      {
+        "productName": "Odeng",
+        "productImages": "Odeng.jpg",
+        "productImagesArray": ["Odeng.jpg"],
+        "deskripsi": "Salah satu jenis korean street food yang populer, cake ikan dengan kuah ikan yang sangat enak disajikan hangat."
+      },
+      {
+        "productName": "Tteokboki",
+        "productImages": "Tteokboki.jpg",
+        "productImagesArray": ["Tteokboki.jpg"],
+        "deskripsi": "Korean street food yang terbuat dari tepung beras disiram kuah gochujang ditambah bakso ikan dan taburan wijen, yummy."
+      },
+      {
+        "productName": "Hotteok ",
+        "productImages": "Hotteok 1.jpg",
+        "productImagesArray": ["Hotteok 1.jpg"],
+        "deskripsi": "Kue yang terbuat dari tepung terigu dan ketan, isian kacang, gula palm dan bubuk kayu manis, cocok untuk semua kalangan."
+      },
+      {
+        "productName": "Tteokkochi",
+        "productImages": "Tteokkochi.jpg",
+        "productImagesArray": ["Tteokkochi.jpg"],
+        "deskripsi": "Kue tteok yang digoreng dioles dengan saus pilihan customer."
+      },
+      {
+        "productName": "Korean fried chicken",
+        "productImages": "Korean fried chicken.jpg",
+        "productImagesArray": ["Korean fried chicken.jpg"],
+        "deskripsi": "Ayam goreng fillet dengan saus pilihan yang cocok untuk semua usia."
+      },
+      {
+        "productName": "Es teh poci",
+        "productImages": "Es teh poci.jpg",
+        "productImagesArray": ["Es teh poci.jpg"],
+        "deskripsi": "Es teh dengan pilhan rasa vanila dan jasmine, bisa dikombinasikan dengan anek pilihan rasa. Honey lemon, blackcurrant, apple, lychee, mango, thai tea, chocolate dan cappucino bisa jadi pilihan yang cocok untuk nonton konser."
       }
     ]
   },
   {
     "id_tenant": 33,
     "category": 1,
-    "ownerName": "Isti",
-    "isUGM": false,
-    "tenantName": "Konveksi Bu Mar",
-    "description": "Konveksi Bu Mar merupakan bisnis konveksi yang berlokasi di Pasar Beringharjo. Bisnis konveksi ini berfokus pada daster, tie dye, mukena, sajadah, dan sarimbit sebagai produknya. Bahan yang berkualitas menjadi daya tariknya yaitu bahan katun dan santung.",
-    "tenantLogo": "nophotos",
+    "tenantName": "Banation",
+    "description": "Banation menyediakan beragam produk makanan dan minuman berbahan baku kulit dan buah pisang sebagai camilan sehat dan moodbooster kamu loh! Ada beberapa produk unggulan kami seperti Bannaffle (Banana Waffle), Banana Nugget, dan Banana iced tea. Banation?! Boost Ur Mood.",
+    "tenantLogo": "Banation.png",
     "socialMedia": [
       {
         "whatsapp": null,
@@ -1378,74 +1378,24 @@
         "facebook": null,
         "website": null,
         "shopee": null,
-        "tokopedia": null,
-        "lazada": null
+        "tokopedia": null
       }
     ],
-    "contactPerson": "081227697374",
-    "address": "Pasar Beringharjo Los 13",
-    "pembayaran": "https://wa.me/6281227697374",
     "product": [
       {
-        "productName": "Daster",
-        "productImages": "daster-1.jpeg",
-        "bahan": "Kain katun dan santung",
-        "color": "Tidak ada",
-        "dimension": "Tidak ada",
-        "price": 35.0,
-        "promo_short": "Potongan khusus!",
-        "promo": "Potongan khusus bagi reseller dengan pembelian di atas 6 potong"
-      },
-      {
-        "productName": "Mukena batik",
-        "productImages": "nophotos",
-        "bahan": "Kain katun dan santung",
-        "color": "Tidak ada",
-        "dimension": "Tidak ada",
-        "price": 65.0,
-        "promo_short": "Potongan khusus!",
-        "promo": "Potongan khusus bagi reseller dengan pembelian di atas 6 potong"
-      },
-      {
-        "productName": "Sajadah batik",
-        "productImages": "nophotos",
-        "bahan": "Kain katun dan santung",
-        "color": "Tidak ada",
-        "dimension": "Tidak ada",
-        "price": 65.0,
-        "promo_short": "Potongan khusus!",
-        "promo": "Potongan khusus bagi reseller dengan pembelian di atas 6 potong"
-      },
-      {
-        "productName": "Sarimbit batik",
-        "productImages": "nophotos",
-        "bahan": "Kain katun dan santung",
-        "color": "Tidak ada",
-        "dimension": "Tidak ada",
-        "price": 35.0,
-        "promo_short": "Potongan khusus!",
-        "promo": "Potongan khusus bagi reseller dengan pembelian di atas 6 potong"
-      },
-      {
-        "productName": "Setelan tie dye",
-        "productImages": "tie-die.jpeg",
-        "bahan": "Kain katun dan santung",
-        "color": "Tidak ada",
-        "dimension": "Tidak ada",
-        "price": 45.0,
-        "promo_short": "Potongan khusus!",
-        "promo": "Potongan khusus bagi reseller dengan pembelian di atas 6 potong"
+        "productName": "Banana Nugget",
+        "productImages": "Banana Nugget 1.jpg",
+        "productImagesArray": ["Banana Nugget 1.jpg","Banana Nugget 2.jpg","Banana Nugget 3.jpg","Banana Nugget 4.jpg","Banana Nugget 5.jpg","Banana Nugget 6.jpg"],
+        "deskripsi": "Nugget dari olahan kulit dan buah pisang"
       }
     ]
   },
   {
     "id_tenant": 34,
-    "category": 2,
-    "ownerName": "Wati",
-    "isUGM": false,
-    "tenantName": "Wati Souvenir",
-    "description": "Wati Souvenir merupakan usaha souvenir dalam partai besar. Bisnis ini menjual souvenir per lusin atau kodi. Produk biasanya dipesan untuk souvenir pernikahan dan bisa di-custom sesuai keinginan pelanggan. ",
-    "tenantLogo": "wati-souvenir.jpg",
+    "category": 1,
+    "tenantName": "Zhafira food",
+    "description": "Zhafira food merupakan usaha di bidang makanan yang menjual berbagai makanan olahan seafood dan tahu gejrot khas yogyakarta.",
+    "tenantLogo": "Zhafira food.jpg",
     "socialMedia": [
       {
         "whatsapp": null,
@@ -1453,54 +1403,36 @@
         "facebook": null,
         "website": null,
         "shopee": null,
-        "tokopedia": null,
-        "lazada": null
+        "tokopedia": null
       }
     ],
-    "contactPerson": "082226401778",
-    "address": "Kios Pasar Beringharjo Blok D Lt.1 11-12",
-    "pembayaran": "https://wa.me/6282226401778",
     "product": [
       {
-        "productName": "Gantungan Kunci",
-        "productImages": "ganci.jpg",
-        "bahan": "Kain batik",
-        "color": "Tidak ada",
-        "dimension": "Tidak ada",
-        "price": 245.0,
-        "promo_short": "Diskon spesial!",
-        "promo": "Promo diberikan untuk pembelian dalam jumlah besar dan dapat langsung dikomunikasikan dengan penjual"
+        "productName": "Tahu gejrot",
+        "productImages": "Tahu gejrot.jpg",
+        "productImagesArray": ["Tahu gejrot.jpg"],
+        "deskripsi": "Produk Tahu gejrot ini merupakan suatu makanan yg berciri khas rasa pedes nya. Yang berkomposisi Tahu, bawang m/p, cabai, gulajawa, asem, dan garam. Makanan ini sangatlah cocok bagi penggemar vegetarian."
       },
       {
-        "productName": "Dompet",
-        "productImages": "dompet-1.jpg",
-        "bahan": "Kain batik",
-        "color": "Tidak ada",
-        "dimension": "Tidak ada",
-        "price": 245.0,
-        "promo_short": "Diskon spesial!",
-        "promo": "Promo diberikan untuk pembelian dalam jumlah besar dan dapat langsung dikomunikasikan dengan penjual"
+        "productName": "Sate seafood bakar",
+        "productImages": "Sate seafood bakar.jpg",
+        "productImagesArray": ["Sate seafood bakar.jpg"],
+        "deskripsi": "Olahan sate seafood yang dibakar menggunakan bumbu barbeque, dan pastinya dijamin kesegaran seafoodnya."
       },
       {
-        "productName": "Pembatas Buku",
-        "productImages": "pembatas.jpg",
-        "bahan": "Kain batik",
-        "color": "Tidak ada",
-        "dimension": "Tidak ada",
-        "price": 245.0,
-        "promo_short": "Diskon spesial!",
-        "promo": "Promo diberikan untuk pembelian dalam jumlah besar dan dapat langsung dikomunikasikan dengan penjual"
+        "productName": "Jeruk baby peras",
+        "productImages": "Jeruk baby peras.jpg",
+        "productImagesArray": ["Jeruk baby peras.jpg"],
+        "deskripsi": "Jeruk peras yang manis alami tanpa gula dan kaya akan vitamin."
       }
     ]
   },
   {
     "id_tenant": 35,
-    "category": 4,
-    "ownerName": "Pak Agus",
-    "isUGM": false,
-    "tenantName": "Gula Jawa Pak Agus",
-    "description": "Ruko Gula Jawa Pak Agus berada di Kios Pasar Beringharjo. Ruko ini tidak hanya menjual gula jawa, gula batu, atau pergulaan lainnya. Namun juga menyediakan jamu-jamu herbal homemade. Jamu herbal yang dijual di ruko ini seperti empon-empon, jahe instan, kencur instan, sereh instan, kopi jahe instan, dan wedang uwuh. ",
-    "tenantLogo": "nophotos",
+    "category": 1,
+    "tenantName": "Nepenthe",
+    "description": "Berawal dari kebosanan yang melanda ketika pandemi menyerang, Nepenthe akhirnya lahir dan berkembang hingga saat ini. Produk yang dijual berupa kue dan roti dari berbagai benua, dari Amerika hingga Asia, dari berbasis coklat hingga basis keju. Meskipun tanpa pengawet, produk kami dapat tahan di suhu ruang hingga 7 hari loh! Tentu dengan kualitas yang terjamin dan dijamin higienis, serta harga terjangkau bagi kalangan pelajar!",
+    "tenantLogo": "Nepenthe.png",
     "socialMedia": [
       {
         "whatsapp": null,
@@ -1508,138 +1440,33 @@
         "facebook": null,
         "website": null,
         "shopee": null,
-        "tokopedia": null,
-        "lazada": null
+        "tokopedia": null
       }
     ],
-    "contactPerson": "08122762823",
-    "address": "Pasar Beringharjo Lt. III Blok D3",
-    "pembayaran": "https://wa.me/628122762823",
     "product": [
       {
-        "productName": "Gula Jawa Aren ",
-        "productImages": "gula-jawa-aren.jpg",
-        "bahan": null,
-        "color": "Tidak ada",
-        "dimension": "Tidak ada",
-        "price": 25.0,
-        "promo_short": null,
-        "promo": null
+        "productName": "Fudgy Brownies",
+        "productImages": "Fudgy Brownies 1.png",
+        "productImagesArray": ["Fudgy Brownies 1.png","Fudgy Brownies 2.png","Fudgy Brownies 3.jpg","Fudgy Brownies 4.png","Fudgy Brownies5.png"],
+        "deskripsi": ""
       },
       {
-        "productName": "Gula Jawa Kelapa",
-        "productImages": "gula-jawa-kelapa.jpg",
-        "bahan": null,
-        "color": "Tidak ada",
-        "dimension": "Tidak ada",
-        "price": 20.0,
-        "promo_short": null,
-        "promo": null
+        "productName": "Cookies",
+        "productImages": "Cookies.png",
+        "productImagesArray": ["Cookies.png"],
+        "deskripsi": ""
       },
       {
-        "productName": "Gula Batu",
-        "productImages": "gula-batu.jpg",
-        "bahan": null,
-        "color": "Tidak ada",
-        "dimension": "Tidak ada",
-        "price": 20.0,
-        "promo_short": null,
-        "promo": null
+        "productName": "Burnt Basque Cheesecake",
+        "productImages": "Burnt Basque Cheesecake.png",
+        "productImagesArray": ["Burnt Basque Cheesecake.png"],
+        "deskripsi": ""
       },
       {
-        "productName": "Wedang Uwuh",
-        "productImages": "wedang-uwuh.jpg",
-        "bahan": null,
-        "color": "Tidak ada",
-        "dimension": "Tidak ada",
-        "price": 20.0,
-        "promo_short": null,
-        "promo": null
-      },
-      {
-        "productName": "Empon - Empon",
-        "productImages": "empon.jpg",
-        "bahan": null,
-        "color": "Tidak ada",
-        "dimension": "Tidak ada",
-        "price": 15.0,
-        "promo_short": null,
-        "promo": null
-      }
-    ]
-  },
-  {
-    "id_tenant": 36,
-    "category": 2,
-    "ownerName": "Indra",
-    "isUGM": false,
-    "tenantName": "Indra Home Decor",
-    "description": "Indra Home Decor merupakan bisnis kerajinan yang menyediakan aneka dekorasi rumah berbahan rotan dan anyaman. Dengan lima produk utama yaitu: karpet seagrass, dreamcatcher, guci rotan, kotak enceng, dan basket seagrass. Semua produk berbahan dasar enceng gondok kering dan rotan. Indra Home Decor memiliki kios yang berada di Pasa Beringharjo.",
-    "tenantLogo": "indra-home.jpeg",
-    "socialMedia": [
-      {
-        "whatsapp": null,
-        "instagram": null,
-        "facebook": null,
-        "website": null,
-        "shopee": null,
-        "tokopedia": null,
-        "lazada": null
-      }
-    ],
-    "contactPerson": "081348176730",
-    "address": "Pasar Beringharjo Lt III Blok D III",
-    "pembayaran": "https://wa.me/6281348176730",
-    "product": [
-      {
-        "productName": "Karpet Seagrass",
-        "productImages": "karpet-seagrass.jpeg",
-        "bahan": "Enceng gondok dan rotan",
-        "color": "Tidak ada",
-        "dimension": "Tidak ada",
-        "price": 160.0,
-        "promo_short": null,
-        "promo": null
-      },
-      {
-        "productName": "Dreamcatchr",
-        "productImages": "dreamcatch.jpeg",
-        "bahan": "Enceng gondok dan rotan",
-        "color": "Tidak ada",
-        "dimension": "Tidak ada",
-        "price": 80.0,
-        "promo_short": null,
-        "promo": null
-      },
-      {
-        "productName": "Guci Rotan",
-        "productImages": "guci-rotan.jpeg",
-        "bahan": "Enceng gondok dan rotan",
-        "color": "Tidak ada",
-        "dimension": "Tidak ada",
-        "price": 30.0,
-        "promo_short": "Harga bervariasi!",
-        "promo": "Harga bervariasi mulai dari Rp30.000 - Rp100.000"
-      },
-      {
-        "productName": "Kotak Enceng",
-        "productImages": "kotak-enceng.jpeg",
-        "bahan": "Enceng gondok dan rotan",
-        "color": "Tidak ada",
-        "dimension": "Tidak ada",
-        "price": 50.0,
-        "promo_short": null,
-        "promo": null
-      },
-      {
-        "productName": "Basket Seagrass",
-        "productImages": "basker-seagrass.jpeg",
-        "bahan": "Enceng gondok dan rotan",
-        "color": "Tidak ada",
-        "dimension": "Tidak ada",
-        "price": 60.0,
-        "promo_short": null,
-        "promo": null
+        "productName": "Nama Chocolate",
+        "productImages": "Nama Chocolate.png",
+        "productImagesArray": ["BurNama Chocolate.png"],
+        "deskripsi": ""
       }
     ]
   },
