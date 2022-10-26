@@ -47,13 +47,29 @@ const TemaPasarRakyat = () => {
           untuk mewujudkan kesejahteraan masyarakat.
         </p>
         {/* mobile */}
-        <img src={TeksTemaMobile} data-aos="fade-down"
-          data-aos-duration="1500" data-aos-offset="600" className="mx-auto md:hidden" alt="" />
-        <img src={TemaMobile} data-aos="fade-up"
-          data-aos-duration="1500" data-aos-offset="600" className="mx-auto pt-5 md:hidden" alt="" />
+        <img
+          src={TeksTemaMobile}
+          data-aos="fade-down"
+          data-aos-duration="1500"
+          data-aos-offset="500"
+          className="mx-auto md:hidden"
+          alt=""
+        />
+        <img
+          src={TemaMobile}
+          data-aos="fade-up"
+          data-aos-duration="1500"
+          data-aos-offset="500"
+          className="mx-auto pt-5 md:hidden"
+          alt=""
+        />
         <img src={LineTemaMobile} className="mx-auto py-5 md:hidden" alt="" />
-        <div className="relative mx-auto flex max-w-[233px] items-end text-sm first-letter:text-center md:hidden" data-aos="fade-left"
-          data-aos-duration="1500" data-aos-offset="900">
+        <div
+          className="relative mx-auto flex max-w-[233px] items-end text-sm first-letter:text-center md:hidden"
+          data-aos="fade-left"
+          data-aos-duration="1500"
+          data-aos-offset="900"
+        >
           <div className="text-justify text-white md:hidden">
             bertujuan untuk membentuk kekuatan yang dapat menghasilkan
             keuntungan atau menguatkan perekonomian dan juga memiliki harapan

@@ -71,7 +71,7 @@ const TentangPasarRakyat = () => {
 							pasar rakyat adalah menyajikan perpaduan penjualan tradisional dan
 							kekinian
 						</p>
-						<Slider className="pt-10" {...settings}>
+						<Slider className="pt-10 mobile:px-3" {...settings}>
 							<div className={styleDivSlider}>
 								<img
 									src={Gambar1Tentang}
