@@ -3,7 +3,7 @@ import { useState  } from "react";
 
 export default function ItemTenant(props) {
   const [src, setSrc] = useState(
-    `/data/tenant/${props.itemData.id_tenant}/${props.itemData.tenantLogo}`
+    `/data/tenants/${props.itemData.id_tenant}/${props.itemData.tenantLogo}`
   );
   console.log(src)
   return (

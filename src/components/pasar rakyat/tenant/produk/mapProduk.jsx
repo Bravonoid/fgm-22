@@ -107,7 +107,7 @@ const Tenant = ({tenantList,categoryName,dataTenant}) => {
                                   className="object-cover"
                                   alt={product.productName}
                                   src={
-                                    "/data/tenant/" +
+                                    "/data/tenants/" +
                                     dataTenant.id_tenant +
                                     "/product/" +
                                     product.productImages

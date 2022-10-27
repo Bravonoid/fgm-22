@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Modal from "./Modal";
-import productData from "../../../../assets/data/tenants/data.json";
+import productData from "../../../../assets/data/tenants/data copy.json";
 import { faInstagram, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import kembangputih1 from "../../../../assets/Pasar-Rakyat/produk/kembangputih1.svg";
@@ -29,24 +29,17 @@ export default function Produk() {
   const modalData = (
     newName,
     newImages,
-    newBahan,
-    newColor,
-    newDImension,
-    newPrice,
-    newPromo,
-    newPembayaran,
+    newImagesArray,
+    newDescription,
     newTenantName,
+   
     id
   ) => {
     let showModalData = [
       newName,
       newImages,
-      newBahan,
-      newColor,
-      newDImension,
-      newPrice,
-      newPromo,
-      newPembayaran,
+      newImagesArray,
+      newDescription,
       newTenantName,
       id,
     ];
@@ -70,7 +63,7 @@ export default function Produk() {
                     <img
                         className="object-cover mobile:block mobile:mx-auto w-[300px] h-[300px] mobile:w-[200px] mobile:h-[200px] pointer-events-none"
                         alt={dataTenant.tenantName}
-                        src={"/data/tenant/" +
+                        src={"/data/tenants/" +
                                     index +
                                     "/" +
                                     dataTenant.tenantLogo}
@@ -125,12 +118,8 @@ export default function Produk() {
                                   modalData(
                                     product.productName,
                                     product.productImages,
-                                    product.bahan,
-                                    product.color,
-                                    product.dimension,
-                                    product.price,
-                                    product.promo,
-                                    dataTenant.pembayaran,
+                                    product.productImagesArray,
+                                    product.deskripsi,
                                     dataTenant.tenantName,
                                     dataTenant.id_tenant
                                   );
@@ -139,7 +128,7 @@ export default function Produk() {
                                   className="object-cover"
                                   alt={product.productName}
                                   src={
-                                    "/data/tenant/" +
+                                    "/data/tenants/" +
                                     dataTenant.id_tenant +
                                     "/product/" +
                                     product.productImages
@@ -147,8 +136,8 @@ export default function Produk() {
                                   width="auto"
                                   height="auto"
                                 />
-                        {/* <p className="font-bold px-10 text-3xl">{product.productName}</p>
-                        <p className="text-lg px-10"> Rp{product.price}.000</p> */}
+                        <p className="font-bold px-10 text-3xl">{product.productName}</p>
+                        {/* <p className="text-lg px-10"> Rp{product.price}.000</p> */}
                     </div>
                 </div>
                 </>
@@ -156,19 +145,7 @@ export default function Produk() {
                 })}
                 </div>
             </div>
-            <div className="flex justify-end bg-[#202020]">
-                <a
-                                href={
-                                  dataTenant.pembayaran +
-                                  "?text=Halo!%20" +
-                                  dataTenant.tenantName +
-                                  ",%20saya%20ingin%20membeli%20" +
-                                
-                                  "%20apakah%20masih+ada?%0aBagaimana%20caranya?"
-                                }
-                              >
-                <button className="p-4 bg-[#EEEEEE] text-[#171717] font-Montserrat text-center font-bold m-4 hover:bg-[#171717] hover:text-[#EEEEEE]">PREORDER DISINI</button></a>
-            </div>
+           
             </>
             );
           }
@@ -178,14 +155,10 @@ export default function Produk() {
         <Modal
           newProductName={showModalData[1]}
           newProductImages={showModalData[2]}
-          newProductBahan={showModalData[3]}
-          newProductColor={showModalData[4]}
-          newProductDimension={showModalData[5]}
-          newProductPrice={showModalData[6]}
-          newProductPromo={showModalData[7]}
-          newPembayaran={showModalData[8]}
-          newTenantName={showModalData[9]}
-          newId={showModalData[10]}
+          newProductImagesArray={showModalData[3]}
+          newDescription={showModalData[4]}
+          newTenantName={showModalData[5]}
+          newId={showModalData[6]}
           hide={() => setShowModal(false)}
         />
       ) : (

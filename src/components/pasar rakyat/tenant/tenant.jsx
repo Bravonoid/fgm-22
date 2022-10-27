@@ -47,7 +47,7 @@ const Tenant = () => {
   };
 
     const [number,setNumber] = useState("1");
-    const data = require("../../../assets/data/tenants/data.json");
+    const data = require("../../../assets/data/tenants/data copy.json");
    
 
     const [categoryName,setCategoryName] = useState("test");
