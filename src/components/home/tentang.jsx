@@ -58,7 +58,7 @@ const Tentang = () => {
 							<p className="font-Montserrat mobile:text-2xl mobile:font-bold">
 								GADJAH
 							</p>{" "}
-							<p className="mobile:text-2xl "> MADA</p>
+							<p className="mobile:text-2xl mobile:font-bold"> MADA</p>
 							<div className="bg-red-500 sm:w-full mobile:block mobile:w-4/5" />
 							{/* <img
                 className="sm:w-[96px] md:w-28 lg:w-48 xl:scale-x-[2.25] mobile:w-1/4"

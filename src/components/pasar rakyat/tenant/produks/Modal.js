@@ -38,54 +38,21 @@ export default class Modal extends Component {
                     <div className="flex items-center justify-center content-center">
                       <div className="lg:w-64 md:w-60 w-44">
                       <Slider className="" {...settings}>
+                      { this.props.newProductImagesArray.map((dataImage) => (
+                        <>
                         <img
                           className="object-cover mb-8 z-50 relative"
                           alt={this.props.newProductName}
                           src={
-                            "/data/tenant/" +
+                            "/data/tenants/" +
                             this.props.newId +
                             "/product/" +
-                            this.props.newProductImages
+                            dataImage
                           }
                           width="375"
                           height="500"
-                        />
-                        <img
-                          className="object-cover mb-8 z-50 relative"
-                          alt={this.props.newProductName}
-                          src={
-                            "/data/tenant/" +
-                            this.props.newId +
-                            "/product/" +
-                            this.props.newProductImages
-                          }
-                          width="375"
-                          height="500"
-                        />
-                        <img
-                          className="object-cover mb-8 z-50 relative"
-                          alt={this.props.newProductName}
-                          src={
-                            "/data/tenant/" +
-                            this.props.newId +
-                            "/product/" +
-                            this.props.newProductImages
-                          }
-                          width="375"
-                          height="500"
-                        />
-                        <img
-                          className="object-cover mb-8 z-50 relative"
-                          alt={this.props.newProductName}
-                          src={
-                            "/data/tenant/" +
-                            this.props.newId +
-                            "/product/" +
-                            this.props.newProductImages
-                          }
-                          width="375"
-                          height="500"
-                        />
+                        /></>
+                      ) )}
                         </Slider>
                       </div>
                     </div>

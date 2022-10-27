@@ -20,7 +20,7 @@ const Infografis = () => {
         <img
           data-aos="zoom-in"
           data-aos-duration="1500"
-          data-aos-offset="800"
+          data-aos-offset="700"
           src={TeksInfografis}
           className="mx-auto hidden md:block"
           alt=""
@@ -28,7 +28,7 @@ const Infografis = () => {
         <img
           data-aos="zoom-in"
           data-aos-duration="1500"
-          data-aos-offset="900"
+          data-aos-offset="800"
           src={KontenInfografis}
           className="mx-auto hidden py-5 md:block"
           alt=""

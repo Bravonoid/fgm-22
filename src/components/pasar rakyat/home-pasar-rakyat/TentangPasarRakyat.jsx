@@ -33,7 +33,7 @@ const TentangPasarRakyat = () => {
 	const styleGambarSlider = "w-full lg:w-[500px] 2xl:mx-auto";
 	return (
 		<>
-			<div className=" relative items-center bg-[#171717] xl:pt-[8rem] pt-[2rem] pb-[4rem] xl:pb-[8rem] h-auto mobile:h-auto">
+			<div className=" relative items-center bg-[#171717] xl:pt-[5rem] pt-[2rem] pb-[4rem] xl:pb-[10rem] h-auto mobile:h-auto">
 				<div className="relative md:mx-auto md:grid md:grid-cols-4 mobile:top-0 mobile:flex mobile:flex-col mobile:h-auto h-auto">
 					<div
 						className="col-span-2 mt-8 hidden items-center justify-center md:block lg:mt-12 mobile:mt-32"
@@ -71,7 +71,7 @@ const TentangPasarRakyat = () => {
 							pasar rakyat adalah menyajikan perpaduan penjualan tradisional dan
 							kekinian
 						</p>
-						<Slider className="pt-10" {...settings}>
+						<Slider className="pt-10 mobile:px-3" {...settings}>
 							<div className={styleDivSlider}>
 								<img
 									src={Gambar1Tentang}
