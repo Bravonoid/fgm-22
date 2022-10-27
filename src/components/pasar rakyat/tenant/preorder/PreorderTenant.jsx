@@ -56,7 +56,7 @@ const Tenant = () => {
             </div>
             <div className=" mt-8 w-[65%]  px-12">
               <div className="flex w-full items-center justify-between">
-                <div className="text-center">1 November 2022</div>
+                <div className="text-center">31 Oktober </div>
                 <div className="text-center">13 November 2022</div>
 
                 <div className="text-center">14 - 15 November 2022</div>
@@ -70,7 +70,7 @@ const Tenant = () => {
           <div className="text-3xl font-bold mb-6 italic">Linimasa</div>
           <div className="flex w-full items-center justify-center ">
             <div className="grid h-[32rem] grid-cols-1 ">
-              <div className="px-5 text-right"><p>Pembukaan Masa PO</p><p>1 November  2022</p></div>
+              <div className="px-5 text-right"><p>Pembukaan Masa PO</p><p>31 Oktober  2022</p></div>
               <div className="text-right"></div>
 
               <div className="px-5 text-right"><p>Pengiriman Kode Unik</p><p>13 November  2022</p></div>
