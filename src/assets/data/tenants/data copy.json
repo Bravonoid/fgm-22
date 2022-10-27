@@ -1733,5 +1733,140 @@
         "deskripsi": "Siomay batagor yang kami sajikan merupakan makanan lokal Jawa Barat yg sangat familiar dilidah para penikmat kuliner nusantara. Namun dg bbrapa bahan2 berkualitas, kami hadirkan siomay dg citarasa yg sangat enak, lembut dan gurih. Yg akan membuat penikmat kuliner nusantara selalu ingin terus dan terus menyantap menu favorit dari kami ini."
       }
     ]
+  },
+  {
+    "id_tenant": 41,
+    "category": 1,
+    "tenantName": "Warna Kopi",
+    "description": "Warna Kopi merupakan cafe dan roastery yang menyajikan suasana spesial menikmati kopi. Ditemani pohon dan hamparan sawah, gemricik air, live music, serta suasana yang homey menjadikan waktu rewind dan istirahatmu lebih nikmat. Temukan warnamu bersama Warna Kopi",
+    "tenantLogo": "Warna Kopi.jpg",
+    "socialMedia": [
+      {
+        "whatsapp": null,
+        "instagram": null,
+        "facebook": null,
+        "website": null,
+        "shopee": null,
+        "tokopedia": null
+      }
+    ],
+    "product": [
+      {
+        "productName": "Lychee Tea",
+        "productImages": "Lychee Tea.jpg",
+        "productImagesArray": ["Lychee Tea.jpg"],
+        "deskripsi": "Teh segar dengan tambahan buah leci memberikan perpaduan rasa yang menyegarkan."
+      },
+      {
+        "productName": "Kopi Susu Aren",
+        "productImages": "Kopi Susu Aren.jpg",
+        "productImagesArray": ["Kopi Susu Aren.jpg"],
+        "deskripsi": "Kopi murni dipadukan dengan susu segar dan gula aren memberikan perpaduan rasa pahit dan manis yang pas. Best Seller."
+      },
+      {
+        "productName": "Kopi Susu Karamel",
+        "productImages": "Kopi Susu Karamel.jpg",
+        "productImagesArray": ["Kopi Susu Karamel.jpg"],
+        "deskripsi": "Kopi murni dipadukan dengan susu segar dan karamel made by Warna Kopi. Cocok untuk penikmat kopi pemula dan suka-suka. Best Seller."
+      },
+      {
+        "productName": "Flavour Latte",
+        "productImages": "Flavour Latte.jpg",
+        "productImagesArray": ["Flavour Latte.jpg"],
+        "deskripsi": "Kopi susu dengan varian rasa hazelnut dan butterscotch."
+      },
+      {
+        "productName": "Classic Tea",
+        "productImages": "Classic Tea.jpg",
+        "productImagesArray": ["Classic Tea.jpg"],
+        "deskripsi": "Teh melati yang dibuat dengan gula murni. Cocok untuk menemanimu berjalan di area FGM."
+      },
+      {
+        "productName": "Americano",
+        "productImages": "Americano.jpg",
+        "productImagesArray": ["Americano.jpg"],
+        "deskripsi": "Kopi Americano dari biji kopi robusta yang disajikan panas atau dingin. Best Seller."
+      },
+      {
+        "productName": "Biji Kopi",
+        "productImages": "TK Arjuna.png",
+        "productImagesArray": ["TK Arjuna.png","TK Bali.png","TK Manggarai.png","TK Temanggung.png"],
+        "deskripsi": "Biji Kopi murni hasil roasting by Warna Kopi. Tersedia biji arabika (Arjuna, Semendo, Manggarai, Menoreh) dan Robusta (Temanggung)."
+      }
+    ]
+  },
+  {
+    "id_tenant": 42,
+    "category": 1,
+    "tenantName": "Sego Gamboot",
+    "description": "Sego Gamboot adalah nasi dengan lauk masak merah khas Banjarmasin, Kalimantan Selatan, yang terbuat dari berbagai macam rempah-rempah sehingga membuat Sego Gamboot memiliki cita rasa yang unik",
+    "tenantLogo": "Sego Gamboot.jpg",
+    "socialMedia": [
+      {
+        "whatsapp": null,
+        "instagram": null,
+        "facebook": null,
+        "website": null,
+        "shopee": null,
+        "tokopedia": null
+      }
+    ],
+    "product": [
+      {
+        "productName": "Potato Mozarella",
+        "productImages": "Sego Gamboot 1.jpeg",
+        "productImagesArray": ["Sego Gamboot 1.jpeg","Sego Gamboot 2.jpeg","Sego Gamboot 3.jpeg","Sego Gamboot 4.jpeg"],
+        "deskripsi": ""
+      }
+    ]
+  },
+  {
+    "id_tenant": 43,
+    "category": 1,
+    "tenantName": "Sweetylucious and Shouffle Cake",
+    "description": "Sweetylicious and Shouffle Cake merupakan brand usaha yang bergerak dalam FnB khususnya untuk ragam street food. Kami sudah berpengalaman dalam mengikuti event-event besar di Yogyakarta. Produk unggulan kami adalah Corndog, Minuman Tea Based, Risol Mayo, dan Shouffle Cake ",
+    "tenantLogo": "Sweetylicious.jpeg",
+    "socialMedia": [
+      {
+        "whatsapp": null,
+        "instagram": null,
+        "facebook": null,
+        "website": null,
+        "shopee": null,
+        "tokopedia": null
+      }
+    ],
+    "product": [
+      {
+        "productName": "Japanese Shouffle CakeJapanese Shouffle Cake",
+        "productImages": "Japanese Shouffle Cake.jpg",
+        "productImagesArray": ["Japanese Shouffle Cake"],
+        "deskripsi": ""
+      },
+      {
+        "productName": "Thai Tea",
+        "productImages": "Thai Tea.jpeg",
+        "productImagesArray": ["Thai Tea.jpeg"],
+        "deskripsi": ""
+      },
+      {
+        "productName": "Corndog Special",
+        "productImages": "Corndog Special.jpeg",
+        "productImagesArray": ["Corndog Special.jpeg"],
+        "deskripsi": ""
+      },
+      {
+        "productName": "Green Thai Tea",
+        "productImages": "Green Thai Tea.jpeg",
+        "productImagesArray": ["Green Thai Tea.jpeg"],
+        "deskripsi": ""
+      },
+      {
+        "productName": "Risol Mayo",
+        "productImages": "Risol Mayo.jpeg",
+        "productImagesArray": ["Risol Mayo.jpeg"],
+        "deskripsi": ""
+      }
+    ]
   }
 ]

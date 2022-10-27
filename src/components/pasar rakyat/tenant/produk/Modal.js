@@ -29,7 +29,7 @@ export default class Modal extends Component {
                           className="object-cover mb-8 z-50 relative"
                           alt={this.props.newProductName}
                           src={
-                            "/data/tenant/" +
+                            "/data/tenants/" +
                             this.props.newId +
                             "/product/" +
                             this.props.newProductImages
