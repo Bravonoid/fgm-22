@@ -23,7 +23,7 @@ const TemaPasarRakyat = () => {
           src={Tema}
           data-aos="fade-down"
           data-aos-duration="1500"
-          data-aos-offset="600"
+          data-aos-offset="400"
           className="mx-auto hidden px-10 md:block"
           alt=""
         />
@@ -31,7 +31,7 @@ const TemaPasarRakyat = () => {
           src={TemaBox}
           data-aos="fade-up"
           data-aos-duration="1500"
-          data-aos-offset="600"
+          data-aos-offset="500"
           className="mx-auto hidden py-5 md:block"
           alt=""
         />
@@ -39,7 +39,7 @@ const TemaPasarRakyat = () => {
         <p
           data-aos="fade-left"
           data-aos-duration="1500"
-          data-aos-offset="600"
+          data-aos-offset="550"
           className="mx-auto hidden max-w-[932px] pt-5 text-center text-2xl text-white md:block"
         >
           bertujuan untuk membentuk kekuatan yang dapat menghasilkan keuntungan
@@ -51,7 +51,7 @@ const TemaPasarRakyat = () => {
           src={TeksTemaMobile}
           data-aos="fade-down"
           data-aos-duration="1500"
-          data-aos-offset="500"
+          data-aos-offset="600"
           className="mx-auto md:hidden"
           alt=""
         />
@@ -59,7 +59,7 @@ const TemaPasarRakyat = () => {
           src={TemaMobile}
           data-aos="fade-up"
           data-aos-duration="1500"
-          data-aos-offset="500"
+          data-aos-offset="700"
           className="mx-auto pt-5 md:hidden"
           alt=""
         />

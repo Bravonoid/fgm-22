@@ -16,8 +16,12 @@ const Maskot = () => {
         className="z-[10] w-full items-center justify-end bg-[#242424] py-20 md:py-24"
       >
         <div className="relative sm:mx-auto sm:grid sm:grid-cols-3 xl:px-24 mobile:flex mobile:flex-col-reverse">
-          <div className="col-span-2" data-aos="fade-down"
-          data-aos-duration="1500">
+          <div
+            className="col-span-2"
+            data-aos="fade-down"
+            data-aos-duration="1500"
+            data-aos-offset="300"
+          >
             <h1 className="mb-3 text-4xl font-bold text-white mobile:hidden mobile:text-center">
               MASKOT KITA
             </h1>
@@ -47,8 +51,12 @@ const Maskot = () => {
               </p>
             </div>
           </div>
-          <div className="relative col-span-1 w-full items-end text-left text-white mobile:text-sm" data-aos="fade-right"
-          data-aos-duration="1500">
+          <div
+            className="relative col-span-1 w-full items-end text-left text-white mobile:text-sm"
+            data-aos="fade-right"
+            data-aos-duration="1500"
+            data-aos-offset="400"
+          >
             <h1 className="mb-3 text-3xl font-bold text-white sm:hidden mobile:text-center">
               MASKOT KITA
             </h1>
