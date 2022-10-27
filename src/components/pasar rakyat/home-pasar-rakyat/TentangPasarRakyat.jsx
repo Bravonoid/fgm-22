@@ -102,13 +102,13 @@ const TentangPasarRakyat = () => {
 							</div>
 						</Slider>
 					</div>
-					{/* <Link to="/pasar-rakyat/pre-order">
+					<Link to="/pasar-rakyat/pre-order">
 							<img src={btn} className="p-4 mobile:relative sm:absolute sm:right-0 sm:bottom-0 mobile:block mobile:mx-auto md:hidden sm:hidden" alt="" />
-					</Link> */}
+					</Link>
 				</div>
-				{/* <Link to="/pasar-rakyat/pre-order">
-							<img src={btn} className="p-4 mobile:relative sm:absolute sm:right-0 sm:bottom-0  mobile:mx-auto md:block mobile:hidden sm:block" alt="" />
-					</Link> */}
+				<Link to="/pasar-rakyat/pre-order">
+							<img src={btn} className="p-4 mobile:relative sm:absolute sm:right-0 sm:bottom-0  mobile:mx-auto md:block mobile:hidden sm:block fixed" alt="" />
+					</Link>
 			</div>
 		</>
 	);
