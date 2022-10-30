@@ -1,24 +1,22 @@
-import { useState  } from "react";
-
+import { useState } from "react";
 
 export default function ItemTenant(props) {
   const [src, setSrc] = useState(
     `/data/tenants/${props.itemData.id_tenant}/${props.itemData.tenantLogo}`
   );
-  console.log(src)
+  console.log(src);
   return (
     <a
-      className="flex flex-col items-center border sm:border-2 shadow  bg-white   duration-300 ease-out overflow-hidden"
+      className="flex flex-col items-center overflow-hidden border bg-white  shadow   duration-300 ease-out sm:border-2"
       href={`/pasar-rakyat/tenant/produk/${props.itemData.id_tenant}`}
     >
       <img
         height="240"
         width="240"
         className="my-auto object-cover"
-        src={ process.env.PUBLIC_URL + src}
-        onError={() => setSrc("/tenant/tokodummy.png")}
+        src={process.env.PUBLIC_URL + src}
       />
-      <div className="flex-none font-bold sm:text-base text-sm m-2">
+      <div className="m-2 flex-none text-sm font-bold sm:text-base">
         {props.itemData.tenantName}
       </div>
     </a>
