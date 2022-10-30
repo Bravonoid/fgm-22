@@ -17,8 +17,8 @@ export default function PasarRakyat() {
 				<TentangPasarRakyat />
 				<TemaPasarRakyat />
 				<Infografis />
-				{/* <SkemaPasar /> */}
-				{/* <KolaborasiKreasi /> */}
+				<SkemaPasar />
+				<KolaborasiKreasi />
 			</main>
 		</>
 	);

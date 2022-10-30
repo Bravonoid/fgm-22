@@ -1,5 +1,5 @@
 import Slider from "react-slick";
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 import KembangTentangMobile from "../../../assets/Pasar-Rakyat/home-pasar/kembang-tentang-mobile.svg";
 import JudulTentangMobile from "../../../assets/Pasar-Rakyat/home-pasar/judul-tentang-mobile.svg";
 import Gambar1Tentang from "../../../assets/Pasar-Rakyat/home-pasar/gambar1-tentang.png";
@@ -33,8 +33,8 @@ const TentangPasarRakyat = () => {
 	const styleGambarSlider = "w-full lg:w-[500px] 2xl:mx-auto";
 	return (
 		<>
-			<div className=" relative items-center bg-[#171717] xl:pt-[5rem] pt-[2rem] pb-[4rem] xl:pb-[10rem] h-auto mobile:h-auto">
-				<div className="relative md:mx-auto md:grid md:grid-cols-4 mobile:top-0 mobile:flex mobile:flex-col mobile:h-auto h-auto">
+			<div className=" relative h-auto items-center bg-[#171717] pt-[2rem] pb-[4rem] xl:pt-[5rem] xl:pb-[10rem] mobile:h-auto">
+				<div className="relative h-auto md:mx-auto md:grid md:grid-cols-4 mobile:top-0 mobile:flex mobile:h-auto mobile:flex-col">
 					<div
 						className="col-span-2 mt-8 hidden items-center justify-center md:block lg:mt-12 mobile:mt-32"
 						data-aos="fade-right"
@@ -102,13 +102,21 @@ const TentangPasarRakyat = () => {
 							</div>
 						</Slider>
 					</div>
-					{/* <Link to="/pasar-rakyat/pre-order">
-							<img src={btn} className="p-4 mobile:relative sm:absolute sm:right-0 sm:bottom-0 mobile:block mobile:mx-auto md:hidden sm:hidden" alt="" />
-					</Link> */}
+					<Link to="/pasar-rakyat/pre-order">
+						<img
+							src={btn}
+							className="p-4 sm:absolute sm:right-0 sm:bottom-0 sm:hidden md:hidden mobile:relative mobile:mx-auto mobile:block"
+							alt=""
+						/>
+					</Link>
 				</div>
-				{/* <Link to="/pasar-rakyat/pre-order">
-							<img src={btn} className="p-4 mobile:relative sm:absolute sm:right-0 sm:bottom-0  mobile:mx-auto md:block mobile:hidden sm:block fixed" alt="" />
-					</Link> */}
+				<Link to="/pasar-rakyat/pre-order">
+					<img
+						src={btn}
+						className="fixed p-4 sm:absolute sm:right-0 sm:bottom-0  sm:block md:block mobile:relative mobile:mx-auto mobile:hidden"
+						alt=""
+					/>
+				</Link>
 			</div>
 		</>
 	);
