@@ -71,7 +71,8 @@ const ActiveTab = () => {
           >
             <img
               data-aos="zoom-in"
-              data-aos-delay="500"
+              // data-aos-delay="500"
+              data-aos-offset="550"
               data-aos-duration="1000"
               src={TemaBesar}
               className="hidden md:flex"
@@ -87,7 +88,8 @@ const ActiveTab = () => {
             />
             <img
               data-aos="zoom-in"
-              data-aos-delay="500"
+              // data-aos-delay="500"
+              data-aos-offset="550"
               data-aos-duration="1000"
               src={TemaBesarKecil}
               className="hidden px-[0.5rem] md:flex"
@@ -116,8 +118,8 @@ const ActiveTab = () => {
         <div
           data-aos="flip-up"
           data-aos-duration="2000"
-		  data-aos-delay="700"
-		  data-aos-offset="400"
+          // data-aos-delay="700"
+          data-aos-offset="550"
           className="scale-x-(135%)"
         >
           <img
