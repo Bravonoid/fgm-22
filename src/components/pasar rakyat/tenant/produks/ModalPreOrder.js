@@ -11,7 +11,7 @@ const settings = {
   infinite: true,
   speed: 2000,
   autoplay: true,
-  autoplaySpeed: 3000,
+  autoplaySpeed: 2000,
 };
 export default class ModalPreOrder extends Component {
   render() {
@@ -38,54 +38,21 @@ export default class ModalPreOrder extends Component {
                     <div className="flex items-center justify-center content-center">
                       <div className="lg:w-64 md:w-60 w-44">
                       <Slider className="" {...settings}>
+                      { this.props.newProductImagesArray.map((dataImage) => (
+                        <>
                         <img
                           className="object-cover mb-8 z-50 relative"
                           alt={this.props.newProductName}
                           src={
-                            "/data/tenant/" +
+                            "/data/tenantPreorder/" +
                             this.props.newId +
                             "/product/" +
-                            this.props.newProductImages
+                            dataImage
                           }
                           width="375"
                           height="500"
-                        />
-                        <img
-                          className="object-cover mb-8 z-50 relative"
-                          alt={this.props.newProductName}
-                          src={
-                            "/data/tenant/" +
-                            this.props.newId +
-                            "/product/" +
-                            this.props.newProductImages
-                          }
-                          width="375"
-                          height="500"
-                        />
-                        <img
-                          className="object-cover mb-8 z-50 relative"
-                          alt={this.props.newProductName}
-                          src={
-                            "/data/tenant/" +
-                            this.props.newId +
-                            "/product/" +
-                            this.props.newProductImages
-                          }
-                          width="375"
-                          height="500"
-                        />
-                        <img
-                          className="object-cover mb-8 z-50 relative"
-                          alt={this.props.newProductName}
-                          src={
-                            "/data/tenant/" +
-                            this.props.newId +
-                            "/product/" +
-                            this.props.newProductImages
-                          }
-                          width="375"
-                          height="500"
-                        />
+                        /></>
+                      ) )}
                         </Slider>
                       </div>
                     </div>
@@ -116,8 +83,8 @@ export default class ModalPreOrder extends Component {
                           <td>Warna/Varian</td>
                           <td>: </td>
                           <td>
-                            {this.props.newProductColor !== null ? (
-                              <>{this.props.newProductColor + "."}</>
+                            {this.props.newProductVarian !== null ? (
+                              <>{this.props.newProductVarian + "."}</>
                             ) : (
                               "Tidak ada."
                             )}
@@ -134,17 +101,7 @@ export default class ModalPreOrder extends Component {
                             )}
                           </td>
                         </tr>
-                        <tr>
-                          <td>Dimensi</td>
-                          <td>: </td>
-                          <td>
-                            {this.props.newProductDimension !== null ? (
-                              <>{this.props.newProductDimension + "."}</>
-                            ) : (
-                              "Tidak ada."
-                            )}
-                          </td>
-                        </tr>
+                       
                       </tbody>
                     </table>
                     <div className="text-center md:text-left pt-8 font-bold text-2xl">

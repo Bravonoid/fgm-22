@@ -33,7 +33,7 @@ const Tenant = () => {
           </div>
         </div>
 
-        <div className="hidden w-screen  flex-col items-center  justify-center py-32 text-white xl:flex ">
+        <div className="hidden w-full  flex-col items-center  justify-center py-32 text-white xl:flex ">
           <div className="text-3xl italic font-bold mb-16">Linimasa</div>
           <div className="flex w-full  flex-col items-center justify-center">
             <div className=" mb-8 w-2/3 px-12">
@@ -66,7 +66,7 @@ const Tenant = () => {
           </div>
         </div>
 
-        <div className=" w-screen  flex flex-col items-center justify-center   py-16 text-white xl:hidden ">
+        <div className=" w-full  flex flex-col items-center justify-center   py-16 text-white xl:hidden ">
           <div className="text-3xl font-bold mb-6 italic">Linimasa</div>
           <div className="flex w-full items-center justify-center ">
             <div className="grid h-[32rem] grid-cols-1 ">
@@ -86,7 +86,7 @@ const Tenant = () => {
             </div>
             <div className="grid h-[32rem] grid-cols-1   ">
               <div className=""></div>
-              <div className="px-5  text-left"><p>Penutupan Masa Po</p><p>14-15 November  2022</p></div>
+              <div className="px-5  text-left"><p>Penutupan Masa PO</p><p>14-15 November  2022</p></div>
               <div></div>
               <div className="px-5  text-left"><p>Pengambilan Barang</p><p>26 November 2022</p></div>
             </div>

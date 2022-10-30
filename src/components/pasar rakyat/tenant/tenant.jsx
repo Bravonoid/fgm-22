@@ -7,6 +7,7 @@ import { Link } from 'react-router-dom'
 import { Divide as Hamburger } from "hamburger-react";
 import { CSSTransition } from "react-transition-group";
 import DropdownIcon from '../../../assets/Pasar-Rakyat/kategori/dropdown.svg'
+import { useParams } from 'react-router-dom'
 import './dropdown.css'
 import MyDropdown from './Dropdown'
 const Dropdown = (navbar,setNavbar)=>{
@@ -17,6 +18,15 @@ const Dropdown = (navbar,setNavbar)=>{
 
 
 const Tenant = () => {
+  const Params = useParams();
+  let ID = Params.id;
+  console.log(ID)
+  if( ID == "1" ||ID == "2" ||ID == "3" ||ID == "4" ||ID == "5" )
+  {
+    ID = ID
+  } else{
+    ID = "1"
+  }
   const [teater, setTeater] = useState(true);
   const [trailer, setTrailer] = useState(false);
   const [sinopsis, setSinopsis] = useState(false);
@@ -46,7 +56,7 @@ const Tenant = () => {
 
   };
 
-    const [number,setNumber] = useState("1");
+    const [number,setNumber] = useState(ID);
     const data = require("../../../assets/data/tenants/data copy.json");
    
 
@@ -61,16 +71,16 @@ const Tenant = () => {
 
         switch (number) {
           case "1":
-            setCategoryName("Makanan dan Minuman")
+            setCategoryName("Makanan")
             break;
           case "2":
-            setCategoryName( "Aksesoris");
+            setCategoryName( "Minuman");
             break;
           case "3":
-            setCategoryName("Pakaian")
+            setCategoryName("Aksesoris ")
             break;
           case "4":
-            setCategoryName("Photo Booth")
+            setCategoryName("Pakaian")
             break;
         }
 
@@ -103,10 +113,10 @@ const Tenant = () => {
           </img>
           Pasar Rakyat</li>
           </Link>
-           <li onClick={handleTeater} className={number === "1" ?'  h-2/6 flex my-auto px-5 items-center justify-start py-auto font-bold bg-fgm-hijau transition-colors  ease-in-out duration-200 border-2 border-black ':"h-1/6 font-semibold px-4 border-[1px] border-black ease-in-out duration-200    py-10 bg-gray-500 cursor-pointer"}> <p>MAKANAN DAN MINUMAN</p></li>
-           <li onClick={handleTrailer} className={number === "2"?'  h-2/6 flex my-auto px-5 items-center justify-start py-auto  font-bold bg-fgm-purple transition-colors ease-in-out duration-200 border-2  border-black':"h-1/6 font-semibold px-4 border-[1px] border-black ease-in-out duration-200  bg-gray-500 py-10 cursor-pointer"}>AKSESORIS</li>  
-           <li onClick={handleSinopsis} className={number === "3"?' h-2/6 flex my-auto px-5 items-center justify-start py-auto  font-bold bg-fgm-orange transition-colors ease-in-out duration-200 border-2 border-black ':" h-1/6 font-semibold px-4 border-[1px] border-black ease-in-out duration-200       py-10 bg-gray-500 cursor-pointer"}> PAKAIAN</li>
-           <li onClick={handlePemeran} className={number === "4"?'  h-2/6 flex my-auto px-5 items-center justify-start py-auto  font-bold bg-fgm-merah-orange  transition-colors ease-in-out duration-200 border-2 border-black':"h-1/6 font-semibold px-4 border-[1px]  border-black  ease-in-out duration-200   py-10 bg-gray-500 cursor-pointer"}>PHOTO BOOTH</li>
+           <li onClick={handleTeater} className={number === "1" ?'  h-2/6 flex my-auto px-5 items-center justify-start py-auto font-bold bg-fgm-hijau transition-colors  ease-in-out duration-200 border-2 border-black ':"h-1/6 font-semibold px-4 border-[1px] border-black ease-in-out duration-200    py-10 bg-gray-500 cursor-pointer"}> <p>MAKANAN</p></li>
+           <li onClick={handleTrailer} className={number === "2"?'  h-2/6 flex my-auto px-5 items-center justify-start py-auto  font-bold bg-fgm-purple transition-colors ease-in-out duration-200 border-2  border-black':"h-1/6 font-semibold px-4 border-[1px] border-black ease-in-out duration-200  bg-gray-500 py-10 cursor-pointer"}>MINUMAN</li>  
+           <li onClick={handleSinopsis} className={number === "3"?' h-2/6 flex my-auto px-5 items-center justify-start py-auto  font-bold bg-fgm-orange transition-colors ease-in-out duration-200 border-2 border-black ':" h-1/6 font-semibold px-4 border-[1px] border-black ease-in-out duration-200       py-10 bg-gray-500 cursor-pointer"}> AKSESORIS</li>
+           <li onClick={handlePemeran} className={number === "4"?'  h-2/6 flex my-auto px-5 items-center justify-start py-auto  font-bold bg-fgm-merah-orange  transition-colors ease-in-out duration-200 border-2 border-black':"h-1/6 font-semibold px-4 border-[1px]  border-black  ease-in-out duration-200   py-10 bg-gray-500 cursor-pointer"}>PAKAIAN</li>
 
    
          </ul>
@@ -114,10 +124,10 @@ const Tenant = () => {
         <div>
         <ul className=' mt-8 flex flex-col z-50 md:hidden w-full absolute justify-center font-bold  items-center    text-white text-xl sm:text-3xl  '>
        
-          {        number ==="1"?   <li onClick={handleTeater} className={number === "1" ?'text-center h-16 pt-4  bg-fgm-hijau w-full order-1 ':"order-2 w-full text-center "}><div className='flex   justify-between mx-8 '>MAKANAN DAN MINUMAN <div className='flex  items-center justify-start'> { number ==="1"?   <img src={DropdownIcon}  onClick={setNavbar} /> :<></>}</div></div></li>:<></>}
-          {        number ==="2"?<li onClick={handleTrailer} className={number === "2"?'text-center h-16 pt-4 order-1  bg-fgm-purple w-full ':" w-full  order-3 text-center "}><div className='flex  justify-between mx-8 '>AKSESORIS <div className='flex  items-center justify-start'> { number ==="2"?   <img src={DropdownIcon}  onClick={setNavbar} /> :<></>}</div></div></li>  :<></>}
-           {        number ==="3"?<li onClick={handleSinopsis} className={number === "3"?'text-center h-16 pt-4 order-1  bg-fgm-orange w-full ':"w-full   order-4 text-center "}><div className='flex  justify-between mx-8 '> PAKAIAN <div className='flex  items-center justify-start'> { number ==="3"?   <img src={DropdownIcon}  onClick={setNavbar} /> :<></>}</div></div></li>:<></>}
-           {        number ==="4"?<li onClick={handlePemeran} className={number === "4"?'text-center  h-16 pt-4 order-1 bg-fgm-merah-orange w-full ':"  order-5 w-full text-center "}><div className='flex  justify-between mx-8 '>PHOTO  BOOTH <div className='flex  items-center justify-start'> { number ==="4"?   <img src={DropdownIcon}  onClick={setNavbar} />:<></>}</div></div></li>:<></>}
+          {        number ==="1"?   <li onClick={handleTeater} className={number === "1" ?'text-center h-16 pt-4  bg-fgm-hijau w-full order-1 ':"order-2 w-full text-center "}><div className='flex   justify-between mx-8 '>MAKANAN <div className='flex  items-center justify-start'> { number ==="1"?   <img src={DropdownIcon}  onClick={setNavbar} /> :<></>}</div></div></li>:<></>}
+          {        number ==="2"?<li onClick={handleTrailer} className={number === "2"?'text-center h-16 pt-4 order-1  bg-fgm-purple w-full ':" w-full  order-3 text-center "}><div className='flex  justify-between mx-8 '>MINUMAN<div className='flex  items-center justify-start'> { number ==="2"?   <img src={DropdownIcon}  onClick={setNavbar} /> :<></>}</div></div></li>  :<></>}
+           {        number ==="3"?<li onClick={handleSinopsis} className={number === "3"?'text-center h-16 pt-4 order-1  bg-fgm-orange w-full ':"w-full   order-4 text-center "}><div className='flex  justify-between mx-8 '>AKSESORIS <div className='flex  items-center justify-start'> { number ==="3"?   <img src={DropdownIcon}  onClick={setNavbar} /> :<></>}</div></div></li>:<></>}
+           {        number ==="4"?<li onClick={handlePemeran} className={number === "4"?'text-center  h-16 pt-4 order-1 bg-fgm-merah-orange w-full ':"  order-5 w-full text-center "}><div className='flex  justify-between mx-8 '>PAKAIAN <div className='flex  items-center justify-start'> { number ==="4"?   <img src={DropdownIcon}  onClick={setNavbar} />:<></>}</div></div></li>:<></>}
 
          </ul> 
         </div>
@@ -131,10 +141,10 @@ const Tenant = () => {
       >
          <ul className='mt-8 flex flex-col z-50 md:hidden w-full absolute justify-center items-center  text-black font-semibold text-xl sm:text-3xl  '>
          
-           <li onClick={handleTeater} className={number === "1" ?'  bg-fgm-hijau  h-16 pt-4 text-white w-full order-1 cursor-default':"order-2 h-[3rem] pt-3 sm:h-16 cursor-pointer w-full bg-gray-100 "}><div className='flex justify-between mx-8'>MAKANAN DAN MINUMAN <div className='flex  items-center justify-start '> { number ==="1"?   <img src={DropdownIcon} className="cursor-pointer" onClick={handleNav} /> :<></>}</div></div></li>
-           <li onClick={handleTrailer} className={number === "2"?'  order-1  h-16 pt-4  text-white bg-fgm-purple w-full cursor-default ':" w-full h-[3rem] sm:h-16  pt-3 cursor-pointer order-3  bg-gray-200 "}><div className='flex justify-between mx-8  '>AKSESORIS <div className='flex  items-center justify-start'> { number ==="2"?   <img src={DropdownIcon} className="cursor-pointer" onClick={handleNav} /> :<></>}</div></div></li>
-           <li onClick={handleSinopsis} className={number === "3"?'  order-1 h-16 pt-4 text-white  bg-fgm-orange w-full cursor-default ':"w-full  h-[3rem] sm:h-16 pt-3 cursor-pointer order-4 bg-gray-300  "}><div className='flex justify-between mx-8  '>PAKAIAN <div className='flex  items-center justify-start'> { number ==="3"?   <img src={DropdownIcon} className="cursor-pointer" onClick={handleNav} /> :<></>}</div></div></li>
-           <li onClick={handlePemeran} className={number === "4"?'   order-1  h-16 pt-4 text-white bg-fgm-merah-orange w-full cursor-default':" h-[3rem] sm:h-16 pt-3 cursor-pointer order-5 w-full bg-gray-400 "}><div className='flex justify-between mx-8  '>PHOTO BOOTH <div className='flex  items-center justify-start'> { number ==="4"?   <img src={DropdownIcon} className="cursor-pointer" onClick={handleNav} /> :<></>}</div></div></li>
+           <li onClick={handleTeater} className={number === "1" ?'  bg-fgm-hijau  h-16 pt-4 text-white w-full order-1 cursor-default':"order-2 h-[3rem] pt-3 sm:h-16 cursor-pointer w-full bg-gray-100 "}><div className='flex justify-between mx-8'>MAKANAN<div className='flex  items-center justify-start '> { number ==="1"?   <img src={DropdownIcon} className="cursor-pointer" onClick={handleNav} /> :<></>}</div></div></li>
+           <li onClick={handleTrailer} className={number === "2"?'  order-1  h-16 pt-4  text-white bg-fgm-purple w-full cursor-default ':" w-full h-[3rem] sm:h-16  pt-3 cursor-pointer order-3  bg-gray-200 "}><div className='flex justify-between mx-8  '>MINUMAN <div className='flex  items-center justify-start'> { number ==="2"?   <img src={DropdownIcon} className="cursor-pointer" onClick={handleNav} /> :<></>}</div></div></li>
+           <li onClick={handleSinopsis} className={number === "3"?'  order-1 h-16 pt-4 text-white  bg-fgm-orange w-full cursor-default ':"w-full  h-[3rem] sm:h-16 pt-3 cursor-pointer order-4 bg-gray-300  "}><div className='flex justify-between mx-8  '> AKSESORIS<div className='flex  items-center justify-start'> { number ==="3"?   <img src={DropdownIcon} className="cursor-pointer" onClick={handleNav} /> :<></>}</div></div></li>
+           <li onClick={handlePemeran} className={number === "4"?'   order-1  h-16 pt-4 text-white bg-fgm-merah-orange w-full cursor-default':" h-[3rem] sm:h-16 pt-3 cursor-pointer order-5 w-full bg-gray-400 "}><div className='flex justify-between mx-8  '>PAKAIAN<div className='flex  items-center justify-start'> { number ==="4"?   <img src={DropdownIcon} className="cursor-pointer" onClick={handleNav} /> :<></>}</div></div></li>
 
          </ul> 
          </CSSTransition>
@@ -151,22 +161,22 @@ const Tenant = () => {
 				"fgm-base-terang":"#242424" */}
       
       <div         className={number === "1"? ' ease-in-out duration-1000  transition-all w-full h-full' : 'hidden'}>
-        <Foto src ={"/img/kategori/makanan_bg.png"} judul ="MAKANAN DAN MINUMAN" color="hijau"/> 
+        <Foto src ={"/img/kategori/makanan_bg.png"} judul ="MAKANAN" color="hijau"/> 
 
        </div>
        <div         className={number === "2"? ' ease-in-out duration-1000  transition-all w-full h-full' : 'hidden'}>
       
-       <Foto src ={"/img/kategori/aksesori.png"} judul ="AKSESORIS" color="purple" />
+       <Foto src ={"/img/kategori/minuman.png"} judul ="MINUMAN" color="purple" />
         </div>
         <div         className={number === "3"? ' ease-in-out duration-1000  transition-all w-full h-full' : 'hidden'}>
         
-        <Foto src ={"/img/kategori/pakaian.png"} judul ="PAKAIAN" color="orange" />
+        <Foto src ={"/img/kategori/aksesori.png"} judul =" AKSESORIS" color="orange" />
         </div>
       <div       className={number === "4"? '  ease-in-out duration-1000  transition-all w-full h-full' : 'hidden'}>
      
    
       
-      <Foto src ={"/img/kategori/photobooth.png"} judul ="PHOTO BOOTH" color = "merah-orange"/>
+      <Foto src ={"/img/kategori/pakaian.png"} judul ="PAKAIAN" color = "merah-orange"/>
        </div>
        
       

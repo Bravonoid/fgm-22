@@ -114,7 +114,7 @@ export default function Produk() {
                         key={product_index}
                         ></div>
                 <div className="flex flex-row mx-auto text-white">
-                    <div className="flex flex-col w-[300px] mx-auto bg-[#494949] hover:scale-110 duration-300" onClick={() => {
+                    <div className="flex flex-col w-[300px] mx-auto bg-[#494949] hover:cursor-pointer duration-300" onClick={() => {
                                   modalData(
                                     product.productName,
                                     product.productImages,

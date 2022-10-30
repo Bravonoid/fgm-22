@@ -28,6 +28,7 @@ function App() {
 				{/* <Route path="/produk" element={<Produk />} /> */}
 				<Route path="/pasar-rakyat" element={<PasarRakyat />} />
 				<Route path="/pasar-rakyat/tenant" element={<Tenant />} />
+				<Route path="/pasar-rakyat/tenant/:id" element={<Tenant />} />
 				<Route path="/pasar-rakyat/pre-order" element={<PreOrder />} />
 
 				<Route path="/pasar-rakyat/tenant/produk/:id" element={<Product />} />

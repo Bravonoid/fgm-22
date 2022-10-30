@@ -1,6 +1,6 @@
 import React, { useState,useEffect } from "react";
 import Modal from "./ModalPreOrder";
-import productData from "../../../../assets/data/tenants/data.json";
+import productData from "../../../../assets/data/tenants/dataPreorder.json";
 import { faInstagram, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import kembangputih1 from "../../../../assets/Pasar-Rakyat/produk/kembangputih1.svg";
@@ -18,6 +18,10 @@ import { useParams } from "react-router-dom";
 import { Link } from "react-router-dom";
 import { HtmlHead } from "../../../HtmlHead";
 import { useNavigate } from "react-router-dom";
+
+
+
+
 export default function PreOrder() {
   
   const param = useParams()
@@ -38,8 +42,8 @@ export default function PreOrder() {
     newName,
     newImages,
     newBahan,
-    newColor,
-    newDImension,
+    newVarian,
+    newProductImagesArray,
     newPrice,
     newPromo,
     newPembayaran,
@@ -50,8 +54,8 @@ export default function PreOrder() {
       newName,
       newImages,
       newBahan,
-      newColor,
-      newDImension,
+      newVarian,
+      newProductImagesArray,
       newPrice,
       newPromo,
       newPembayaran,
@@ -78,7 +82,7 @@ export default function PreOrder() {
                     <img
                         className="object-cover mobile:block mobile:mx-auto w-[300px] h-[300px] mobile:w-[200px] mobile:h-[200px]"
                         alt={dataTenant.tenantName}
-                        src={"/data/tenant/" +
+                        src={"/data/tenantPreorder/" +
                                     index +
                                     "/" +
                                     dataTenant.tenantLogo}
@@ -129,13 +133,14 @@ export default function PreOrder() {
                         key={product_index}
                         ></div>
                 <div className="flex flex-row mx-auto text-white">
-                    <div className="flex flex-col w-[300px] mx-auto bg-[#494949] hover:scale-110 duration-300 relative" onClick={() => {
+                
+                    <div className="flex flex-col w-[300px] mx-auto bg-[#494949] hover:cursor-pointer duration-300 relative" onClick={() => {
                                   modalData(
                                     product.productName,
                                     product.productImages,
                                     product.bahan,
-                                    product.color,
-                                    product.dimension,
+                                    product.varian,
+                                    product.productImagesArray,
                                     product.price,
                                     product.promo,
                                     dataTenant.pembayaran,
@@ -153,7 +158,7 @@ export default function PreOrder() {
                                   className="object-cover"
                                   alt={product.productName}
                                   src={
-                                    "/data/tenant/" +
+                                    "/data/tenantPreorder/" +
                                     dataTenant.id_tenant +
                                     "/product/" +
                                     product.productImages
@@ -164,6 +169,20 @@ export default function PreOrder() {
                         <p className="font-bold px-10 text-3xl">{product.productName}</p>
                         <p className="text-lg px-10"> Rp{product.price}.000</p>
                     </div>
+                    {product.promo_short !== null ? (
+                              <>
+                                <div className="sticky flex w-auto z-10 mr-3">
+                                  <div className="absolute right-0 ">
+                                    <div className="flex bg-red-500 w-15 h-15s items-center justify-center absolute mr-4 right-0 z-20 mt-10 text-sm font-extrabold text-white">
+                                      {product.promo_short}
+                                    </div>
+                                    
+                                  </div>
+                                </div>
+                              </>
+                            ) : (
+                              ""
+                            )}
                 </div>
                 </>
                     );
@@ -195,8 +214,8 @@ export default function PreOrder() {
           newProductName={showModalData[1]}
           newProductImages={showModalData[2]}
           newProductBahan={showModalData[3]}
-          newProductColor={showModalData[4]}
-          newProductDimension={showModalData[5]}
+          newProductVarian={showModalData[4]}
+          newProductImagesArray={showModalData[5]}
           newProductPrice={showModalData[6]}
           newProductPromo={showModalData[7]}
           newPembayaran={showModalData[8]}

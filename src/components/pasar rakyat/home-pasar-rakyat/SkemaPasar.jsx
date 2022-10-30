@@ -50,7 +50,7 @@ const SkemaPasar = () => {
           data-aos-duration="1500"
           data-aos-offset="1300"
         >
-          <Link to="/pasar-rakyat/tenant">
+          <Link to="/pasar-rakyat/tenant/1">
             <div
               onClick={(e) => {
                 window.scrollTo({ top: 0, left: 0, behavior: "auto" });
@@ -63,7 +63,7 @@ const SkemaPasar = () => {
               </p>
             </div>
           </Link>
-          <Link to="/pasar-rakyat/tenant">
+          <Link to="/pasar-rakyat/tenant/2">
             <div
               onClick={(e) => {
                 window.scrollTo({ top: 0, left: 0, behavior: "auto" });
@@ -75,7 +75,7 @@ const SkemaPasar = () => {
               </p>
             </div>
           </Link>
-          <Link to="/pasar-rakyat/tenant">
+          <Link to="/pasar-rakyat/tenant/3">
             <div
               onClick={() => {
                 window.scrollTo({ top: 0, left: 0, behavior: "auto" });
@@ -87,7 +87,7 @@ const SkemaPasar = () => {
               </p>
             </div>
           </Link>
-          <Link to="/pasar-rakyat/tenant">
+          <Link to="/pasar-rakyat/tenant/4">
             <div
               onClick={() => {
                 window.scrollTo({ top: 0, left: 0, behavior: "auto" });
@@ -99,18 +99,7 @@ const SkemaPasar = () => {
               </p>
             </div>
           </Link>
-          <Link to="/pasar-rakyat/tenant">
-            <div
-              onClick={() => {
-                window.scrollTo({ top: 0, left: 0, behavior: "auto" });
-              }}
-              className="mx-auto  h-[100px] w-[1013px] border bg-mask-photobooth transition-all ease-linear hover:cursor-pointer hover:bg-[#E62C20] hover:bg-mask-photobooth-hover "
-            >
-              <p className="font-montserrat p-8 text-3xl font-black text-[#EEEEEE]">
-                PHOTO BOOTH
-              </p>
-            </div>
-          </Link>
+        
         </div>
         <div
           data-aos="slide-right"
@@ -118,7 +107,7 @@ const SkemaPasar = () => {
           data-aos-offset="2200"
           className="md:hidden"
         >
-          <Link to="/pasar-rakyat/tenant">
+          <Link to="/pasar-rakyat/tenant/1">
             <div
               onClick={() => {
                 window.scrollTo({ top: 0, left: 0, behavior: "auto" });
@@ -130,7 +119,7 @@ const SkemaPasar = () => {
               </p>
             </div>
           </Link>
-          <Link to="/pasar-rakyat/tenant">
+          <Link to="/pasar-rakyat/tenant/2">
             <div
               onClick={() => {
                 window.scrollTo({ top: 0, left: 0, behavior: "auto" });
@@ -142,7 +131,7 @@ const SkemaPasar = () => {
               </p>
             </div>
           </Link>
-          <Link to="/pasar-rakyat/tenant">
+          <Link to="/pasar-rakyat/tenant/3">
             <div
               onClick={() => {
                 window.scrollTo({ top: 0, left: 0, behavior: "auto" });
@@ -154,7 +143,7 @@ const SkemaPasar = () => {
               </p>
             </div>
           </Link>
-          <Link to="/pasar-rakyat/tenant">
+          <Link to="/pasar-rakyat/tenant/4">
             <div
               onClick={() => {
                 window.scrollTo({ top: 0, left: 0, behavior: "auto" });
@@ -166,18 +155,7 @@ const SkemaPasar = () => {
               </p>
             </div>
           </Link>
-          <Link to="/pasar-rakyat/tenant">
-            <div
-              onClick={() => {
-                window.scrollTo({ top: 0, left: 0, behavior: "auto" });
-              }}
-              className="mx-auto mb-10  h-[100px] w-[242px] border bg-[#E62C20] bg-opacity-40 bg-mask-photobooth-mobile transition-all ease-linear hover:cursor-pointer"
-            >
-              <p className="font-montserrat py-8 px-5 text-xl font-black text-[#EEEEEE]">
-                PHOTO BOOTH
-              </p>
-            </div>
-          </Link>
+          
         </div>
       </div>
     </>

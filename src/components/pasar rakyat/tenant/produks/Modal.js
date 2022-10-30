@@ -11,7 +11,7 @@ const settings = {
   infinite: true,
   speed: 2000,
   autoplay: true,
-  autoplaySpeed: 3000,
+  autoplaySpeed: 2000,
 };
 export default class Modal extends Component {
   render() {
@@ -64,8 +64,8 @@ export default class Modal extends Component {
                       Detail Produk
                     </div>
                     <h2>
-                          {this.props.newDescription !== null ? (
-                            <>{this.props.newDescription+"."}</>
+                          {this.props.newDescription !==""? (
+                            <>{this.props.newDescription}</>
                           ) : (
                             "Tidak ada"
                           )}
