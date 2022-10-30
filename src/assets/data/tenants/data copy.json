@@ -601,9 +601,9 @@
   {
     "id_tenant": 15,
     "category": 1,
-    "tenantName": "Kedai kikok",
+    "tenantName": "Kedai Kikok",
     "description": "Jajanan kekinian yg sangat digemari kawan kawan",
-    "tenantLogo": "Kedai kikok.png",
+    "tenantLogo": "Kedai Kikok.png",
     "socialMedia": [
       {
         "whatsapp": null,
@@ -1489,9 +1489,9 @@
   {
     "id_tenant": 34,
     "category": 1,
-    "tenantName": "Zhafira food",
-    "description": "Zhafira food merupakan usaha di bidang makanan yang menjual berbagai makanan olahan seafood dan tahu gejrot khas yogyakarta.",
-    "tenantLogo": "Zhafira food.jpg",
+    "tenantName": "Zhafira Food",
+    "description": "Zhafira Food merupakan usaha di bidang makanan yang menjual berbagai makanan olahan seafood dan tahu gejrot khas yogyakarta.",
+    "tenantLogo": "Zhafira Food.jpg",
     "socialMedia": [
       {
         "whatsapp": null,

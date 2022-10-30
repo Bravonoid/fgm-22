@@ -351,7 +351,7 @@
     "id_tenant": 7,
     "tenantName": "Sate Kere Munggah Mbale",
     "description": "",
-    "tenantLogo": "Sate Kere Munggah mbale.jpg",
+    "tenantLogo": "Sate kere Munggah mbale.jpg",
     "socialMedia": [
       {
         "whatsapp": null,
@@ -366,8 +366,8 @@
     "product": [
       {
         "productName": "Sate Kere",
-        "productImages": "Sate Kere.jpg",
-        "productImagesArray": ["Sate Kere.jpg"],
+        "productImages": "Sate kere.jpg",
+        "productImagesArray": ["Sate kere.jpg"],
         "price": 25.0,
         "varian": "Sate Kere,lontong,dagin sapi+koyor+gajih,sayur tempe+tahu pong.Kertas bulat ukuran 360 ml.",
         "promo_short": "",
@@ -521,7 +521,7 @@
     "product": [
       {
         "productName": "Thai tea",
-        "productImages": "Thai tea.jpg",
+        "productImages": "Thai Tea.jpg",
         "productImagesArray": ["Thai tea.jpg"],
         "price": 10.0,
         "varian": "",
@@ -583,18 +583,18 @@
         "promo": ""
       },
       {
-        "productName": "Pie coklat blangkon",
-        "productImages": "Pie coklat blangkon.jpg",
-        "productImagesArray": ["Pie coklat blangkon.jpg"],
+        "productName": "Pie Coklat Blangkon",
+        "productImages": "Pie Coklat Blangkon.jpg",
+        "productImagesArray": ["Pie Coklat Blangkon.jpg"],
         "price": 30.0,
         "varian": " ",
         "promo_short": "",
         "promo": ""
       },
       {
-        "productName": "Aneka snack",
-        "productImages": "Aneka snack.png",
-        "productImagesArray": ["Aneka snack.png"],
+        "productName": "Aneka Snack",
+        "productImages": "Aneka Snack.png",
+        "productImagesArray": ["Aneka Snack.png"],
         "price": 5.0,
         "varian": "batagor pedas, batagor asin,bakso goreng, keripik pedas, snack kerang, makaroni pedas, seblak,",
         "promo_short": "",
@@ -860,9 +860,9 @@
   },
   {
     "id_tenant": 14,
-    "tenantName": "Summit coffee",
+    "tenantName": "Summit Coffee",
     "description": "Summit coffee bergerak di bidang minuman kopi yang utamanya adalah produk kopi susu. Kopi ini juga pernah juara harapan 1 nasional dalam acara kompetisi cafe mahasiswa indonesia lo.",
-    "tenantLogo": "Summit coffee.jpeg",
+    "tenantLogo": "Summit Coffee.jpeg",
     "socialMedia": [
       {
         "whatsapp": null,
@@ -876,9 +876,9 @@
 
     "product": [
       {
-        "productName": "Es Kopi susu",
-        "productImages": "Es Kopi susu.jpeg",
-        "productImagesArray": ["Es Kopi susu.jpeg"],
+        "productName": "Es Kopi Susu",
+        "productImages": "Es Kopi Susu.jpeg",
+        "productImagesArray": ["Es Kopi Susu.jpeg"],
         "price": 20.0,
         "varian": "Rasa : kopi susu gula aren, kopi susu caramel, kopi susu vanilla, caramel macchiato, kopi susu sakura",
         "promo_short": "",
@@ -894,9 +894,9 @@
         "promo": "Beli 2 diskon 10 persen"
       },
       {
-        "productName": "Risol mayo",
-        "productImages": "Risol mayo.jpeg",
-        "productImagesArray": ["Risol mayo.jpeg"],
+        "productName": "Risol Mayo",
+        "productImages": "Risol Mayo.jpeg",
+        "productImagesArray": ["Risol Mayo.jpeg"],
         "price": 7.5,
         "varian": "Risoles isi mayonaise",
         "promo_short": "",
@@ -1172,7 +1172,7 @@
     "id_tenant": 18,
     "tenantName": "sadadjiwa.co",
     "description": "Sadadjiwa.co not just an ordinary bag. Produk dari toko kami berupa totebag, backpack, dan slingbag multi fungsi dengan desain yang unik. Setiap produk tas kami memiliki banyak kantong dengan bahan yang lebih tebal dan desain yang estetik!",
-    "tenantLogo": "sadadjiwa.co.png",
+    "tenantLogo": "Sadadjiwa.co.png",
     "socialMedia": [
       {
         "whatsapp": null,
