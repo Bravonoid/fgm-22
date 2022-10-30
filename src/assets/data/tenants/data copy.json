@@ -341,32 +341,32 @@
     "product": [
       {
         "productName": "Indomie Original",
-        "productImages": "Indomie Original.PNG",
-        "productImagesArray": ["Indomie Original.PNG"],
+        "productImages": "Indomie Original.png",
+        "productImagesArray": ["Indomie Original.png"],
         "deskripsi": ""
       },
       {
         "productName": "Indomie Kornet Keju",
-        "productImages": "Indomie Kornet Keju.PNG",
-        "productImagesArray": ["Indomie Kornet Keju.PNG"],
+        "productImages": "Indomie Kornet Keju.png",
+        "productImagesArray": ["Indomie Kornet Keju.png"],
         "deskripsi": ""
       },
       {
         "productName": "Indomie Kornet",
-        "productImages": "Indomie Kornet.PNG",
-        "productImagesArray": ["Indomie Kornet.PNG"],
+        "productImages": "Indomie Kornet.png",
+        "productImagesArray": ["Indomie Kornet.png"],
         "deskripsi": ""
       },
       {
         "productName": "Indomie Chili Oil",
-        "productImages": "Indomie Chili Oil.PNG",
-        "productImagesArray": ["Indomie Chili Oil.PNG"],
+        "productImages": "Indomie Chili Oil.png",
+        "productImagesArray": ["Indomie Chili Oil.png"],
         "deskripsi": ""
       },
       {
         "productName": "Indomie Telor",
-        "productImages": "Indomie Telor.PNG",
-        "productImagesArray": ["Indomie Telor.PNG"],
+        "productImages": "Indomie Telor.png",
+        "productImagesArray": ["Indomie Telor.png"],
         "deskripsi": ","
       }
     ]
@@ -1238,9 +1238,9 @@
   {
     "id_tenant": 29,
     "category": 2,
-    "tenantName": "Summit coffee",
+    "tenantName": "Summit Coffee",
     "description": "Summit coffee bergerak di bidang minuman kopi yang utamanya adalah produk kopi susu. Kopi ini juga pernah juara harapan 1 nasional dalam acara kompetisi cafe mahasiswa indonesia lo.",
-    "tenantLogo": "Summit coffee.jpeg",
+    "tenantLogo": "Summit Coffee.jpeg",
     "socialMedia": [
       {
         "whatsapp": null,
