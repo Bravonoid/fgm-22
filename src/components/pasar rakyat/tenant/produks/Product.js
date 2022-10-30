@@ -114,7 +114,7 @@ export default function Produk() {
                         key={product_index}
                         ></div>
                 <div className="flex flex-row mx-auto text-white">
-                    <div className="flex flex-col w-[300px] mx-auto bg-[#494949] hover:scale-110 duration-300" onClick={() => {
+                    <div className="flex flex-col w-[300px] mx-auto bg-[#494949] hover:cursor-pointer" onClick={() => {
                                   modalData(
                                     product.productName,
                                     product.productImages,
@@ -136,7 +136,7 @@ export default function Produk() {
                                   width="auto"
                                   height="auto"
                                 />
-                        <p className="font-bold px-10 text-3xl">{product.productName}</p>
+                        <p className="font-bold px-10 text-xl">{product.productName}</p>
                         {/* <p className="text-lg px-10"> Rp{product.price}.000</p> */}
                     </div>
                 </div>

@@ -26,6 +26,9 @@ import mobile2 from "../../assets/festival-seni/mobile2.svg";
 import mobile3 from "../../assets/festival-seni/mobile3.svg";
 import mobile4 from "../../assets/festival-seni/judulkolaborasi_mobile.svg";
 import mobile5 from "../../assets/festival-seni/mobile5.svg";
+import roj from "../../assets/festival-seni/roj.png";
+import swagayugama from "../../assets/festival-seni/swagayugama.png";
+import psm from "../../assets/festival-seni/psm.png";
 import "./festival.css";
 import { Link } from "react-router-dom";
 import AOS from "aos";
@@ -371,7 +374,18 @@ const festival_seni = () => {
 					data-aos-duration="1000"
 					data-aos-anchor-placement="top-center"
 				>
-					<Coming />{" "}
+					{/* <Coming />{" "} */}
+					<div className={` flex mobile:mt-12  p-5 bg-[#EEEEEE] xl:bg-flat-kkm bg-cover h-3/5 w-4/5 my-auto mx-auto  2xl:w-2/3 relative z-100 `} data-aos="zoom-in" data-aos-duration="1000">
+          			<div className="relative p-2 z-40  flex  2xl:ml-24 flex-wrap md:gap-8 gap-4 justify-evenly md:mx-16 ">
+                            
+                                <div className="self-center flex flex-row justify-center">
+									<img src={roj} />
+									<img src={swagayugama} />
+									<img src={psm} />
+                                </div>
+                            
+                        </div>
+          		</div>
 					{/* <img src={ukm1} alt="ukm header" className="w-auto mobile:hidden sm:hidden md:block md:mb-12"/>
                     <img src={mobile4} alt="ukm header" className="w-screen mobile:block md:hidden"/> */}
 					{/* <p className="mt-16 font-Montserrat text-6xl font-bold text-white mobile:hidden">

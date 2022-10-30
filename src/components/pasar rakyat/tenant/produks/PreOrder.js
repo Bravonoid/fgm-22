@@ -129,7 +129,7 @@ export default function PreOrder() {
                         key={product_index}
                         ></div>
                 <div className="flex flex-row mx-auto text-white">
-                    <div className="flex flex-col w-[300px] mx-auto bg-[#494949] hover:scale-110 duration-300 relative" onClick={() => {
+                    <div className="flex flex-col w-[300px] mx-auto bg-[#494949] hover:cursor-pointer relative" onClick={() => {
                                   modalData(
                                     product.productName,
                                     product.productImages,
@@ -161,7 +161,7 @@ export default function PreOrder() {
                                   width="auto"
                                   height="auto"
                                 />
-                        <p className="font-bold px-10 text-3xl">{product.productName}</p>
+                        <p className="font-bold px-10 text-xl">{product.productName}</p>
                         <p className="text-lg px-10"> Rp{product.price}.000</p>
                     </div>
                 </div>
@@ -181,7 +181,7 @@ export default function PreOrder() {
                                   "%20apakah%20masih+ada?%0aBagaimana%20caranya?"
                                 }
                               >
-                <button className="p-4 bg-[#EEEEEE] text-[#171717] font-Montserrat text-center font-bold m-4 hover:bg-[#171717] hover:text-[#EEEEEE]">PREORDER DISINI</button></a>
+                <button className="p-4 bg-[#EEEEEE] text-[#171717] font-Montserrat text-center font-bold m-4 hover:cursor-pointer">PREORDER DISINI</button></a>
             </div>
             </>
             );

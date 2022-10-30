@@ -34,6 +34,7 @@ module.exports = {
 		backgroundImage: {
 			pattern: "url('../src/assets/home/navbar-hover.svg')",
 			"flat-medpart": "url('../src/assets/home/plain-cover.svg')",
+			"flat-kkm": "url('../src/assets/festival-seni/kkm.png')",
 			foto_teater : "../src/assets/home/teater/teater.png",
 			"festival_md" : 'url("../src/assets/festival-seni/backgroundsection1.png")',
 			"festival_mobile" : 'url("../src/assets/festival-seni/background_mobile.png")',
