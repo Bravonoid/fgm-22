@@ -23,18 +23,18 @@ export default class Modal extends Component {
             <img src={block1} alt="block" className="absolute left-0 top-0 z-0"/>
             <img src={block2} alt="block" className="absolute bottom-0 right-0 z-0"/>
             <button
-                  className="absolute right-0 top-0 scale-150 text-red-500 background-transparent font-bold uppercase px-4 py-2 text-sm outline-none focus:outline-none ease-linear transition-all duration-150"
+                  className="absolute right-2 top-0 scale-150 text-red-500 font-bold uppercase text-sm"
                   type="button"
                   onClick={this.props.hide}
                 >
                   X
                 </button>
-              <div className="flex justify-center text-center items-center text-3xl font-bold py-8 z-50 relative">
+              <div className="pt-24 flex justify-center text-center items-center text-3xl font-bold py-8 z-50 relative">
                 {this.props.newProductName}
               </div>
               <div className="md:flex">
                 <div>
-                  <div className="text-center items-center justify-center px-5 border-b border-solid border-blueGray-200 rounded-t">
+                  <div className="text-center items-center justify-center px-5 border-b border-solid border-blueGray-200 rounded ">
                     <div className="flex items-center justify-center content-center">
                       <div className="lg:w-64 md:w-60 w-44">
                       <Slider className="" {...settings}>
@@ -59,7 +59,7 @@ export default class Modal extends Component {
                   </div>
                 </div>
                 <div>
-                  <div className="md:ml-10 relative flex-auto justify-center">
+                  <div className="md:ml-10 relative flex-auto justify-center pb-32">
                     <div className="font-bold text-2xl pt-6 pb-6 text-center md:text-left">
                       Detail Produk
                     </div>

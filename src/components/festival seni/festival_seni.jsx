@@ -375,7 +375,7 @@ const festival_seni = () => {
 					data-aos-anchor-placement="top-center"
 				>
 					{/* <Coming />{" "} */}
-					<div className={` flex mobile:mt-12  p-5 bg-[#EEEEEE] xl:bg-flat-kkm bg-cover h-3/5 w-4/5 my-auto mx-auto  2xl:w-2/3 relative z-100 `} data-aos="zoom-in" data-aos-duration="1000">
+					<div className={` flex mobile:mt-12  p-5 bg-[#EEEEEE] xl:bg-flat-kkm bg-cover h-3/5 w-4/5 my-auto mx-auto  2xl:w-2/3 relative z-100 py-16`} data-aos="zoom-in" data-aos-duration="1000">
           				<div className="mx-auto h-auto w-1/2 px-10 lg:w-[1140.88px]">
                             
                                 <div className="flex flex-row flex-wrap">
