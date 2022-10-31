@@ -296,7 +296,7 @@ const festival_seni = () => {
 				</div>
 			</div>
 			<div
-				className="h-[500px] bg-[#242424] bg-cover sm:h-[600px] mobile:h-[800px]"
+				className="h-auto bg-[#242424] bg-cover"
 				style={{ backgroundImage: `url(${pattern})` }}
 			>
 				<div className="relative flex flex-col items-center justify-center gap-2 bg-[#242424] py-4 mobile:top-0">
@@ -369,23 +369,24 @@ const festival_seni = () => {
                         </div>
                     </Slider> */}
 				<div
-					className="relative top-10 flex flex-col items-center justify-center gap-2 py-4 mobile:top-0"
+					className="h-auto flex flex-col items-center justify-center gap-2 py-4 mobile:top-0"
 					data-aos="zoom-in"
 					data-aos-duration="1000"
 					data-aos-anchor-placement="top-center"
 				>
 					{/* <Coming />{" "} */}
 					<div className={` flex mobile:mt-12  p-5 bg-[#EEEEEE] xl:bg-flat-kkm bg-cover h-3/5 w-4/5 my-auto mx-auto  2xl:w-2/3 relative z-100 `} data-aos="zoom-in" data-aos-duration="1000">
-          			<div className="relative p-2 z-40  flex  2xl:ml-24 flex-wrap md:gap-8 gap-4 justify-evenly md:mx-16 ">
+          				<div className="mx-auto h-auto w-1/2 px-10 lg:w-[1140.88px]">
                             
-                                <div className="self-center flex flex-row justify-center">
-									<img src={roj} />
-									<img src={swagayugama} />
-									<img src={psm} />
+                                <div className="flex flex-row flex-wrap">
+									<img src={roj} className="m-auto items-center justify-center pt-10"
+									/>
+									<img src={swagayugama} className="m-auto items-center justify-center pt-10"/>
+									<img src={psm} className="m-auto items-center justify-center pt-10"/>
                                 </div>
                             
                         </div>
-          		</div>
+          			</div>
 					{/* <img src={ukm1} alt="ukm header" className="w-auto mobile:hidden sm:hidden md:block md:mb-12"/>
                     <img src={mobile4} alt="ukm header" className="w-screen mobile:block md:hidden"/> */}
 					{/* <p className="mt-16 font-Montserrat text-6xl font-bold text-white mobile:hidden">

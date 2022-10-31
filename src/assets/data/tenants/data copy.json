@@ -62,7 +62,7 @@
     "category": 1,
     "tenantName": "Sosis bakar LEVINA",
     "description": " Sosis bakar levina di bidang kuliner,sosis bakar yg benar-benar dibakar dan salah satu pioner sosis jumbo di jogja dan hanya open dieven even dgn taste yg disesuaikan dengan lidah orang indonesia.",
-    "tenantLogo": "Sosis Bakar Levina.png",
+    "tenantLogo": "Sosis Bakar Levina.jpg",
     "socialMedia": [
       {
         "whatsapp": null,
@@ -87,7 +87,7 @@
     "category": 1,
     "tenantName": "Kedai eonnie 31 streetfood",
     "description": " Kami menjual produk makanan, produk paling special kami adalah Corndog dan Hottang. Selain topping Saos Tomat/Sambal Mayo kami jg memiliki Topping Manis yaitu Coklat,Greentea,Tiramisu,Taro dan Strawberry. Dan kami jg menggunakan Keju Mozzarella asli untuk menjaga kualitas produk kami.",
-    "tenantLogo": "Kedai eonnie 31.png",
+    "tenantLogo": "Kedai eonnie 31.jpeg",
     "socialMedia": [
       {
         "whatsapp": null,
@@ -101,8 +101,8 @@
     "product": [
       {
         "productName": "Corndog & Hottang",
-        "productImages": "Corndog & Hottang.jpg",
-        "productImagesArray": ["Corndog & Hottang.jpg"],
+        "productImages": "Corndog & Hottang.jpeg",
+        "productImagesArray": ["Corndog & Hottang.jpeg"],
         "deskripsi": ""
       }
     ]
@@ -215,6 +215,24 @@
         "productImages": "Garlic Baby Potato.jpg",
         "productImagesArray": ["Garlic Baby Potato.jpg"],
         "deskripsi": "Baby potato yang dibalut tumisan bawang putih dengan saus creamy"
+      },
+      {
+        "productName": "Arawings.jpg",
+        "productImages": "Arawings.jpg",
+        "productImagesArray": ["Arawings.jpg"],
+        "deskripsi": "Sayap ayam yang gurih dengan tepung crispy dibalut dengan arrabiata sauce"
+      },
+      {
+        "productName": "Napolitana", 
+        "productImages": "Napolitana.jpg",
+        "productImagesArray": ["Napolitana.jpg"],
+        "deskripsi": "Pasta tomato sauce yang segar dengan toping chicken oregano"
+      },
+      {
+        "productName": "Red Creamy Chicken",
+        "productImages": "Red Creamy Chicken.jpg",
+        "productImagesArray": ["Red Creamy Chicken.jpg"],
+        "deskripsi": "Pasta dengan red sauce yang spicy, segar, dan gurih berpadu dengan susu dan keju"
       }
     ]
   },
@@ -223,7 +241,7 @@
     "category": 1,
     "tenantName": "MAJESTY/KANJENG MAMI",
     "description": "MAJESTY/KANJENG MAMI adalah Jasa Boga penyediaan makanan dan minuman TOLAK MISKIN. Tersedia aneka makanan kekinian dan juga kekinian. Ada kemasan Tradisional dan juga modern, menyesuaikan orderan para pecinta makanan kami. Dijamin ENAK dan selalu BIKIN RINDU.",
-    "tenantLogo": "MAJESTY/KANJENG MAMI.jpg",
+    "tenantLogo": "Majesty Kanjeng Mami.jpg",
     "socialMedia": [
       {
         "whatsapp": null,
@@ -322,10 +340,34 @@
     ],
     "product": [
       {
-        "productName": "Indomie WarMieandDo",
-        "productImages": "WarMieandDoProduk.jpeg",
-        "productImagesArray": ["WarMieandDoProduk.jpeg"],
-        "deskripsi": "Indomie dengan segala macam varian rasa dan juga topping yang bermacam rupa,"
+        "productName": "Indomie Original",
+        "productImages": "Indomie Original.png",
+        "productImagesArray": ["Indomie Original.png"],
+        "deskripsi": ""
+      },
+      {
+        "productName": "Indomie Kornet Keju",
+        "productImages": "Indomie Kornet Keju.png",
+        "productImagesArray": ["Indomie Kornet Keju.png"],
+        "deskripsi": ""
+      },
+      {
+        "productName": "Indomie Kornet",
+        "productImages": "Indomie Kornet.png",
+        "productImagesArray": ["Indomie Kornet.png"],
+        "deskripsi": ""
+      },
+      {
+        "productName": "Indomie Chili Oil",
+        "productImages": "Indomie Chili Oil.png",
+        "productImagesArray": ["Indomie Chili Oil.png"],
+        "deskripsi": ""
+      },
+      {
+        "productName": "Indomie Telor",
+        "productImages": "Indomie Telor.png",
+        "productImagesArray": ["Indomie Telor.png"],
+        "deskripsi": ","
       }
     ]
   },
@@ -380,7 +422,7 @@
   },
   {
     "id_tenant": 11,
-    "category": 1,
+    "category": 2,
     "tenantName": "Santea",
     "description": "Santea merupakan salah satu tenant yang bergerak dibidang FnB. Menjual berbagai macam minuman baik dingin maupun panas.",
     "tenantLogo": "Santea.png",
@@ -409,8 +451,8 @@
       },
       {
         "productName": "Brownsugar milktea",
-        "productImages": "Brownsugar milkteas.jpeg",
-        "productImagesArray": ["Brownsugar milkteas.jpeg"],
+        "productImages": "Brownsugar milktea.jpeg",
+        "productImagesArray": ["Brownsugar milktea.jpeg"],
         "deskripsi": ""
       }
     ]
@@ -451,25 +493,25 @@
         "deskripsi": ""
       },
       {
-        "productName": "Pisang Goreng Matcha Coklat",
+        "productName": "Matcha Coklat",
         "productImages": "Pisang Goreng Matcha Coklat.jpeg",
         "productImagesArray": ["Pisang Goreng Matcha Coklat.jpeg"],
         "deskripsi": ""
       },
       {
-        "productName": "Pisang Goreng Matcha Oreo",
+        "productName": "Matcha Oreo",
         "productImages": "Pisang Goreng Matcha Oreo.jpeg",
         "productImagesArray": ["Pisang Goreng Matcha Oreo.jpeg"],
         "deskripsi": ""
       },
       {
-        "productName": "Pisang Goreng Matcha with Orea 2",
-        "productImages": "Pisang Goreng Matcha with Orea 2.jfif",
-        "productImagesArray": ["Pisang Goreng Matcha with Orea 2.jpeg"],
+        "productName": "Matcha with Orea",
+        "productImages": "Pisang Goreng Matcha with Orea 2.jpg",
+        "productImagesArray": ["Pisang Goreng Matcha with Orea 2.jpg"],
         "deskripsi": ""
       },
       {
-        "productName": "Pisang Goreng coklat",
+        "productName": "Pisang Goreng Coklat",
         "productImages": "Pisang Goreng coklat.jpg",
         "productImagesArray": ["Pisang Goreng coklat.jpeg"],
         "deskripsi": ""
@@ -503,10 +545,10 @@
   },
   {
     "id_tenant": 14,
-    "category": 2,
+    "category": 3,
     "tenantName": "Knots by Knots",
     "description": "We turn rope into macrame. All of our products are handmade and unique as it is not identical to one another.",
-    "tenantLogo": "Ajumma Kitchen.png",
+    "tenantLogo": "Knots by Knots.jpg",
     "socialMedia": [
       {
         "whatsapp": null,
@@ -559,9 +601,9 @@
   {
     "id_tenant": 15,
     "category": 1,
-    "tenantName": "Kedai kikok",
+    "tenantName": "Kedai Kikok",
     "description": "Jajanan kekinian yg sangat digemari kawan kawan",
-    "tenantLogo": "Kedai kikok.png",
+    "tenantLogo": "Kedai Kikok.png",
     "socialMedia": [
       {
         "whatsapp": null,
@@ -760,9 +802,15 @@
         "deskripsi": ""
       },
       {
-        "productName": "Daftar menu steak PM",
-        "productImages": "Daftar menu steak PM.jpg",
-        "productImagesArray": ["Daftar menu steak PM.jpg"],
+        "productName": "Ayam Pok Pok",
+        "productImages": "Ayam Pok Pok.png",
+        "productImagesArray": ["Ayam Pok Pok.png"],
+        "deskripsi": ""
+      },
+      {
+        "productName": "Jagung Bakar Mexico",
+        "productImages": "Jagung Bakar Mexico.png",
+        "productImagesArray": ["Jagung Bakar Mexico.png"],
         "deskripsi": ""
       }
     ]
@@ -792,8 +840,8 @@
       },
       {
         "productName": "Bakso ayam Rahma",
-        "productImages": "Bakso ayam Rahma.jpg",
-        "productImagesArray": ["Bakso ayam Rahma.jpg"],
+        "productImages": "Bakso ayam Rahma.png",
+        "productImagesArray": ["Bakso ayam Rahma.png"],
         "deskripsi": "Bakso yg terbuat dari bahan pokok ayam,dan tidak mengunakan bahan pengawet."
       },
       {
@@ -818,7 +866,7 @@
   },
   {
     "id_tenant": 21,
-    "category": 3,
+    "category": 4,
     "tenantName": "Lemo Jalma",
     "description": "Lemo Jalma adalah produk fashion kekinian yang memadukan unsur budaya, ikon, atau keadaan sosial Indonesia dengan selera fashion generasi saat ini yang dituangkan dalam desain orisinal bertemakan \"Wonderful Indonesia\". Lemo Jalma resmi dibuka sejak 24 Juli 2021.",
     "tenantLogo": "Lemo Jalma.png",
@@ -916,7 +964,7 @@
   },
   {
     "id_tenant": 23,
-    "category": 3,
+    "category": 4,
     "tenantName": "Sadadjiwa.co",
     "description": "Sadadjiwa.co not just an ordinary bag. Produk dari toko kami berupa totebag, backpack, dan slingbag multi fungsi dengan desain yang unik. Setiap produk tas kami memiliki banyak kantong dengan bahan yang lebih tebal dan desain yang estetik!",
     "tenantLogo": "Sadadjiwa.co.png",
@@ -933,40 +981,40 @@
     "product": [
       {
         "productName": "Fearless Edition",
-        "productImages": "Fearless Edition.png",
+        "productImages": "Fearless Edition 1.png",
         "productImagesArray": ["Fearless Edition 1.png","Fearless Edition 2.png","Fearless Edition 3.png"],
 
         "deskripsi": ""
       },
       {
         "productName": "Discover Edition",
-        "productImages": "Discover Edition.png",
+        "productImages": "Discover Edition 1.png",
         "productImagesArray": ["Discover Edition 1.png","Discover Edition 2.png","Discover Edition 3.png","Discover Edition 4.png"],
 
         "deskripsi": ""
       },
       {
         "productName": "24 Hours",
-        "productImages": "24 Hours.png",
+        "productImages": "24 Hours 1.png",
         "productImagesArray": ["24 Hours 1.png","24 Hours 2.png","24 Hours 3.png","24 Hours 4.png","24 Hours 5.png"],
 
         "deskripsi": ""
       }, 
       {
         "productName": "Playdate Edition",
-        "productImages": "Playdate Edition.png",
+        "productImages": "Playdate Edition 1.png",
         "productImagesArray": ["Playdate Edition 1.png","Playdate Edition 2.png","Playdate Edition 3.png","Playdate Edition 4.png","Playdate Edition 5.png"],
         "deskripsi": ""
       },
       {
         "productName": "Luna Edition",
-        "productImages": "Luna Edition.png",
+        "productImages": "Luna Edition 1.png",
         "productImagesArray": ["Luna Edition 1.png","Luna Edition 2.png","Luna Edition 3.png","Luna Edition 4.png"],
         "deskripsi": ""
       },
       {
         "productName": "Every Yay Edition",
-        "productImages": "Every Yay Edition.png",
+        "productImages": "Every Yay Edition 1.png",
         "productImagesArray": ["Every Yay Edition 1.png","Every Yay Edition 2.png","Every Yay Edition 3.png","Every Yay Edition 4.png","Every Yay Edition 5.png","Every Yay Edition 6.png"],
         "deskripsi": ""
       }
@@ -1027,15 +1075,15 @@
       },
       {
         "productName": "Rice bowl tongkol ayam ",
-        "productImages": "Rice bowl tongkol suwir_ayam lada hitam.png",
-        "productImagesArray": ["Rice bowl tongkol suwir_ayam lada hitam.png"],
+        "productImages": "Rice bowl tongkol suwir_ ayam lada hitam.png",
+        "productImagesArray": ["Rice bowl tongkol suwir_ ayam lada hitam.png"],
         "deskripsi": "Nasi dengan lauk tongkol suwir atau ayam dengan saus lada hitam"
       }
     ]
   },
   {
     "id_tenant": 25,
-    "category": 1,
+    "category": 2,
     "tenantName": "LASYADHINARA",
     "description": "Siapa sih yang nggak tau Nutrijell? disini kami memberikan cara yang berbeda dalam menikmati nutrijell yang dipadukan dengan susu segar dan manis. Nah, untuk menemani minuman yang manis pasti perlu makanan pendamping yang gurih gak siih? disini kami juga menyediakan makaroni dengan berbagai rasa yang pastinya gurih dan cocok abis untuk dinikmati bersamaan dengan es nutrijell yang manis",
     "tenantLogo": "Lasyadhinara.jpeg",
@@ -1072,7 +1120,7 @@
   },
   {
     "id_tenant": 26,
-    "category": 1,
+    "category": 2,
     "tenantName": "Decaf Yogyakarta",
     "description": "Cold Brew Coffee Crafters based in Yogyakarta. Coffee it your way!",
     "tenantLogo": "Decaf Yogyakarta.png",
@@ -1115,7 +1163,7 @@
   },
   {
     "id_tenant": 27,
-    "category": 3,
+    "category": 4,
     "tenantName": "Gama Urban Store",
     "description": "Gama Urban Store adalah induk dari Gama Urban yaitu organisasi mahasiswa daerah bandung.. nah disini Gama Urban Store menjual beberapa merchandise berupa T-Shirt, Tumbler, Totebag, Gelang, dan Stiker. Tapi kami juga menjual beberapa cemilan khas bandung.",
     "tenantLogo": "Gama Urban Store.jpeg",
@@ -1189,10 +1237,10 @@
   },
   {
     "id_tenant": 29,
-    "category": 1,
-    "tenantName": "Summit coffee",
+    "category": 2,
+    "tenantName": "Summit Coffee",
     "description": "Summit coffee bergerak di bidang minuman kopi yang utamanya adalah produk kopi susu. Kopi ini juga pernah juara harapan 1 nasional dalam acara kompetisi cafe mahasiswa indonesia lo.",
-    "tenantLogo": "Summit coffee.jpeg",
+    "tenantLogo": "Summit Coffee.jpeg",
     "socialMedia": [
       {
         "whatsapp": null,
@@ -1388,9 +1436,9 @@
         "deskripsi": "Korean street food yang terbuat dari tepung beras disiram kuah gochujang ditambah bakso ikan dan taburan wijen, yummy."
       },
       {
-        "productName": "Hotteok ",
-        "productImages": "Hotteok 1.jpg",
-        "productImagesArray": ["Hotteok 1.jpg"],
+        "productName": "Hotteok",
+        "productImages": "Hotteok.jpg",
+        "productImagesArray": ["Hotteok.jpg"],
         "deskripsi": "Kue yang terbuat dari tepung terigu dan ketan, isian kacang, gula palm dan bubuk kayu manis, cocok untuk semua kalangan."
       },
       {
@@ -1441,9 +1489,9 @@
   {
     "id_tenant": 34,
     "category": 1,
-    "tenantName": "Zhafira food",
-    "description": "Zhafira food merupakan usaha di bidang makanan yang menjual berbagai makanan olahan seafood dan tahu gejrot khas yogyakarta.",
-    "tenantLogo": "Zhafira food.jpg",
+    "tenantName": "Zhafira Food",
+    "description": "Zhafira Food merupakan usaha di bidang makanan yang menjual berbagai makanan olahan seafood dan tahu gejrot khas yogyakarta.",
+    "tenantLogo": "Zhafira Food.jpg",
     "socialMedia": [
       {
         "whatsapp": null,
@@ -1469,8 +1517,8 @@
       },
       {
         "productName": "Jeruk baby peras",
-        "productImages": "Jeruk baby peras.jpg",
-        "productImagesArray": ["Jeruk baby peras.jpg"],
+        "productImages": "Jeruk baby peras.jpeg",
+        "productImagesArray": ["Jeruk baby peras.jpeg"],
         "deskripsi": "Jeruk peras yang manis alami tanpa gula dan kaya akan vitamin."
       }
     ]
@@ -1536,28 +1584,52 @@
     ],
     "product": [
       {
-        "productName": "Tahu gejrot",
-        "productImages": "Tahu gejrot.jpg",
-        "productImagesArray": ["Tahu gejrot.jpg"],
-        "deskripsi": "Produk Tahu gejrot ini merupakan suatu makanan yg berciri khas rasa pedes nya. Yang berkomposisi Tahu, bawang m/p, cabai, gulajawa, asem, dan garam. Makanan ini sangatlah cocok bagi penggemar vegetarian."
+        "productName": "Bublle gum.jpg",
+        "productImages": "Bublle gum.jpg",
+        "productImagesArray": ["Bublle gum.jpg"],
+        "deskripsi": ""
       },
       {
-        "productName": "Sate seafood bakar",
-        "productImages": "Sate seafood bakar.jpg",
-        "productImagesArray": ["Sate seafood bakar.jpg"],
-        "deskripsi": "Olahan sate seafood yang dibakar menggunakan bumbu barbeque, dan pastinya dijamin kesegaran seafoodnya."
+        "productName": "Es jeruk selasih.jpg",
+        "productImages": "Es jeruk selasih.jpg",
+        "productImagesArray": ["Es jeruk selasih.jpg"],
+        "deskripsi": ""
       },
       {
-        "productName": "Jeruk baby peras",
-        "productImages": "Jeruk baby peras.jpg",
-        "productImagesArray": ["Jeruk baby peras.jpg"],
-        "deskripsi": "Jeruk peras yang manis alami tanpa gula dan kaya akan vitamin."
+        "productName": "Green tea.jpg",
+        "productImages": "Green tea.jpg",
+        "productImagesArray": ["Green tea.jpg"],
+        "deskripsi": ""
+      },
+      {
+        "productName": "Es teh.jpg",
+        "productImages": "Es teh.jpg",
+        "productImagesArray": ["Es teh.jpg"],
+        "deskripsi": ""
+      },
+      {
+        "productName": "Red Velvet.jpg",
+        "productImages": "Red Velvet.jpg",
+        "productImagesArray": ["Red Velvet.jpg"],
+        "deskripsi": ""
+      },
+      {
+        "productName": "Sate kere.jpg",
+        "productImages": "Sate kere.jpg",
+        "productImagesArray": ["Sate kere.jpg"],
+        "deskripsi": ""
+      },
+      {
+        "productName": "Thai tea.jpg",
+        "productImages": "Thai tea.jpg",
+        "productImagesArray": ["Thai tea.jpg"],
+        "deskripsi": ""
       }
     ]
   },
   {
     "id_tenant": 37,
-    "category": 1,
+    "category": 2,
     "tenantName": "Dapur Ayah",
     "description": "",
     "tenantLogo": "Dapur Ayah.jpg",
@@ -1591,9 +1663,9 @@
         "deskripsi": "Jeruk peras yang manis alami tanpa gula dan kaya akan vitamin."
       },
       {
-        "productName": "Tahu gejrot",
-        "productImages": "Tahu gejrot.jpg",
-        "productImagesArray": ["Tahu gejrot.jpg"],
+        "productName": "MINUMAN",
+        "productImages": "MINUMAN.jpg",
+        "productImagesArray": ["MINUMAN.jpg"],
         "deskripsi": "Produk Tahu gejrot ini merupakan suatu makanan yg berciri khas rasa pedes nya. Yang berkomposisi Tahu, bawang m/p, cabai, gulajawa, asem, dan garam. Makanan ini sangatlah cocok bagi penggemar vegetarian."
       },
       {
@@ -1615,7 +1687,7 @@
     "category": 1,
     "tenantName": "Laka-Laka",
     "description": "Laka-Laka kedai makanan yang menyediakan menu yang spesial, tapi menu yang paling istimewa adalah menua bersamamu",
-    "tenantLogo": "Laka-Laka.jpeg",
+    "tenantLogo": "Laka Laka.jpeg",
     "socialMedia": [
       {
         "whatsapp": null,
@@ -1660,44 +1732,44 @@
     "product": [
       {
         "productName": "Cheese Tiramisu Dessert Box",
-        "productImages": "Cheese Tiramisu Dessert Box.jpeg",
-        "productImagesArray": ["Cheese Tiramisu Dessert Box.jpeg"],
+        "productImages": "Cheese Tiramisu Dessert Box.jpg",
+        "productImagesArray": ["Cheese Tiramisu Dessert Box.jpg"],
         "deskripsi": "Semangkuk sup yang berisi aneka produk olahan dengan dua pilihan kuah. Adar rasa original dan tom yom"
       },
       {
         "productName": "Green Tea Dessert Box",
-        "productImages": "Green Tea Dessert Box.jpeg",
-        "productImagesArray": ["Green Tea Dessert Box.jpeg"],
+        "productImages": "Green Tea Dessert Box.jpg",
+        "productImagesArray": ["Green Tea Dessert Box.jpg"],
         "deskripsi": "Minuman teh segar yang membuat kamu selalu merasa dekat denganku."
       },
       {
         "productName": "Red Velvet Dessert Box ",
-        "productImages": "Red Velvet Dessert Box.jpeg",
-        "productImagesArray": ["Red Velvet Dessert Box.jpeg"],
+        "productImages": "Red Velvet Dessert Box.jpg",
+        "productImagesArray": ["Red Velvet Dessert Box.jpg"],
         "deskripsi": "Semangkuk sup yang berisi aneka produk olahan dengan dua pilihan kuah. Adar rasa original dan tom yom"
       },
       {
         "productName": "Korean Lunch Cake",
-        "productImages": "Korean Lunch Cake.jpeg",
-        "productImagesArray": ["Korean Lunch Cake.jpeg"],
+        "productImages": "Korean Lunch Cake.jpg",
+        "productImagesArray": ["Korean Lunch Cake.jpg"],
         "deskripsi": "Minuman teh segar yang membuat kamu selalu merasa dekat denganku."
       },
       {
         "productName": "Brownies",
-        "productImages": "Brownies.jpeg",
-        "productImagesArray": ["Brownies.jpeg"],
+        "productImages": "Brownies.jpg",
+        "productImagesArray": ["Brownies.jpg"],
         "deskripsi": "Semangkuk sup yang berisi aneka produk olahan dengan dua pilihan kuah. Adar rasa original dan tom yom"
       },
       {
         "productName": "Banoffee",
-        "productImages": "Banoffee.jpeg",
-        "productImagesArray": ["Ice Justmine Tea.jpeg"],
+        "productImages": "Banoffee.jpg",
+        "productImagesArray": ["Ice Justmine Tea.jpg"],
         "deskripsi": "Minuman teh segar yang membuat kamu selalu merasa dekat denganku."
       },
       {
         "productName": "Double Cheese Dessert Box",
-        "productImages": "Double Cheese Dessert Box.jpeg",
-        "productImagesArray": ["Double Cheese Dessert Box.jpeg"],
+        "productImages": "Double Cheese Dessert Box.jpg",
+        "productImagesArray": ["Double Cheese Dessert Box.jpg"],
         "deskripsi": "Minuman teh segar yang membuat kamu selalu merasa dekat denganku."
       }
     ]
@@ -1798,9 +1870,9 @@
   {
     "id_tenant": 42,
     "category": 1,
-    "tenantName": "Sego Gamboot",
+    "tenantName": "Segoot",
     "description": "Sego Gamboot adalah nasi dengan lauk masak merah khas Banjarmasin, Kalimantan Selatan, yang terbuat dari berbagai macam rempah-rempah sehingga membuat Sego Gamboot memiliki cita rasa yang unik",
-    "tenantLogo": "Sego Gamboot.jpg",
+    "tenantLogo": "Segoot.jpg",
     "socialMedia": [
       {
         "whatsapp": null,
@@ -1813,7 +1885,7 @@
     ],
     "product": [
       {
-        "productName": "Potato Mozarella",
+        "productName": "Sego Gamboot",
         "productImages": "Sego Gamboot 1.jpeg",
         "productImagesArray": ["Sego Gamboot 1.jpeg","Sego Gamboot 2.jpeg","Sego Gamboot 3.jpeg","Sego Gamboot 4.jpeg"],
         "deskripsi": ""
@@ -1845,26 +1917,124 @@
       },
       {
         "productName": "Thai Tea",
-        "productImages": "Thai Tea.jpeg",
-        "productImagesArray": ["Thai Tea.jpeg"],
+        "productImages": "Thai Tea.jpg",
+        "productImagesArray": ["Thai Tea.jpg"],
         "deskripsi": ""
       },
       {
         "productName": "Corndog Special",
-        "productImages": "Corndog Special.jpeg",
-        "productImagesArray": ["Corndog Special.jpeg"],
+        "productImages": "Corndog Special.jpg",
+        "productImagesArray": ["Corndog Special.jpg"],
         "deskripsi": ""
       },
       {
         "productName": "Green Thai Tea",
-        "productImages": "Green Thai Tea.jpeg",
-        "productImagesArray": ["Green Thai Tea.jpeg"],
+        "productImages": "Green Thai Tea.jpg",
+        "productImagesArray": ["Green Thai Tea.jpg"],
         "deskripsi": ""
       },
       {
         "productName": "Risol Mayo",
-        "productImages": "Risol Mayo.jpeg",
-        "productImagesArray": ["Risol Mayo.jpeg"],
+        "productImages": "Risol Mayo.jpg",
+        "productImagesArray": ["Risol Mayo.jpg"],
+        "deskripsi": ""
+      }
+    ]
+  },
+  {
+    "id_tenant": 44,
+    "category": 2,
+    "tenantName": "Teh Nusantara",
+    "description": "Aslinya Teh Nusantara yang disajikan dengan rasa2 buah, machiato dan susu ... eeenaakkk tenan ...",
+    "tenantLogo": "Teh Nusantara.jpg",
+    "socialMedia": [
+      {
+        "whatsapp": null,
+        "instagram": null,
+        "facebook": null,
+        "website": null,
+        "shopee": null,
+        "tokopedia": null
+      }
+    ],
+    "product": [
+      {
+        "productName": "CHOCOLATE MACCHIATO",
+        "productImages": "CHOCOLATE MACCHIATO.jpg",
+        "productImagesArray": ["CHOCOLATE MACCHIATO.jpg"],
+        "deskripsi": ""
+      },
+      {
+        "productName": "GREEN TEA",
+        "productImages": "GREEN TEA.jpg",
+        "productImagesArray": ["GREEN TEA.jpg"],
+        "deskripsi": ""
+      },
+      {
+        "productName": "Lychee Tea",
+        "productImages": "Lychee Tea.jpg",
+        "productImagesArray": ["Lychee Tea.jpg"],
+        "deskripsi": ""
+      },
+      {
+        "productName": "OREO VANLLA MILK TEA",
+        "productImages": "OREO VANLLA MILK TEA.jpg",
+        "productImagesArray": ["OREO VANLLA MILK TEA.jpg"],
+        "deskripsi": ""
+      },
+      {
+        "productName": "PEACH TEA",
+        "productImages": "PEACH TEA.jpg",
+        "productImagesArray": ["PEACH TEA.jpg"],
+        "deskripsi": ""
+      },
+      {
+        "productName": "RED VELVET MACCHIATO",
+        "productImages": "RED VELVET MACCHIATO.jpg",
+        "productImagesArray": ["RED VELVET MACCHIATO.jpg"],
+        "deskripsi": ""
+      },
+      {
+        "productName": "TARO MACCHIATO",
+        "productImages": "TARO MACCHIATO.jpg",
+        "productImagesArray": ["TARO MACCHIATO.jpg"],
+        "deskripsi": ""
+      }
+    ]
+  },
+  {
+    "id_tenant": 45,
+    "category": 2,
+    "tenantName": "Es Kabeh.PNG",
+    "description": "Es kabeh adalah startup yang bergerak di bidang minuman.Minuman yang kami sajikan adalah minuman yang harganya sangat terjangkau dan secara umum disukai oleh berbagai kalangan. Beberapa produk minuman yang kami sajikan selain menyegarkan juga bagus untuk kesehatan karena mengandung campuran rempah-rempah alami. Walaupun nama kami adalah ES",
+    "tenantLogo": "Es Kabeh.PNG",
+    "socialMedia": [
+      {
+        "whatsapp": null,
+        "instagram": null,
+        "facebook": null,
+        "website": null,
+        "shopee": null,
+        "tokopedia": null
+      }
+    ],
+    "product": [
+      {
+        "productName": "Mango Jelly",
+        "productImages": "Mango Jelly.jpeg",
+        "productImagesArray": ["Mango Jelly.jpeg"],
+        "deskripsi": "Minuman rasa mangga dengan toping jelly"
+      },
+      {
+        "productName": "Es Coklat",
+        "productImages": "Es Coklat.jpeg",
+        "productImagesArray": ["Es Coklat.jpeg"],
+        "deskripsi": ""
+      },
+      {
+        "productName": "Es Teh",
+        "productImages": "Es Teh.jpeg",
+        "productImagesArray": ["Es Teh.jpeg"],
         "deskripsi": ""
       }
     ]

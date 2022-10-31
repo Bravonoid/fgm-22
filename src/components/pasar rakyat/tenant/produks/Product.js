@@ -12,6 +12,7 @@ import produk2 from "../../../../assets/Pasar-Rakyat/produk/produk2.svg";
 import judultemabunga from "../../../../assets/Pasar-Rakyat/produk/judultemabunga.svg";
 import hiasan from "../../../../assets/Pasar-Rakyat/produk/hiasan-kanan-pageproduk.svg";
 import Diskon from "../../../../assets/Pasar-Rakyat/produk/diskon.png";
+import btn from "../../../../assets/Pasar-Rakyat/home-pasar/btnPO.png";
 import { useParams } from "react-router-dom";
 import { Link } from "react-router-dom";
 import { HtmlHead } from "../../../HtmlHead";
@@ -51,6 +52,13 @@ export default function Produk() {
     <div className="text-gray-500 bg-fgm-base m-0 bg-30% mx-0" >
      <HtmlHead title="Produk" decription="[insert page description]" />
       <div>
+      <Link to="/pasar-rakyat/pre-order">
+					<img
+						src={btn}
+						className="fixed p-4 right-0 bottom-0 z-50"
+						alt=""
+					/>
+					</Link>
         {productData.map((dataTenant) => {
           if (dataTenant.id_tenant == index) {
             return (
@@ -114,7 +122,7 @@ export default function Produk() {
                         key={product_index}
                         ></div>
                 <div className="flex flex-row mx-auto text-white">
-                    <div className="flex flex-col w-[300px] mx-auto bg-[#494949] hover:cursor-pointer" onClick={() => {
+                    <div className="flex flex-col w-[300px] mx-auto bg-[#494949] hover:cursor-pointer duration-300" onClick={() => {
                                   modalData(
                                     product.productName,
                                     product.productImages,
@@ -145,7 +153,6 @@ export default function Produk() {
                 })}
                 </div>
             </div>
-           
             </>
             );
           }

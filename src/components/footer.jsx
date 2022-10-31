@@ -25,7 +25,7 @@ import sitemap_footer from "../assets/footer/sitemap-footer.svg";
 
 const footer = () => {
 	return (
-		<footer className=" bg-black">
+		<footer className=" bg-black z-100">
 			<div className="flex flex-row">
 				<img
 					className="sm:hidden lg:block mobile:hidden"

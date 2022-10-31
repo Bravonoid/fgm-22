@@ -3,9 +3,10 @@ import { useState  } from "react";
 
 export default function ItemTenant(props) {
   const [src, setSrc] = useState(
-    `/data/tenant/${props.itemData.id_tenant}/${props.itemData.tenantLogo}`
+    `/data/tenantPreorder/${props.itemData.id_tenant}/${props.itemData.tenantLogo}`
   );
   console.log(src)
+
   return (
     <a
       className="flex flex-col items-center border sm:border-2 shadow  bg-white   duration-300 ease-out overflow-hidden"
