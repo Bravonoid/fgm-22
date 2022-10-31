@@ -9,7 +9,7 @@ import Bgfoto from "../../assets/teater/teater.png";
 import Pattern_samping from "../../assets/home/teater/pattern-group.svg";
 import Trailer from "./trailer";
 import Sinopsis from "./Sinopsis";
-import Pemeran from "./Pemeran";
+import Kolaborasi from "./Kolaborasi";
 import Judul_teater from "../../assets/teater/Judul_teater.svg";
 import { Link } from "react-router-dom";
 import Penari from "../../assets/home/penari.png";
@@ -25,31 +25,32 @@ const Foto = () => {
 	const [teater, setTeater] = useState(true);
 	const [trailer, setTrailer] = useState(false);
 	const [sinopsis, setSinopsis] = useState(false);
-	const [pemeran, setPemeran] = useState(false);
+	const [kolaborasi, setKolaborasi] = useState(false);
+
 
 	const handleTeater = () => {
 		setTeater(true);
 		setTrailer(false);
 		setSinopsis(false);
-		setPemeran(false);
+		setKolaborasi(false);
 	};
 	const handleTrailer = () => {
 		setTeater(false);
 		setTrailer(true);
 		setSinopsis(false);
-		setPemeran(false);
+		setKolaborasi(false);
 	};
 	const handleSinopsis = () => {
 		setTeater(false);
 		setTrailer(false);
 		setSinopsis(true);
-		setPemeran(false);
+		setKolaborasi(false);
 	};
-	const handlePemeran = () => {
+	const handleKolaborasi = () => {
 		setTeater(false);
 		setTrailer(false);
 		setSinopsis(false);
-		setPemeran(true);
+		setKolaborasi(true);
 	};
 
 	const settings = {
@@ -90,12 +91,13 @@ const Foto = () => {
 				</div>
 				<div
 					className={
-						pemeran
-							? " h-full w-full  transition-all duration-1000 ease-in-out"
+						kolaborasi
+							? " h-full w-full  bg-right   bg-no-repeat bg-cover transition-all duration-1000 ease-in-out"
 							: "hidden"
 					}
+					style={{ backgroundImage: `url(${Bgfoto})` }}
 				>
-					<Pemeran />
+					<Kolaborasi />
 				</div>
 				<div
 					className={
@@ -180,6 +182,16 @@ const Foto = () => {
 						}
 					>
 						SINOPSIS
+					</li>
+					<li
+						onClick={handleKolaborasi}
+						className={
+							kolaborasi
+								? " cursor-default   font-bold"
+								: " cursor-pointer hover:font-bold"
+						}
+					>
+						KOLABORASI
 					</li>
 					<Link to="/tiket">
 						<li className="hover:font-bold">TIKET</li>
