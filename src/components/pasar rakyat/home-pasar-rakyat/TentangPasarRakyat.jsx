@@ -102,7 +102,7 @@ const TentangPasarRakyat = () => {
               </div>
             </Slider>
           </div>
-          <Link to="/pasar-rakyat/pre-order">
+          {/* <Link to="/pasar-rakyat/pre-order">
             <img
               onClick={() => {
                 window.scrollTo({ top: 0, left: 0, behavior: "auto" });
@@ -111,7 +111,7 @@ const TentangPasarRakyat = () => {
               className="fixed right-0 bottom-0 z-50 p-4"
               alt=""
             />
-          </Link>
+          </Link> */}
         </div>
       </div>
     </>

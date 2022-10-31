@@ -15,12 +15,22 @@ export default function PasarRakyat() {
 				decription="[insert page description]"
 				link="/pasar-rakyat"
 			/>
-			<main className="overflow-hidden">
+			<main className="relative bg-[#202020]">
 				<TentangPasarRakyat />
 				<TemaPasarRakyat />
 				<Infografis />
 				<SkemaPasar />
 				<KolaborasiKreasi />
+				<Link to="/pasar-rakyat/pre-order">
+					<img
+					onClick={() => {
+						window.scrollTo({ top: 0, left: 0, behavior: "auto" });
+					}}
+					src={btn}
+					className="sticky right-0 bottom-0 z-50 p-4"
+					alt=""
+					/>
+				</Link>
 			</main>
 		</>
 	);

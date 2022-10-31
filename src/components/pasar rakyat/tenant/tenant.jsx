@@ -104,16 +104,8 @@ const Tenant = () => {
       }, [number]);
 
   return (
-    <div className='w-full h-full bg-fgm-base'>
-    
+    <div className='w-full h-full bg-fgm-base relative'>
       <div className='grid  py-16  bg-fgm-base  justify-between  md:flex'>
-      <Link to="/pasar-rakyat/pre-order">
-					<img
-						src={btn}
-						className="fixed p-4 right-0 bottom-0 z-50"
-						alt=""
-					/>
-					</Link>
       <div className='text-start order-first w-1/2  xl:order-first  items-start z-100  '>
          <ul className='hidden md:inline-block justify-center items-center w-full  gap-2 text-xl md:text-2xl xl:text-3xl h-[89vh] text-white'>
          <Link to="/pasar-rakyat">
@@ -197,6 +189,13 @@ const Tenant = () => {
        </div>
 
         <MapTenant categoryName = {categoryName} tenantList = {tenantLists} ></MapTenant>
+        <Link to="/pasar-rakyat/pre-order">
+					<img
+						src={btn}
+						className="sticky p-4 right-0 bottom-0 z-50"
+						alt=""
+					/>
+					</Link>
 
     </div>
   )
