@@ -31,7 +31,7 @@ const SkemaPasar = () => {
         <img
           data-aos="fade-down"
           data-aos-duration="1500"
-          data-aos-offset="1200"
+          data-aos-offset="1100"
           src={TeksSkema}
           className="mx-auto hidden md:block"
           alt=""
@@ -47,8 +47,8 @@ const SkemaPasar = () => {
         <div
           className="hidden px-5 md:block"
           data-aos="slide-right"
-          data-aos-duration="1500"
-          data-aos-offset="1300"
+          data-aos-duration="1300"
+          data-aos-offset="1100"
         >
           <Link to="/pasar-rakyat/tenant/1">
             <div
@@ -104,7 +104,7 @@ const SkemaPasar = () => {
         <div
           data-aos="slide-right"
           data-aos-duration="1500"
-          data-aos-offset="2200"
+          data-aos-offset="2100"
           className="md:hidden"
         >
           <Link to="/pasar-rakyat/tenant/1">
