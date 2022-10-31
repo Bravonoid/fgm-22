@@ -11,21 +11,48 @@ const KolaborasiKreasi = () => {
   return (
     <>
       <div
-        className="bg-[#202020] bg-contain bg-repeat py-16"
+        className="bg-[#202020] bg-contain bg-repeat py-16 lg:hidden"
         style={{ backgroundImage: `url(${BGPattern})` }}
       >
         <img
           src={TeksKolaborasi}
           data-aos="fade-down"
           data-aos-duration="1500"
-          data-aos-offset="1400"
+          data-aos-offset="2200"
+          style={{ transform: "scale(150%)" }}
+          className="mx-auto"
+          alt=""
+        />
+        <div
+          className="mx-auto mt-10 h-full w-[50%] bg-kkm px-10 lg:w-[1140.88px] py-20"
+          data-aos="fade-up"
+          data-aos-offset="2200"
+          data-aos-duration="1500"
+        >
+          <img
+            src={LogoUser}
+            className="m-auto items-center justify-center"
+            alt=""
+          />
+        </div>
+      </div>
+
+      <div
+        className="bg-[#202020] bg-contain bg-repeat py-16 hidden lg:block"
+        style={{ backgroundImage: `url(${BGPattern})` }}
+      >
+        <img
+          src={TeksKolaborasi}
+          data-aos="fade-down"
+          data-aos-duration="1500"
+          data-aos-offset="1100"
           className="mx-auto scale-150 lg:scale-100"
           alt=""
         />
         <div
-          className="mx-auto mt-10 h-[371px] w-1/2 bg-kkm px-10 lg:w-[1140.88px]"
+          className="mx-auto mt-10 h-[371px] bg-kkm px-10 lg:w-[1140.88px]"
           data-aos="fade-up"
-          data-aos-offset="1400"
+          data-aos-offset="1100"
           data-aos-duration="1500"
         >
           <img
