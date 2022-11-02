@@ -14,7 +14,7 @@ const medpart = () => {
     <div className=' relative  justify-center bg-cover  py-16 bg-[#171717] pointer-events-none' >
         
             <div className=' grid absolute gap-24 h-full  mx-auto w-full grid-cols-2'>
-            <div className=' flex bg-cover h-auto w-auto  bg-[#171717]' style={{ backgroundImage: "url(" + Pattern + ")" }}></div>
+            <div className=' flex bg-cover h-auto w-fit  bg-[#171717]' style={{ backgroundImage: "url(" + Pattern + ")" }}></div>
             <div className='  flex bg-cover h-auto w-auto  bg-[#171717]' style={{ backgroundImage: "url(" + Pattern + ")" }}></div>
 
             </div>
@@ -32,7 +32,7 @@ const medpart = () => {
             <img src={medpart_mobile} className='block sm:hidden relative h-24 mx-auto' alt="" />
           </div>
 
-          <div className={` flex  mobile:mt-12 mt-32  p-5 bg-[#242424] xl:bg-flat-medpart bg-cover h-3/5 w-4/5 my-auto mx-auto  2xl:w-2/3 relative z-100 `} data-aos="zoom-in" data-aos-duration="1000">
+          <div className={` flex  mobile:mt-12 mt-32  p-5 bg-[#242424] xl:bg-flat-medpart bg-auto h-3/5 w-4/5 my-auto mx-auto  2xl:w-2/3 relative z-100 `} data-aos="zoom-in" data-aos-duration="1000">
           <div className="relative p-2 z-40  flex 2xl:ml-24 flex-wrap md:gap-8 gap-4 justify-evenly md:mx-16 ">
                             {dataMedpart.map((sponsor, index) =>
                                 <div className="self-center">

@@ -15,7 +15,7 @@ export default function PasarRakyat() {
 				decription="[insert page description]"
 				link="/pasar-rakyat"
 			/>
-			<main className="relative bg-[#202020]">
+			<main className="overflow-hidden">
 				<TentangPasarRakyat />
 				<TemaPasarRakyat />
 				<Infografis />
@@ -27,7 +27,7 @@ export default function PasarRakyat() {
 						window.scrollTo({ top: 0, left: 0, behavior: "auto" });
 					}}
 					src={btn}
-					className="sticky right-0 bottom-0 z-50 p-4"
+					className="fixed right-0 bottom-0 z-50 p-4"
 					alt=""
 					/>
 				</Link>

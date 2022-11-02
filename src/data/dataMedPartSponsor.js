@@ -67,9 +67,62 @@ const dataMedpart = [
         "name" : "Solo Info",
         "img" : "medpart/soloinfo.png",
         "lebar" : "24"
+    },
+    {
+        "name" : "Info Surabayans",
+        "img" : "medpart/20201129_172555.jpg",
+        "lebar" : "24"
+    },
+    {
+        "name" : "Event Solo",
+        "img" : "medpart/1666929174811.jpg",
+        "lebar" : "24"
+    },
+    {
+        "name" : "IG jogjaku",
+        "img" : "medpart/IG jogjaku.png",
+        "lebar" : "24"
+    },
+    {
+        "name" : "harian jogja",
+        "img" : "medpart/LOGO BARU HARIAN JOGJA STEMPEL.png",
+        "lebar" : "24"
+    },
+    {
+        "name" : "event mahasiswa",
+        "img" : "medpart/logo eventmahasiswa8.png",
+        "lebar" : "24"
+    },
+    {
+        "name" : "events ina",
+        "img" : "medpart/Logo events.ina.jpeg",
+        "lebar" : "24"
+    },
+    {
+        "name" : "info event",
+        "img" : "medpart/Logo Info Event.png",
+        "lebar" : "24"
+    },
+    {
+        "name" : "Mading Event",
+        "img" : "medpart/Logo Mading Event Cerah.png",
+        "lebar" : "24"
+    },
+    {
+        "name" : "Partner Event",
+        "img" : "medpart/Logo Partner Event.png",
+        "lebar" : "24"
+    },
+    {
+        "name" : "Sirkel Koffie",
+        "img" : "medpart/Logo Sirkel Koffie.jpg",
+        "lebar" : "24"
+    },
+    {
+        "name" : "Kabar Teater Indonesia",
+        "img" : "medpart/png_20220113_184458_0000.png",
+        "lebar" : "24"
     }
-    
-    
 ]
 const dataSponsor = [
     {

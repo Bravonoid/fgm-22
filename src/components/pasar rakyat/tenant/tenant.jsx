@@ -192,7 +192,7 @@ const Tenant = () => {
         <Link to="/pasar-rakyat/pre-order">
 					<img
 						src={btn}
-						className="sticky p-4 right-0 bottom-0 z-50"
+						className="fixed p-4 right-0 bottom-0 z-50"
 						alt=""
 					/>
 					</Link>
