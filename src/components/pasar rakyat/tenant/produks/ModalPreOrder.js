@@ -19,7 +19,7 @@ export default class ModalPreOrder extends Component {
       <>
         <div className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none pt-64 md:pt-10 pb-6">
           <div className="relative w-96 md:w-auto my-2 mx-auto max-w-xl md:max-w-4xl m-8">
-            <div className="border-0 shadow-lg relative w-auto bg-white outline-none focus:outline-none mx-4 md:mx-2 px-4 md:px-16">
+            <div className="border-0 shadow-lg relative w-auto bg-white outline-none focus:outline-none mx-4 md:mx-2 px-4 md:px-16 mt-80">
             <img src={block1} alt="block" className="absolute left-0 top-0 z-0"/>
             <img src={block2} alt="block" className="absolute bottom-0 right-0 z-0"/>
             <button
