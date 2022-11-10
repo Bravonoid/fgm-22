@@ -369,7 +369,7 @@ const festival_seni = () => {
                         </div>
                     </Slider> */}
 				<div
-					className="h-auto flex flex-col items-center justify-center gap-2 py-4 mobile:top-0"
+					className="h-auto flex flex-col items-center justify-center gap-2 py-4 mobile:top-0 pb-20"
 					data-aos="zoom-in"
 					data-aos-duration="1000"
 					data-aos-anchor-placement="top-center"

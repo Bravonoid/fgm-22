@@ -1,4 +1,5 @@
 import TeksKolaborasi from "../../../assets/Pasar-Rakyat/home-pasar/teks-kolaborasi.svg";
+import pdm from "../../../assets/Pasar-Rakyat/home-pasar/pdm.png";
 import BGPattern from "../../../assets/Pasar-Rakyat/home-pasar/bg-pasar.svg";
 import LogoUser from "../../../assets/Pasar-Rakyat/home-pasar/logo-user.png";
 import AOS from "aos";
@@ -50,16 +51,24 @@ const KolaborasiKreasi = () => {
           alt=""
         />
         <div
-          className="mx-auto mt-10 h-[371px] bg-kkm px-10 lg:w-[1140.88px]"
-          data-aos="fade-up"
-          data-aos-offset="1100"
-          data-aos-duration="1500"
+          className="mx-auto mt-10 h-[371px] bg-kkm px-10 lg:w-[1140.88px] flex flex-row"
+          // data-aos="fade-up"
+          // data-aos-offset="1100"
+          // data-aos-duration="1500"
         >
           <img
             src={LogoUser}
             className="m-auto items-center justify-center pt-10"
             alt=""
           />
+            <img
+              src={pdm}
+              className="m-auto items-center justify-center pt-10"
+              alt=""
+            />
+  
+   
+          
         </div>
       </div>
     </>

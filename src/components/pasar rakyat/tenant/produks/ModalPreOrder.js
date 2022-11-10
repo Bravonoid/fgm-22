@@ -113,15 +113,11 @@ export default class ModalPreOrder extends Component {
                 </div>
                 
               </div>
-              <div className="space-x-3 pb-32">
-                              <a
-                                href="https://formfaca.de/sm/zYgTo63cn"
-                              >
-                                <button className="bg-red-500 block mx-auto hover:bg-red-700 text-xl text-white font-bold py-4 px-10 rounded-full">
-                                  Beli
-                                </button>
-                              </a>
-                      </div>
+              <div className=" pb-32">
+                <button className="bg-red-500 block mx-auto hover:bg-red-700 text-xl text-white font-bold py-4 px-10 rounded-full" href="https://formfaca.de/sm/zYgTo63cn">
+                  Beli
+                </button>
+              </div>
             </div>
           </div>
         </div>
