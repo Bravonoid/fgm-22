@@ -6,6 +6,7 @@ import KolaborasiKreasi from "../components/pasar rakyat/home-pasar-rakyat/Kolab
 import btn from "../assets/Pasar-Rakyat/home-pasar/btnPO.png";
 import { HtmlHead } from "../components/HtmlHead";
 import { Link } from "react-router-dom";
+import Seminar from "../components/pasar rakyat/home-pasar-rakyat/Seminar";
 
 export default function PasarRakyat() {
 	return (
@@ -31,6 +32,7 @@ export default function PasarRakyat() {
 					alt=""
 					/>
 				</Link>
+				<Seminar/>
 			</main>
 		</>
 	);
