@@ -38,7 +38,7 @@ const Seminar = () => {
           alt=""
         />
 
-        <div className="mx-auto mt-8 flex flex-col items-center justify-around   pb-5 text-white md:h-[20rem] md:flex-row lg:w-[1000.88px] xl:w-[1260.88px]">
+        <div className="mx-auto mt-16 flex flex-col items-center justify-around   pb-5 text-white md:h-[20rem] md:flex-row lg:w-[1000.88px] xl:w-[1260.88px]">
           <div className="h-[12rem]  w-[16rem] bg-white md:h-[20rem] md:w-[40%]">
             test
           </div>
