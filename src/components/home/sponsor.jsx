@@ -38,10 +38,21 @@ const sponsor = () =>  {
             </div>
           </div>
 
-          <div className={` mobile:mt-4 flex  mt-32  p-5 bg-[#242424] xl:bg-flat-medpart bg-cover h-full w-3/4 my-auto mx-auto  relative z-100 `} data-aos="flip-up" data-aos-duration="1000">
-          <div className="relative p-2 z-40 flex md:h-72 2xl:h-[24rem] mx-auto md:gap-8 gap-4 justify-between ">
-                            <img classname= " mx-auto "src ={Pegadaian}>
+          <div className={` flex  mobile:mt-12 mt-32  p-5 bg-[#242424] xl:bg-flat-medpart bg-auto h-3/5 w-4/5 my-auto mx-auto  2xl:w-2/3 relative z-100 `} data-aos="zoom-in" data-aos-duration="1000">
+          <div className="relative p-2 z-40  flex 2xl:ml-24 flex-wrap md:gap-8 gap-4 justify-evenly md:mx-16 align-middle">
+                            <img classname= "h-auto w-auto mx-auto "src ={Pegadaian}>
                             </img>
+                            {dataSponsor.map((sponsor, index) =>
+                                <div className="self-center">
+                                <MedPartSponsorLogo
+                                    key={index}
+                                    name={sponsor.name}
+                                    img={sponsor.img}
+                                    width={sponsor.lebar}
+                                    height={sponsor.tinggi}
+                                />
+                                </div>
+                            )}
                         </div>
           </div>
     </div>

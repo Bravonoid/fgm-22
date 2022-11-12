@@ -33,7 +33,7 @@ const medpart = () => {
           </div>
 
           <div className={` flex  mobile:mt-12 mt-32  p-5 bg-[#242424] xl:bg-flat-medpart bg-auto h-3/5 w-4/5 my-auto mx-auto  2xl:w-2/3 relative z-100 `} data-aos="zoom-in" data-aos-duration="1000">
-          <div className="relative p-2 z-40  flex 2xl:ml-24 flex-wrap md:gap-8 gap-4 justify-evenly md:mx-16 ">
+          <div className="relative p-2 z-40  flex 2xl:ml-24 flex-wrap md:gap-8 gap-4 justify-evenly md:mx-16 align-middle ">
                             {dataMedpart.map((sponsor, index) =>
                                 <div className="self-center">
                                 <MedPartSponsorLogo
