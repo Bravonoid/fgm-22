@@ -1,17 +1,17 @@
-import PleaseRelease from "../components/please release/please_release";
+import PressRelease from "../components/press release/press_release";
 import { HtmlHead } from "../components/HtmlHead";
 
-const Please = () => {
+const Press = () => {
 	return (
 		<>
 			<HtmlHead
-				title="Please Release"
+				title="Press Release"
 				decription="[insert page description]"
-				link="/please-release"
+				link="/press-release"
 			/>
-			<PleaseRelease />
+			<PressRelease />
 		</>
 	);
 };
 
-export default Please;
+export default Press;

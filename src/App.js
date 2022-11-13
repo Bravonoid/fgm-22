@@ -15,7 +15,7 @@ import NotFound from "./pages/NotFound";
 import Product from "./components/pasar rakyat/tenant/produks/Product";
 import ProductPreOrder from "./components/pasar rakyat/tenant/produks/PreOrder";
 import PreOrder from "./components/pasar rakyat/tenant/preorder/PreorderTenant";
-import Please from "./pages/Please";
+import Press from "./pages/Press";
 function App() {
 	return (
 		<div className="App">
@@ -35,7 +35,7 @@ function App() {
 				<Route path="/pasar-rakyat/tenant/produk/:id" element={<Product />} />
 				<Route path="/pasar-rakyat/pre-order/produk/:id" element={<ProductPreOrder />} />
 				<Route path="/tiket" element={<Tiket />} />
-				<Route path="/please-release" element={<Please />} />
+				<Route path="/press-release" element={<Press />} />
 
 				<Route path="*" element={<NotFound />} />
 			</Routes>
