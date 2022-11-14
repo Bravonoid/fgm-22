@@ -17,6 +17,9 @@ import Presale2SM from "../../assets/tiket/Presale2-SM.png";
 
 import RegularSM from "../../assets/tiket/Regula-SM.png";
 import Pattern from "../../assets/tiket/bg-tiket.svg";
+import judul from "../../assets/tiket/judulkolaborasi.svg";
+import judulmobile from "../../assets/tiket/judulmobile.svg";
+import {dataFoto} from "../../assets/tiket/penjualan";
 
 import FestivalSeni from "../../assets/tiket/FESTIVAL SENI.svg";
 import AOS from "aos";
@@ -194,6 +197,23 @@ const section1 = () => {
 
           <div></div>
         </div>
+        <div className="h-auto flex flex-col items-center justify-center gap-2 py-4 mobile:top-0 pb-20"
+					data-aos="zoom-in"
+					data-aos-duration="1000"
+					data-aos-anchor-placement="top-center"
+        >
+           <img src={judul} alt="judul" className="pb-20 mobile:hidden sm:hidden md:block"/>
+           <img src={judulmobile} alt="judul" className="pb-20 mobile:block sm:block md:hidden"/>
+					<div className={` flex mobile:mt-12  p-5 bg-[#EEEEEE] xl:bg-flat-kkm bg-contain h-3/5 w-4/5 my-auto mx-auto  2xl:w-2/3 relative z-100 py-16`} data-aos="zoom-in" data-aos-duration="1000">
+          				<div className="mx-auto h-auto px-10 lg:w-[1140.88px]">
+                    <div className="grid lg:grid-cols-3 w-auto mobile:grid-cols-1 sm:grid-cols-2">
+									  {dataFoto.map((item) =>
+                      <img src={require('../../assets/tiket/'+item.img+'.png')} alt={item.name} className=" block mx-auto" /> )}
+                    </div>
+                            
+                  </div>
+          			</div>
+            </div>
         <div></div>
       </div>
     </div>
