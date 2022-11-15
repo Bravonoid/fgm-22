@@ -52,7 +52,7 @@ const Seminar = () => {
             <p className="text-justify text-sm leading-6  sm:leading-normal lg:leading-[1.6rem]">
             Yogyakarta, 13 November 2022 – Kewirausahaan, khususnya UMKM, menjadi sektor penting dalam perekonomian Indonesia, terlebih lagi kemunculan UMKM menyumbang 61% PDB Indonesia. Dalam mendukung peran ini, Festival Gadjah Mada menghadirkan seminar edukasi kewirausahaan pada hari Minggu (13/11/2022) di Ruang Audiotorium Tropical Biologi, Universitas Gadjah Mada. Seminar yang bertemakan “Optimizing Additional Capital & Market Analyze For Business Strategy in Digital Era” ini bertujuan untuk mengembangkan potensi dalam berwirausaha serta mengoptimalkan bisnis. 
             </p>
-            <Link to = "/press-release">
+            <Link to = "/pasar-rakyat/press-release">
               <div className="btn  mt-2  w-fit cursor-pointer bg-fgm-orange py-2 px-3  text-center font-bold  text-black shadow-[0_0px_0px_rgb(72,130,103)] transition-all  ease-out hover:translate-y-1 hover:shadow-[9px_9px_0_rgb(230,44,32)] ">
               Selengkapnya
             </div>

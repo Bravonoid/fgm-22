@@ -35,7 +35,7 @@ function App() {
 				<Route path="/pasar-rakyat/tenant/produk/:id" element={<Product />} />
 				<Route path="/pasar-rakyat/pre-order/produk/:id" element={<ProductPreOrder />} />
 				<Route path="/tiket" element={<Tiket />} />
-				<Route path="/press-release" element={<Press />} />
+				<Route path="/pasar-rakyat/press-release" element={<Press />} />
 
 				<Route path="*" element={<NotFound />} />
 			</Routes>
