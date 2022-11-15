@@ -32,7 +32,7 @@ export default function PasarRakyat() {
 					alt=""
 					/>
 				</Link>
-				{/* <Seminar/> */}
+				<Seminar/>
 			</main>
 		</>
 	);
