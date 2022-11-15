@@ -8,7 +8,7 @@ const press_release = () => {
     return(
         <>
             <div className="bg-[#202020] relative overflow-hidden h-auto text-white">
-                <div className='flex flex-col mt-20 items-center justify-center'>
+                <div className='flex flex-col mt-[120px] items-center justify-center'>
                     <div className="font-bold text-2xl items-center flex justify-center sm:px-20 xl:px-[200px] mobile:px-5 text-center">
                         <p>Dukung UMKM, Festival Gadjah Mada Gelar Seminar Edukasi Kewirausahaan</p>
                     </div>
@@ -25,7 +25,7 @@ const press_release = () => {
                         <p className="pb-12 indent-12">Pada sesi terakhir, Winarta selaku Assistant Vice President Business Micro PT. Pegadaian mengangkat topik terkait isu pelemahan perekonomian sebagai salah isu yang penting untuk menjadi perhatian bersama. Masyarakat, baik itu pengusaha atau non-pengusaha perlu melakukan investasi sebagai salah bentuk antisipasi saat perekonomian melemah. Dalam hal ini, Pegadaian menyediakan berbagai produk yang bertujuan untuk membantu perekonomian nasional melalui jasa pembiayaan jangka pendek dan jangka panjang.</p>
                         <img src={picture4} alt="" className=" mobile:w-full sm:w-4/5 md:w-3/4 lg:w-3/5 xl:w-1/2 mx-auto py-12"/>
                         <p className="pb-12 indent-12">“Setiap produk memiliki kelebihan dan tujuannya masing-masing. Bisa disesuaikan dengan kebutuhan. Selain itu, Pegadaian juga memiliki program Gadai Peduli Pegadaian yang bebas bunga hingga dua juta lima ratus riba rupiah.” jelas Winarta. Dalam kesempatan ini, Pegadaian juga memaparkan program Agen Pegadaian yang bertujuan untuk membantu masyarakat menambah penghasilan.</p>
-                        <p className="pb-12 indent-12">“Selain sesi pemaparan materi, terdapat juga sesi diskusi dan tanya jawab antar peserta bersama para narasumber. Seminar edukasi kewirausahaan ini kemudian ditutup dengan penyerahan kenang-kenangan bagi narasumber serta hadiah bagi lima penanya terbaik. </p>
+                        <p className="pb-[120px] indent-12">“Selain sesi pemaparan materi, terdapat juga sesi diskusi dan tanya jawab antar peserta bersama para narasumber. Seminar edukasi kewirausahaan ini kemudian ditutup dengan penyerahan kenang-kenangan bagi narasumber serta hadiah bagi lima penanya terbaik. </p>
                     </div>
                 </div>
             </div>
