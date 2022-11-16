@@ -1,9 +1,9 @@
 import React from 'react';
-import picture from '../../assets/press release/IMG_0608.jpg';
-import picture1 from '../../assets/press release/IMG_0485.jpg';
-import picture2 from '../../assets/press release/IMG_0502.jpg';
-import picture3 from '../../assets/press release/IMG_0519.jpg';
-import picture4 from '../../assets/press release/IMG_0534.jpg';
+import picture from '../../assets/press release/IMG_0608.JPG';
+import picture1 from '../../assets/press release/IMG_0485.JPG';
+import picture2 from '../../assets/press release/IMG_0502.JPG';
+import picture3 from '../../assets/press release/IMG_0519.JPG';
+import picture4 from '../../assets/press release/IMG_0534.JPG';
 const press_release = () => {
     return(
         <>
