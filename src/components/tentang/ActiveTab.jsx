@@ -36,8 +36,8 @@ const ActiveTab = () => {
         <div
           className="flex w-full justify-center"
           data-aos="fade-down"
-          data-aos-offset="500"
-          data-aos-duration="700"
+          data-aos-offset="250"
+          data-aos-duration="1000"
         >
           <h2
             onClick={handleTema}
@@ -63,7 +63,7 @@ const ActiveTab = () => {
         </div>
       </div>
       <div className="flex w-full justify-center bg-[#171717] py-10">
-        <div data-aos="zoom-in" data-aos-duration="2000">
+        <div>
           <div
             className={
               tema ? "mx-auto block items-center justify-center pt-5" : "hidden"
@@ -72,7 +72,7 @@ const ActiveTab = () => {
             <img
               data-aos="zoom-in"
               // data-aos-delay="500"
-              data-aos-offset="550"
+              data-aos-offset="350"
               data-aos-duration="1000"
               src={TemaBesar}
               className="hidden md:flex"
@@ -80,7 +80,8 @@ const ActiveTab = () => {
             />
             <img
               data-aos="zoom-in"
-              data-aos-offset="700"
+              data-aos-offset="600"
+              // data-aos-delay="700"
               data-aos-duration="1000"
               src={TemaBesarMobile}
               className="flex items-center justify-center md:hidden"
@@ -89,7 +90,7 @@ const ActiveTab = () => {
             <img
               data-aos="zoom-in"
               // data-aos-delay="500"
-              data-aos-offset="550"
+              data-aos-offset="350"
               data-aos-duration="1000"
               src={TemaBesarKecil}
               className="hidden px-[0.5rem] md:flex"
@@ -115,23 +116,29 @@ const ActiveTab = () => {
         </div>
       </div>
       <div className="absolute flex w-full overflow-hidden bg-[#171717]">
-        <div
-          data-aos="flip-up"
-          data-aos-duration="2000"
-          // data-aos-delay="700"
-          data-aos-offset="550"
-          className="scale-x-(135%)"
-        >
-          <img
-            src={MozaikTentang}
-            className="mx-auto hidden scale-x-[175%] items-center justify-center overflow-hidden md:flex"
-            alt="mozaik"
-          />
-          <img
-            src={MozaikTentangMobile}
-            className="mx-auto scale-x-[150%] items-center justify-center overflow-hidden md:hidden"
-            alt="mozaik"
-          />
+        <div className="scale-x-(135%)">
+          <div
+            data-aos="flip-up"
+            data-aos-duration="1000"
+            data-aos-offset="400"
+          >
+            <img
+              src={MozaikTentang}
+              className="mx-auto hidden scale-x-[175%] items-center justify-center overflow-hidden md:flex"
+              alt="mozaik"
+            />
+          </div>
+          <div
+            data-aos="flip-up"
+            data-aos-duration="1000"
+            data-aos-offset="900"
+          >
+            <img
+              src={MozaikTentangMobile}
+              className="mx-auto scale-x-[150%] items-center justify-center overflow-hidden md:hidden"
+              alt="mozaik"
+            />
+          </div>
         </div>
       </div>
     </>

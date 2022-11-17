@@ -20,7 +20,7 @@ const Maskot = () => {
             className="col-span-2"
             data-aos="fade-down"
             data-aos-duration="1500"
-            data-aos-offset="300"
+            data-aos-offset="500"
           >
             <h1 className="mb-3 text-4xl font-bold text-white mobile:hidden mobile:text-center">
               MASKOT KITA
@@ -51,25 +51,30 @@ const Maskot = () => {
               </p>
             </div>
           </div>
-          <div
-            className="relative col-span-1 w-full items-end text-left text-white mobile:text-sm"
-            data-aos="fade-right"
-            data-aos-duration="1500"
-            data-aos-offset="400"
-          >
-            <h1 className="mb-3 text-3xl font-bold text-white sm:hidden mobile:text-center">
-              MASKOT KITA
-            </h1>
-            <img
-              src={TextCindaru}
-              className="sm:hidden mobile:scale-[90%] mobile:px-10"
-              alt="text-cindaru"
-            />
+          <div className="relative col-span-1 w-full items-end text-left text-white mobile:text-sm">
+            <div
+              data-aos="fade-right"
+              data-aos-duration="1500"
+              data-aos-offset="800"
+            >
+              <h1 className="mb-3 text-3xl font-bold text-white sm:hidden mobile:text-center">
+                MASKOT KITA
+              </h1>
+              <img
+                src={TextCindaru}
+                className="sm:hidden mobile:scale-[90%] mobile:px-10"
+                alt="text-cindaru"
+              />
+            </div>
+            <div data-aos="fade-right"
+              data-aos-duration="1500"
+              data-aos-offset="500">
             <img
               src={MaskotCindaru}
               className="-translate-x-2 scale-[110%] transform md:translate-y-16 md:-translate-x-10 md:scale-[150%] mobile:my-10"
               alt="maskot-cindaru"
             />
+            </div>
           </div>
         </div>
         {/* <img
